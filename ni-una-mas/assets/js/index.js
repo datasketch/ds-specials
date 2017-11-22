@@ -4,9 +4,16 @@ function handleResize() {
 	$('.story-box').css('height', storyBoxHeight + 'px');
 }
 function init() {
-	/* Invoke initial functions*/
+	/* Handle resize */
 	handleResize();
 	window.addEventListener('resize', handleResize);
+
+	/* Initialize videojs */
+	var video = videojs(document.querySelector('.video-js'), {
+		autoplay: false,
+		controls: true,
+		preload: 'auto',
+	});
 	
 	/* Setup the carousel for the stories section*/
 	$('.stories-carousel').owlCarousel({
@@ -17,15 +24,29 @@ function init() {
 		slideBy: 1,
 		responsive: {
 			768: {
-				items: 2,
-				slideBy: 2,
-			},
-			992: {
 				items: 3,
-				slideBy: 3
-				}
+				nav: false
 			}
-		});
+		}
+	});
+
+	/* Handle tales overlay */
+	var tale = undefined;
+	$('.tale-item').click(function(event) {
+		event.preventDefault();
+		var target = event.target;
+		tale = $(target).attr('data-tale');
+		if (!tale) {
+			tale = $(target).parent().attr('data-tale');
+		}
+		$('body').css('overflow', 'hidden');
+		$('#' + tale).toggleClass('opened');
+	})
+	$('.close-overlay').click(function(event) {
+		event.preventDefault();
+		$('#' + tale).toggleClass('opened');
+		$('body').css('overflow', 'auto');
+	})
 }
 
 /* When DOM loaded */

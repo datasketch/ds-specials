@@ -16,6 +16,11 @@ body {
 	padding: 0;
 	width: 100%;
 }
+a:hover,
+a:focus,
+a:visited {
+	text-decoration: none;
+}
 /* ==================== */
 /*        OVERLAY       */
 /* ==================== */
@@ -267,6 +272,17 @@ header .space {
 	transform: translate(-50%,-50%);
 	width:2em;
 }
+/*.banner {
+	background: no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.5s ease-in-out;
+	transform: translate3d(0,0,0);
+	width: 100%;
+}*/
 /* ==================== */
 /*        STORIES       */
 /* ==================== */
@@ -364,16 +380,17 @@ header .space {
 }
 .owl-prev i,
 .owl-next i {
-	font-size: 1.5rem;
+	color: #190c41;
+	font-size: 30px;
 }
 @media only screen and (min-width: 768px) {
-	.owl-prev i,
-	.owl-next i {
-		font-size: 4rem;
-	}	
+	.story-box {
+		align-items: center;
+		justify-content: center;
+	}
 }
 /* ==================== */
-/*        STORIES       */
+/*         QUIZ         */
 /* ==================== */
 .quiz-container {
 	background-color: #190c41;
@@ -476,4 +493,72 @@ header .space {
 		flex: 1 0 auto;
 		width: auto;
 	}
+}
+/* ==================== */
+/*     TALE OVERLAY     */
+/* ==================== */
+.tale-overlay {
+	background: white;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	height: 0vh;
+	left: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.5s;
+	transition-delay: 0.6s;
+	width: 100%;
+	z-index: 10;
+}
+.tale-overlay-header {
+	align-items: center;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: space-between;
+	margin-bottom: 5vw;
+	opacity: 0;
+	transition: all 0.3s;
+	transition-delay: 0.3s;
+	visibility: hidden;
+}
+.tale-overlay-header h1 {
+	margin: 0;
+}
+.tale-overlay-header .close-overlay {
+	background: transparent;
+	border: none;
+	font-size: 20px;
+}
+.tale-overlay-body {
+	flex: 1 0 auto;
+	opacity: 0;
+	transition: all 0.3s;
+	transition-delay: 0s;
+	visibility: 0;
+}
+.tale-overlay.opened {
+	height: 100vh;
+	overflow: auto;
+	padding: 3vw 5vw;
+	transition: all 0.5s;
+}
+.tale-overlay.opened > .tale-overlay-header {
+	transition: 2s;
+	transition-delay: 0.3s;
+	opacity: 1;
+	visibility: visible;
+}
+.tale-overlay.opened > .tale-overlay-body {
+	transition: 2s;
+	transition-delay: 0.6s;
+	opacity: 1;
+	visibility: visible;
 }
