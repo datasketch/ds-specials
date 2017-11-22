@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.corrupstar {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.corrupstar img {
+	border-radius: 50%;
+}
+.corrupstar-name {
+	margin-bottom: 2px;
+}
+.hamburger-mobile .hamburger-inner,
+.hamburger-mobile .hamburger-inner:after,
+.hamburger-mobile .hamburger-inner:before {
+	width: 30px;
+}
+.fullmenu {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.corrupstar {
+		width: 45%;
+	}
+}
+@media screen and (min-width: 992px) {
+	.corrupstar {
+		width: 25%;
+	}
+}
+.mouse,
+.mouse-mobile {
+	border-radius: 20px;
+	border: 3px solid #2a2a2a;
+	bottom: 5%;
+	cursor: pointer;
+	height: 60px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 40px;
+}
+.mouse:before,
+.mouse-mobile:before {
+	background: #2a2a2a;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height: 7px;
+	left: 50%;
+	position: absolute;
+	top: 10px;
+	transform: translateX(-50%);
+	width: 7px;
+}
+.mouse:before {
+	-webkit-animation: mousewheel 750ms cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+	animation: mousewheel 750ms cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+}
+.mouse-mobile:before {
+	-webkit-animation: mousewheel-up 750ms cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+	animation: mousewheel-up 750ms cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+}
+.mouse:after,
+.mouse-mobile:after {
+	content: 'Scroll';
+	display: block;
+	left: 50%;
+	position: absolute;
+	top: 110%;
+	transform: translateX(-50%);
+}
+.mouse-mobile:after {
+	content: 'Swipe';
+}
+@-webkit-keyframes mousewheel {
+  0% { transform: translate(-50%, 0px) scale(1.2); opacity: 1}
+  25% { transform: translate(-50%, 10px) scale(1); opacity: 0.75 }
+  50% { transform: translate(-50%, 20px) scale(0.8); opacity: 0.5 }
+  75% { transform: translate(-50%, 30px) scale(0.6); opacity: 0.25 }
+  100% { transform: translate(-50%, 40px) scale(0.4); opacity: 0 }
+}
+@keyframes mousewheel {
+  0% { transform: translate(-50%, 0px) scale(1.2); opacity: 1}
+  25% { transform: translate(-50%, 10px) scale(1); opacity: 0.75 }
+  50% { transform: translate(-50%, 20px) scale(0.8); opacity: 0.5 }
+  75% { transform: translate(-50%, 30px) scale(0.6); opacity: 0.25 }
+  100% { transform: translate(-50%, 40px) scale(0.4); opacity: 0 }
+}
+@-webkit-keyframes mousewheel-up {
+  100% { transform: translate(-50%, 0px) scale(1.2); opacity: 1}
+  75% { transform: translate(-50%, 10px) scale(1); opacity: 0.75 }
+  50% { transform: translate(-50%, 20px) scale(0.8); opacity: 0.5 }
+  25% { transform: translate(-50%, 30px) scale(0.6); opacity: 0.25 }
+  0% { transform: translate(-50%, 40px) scale(0.4); opacity: 0 }
+}
+@keyframes mousewheel-up {
+  100% { transform: translate(-50%, 0px) scale(1.2); opacity: 1}
+  75% { transform: translate(-50%, 10px) scale(1); opacity: 0.75 }
+  50% { transform: translate(-50%, 20px) scale(0.8); opacity: 0.5 }
+  25% { transform: translate(-50%, 30px) scale(0.6); opacity: 0.25 }
+  0% { transform: translate(-50%, 40px) scale(0.4); opacity: 0 }
+}

@@ -1,0 +1,91 @@
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.bg-yellow { background-color: #F4E61E; }
+.block {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+.button {
+	background-color: #eeeeee;
+	border-radius: 5px;
+	padding: 8px 18px;
+}
+.button:hover {
+	text-decoration: none;
+}
+.button-yellow {
+	background-color: #F4E61E;
+	box-shadow: 1px 2px #e3d50d; 
+	color: #463838;
+}
+.button-yellow:hover {
+	color: #574949;
+}
+.centered {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.contained {
+	margin: 0 auto;
+	width: 90%;
+}
+.logo { height: auto; }
+.logo-x-small { width: 100px }
+.logo-small { width: 137.5px }
+.logo-medium { width: 175px }
+.logo-large { width: 212.5px }
+.logo-x-large { width: 250px }
+.img-margin { margin: 0 10px }
+/* Horizontal flexbox */
+.flex {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex--flex-end { justify-content: flex-end; }
+.flex--space-around { justify-content: space-around; }
+.flex--space-between { justify-content: space-between; }
+.flex-10 { width: 10% }
+.flex-20 { width: 20% }
+.flex-30 { width: 30% }
+.flex-40 { width: 40% }
+.flex-50 { width: 50% }
+.flex-60 { width: 60% }
+.flex-70 { width: 70% }
+.flex-80 { width: 80% }
+.flex-90 { width: 90% }
+.flex-100 { width: 100% }
+/* Vertical flexbox */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+/* Flexbox spaces */
+.flex-static { flex: 0 0 auto }
+.flex-remaining { flex: 1 1 auto }
+.full-viewport {
+	height: 100vh;
+	position: relative;
+	width: 100%;
+}
+.full-width { width: 100%; }
+.img-center { margin: 0 auto; }
+.no-outline { outline: none }
+.padding-20 { padding: 20px; }
+.padding-vertical-20 { padding: 20px 0 }
+.text-color-black { color: black; }
+.text-color-dark-gray { color: #7c7766; }
+.text-size-xx-small { font-size: xx-small; }
+.text-size-x-small { font-size: x-small; }
+.text-size-small { font-size: small; }
+.text-size-medium { font-size: medium; }
+.text-size-large { font-size: large; }
+.text-size-x-large { font-size: x-large; }
+.text-size-xx-large { font-size: xx-large; }
+.titillium { font-family: 'Titillium Web', sans-serif; }
+.titillium-regular { font-weight: 400; }
+.titillium-light { font-weight: 300; }
+.titillium-semibold { font-weight: 600; }
