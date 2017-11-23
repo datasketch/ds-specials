@@ -18,6 +18,12 @@ body {
 #wrapper main {
 	flex: 1 0 auto;
 }
+.brand a {
+	margin: 0 20px;
+}
+.brand a:last-child {
+	margin: 0;
+}
 footer {
 	/*bottom: 0;
 	left: 0;
