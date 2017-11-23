@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<title>Scrollytelling | Demo</title>
+	<style>
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		p {
+			margin: 0;
+		}
+		.space {
+			height: 500px;
+		}
+		#scroll {
+			position: relative;
+		}
+		.graphic {
+			-moz-transform: translate3d(0, 0, 0);
+			-webkit-transform: translate3d(0, 0, 0);
+			background-color: #ddd;
+			bottom: auto;
+			right: 0;
+			position: absolute;
+			top: 0;
+			transform: translate3d(0, 0, 0);
+		}
+		.graphic.fixed {
+			position: fixed;
+		}
+		.graphic.bottom {
+			bottom: 0;
+			top: auto;
+		}
+		.text {
+			position: relative;
+			width: 30%;
+		}
+		.step {
+			border: 1px dashed #333;
+			margin: 0 auto 2rem auto;
+			overflow: auto;
+			padding: 1.5vw;
+			transition: all 0.5s linear;
+		}
+		.step.is-active {
+			background: gold;
+		}
+	</style>
+</head>
+<body>
+	<section class="space"></section>
+	<section id="scroll">
+		<div class="graphic">
+			<p>1</p>
+		</div>
+		<div class="text">
+			<div class="step" data-step="chart-1"><span>1</span></div>
+			<div class="step" data-step="chart-2"><span>2</span></div>
+			<div class="step" data-step="chart-3"><span>3</span></div>
+			<div class="step" data-step="chart-4"><span>4</span></div>
+		</div>
+	</section>
+	<div class="space"></div>
+	<div class="space"></div>
+	<script src="vendors/scrollama/scrollama.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		var container = $('#scroll');
+		var graphic = $('.graphic');
+		var text = $('.text');
+		var step = $('.step');
+
+		var scroller = scrollama();
+
+		function onResize() {
+			var stepHeight = window.innerHeight * 0.75;
+			step.css('min-height', stepHeight + 'px');
+
+			var textWidth = text.width();
+			var graphicWidth = container.width() - textWidth;
+			var graphicHeight = Math.floor(window.innerHeight);
+
+			graphic.css({
+				'height': graphicHeight + 'px',
+				'width': graphicWidth + 'px'
+			})
+
+			scroller.resize();
+		}
+
+		function handleStepEnter(response) {
+			response.element.classList.add('is-active');
+			graphic.text(response.index + 1)
+		}
+
+		function handleStepExit(response) {
+			response.element.classList.remove('is-active')
+		}
+
+		function handleContainerEnter(response) {
+			graphic.addClass('fixed');
+			graphic.removeClass('bottom')
+		}
+
+		function handleContainerExit(response) {
+			graphic.removeClass('fixed');
+			if (response.direction === 'down') {
+				graphic.addClass('bottom')
+			}
+		}
+
+		function init() {
+			onResize();
+
+			scroller
+				.setup({
+					container: '#scroll',
+					debug: true,
+					graphic: '.graphic',
+					offset: 0.33,
+					step: '.text .step',
+					text: '.text',
+				})
+				.onStepEnter(handleStepEnter)
+				.onStepExit(handleStepExit)
+				.onContainerEnter(handleContainerEnter)
+				.onContainerExit(handleContainerExit)
+
+			window.addEventListener('resize', onResize);
+		}
+
+		init();
+
+	</script>
+</body>
+</html>
