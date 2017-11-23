@@ -42,6 +42,26 @@
 			bottom: 0;
 			top: auto;
 		}
+		.graphic img {
+			left: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+		}
+		img[id^="chart-"] {
+			opacity: 0;
+			transition: all 0.3s;
+			visibility: hidden;
+		}
+		img[id^="chart-"].visible {
+			opacity: 1;
+			transition: all 0.3s;
+			visibility: visible;
+		}
 		.text {
 			position: relative;
 			width: 30%;
@@ -62,7 +82,10 @@
 	<section class="space"></section>
 	<section id="scroll">
 		<div class="graphic">
-			<p>1</p>
+			<img src="assets/media/dog1.jpg" alt="" id="chart-1">
+			<img src="assets/media/dog2.jpg" alt="" id="chart-2">
+			<img src="assets/media/dog3.jpg" alt="" id="chart-3">
+			<img src="assets/media/dog4.jpg" alt="" id="chart-4">
 		</div>
 		<div class="text">
 			<div class="step" data-step="chart-1"><span>1</span></div>
@@ -90,7 +113,7 @@
 
 			var textWidth = text.width();
 			var graphicWidth = container.width() - textWidth;
-			var graphicHeight = Math.floor(window.innerHeight);
+			var graphicHeight = Math.floor(window.innerHeight / 2);
 
 			graphic.css({
 				'height': graphicHeight + 'px',
@@ -102,11 +125,12 @@
 
 		function handleStepEnter(response) {
 			response.element.classList.add('is-active');
-			graphic.text(response.index + 1)
+			$('#' + response.element.dataset.step).addClass('visible');
 		}
 
 		function handleStepExit(response) {
-			response.element.classList.remove('is-active')
+			response.element.classList.remove('is-active');
+			$('#' + response.element.dataset.step).removeClass('visible');
 		}
 
 		function handleContainerEnter(response) {
