@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=7">
-	<title>Scrollytelling | Demo</title>
+	<title>Metodología y Base de datos</title>
 	<link rel="stylesheet" href="assets/css/shared.css">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/post.css">
 </head>
 <body>
 	<!-- Overlay for loading page -->
@@ -55,22 +55,19 @@
 			</div>
 		</header>
 		<main>
-			<section id="scroll">
-				<div class="graphic">
-					<img src="assets/media/dog1.jpg" alt="" id="chart-1">
-					<img src="assets/media/dog2.jpg" alt="" id="chart-2">
-					<img src="assets/media/dog3.jpg" alt="" id="chart-3">
-					<img src="assets/media/dog4.jpg" alt="" id="chart-4">
+			<div class="custom-container">
+				<h1 class="titillium text-center post-main-title">Así hicimos este especial</h1>
+				<div class="titillium text-size-large">
+					<p>Este especial quiso investigar y comprender la realidad de la situación actual de la violencia de género en Colombia a través del análisis de los datos que dos entidades nacionales han recopilado: la Fiscalí General de la Nación y Medicina Legal. Cuando obtuvimos los datos, luego de realizar peticiones de información a través de <a href="https://www.queremosdatos.co/" target="_blank" rel="noopener noreferrer">QueremosDatos.co</a>, nos dimos cuenta que habían información incompleta o desarticulada por lo que quisimos empezar a recopilar los datos nosotros a partir de las denuncias e informaciones que salen en medio de comunicación.</p>
+					<p>En este ejercicio nos encontramos con Sandra Suárez, una contadora de historias que ya venía realizando esta actividad desde su <a href="https://twitter.com/sandsuarez" target="_blank" rel="noopener noreferrer">cuenta en Twitter</a>.  Por ello, sumamos esfuerzo y empezamos a trabajar con estos datos juntos.</p>
+					<p>Los datos que utilizamos son entonces: Homicidios y Agresiones No Fatales a mujeres en el contexto de presunto delito sexual y violencia intrafamiliar entre el 2012 y hasta septiembre del 2017.  Además, están los datos de la Fiscalía General de la Nación en los que se analizan los casos que ha analizado la entidad por casos de feminicidio, o tentativa de feminicidio, desde el 2015 y hasta marzo de 2017.</p>
+					<p>Por último, recolectamos casos de acoso en universidades colombianas y entrevistamos a distintos grupos que combaten y denuncian este tipo de abusos como PACA (Pares de Acompañamiento Contra el Acoso) de la Universidad Nacional de Colombia, “No es Normal”, de la Universidad de los Andes, y la fundadora de Seguridad & Género de la Universidad Nacional de Colombia. También entrevistamos algunos psicólogos expertos en el tema de violencia sexual y doméstica, que nos ayudaron a entender esta situación y cómo darle la vuelta a esta dolorosa realidad.</p>
+					<p>El diseño de este especial, al igual que el análisis de la información, lo hicimos en R-Studio.</p>
+					<p>Puedes <a href="#">descargar los datos completos aquí</a>.</p>
 				</div>
-				<div class="text">
-					<div class="step" data-step="chart-1"><span>1</span></div>
-					<div class="step" data-step="chart-2"><span>2</span></div>
-					<div class="step" data-step="chart-3"><span>3</span></div>
-					<div class="step" data-step="chart-4"><span>4</span></div>
-				</div>
-			</section>
-			<div class="space"></div>
+			</div>
 		</main>
+		<!-- Footer -->
 		<footer>
 			<div class="footer-container titillium">
 				<p>Este es un trabajo de periodismo de datos del equipo de <a href="https://www.datasketch.co/es/team" target="_blank" rel="noopener noreferrer">Datasketch</a>. Revisa como creamos este especial en la <a href="#">metodología</a>.</p>
@@ -81,76 +78,8 @@
 	</div>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="vendors/scrollama/scrollama.min.js"></script>
+	<!-- Custom -->
 	<script src="assets/js/shared.js"></script>
-	<script>
-		var container = $('#scroll');
-		var graphic = $('.graphic');
-		var text = $('.text');
-		var step = $('.step');
-
-		var scroller = scrollama();
-
-		function onResize() {
-			var stepHeight = window.innerHeight * 0.75;
-			step.css('min-height', stepHeight + 'px');
-
-			var textWidth = text.width();
-			var graphicWidth = container.width() - textWidth - 1;
-			var graphicHeight = Math.floor(window.innerHeight);
-
-			graphic.css({
-				'height': graphicHeight + 'px',
-				'width': graphicWidth + 'px'
-			})
-
-			scroller.resize();
-		}
-
-		function handleStepEnter(response) {
-			response.element.classList.add('is-active');
-			$('#' + response.element.dataset.step).addClass('visible');
-		}
-
-		function handleStepExit(response) {
-			response.element.classList.remove('is-active');
-			$('#' + response.element.dataset.step).removeClass('visible');
-		}
-
-		function handleContainerEnter(response) {
-			graphic.addClass('fixed');
-			graphic.removeClass('bottom')
-		}
-
-		function handleContainerExit(response) {
-			graphic.removeClass('fixed');
-			if (response.direction === 'down') {
-				graphic.addClass('bottom')
-			}
-		}
-
-		function init() {
-			onResize();
-
-			scroller
-				.setup({
-					container: '#scroll',
-					debug: true,
-					graphic: '.graphic',
-					offset: 0.33,
-					step: '.text .step',
-					text: '.text',
-				})
-				.onStepEnter(handleStepEnter)
-				.onStepExit(handleStepExit)
-				.onContainerEnter(handleContainerEnter)
-				.onContainerExit(handleContainerExit)
-
-			window.addEventListener('resize', onResize);
-		}
-
-		init();
-
-	</script>
+	<script src="assets/js/post.js"></script>
 </body>
 </html>

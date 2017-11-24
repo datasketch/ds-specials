@@ -3,7 +3,11 @@ main {
 }
 .post-main-title {
 	margin: 3vw 0;
+	text-transform: uppercase;
 }
 .post-subtitle {
-	margin: 1.5vw 0;
+	margin: 2vw 0;
+}
+p {
+	margin-bottom: 1.5vw;
 }
