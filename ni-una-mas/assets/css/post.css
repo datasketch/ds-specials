@@ -28,3 +28,32 @@ p {
 .author-info > * {
 	margin: 0;
 }
+.panel {
+  box-shadow: none;
+  border: none;
+}
+.panel-default {
+  border-color: none;
+}
+.panel-default > .panel-heading {
+  background-color: transparent;
+}
+.panel-title > a {
+	font-size: large
+}
+.panel-title > a span {
+  color: #190c41;
+  transition: all 0.25s linear;
+}
+.panel-body {
+  border-top: none !important;;
+}
+.panel-body p {
+  font-size: 14px;
+}
+div[arialabelledby^="panel-"] {
+	padding: 10px 15px;
+}
+.to-group {
+	transform: rotate(180deg);
+}
