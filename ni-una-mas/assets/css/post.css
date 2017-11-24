@@ -11,3 +11,20 @@ main {
 p {
 	margin-bottom: 1.5vw;
 }
+.author {
+	display: flex;
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1.5vw;
+}
+.author-avatar {
+	border-radius: 50%;
+	width: 70px;
+	margin-right: 1vw;
+}
+.author-info > * {
+	margin: 0;
+}
