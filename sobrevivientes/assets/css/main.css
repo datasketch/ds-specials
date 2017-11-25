@@ -2,9 +2,6 @@ p {
 	margin: 0;
 	margin-bottom: 1.5vw;
 }
-.space {
-	height: 500px;
-}
 #scroll {
 	/*background: #190c41;*/
 	position: relative;
@@ -17,11 +14,10 @@ p {
 	right: 0;
 	position: absolute;
 	top: 0;
-	transform: translate3d(0, 0, 0);
+	transform: translate3d(0,0,0);
 }
 .graphic.fixed {
 	position: fixed;
-	margin-top: 10px;
 }
 .graphic.bottom {
 	bottom: 0;
@@ -42,6 +38,13 @@ div[id^="chart-"].visible {
 	opacity: 1;
 	transition: all 0.1s;
 	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.contain {
+	height: 100%;
 }
 .text {
 	position: relative;
@@ -49,23 +52,14 @@ div[id^="chart-"].visible {
 	padding-left: 15px;
 }
 .step {
-	margin: 0 auto 2rem auto;
+	margin: 0 auto 0 auto;
 	overflow: auto;
 	padding: 1.5vw;
 	transition: all 0.5s linear;
 }
-
-/* Step by step */
-.step-container {
-	display: flex;
-	flex-direction: column;
-}
-.step-item {
-	display: flex;
-	align-items: center;
-}
-.step-img {
-	width: 10%;
+.step h1 {
+	text-transform: uppercase;
+	margin: 2vw auto;
 }
 .bg-center {
 	background: no-repeat center center;
