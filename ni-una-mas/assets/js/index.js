@@ -1,12 +1,4 @@
-/* Set the height for the story boxes on resize */
-function handleResize() {
-	var storyBoxHeight = Math.floor($('.stories-container').height() * 1)
-	$('.story-box').css('height', storyBoxHeight + 'px');
-}
 function init() {
-	/* Handle resize */
-	handleResize();
-	window.addEventListener('resize', handleResize);
 
 	var banner = $('.banner');
 	var body = $('body');
