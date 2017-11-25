@@ -19,7 +19,7 @@
 	transform: translate(-50%,-50%);
 	width:2em;
 }
-/*.banner {
+.banner {
 	background: no-repeat center center;
 	background-size: cover;
 	height: 100%;
@@ -29,7 +29,11 @@
 	transition: all 0.5s ease-in-out;
 	transform: translate3d(0,0,0);
 	width: 100%;
-}*/
+	opacity: 0;
+	visibility: 0;
+	z-index: -1;
+	
+}
 /* ==================== */
 /*        STORIES       */
 /* ==================== */
@@ -141,6 +145,13 @@
 /* ==================== */
 .quiz-container {
 	background-color: #190c41;
+}
+iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 /* ==================== */
 /*         DATA         */

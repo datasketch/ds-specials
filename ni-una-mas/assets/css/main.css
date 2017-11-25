@@ -1,16 +1,18 @@
 p {
 	margin: 0;
+	margin-bottom: 1.5vw;
 }
 .space {
 	height: 500px;
 }
 #scroll {
+	/*background: #190c41;*/
 	position: relative;
 }
 .graphic {
 	-moz-transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
-	background-color: #ddd;
+	background-color: white;
 	bottom: auto;
 	right: 0;
 	position: absolute;
@@ -19,42 +21,53 @@ p {
 }
 .graphic.fixed {
 	position: fixed;
+	margin-top: 10px;
 }
 .graphic.bottom {
 	bottom: 0;
 	top: auto;
 }
 .graphic img {
-	left: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	max-width: 100%;
-	max-height: 100%;
 	margin: 0 auto;
 }
-img[id^="chart-"] {
+.full-height {
+	height: 100%;
+}
+div[id^="chart-"] {
 	opacity: 0;
-	transition: all 0.3s;
+	transition: all 0.1s;
 	visibility: hidden;
 }
-img[id^="chart-"].visible {
+div[id^="chart-"].visible {
 	opacity: 1;
-	transition: all 0.3s;
+	transition: all 0.1s;
 	visibility: visible;
 }
 .text {
 	position: relative;
-	width: 30%;
+	width: 45%;
+	padding-left: 15px;
 }
 .step {
-	border: 1px dashed #333;
 	margin: 0 auto 2rem auto;
 	overflow: auto;
 	padding: 1.5vw;
 	transition: all 0.5s linear;
 }
-.step.is-active {
-	background: gold;
+
+/* Step by step */
+.step-container {
+	display: flex;
+	flex-direction: column;
+}
+.step-item {
+	display: flex;
+	align-items: center;
+}
+.step-img {
+	width: 10%;
+}
+.bg-center {
+	background: no-repeat center center;
+	background-size: cover;
 }

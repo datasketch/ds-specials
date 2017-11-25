@@ -1,0 +1,38 @@
+						<div class="step-container titillium">
+							<div class="step-item">
+								<div class="step-img">
+									<img src="assets/media/peligro.png" alt="Peligro" class="img-responsive">
+								</div>
+								<div class="step-text">
+									<p class="step-text-title text-white">Certificación médica</p>
+									<p>Cuando seas víctima de una agresión debes acudir a Medicina Legal. Allí te harán  una revisión física que servirá como prueba ante un juez.</p>
+								</div>
+							</div>
+							<div class="step-item">
+								<div class="step-img">
+									<img src="assets/media/pol.png" alt="Poli" class="img-responsive">
+								</div>
+								<div class="step-text">
+									<p class="step-text-title text-white">Denuncia y medida de protección</p>
+									<p>Si vas a interponer una denuncia penal puedes acudir a cualquiera de estas entidades: Fiscalía, Policía, Comisaría de Familia y Secretaría de la Mujer. Es ideal que extiendas la medida a tus familiares.</p>
+								</div>
+							</div>
+							<div class="step-item">
+								<div class="step-img">
+									<img src="assets/media/juez.png" alt="Juez" class="img-responsive">
+								</div>
+								<div class="step-text">
+									<p class="step-text-title text-white">Radicar la medida de protección</p>
+									<p>Es necesario que dejes copias de este documento en la Policía en caso de que el agresor reincida. Esto será tenido en cuenta en un proceso judicial.</p>
+								</div>
+							</div>
+							<div class="step-item">
+								<div class="step-img">
+									<img src="assets/media/doc.png" alt="Peligro" class="img-responsive">
+								</div>
+								<div class="step-text">
+									<p class="step-text-title text-white">Certificación médica</p>
+									<p>Cuando seas víctima de una agresión debes acudir a Medicina Legal. Allí te harán  una revisión física que servirá como prueba ante un juez.</p>
+								</div>
+							</div>
+						</div>

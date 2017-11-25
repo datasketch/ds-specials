@@ -8,6 +8,9 @@ function init() {
 	handleResize();
 	window.addEventListener('resize', handleResize);
 
+	var banner = $('.banner');
+	var body = $('body');
+
 	/* Initialize videojs */
 	var video = videojs(document.querySelector('.video-js'), {
 		autoplay: false,
@@ -15,6 +18,23 @@ function init() {
 		preload: 'auto',
 	});
 	
+	video.on('ended', function() {
+		body.css('overflow', 'auto');
+		banner.css({
+			'opacity': '1',
+			'visibility': 'visible',
+			'z-index': '3'
+		});
+	})
+
+	video.on('play', function() {
+		body.css('overflow', 'hidden');
+	})
+
+	video.on('pause', function() {
+		body.css('overflow', 'auto');
+	})
+
 	/* Setup the carousel for the stories section*/
 	$('.stories-carousel').owlCarousel({
 		dots: false,
