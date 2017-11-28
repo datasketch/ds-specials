@@ -169,10 +169,15 @@ header .menu .menu-container .navigation li {
 }
 header .menu .menu-container .navigation li a {
 	color: white;
-	font-size: 20px;
+	font-size: 15px;
 	position: relative;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+	header .menu .menu-container .navigation li a {
+		font-size: 20px;
+	}
 }
 header .menu .menu-container .navigation li a:hover {
 	color: white;
