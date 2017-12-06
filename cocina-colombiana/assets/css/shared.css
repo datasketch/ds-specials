@@ -1,20 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
 }
 html,
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .hamburger-box {
+  width: 20px;
+}
+header .hamburger-box .hamburger-inner,
+header .hamburger-box .hamburger-inner:before,
+header .hamburger-box .hamburger-inner:after {
+  background: #ffffff;
+  height: 2px;
+  width: 20px;
+}
+header .hamburger-box .hamburger-inner:before {
+  top: -5px;
+}
+header .hamburger-box .hamburger-inner:after {
+  bottom: -5px;
+}
+#wrapper {
+  min-height: 100%;
+}
+#wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+}
+#wrapper main section {
+  position: relative;
+}
+#wrapper footer {
+  background-color: #221d1b;
+  padding: 2vw;
+}
+#wrapper footer p {
+  margin: 0 0 10px;
+}
+/* ==================== */
+/*        Layout        */
+/* ==================== */
+.container-small {
+  margin: 0 auto;
+  width: 90%;
+}
+@media only screen and (min-width: 768px) {
+  .container-small {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container-small {
+    width: 65%;
+  }
+}
+.container-large {
+  margin: 0 auto;
+  width: 90%;
 }
 .flex {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
+.flex--align {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.flex--space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flex--wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.full {
+  height: 100vh;
+}
+.half {
+  height: 50vh;
+}
+.half-and-quarter {
+  height: 75vh;
+}
+/* ==================== */
+/*      Image/Video     */
+/* ==================== */
+.background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==================== */
+/*         Text         */
+/* ==================== */
+.josefin-thin {
+  font-weight: 100;
+}
+.josefin-light {
+  font-weight: 300;
+}
+.josefin-regular {
+  font-weight: 400;
+}
+.josefin-semibold {
+  font-weight: 600;
+}
+.josefin-bold {
+  font-weight: 700;
+}
+.josefin-italic {
+  font-style: italic;
+}
+.text-white {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=shared.css.map */

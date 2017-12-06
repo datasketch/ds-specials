@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+@footer-color: #221d1b;
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html,
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+header {
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	.hamburger-box {
+		width: 20px;
+		.hamburger-inner,
+		.hamburger-inner:before,
+		.hamburger-inner:after {
+			background: #ffffff;
+			height: 2px;
+			width: 20px;
+		}
+		.hamburger-inner:before {
+			top: -5px;
+		}
+		.hamburger-inner:after {
+			bottom: -5px;
+		}
+	}
+}
+
+#wrapper {
+	min-height: 100%;
+	main {
+		flex: 1 0 auto;
+		position: relative;
+		section {
+			position: relative;
+		}
+	}
+	footer {
+		background-color: @footer-color;
+		padding: 2vw;
+		p {
+			margin: 0 0 10px;
+		}
+	}
+}
+
+/* ==================== */
+/*        Layout        */
+/* ==================== */
+.container-small {
+	margin: 0 auto;
+	width: 90%;
+	@media only screen and (min-width: 768px) {
+		width: 75%;
+	}
+	@media only screen and (min-width: 992px) {
+		width: 65%;
+	}
+}
+.container-large {
+	margin: 0 auto;
+	width: 90%;
+}
+.flex {
+	display: flex;
+}
+.flex--align {
+	align-items: center;
+}
+.flex--column {
+	flex-direction: column;
+}
+.flex--space-between {
+	justify-content: space-between;
+}
+.flex--wrap {
+	flex-wrap: wrap;
+}
+.full {
+	height: 100vh;
+}
+.half {
+	height: 50vh;
+}
+.half-and-quarter {
+	height: 75vh;
+}
+/* ==================== */
+/*      Image/Video     */
+/* ==================== */
+.background {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.img-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* ==================== */
+/*         Text         */
+/* ==================== */
+.josefin-thin {
+	font-weight: 100;
+}
+.josefin-light {
+	font-weight: 300;
+}
+.josefin-regular {
+	font-weight: 400;
+}
+.josefin-semibold {
+	font-weight: 600;
+}
+.josefin-bold {
+	font-weight: 700;
+}
+.josefin-italic {
+	font-style: italic;
+}
+.text-white {
+	color: #ffffff;
+}

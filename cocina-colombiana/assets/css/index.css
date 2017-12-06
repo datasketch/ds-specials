@@ -1,2 +1,6 @@
+.logo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
 
 /*# sourceMappingURL=index.css.map */

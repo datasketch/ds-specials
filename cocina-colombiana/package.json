@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp autoprefixer",
-    "dev": "gulp watch"
+    "build": "gulp autoprefixer babel",
+    "dev": "gulp watch",
+    "start": "npm run build && npm run dev"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.2.1",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-less": "^3.3.2",
     "gulp-livereload": "^3.8.1",
-    "gulp-postcss": "^7.0.0",
     "gulp-sourcemaps": "^2.6.1"
   }
 }
