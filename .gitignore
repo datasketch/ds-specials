@@ -4,3 +4,5 @@
 .Ruserdata
 */data/*
 */*/data/*
+node_modules/
+*.map
