@@ -19,8 +19,9 @@ body {
 
 header {
 	left: 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
+	transition: all 0.25s ease-in-out;
 	width: 100%;
 	z-index: 1;
 	.hamburger-box {
@@ -38,6 +39,9 @@ header {
 		.hamburger-inner:after {
 			bottom: -5px;
 		}
+	}
+	&.scrolled {
+		background-color: rgba(32, 31, 26, 0.8);
 	}
 }
 
@@ -93,12 +97,15 @@ header {
 }
 .full {
 	height: 100vh;
+	min-height: 100vh;
 }
 .half {
 	height: 50vh;
+	min-height: 50vh;
 }
 .half-and-quarter {
 	height: 75vh;
+	min-height: 75vh;
 }
 /* ==================== */
 /*      Image/Video     */

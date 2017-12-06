@@ -5,12 +5,15 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=7">
 	<title>Cocina colombiana | Especiales Datasketch</title>
-	<link rel="stylesheet" href="vendors/css/hamburgers.min.css">
+	<!-- Vendors -->
+	<link rel="stylesheet" href="vendors/hamburgers.min.css">
+	<!-- Custom -->
 	<link rel="stylesheet" href="assets/css/shared.css">
 	<link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-	<header>
+	<!-- Full content -->
+	<header class="nav">
 		<nav class="container-large flex flex--space-between flex--align">
 			<button class="hamburger hamburger--squeeze" type="button">
   			<span class="hamburger-box">
@@ -21,11 +24,23 @@
 		</nav>
 	</header>
 	<div id="wrapper" class="flex flex--column">
+		<!-- Main -->
 		<main>
 			<section class="full background" style="background-image: url(assets/media/banner.jpg);">
 			</section>
-			<section class="half-and-quarter"></section>
+			<section class="half flex">
+				<div class="video-section">
+					<iframe src="https://www.youtube-nocookie.com/embed/z7yqtW4Isec?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="quotes">
+					<span>Algo</span>
+				</div>
+			</section>
+			<section class="half"></section>
+			<section class="full background" style="background-image: url(assets/media/triada.jpg);">
+			</section>
 		</main>
+		<!-- Footer -->
 		<footer class="text-white">
 			<div class="container-small">
 				<p>
@@ -38,6 +53,10 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Vendors -->
+	<script src="vendors/jquery.min.js"></script>
+	<!-- Custom -->
 	<script src="assets/js/shared.js"></script>
+	<script src="assets/js/index.js"></script>
 </body>
 </html>

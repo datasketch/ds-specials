@@ -2,5 +2,33 @@
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
+.video-section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .video-section {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+.video-section iframe {
+  height: 100%;
+  width: 100%;
+}
+.quotes {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .quotes {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+.quotes .quote {
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=index.css.map */
