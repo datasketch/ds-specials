@@ -9,6 +9,28 @@
 	height: 100%;
 	width: 100%;
 }
+.quotes {
+	position: relative;
+	.owl-stage-outer,
+	.owl-stage-outer .owl-stage,
+	.owl-stage-outer .owl-stage .owl-item,
+	.owl-stage-outer .owl-stage .owl-item .quote {
+		height: 100%
+	}
+	.quote {
+		position: relative;
+		.quote-body {
+			margin-bottom: 1.5vw;
+			position: relative;
+		}
+	}
+	.owl-dots {
+		bottom: 0;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+}
 .quiz-info {
 	flex-basis: 100%;
 	@media only screen and (min-width: 768px) {

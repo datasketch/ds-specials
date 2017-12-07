@@ -1,5 +1,6 @@
 const nav = document.querySelector('.nav');
-console.dir(nav)
+const carousel = $('.owl-carousel');
+
 const affix = () => {
 	window.scrollY > (window.innerHeight - nav.clientHeight) ? 
 		nav.classList.add('scrolled') :
@@ -7,4 +8,9 @@ const affix = () => {
 }
 
 affix();
+carousel.owlCarousel({
+	autoplay: true,
+	items: 1,
+});
+
 window.addEventListener('scroll', affix);

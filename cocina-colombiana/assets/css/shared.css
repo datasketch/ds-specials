@@ -255,6 +255,9 @@ header .menu .menu-anchors a:hover:before {
 .text-size-xx-large {
   font-size: xx-large;
 }
+.text-right {
+  text-align: right;
+}
 .text-white {
   color: #ffffff;
 }

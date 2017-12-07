@@ -12,6 +12,29 @@
   height: 100%;
   width: 100%;
 }
+.quotes {
+  position: relative;
+}
+.quotes .owl-stage-outer,
+.quotes .owl-stage-outer .owl-stage,
+.quotes .owl-stage-outer .owl-stage .owl-item,
+.quotes .owl-stage-outer .owl-stage .owl-item .quote {
+  height: 100%;
+}
+.quotes .quote {
+  position: relative;
+}
+.quotes .quote .quote-body {
+  margin-bottom: 1.5vw;
+  position: relative;
+}
+.quotes .owl-dots {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 .quiz-info {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;

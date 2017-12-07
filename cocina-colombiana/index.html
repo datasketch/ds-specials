@@ -7,6 +7,8 @@
 	<title>Cocina colombiana | Especiales Datasketch</title>
 	<!-- Vendors -->
 	<link rel="stylesheet" href="vendors/hamburgers.min.css">
+	<link rel="stylesheet" href="vendors/owl/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/owl/assets/owl.theme.default.min.css">
 	<!-- Custom -->
 	<link rel="stylesheet" href="assets/css/shared.css">
 	<link rel="stylesheet" href="assets/css/index.css">
@@ -38,12 +40,35 @@
 		<main>
 			<section class="full background parallax" style="background-image: url(assets/media/banner.jpg);">
 			</section>
-			<section class="half flex">
+			<section class="half flex flex--wrap">
 				<div class="video-section">
 					<iframe src="https://www.youtube.com/embed/z7yqtW4Isec?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 				</div>
-				<div class="quotes">
-					<span>Quotes</span>
+				<div class="quotes owl-carousel owl-theme">
+					<div class="quote">
+						<div class="container-small flex flex--column flex--align-vertical text-size-x-large" style="height: 100%;">
+							<div class="quote-body josefin-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!</div>
+							<div class="quote-author josefin-italic text-right">Ana María</div>
+						</div>
+					</div>
+					<div class="quote">
+						<div class="container-small flex flex--column flex--align-vertical text-size-x-large" style="height: 100%;">
+							<div class="quote-body josefin-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!</div>
+							<div class="quote-author josefin-italic text-right">Camila Achuri</div>
+						</div>
+					</div>
+					<div class="quote">
+						<div class="container-small flex flex--column flex--align-vertical text-size-x-large" style="height: 100%;">
+							<div class="quote-body josefin-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!</div>
+							<div class="quote-author josefin-italic text-right">Juliana Galvis</div>
+						</div>
+					</div>
+					<div class="quote">
+						<div class="container-small flex flex--column flex--align-vertical text-size-x-large" style="height: 100%;">
+							<div class="quote-body josefin-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!</div>
+							<div class="quote-author josefin-italic text-right">Verónica Toro</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="half-and-quarter flex container-large flex--wrap" style="padding: 2vw 0">
@@ -85,6 +110,7 @@
 	</div>
 	<!-- Vendors -->
 	<script src="vendors/jquery.min.js"></script>
+	<script src="vendors/owl/owl.carousel.min.js"></script>
 	<!-- Custom -->
 	<script src="assets/js/shared.js"></script>
 	<script src="assets/js/index.js"></script>
