@@ -205,6 +205,9 @@ header .menu .menu-anchors a:hover:before {
   margin-left: auto;
   margin-right: auto;
 }
+.img-fit {
+  max-width: 100%;
+}
 .parallax {
   background-attachment: fixed;
 }

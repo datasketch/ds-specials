@@ -8,6 +8,7 @@ const affix = () => {
 }
 
 affix();
+
 carousel.owlCarousel({
 	autoplay: true,
 	items: 1,
