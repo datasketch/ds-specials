@@ -1,0 +1,1 @@
+"use strict";var wrapper=document.querySelector("#wrapper"),headerHeight=document.querySelector("header").clientHeight,margin=function(){wrapper.style.marginTop=headerHeight+"px"};margin(),window.addEventListener("resize",margin);

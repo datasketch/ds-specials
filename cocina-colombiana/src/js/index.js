@@ -5,13 +5,15 @@ const affix = () => {
 	window.scrollY > (window.innerHeight - nav.clientHeight) ? 
 		nav.classList.add('scrolled') :
 		nav.classList.remove('scrolled');	
-}
+};
 
-affix();
+(function(){
 
-carousel.owlCarousel({
-	autoplay: true,
-	items: 1,
-});
+	carousel.owlCarousel({
+		autoplay: true,
+		items: 1,
+	});
 
-window.addEventListener('scroll', affix);
+	affix();
+	window.addEventListener('scroll', affix);
+})()
