@@ -1,18 +1,1 @@
-'use strict';
-
-var nav = document.querySelector('.nav');
-var carousel = $('.owl-carousel');
-
-var affix = function affix() {
-	window.scrollY > window.innerHeight - nav.clientHeight ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
-};
-
-affix();
-
-carousel.owlCarousel({
-	autoplay: true,
-	items: 1
-});
-
-window.addEventListener('scroll', affix);
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIm5hdiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsImNhcm91c2VsIiwiJCIsImFmZml4Iiwid2luZG93Iiwic2Nyb2xsWSIsImlubmVySGVpZ2h0IiwiY2xpZW50SGVpZ2h0IiwiY2xhc3NMaXN0IiwiYWRkIiwicmVtb3ZlIiwib3dsQ2Fyb3VzZWwiLCJhdXRvcGxheSIsIml0ZW1zIiwiYWRkRXZlbnRMaXN0ZW5lciJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFNQSxNQUFNQyxTQUFTQyxhQUFULENBQXVCLE1BQXZCLENBQVo7QUFDQSxJQUFNQyxXQUFXQyxFQUFFLGVBQUYsQ0FBakI7O0FBRUEsSUFBTUMsUUFBUSxTQUFSQSxLQUFRLEdBQU07QUFDbkJDLFFBQU9DLE9BQVAsR0FBa0JELE9BQU9FLFdBQVAsR0FBcUJSLElBQUlTLFlBQTNDLEdBQ0NULElBQUlVLFNBQUosQ0FBY0MsR0FBZCxDQUFrQixVQUFsQixDQURELEdBRUNYLElBQUlVLFNBQUosQ0FBY0UsTUFBZCxDQUFxQixVQUFyQixDQUZEO0FBR0EsQ0FKRDs7QUFNQVA7O0FBRUFGLFNBQVNVLFdBQVQsQ0FBcUI7QUFDcEJDLFdBQVUsSUFEVTtBQUVwQkMsUUFBTztBQUZhLENBQXJCOztBQUtBVCxPQUFPVSxnQkFBUCxDQUF3QixRQUF4QixFQUFrQ1gsS0FBbEMiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBuYXYgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcubmF2Jyk7XG5jb25zdCBjYXJvdXNlbCA9ICQoJy5vd2wtY2Fyb3VzZWwnKTtcblxuY29uc3QgYWZmaXggPSAoKSA9PiB7XG5cdHdpbmRvdy5zY3JvbGxZID4gKHdpbmRvdy5pbm5lckhlaWdodCAtIG5hdi5jbGllbnRIZWlnaHQpID8gXG5cdFx0bmF2LmNsYXNzTGlzdC5hZGQoJ3Njcm9sbGVkJykgOlxuXHRcdG5hdi5jbGFzc0xpc3QucmVtb3ZlKCdzY3JvbGxlZCcpO1x0XG59XG5cbmFmZml4KCk7XG5cbmNhcm91c2VsLm93bENhcm91c2VsKHtcblx0YXV0b3BsYXk6IHRydWUsXG5cdGl0ZW1zOiAxLFxufSk7XG5cbndpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdzY3JvbGwnLCBhZmZpeCk7Il19
+"use strict";var nav=document.querySelector(".nav"),carousel=$(".owl-carousel"),affix=function(){window.scrollY>window.innerHeight-nav.clientHeight?nav.classList.add("scrolled"):nav.classList.remove("scrolled")};affix(),carousel.owlCarousel({autoplay:!0,items:1}),window.addEventListener("scroll",affix);
