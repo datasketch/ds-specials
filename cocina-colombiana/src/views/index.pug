@@ -34,24 +34,29 @@ block main
 					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
 					.quote-author.josefin-italic.text-right Verónica Toro					
 	section.half-and-quarter.flex.container-large.flex--wrap(style='padding: 2vw 0')
-		.quiz-info.flex.flex--column.self-center
-			h1.text-size-xx-large Quiz
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi blanditiis laborum, sit error sapiente, deleniti ipsum aspernatur culpa! Ratione eligendi labore quasi, voluptatibus voluptatum amet. Harum dolorem quibusdam eius quo.
+		.quiz-info.flex.flex--column.self-center.josefin-thin
+			img.quiz-img(src="assets/media/quiz.png", alt="Quiz")
+			p.quiz-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi blanditiis laborum, sit error sapiente, deleniti ipsum aspernatur culpa! Ratione eligendi labore quasi, voluptatibus voluptatum amet. Harum dolorem quibusdam eius quo.
 		.quiz-frame
 			// <iframe src="https://player.vimeo.com/video/243653373?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	section.full.background.parallax(style='background-image: url(assets/media/banner_recetas.jpg);')
+	section.full.background.parallax.recipes.flex.flex--column.flex--align-vertical.flex--align-horizontal(style='background-image: url(assets/media/banner_recetas.jpg);')
+		a(href="post.html")
+			h1.recipes-title.slab.slab-bold Recetas
+			h2.recipes-subtitle.josefin-bold Prohibidas
 	section.half.background.app-section.flex.flex--align-vertical.flex--align-horizontal
-		h1: a(href='') App
+		h1
+			a(href='') App
+			img(src="assets/media/aguacate.png", alt="Aguacate")
 	section.full.background.flex.flex--wrap.parallax(style='background-image: url(assets/media/triada.jpg);')
 		.text-white.story.self-center
 			h1.text-size-xx-large Nota principal
-			a.text-white(href='#') Ver más
+			a.text-white(href='post.html') Ver más
 		.text-white.story.self-center
 			h1.text-size-xx-large Nota regiones
-			a.text-white(href='#') Ver más
+			a.text-white(href='post.html') Ver más
 		.text-white.story.self-center
 			h1.text-size-xx-large Nota recetas
-			a.text-white(href='#') Ver más
+			a.text-white(href='post.html') Ver más
 block footer
 	include ./blocks/footer
 

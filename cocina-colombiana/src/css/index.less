@@ -47,6 +47,12 @@
 		flex-basis: 30%;
 		padding: 2vw;
 	}
+	.quiz-img {
+		max-width: 250px;
+	}
+	.quiz-description {
+		font-size: 20px;
+	}
 }
 .quiz-frame {
 	flex-basis: 100%;
@@ -56,6 +62,40 @@
 	}
 	@media only screen and (min-width: 768px) {
 		flex-basis: 70%;
+	}
+}
+.recipes {
+	a {
+		text-align: center;
+	}
+	.recipes-title {
+		color: rgba(255,255,255,0.7);
+		font-size: 100px;
+		margin: 0;
+		@media only screen and (min-width: 768px) {
+			font-size: 150px;
+		}
+		@media only screen and (min-width: 992px) {
+			font-size: 180px;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-size: 200px;
+		}
+	}
+	.recipes-subtitle {
+		color: black;
+		font-size: 40px;
+		text-transform: uppercase;
+		margin: 0;
+		@media only screen and (min-width: 768px) {
+			font-size: 60px;
+		}
+		@media only screen and (min-width: 992px) {
+			font-size: 70px;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-size: 80px;
+		}
 	}
 }
 .story {
@@ -68,6 +108,7 @@
 		text-transform: uppercase;
 	}
 	a {
+		font-size: 30px;
 		position: relative;
 		text-decoration: none;
 		&:before {
@@ -93,7 +134,18 @@
     background: white;
     color: black;
     padding: 40px;
+    position: relative;
     text-align: center;
     width: 85%;
+    img {
+	    max-width: 50px;
+    	left: 0;
+    	position: absolute;
+    	top: 50%;
+    	transform: translate(-50%,-50%);
+    	@media only screen and (min-width: 768px) {
+    		max-width: 70px;
+    	}
+    }
 	}
 }
