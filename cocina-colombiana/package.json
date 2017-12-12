@@ -10,7 +10,7 @@
     "build:views": "gulp views",
     "build": "npm run build:css && npm run build:js && npm run build:views",
     "watch": "gulp watch",
-    "start": "npm run build && npm run dev"
+    "start": "npm run build && npm run watch"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,60 @@
+extends ./blocks/head
+
+block title
+	title Cocina colombiana | Especiales Datasketch
+
+block css
+	link(rel="stylesheet", href="vendors/owl/assets/owl.carousel.min.css")
+	link(rel="stylesheet", href="vendors/owl/assets/owl.theme.default.min.css")
+	link(rel="stylesheet", href="assets/css/index.css")
+
+block header
+	include ./blocks/main-header.pug
+
+block main
+	section.full.background.parallax(style='background-image: url(assets/media/banner.jpg);')
+	section.half.flex.flex--wrap
+		.video-section
+			iframe(src='https://www.youtube.com/embed/z7yqtW4Isec?rel=0&controls=0&showinfo=0', frameborder='0', gesture='media', allow='encrypted-media', allowfullscreen='')
+		.quotes.owl-carousel.owl-theme
+			.quote
+				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+					.quote-author.josefin-italic.text-right Ana María
+			.quote
+				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+					.quote-author.josefin-italic.text-right Juliana Galvis
+			.quote
+				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+					.quote-author.josefin-italic.text-right Camila Achuri
+			.quote
+				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+					.quote-author.josefin-italic.text-right Verónica Toro					
+	section.half-and-quarter.flex.container-large.flex--wrap(style='padding: 2vw 0')
+		.quiz-info.flex.flex--column.self-center
+			h1.text-size-xx-large Quiz
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi blanditiis laborum, sit error sapiente, deleniti ipsum aspernatur culpa! Ratione eligendi labore quasi, voluptatibus voluptatum amet. Harum dolorem quibusdam eius quo.
+		.quiz-frame
+			// <iframe src="https://player.vimeo.com/video/243653373?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	section.full.background.parallax(style='background-image: url(assets/media/banner_recetas.jpg);')
+	section.half.background.app-section.flex.flex--align-vertical.flex--align-horizontal
+		h1: a(href='') App
+	section.full.background.flex.flex--wrap.parallax(style='background-image: url(assets/media/triada.jpg);')
+		.text-white.story.self-center
+			h1.text-size-xx-large Nota principal
+			a.text-white(href='#') Ver más
+		.text-white.story.self-center
+			h1.text-size-xx-large Nota regiones
+			a.text-white(href='#') Ver más
+		.text-white.story.self-center
+			h1.text-size-xx-large Nota recetas
+			a.text-white(href='#') Ver más
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="vendors/owl/owl.carousel.min.js")
+	script(src="assets/js/index.js")
