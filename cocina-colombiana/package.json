@@ -9,7 +9,7 @@
     "build:js": "gulp js",
     "build:views": "gulp views",
     "build": "npm run build:css && npm run build:js && npm run build:views",
-    "dev": "gulp watch",
+    "watch": "gulp watch",
     "start": "npm run build && npm run dev"
   },
   "author": "",

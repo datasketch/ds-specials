@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
-@footer-color: #221d1b;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700');
+@footer-color: #bcc41e;
 
 *,
 *:before,
@@ -137,6 +138,16 @@ header {
 		width: 65%;
 	}
 }
+.container-x-small {
+	margin: 0 auto;
+	width: 90%;
+	@media only screen and (min-width: 768px) {
+		width: 60%;
+	}
+	@media only screen and (min-width: 992px) {
+		width: 50%;
+	}
+}
 .container-large {
 	margin: 0 auto;
 	width: 90%;
@@ -216,6 +227,27 @@ header {
 	font-weight: 700;
 }
 .josefin-italic {
+	font-style: italic;
+}
+.slab {
+	font-family: 'Josefin Slab', serif;
+}
+.slab-thin {
+	font-weight: 100;
+}
+.slab-light {
+	font-weight: 300;
+}
+.slab-regular {
+	font-weight: 400;
+}
+.slab-semibold {
+	font-weight: 600;
+}
+.slab-bold {
+	font-weight: 700;
+}
+.slab-italic {
 	font-style: italic;
 }
 .text-size-xx-small {
