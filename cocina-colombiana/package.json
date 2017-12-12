@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "gulp css",
     "build:js": "gulp js",
-    "build": "npm run build:css && npm run build:js",
+    "build:views": "gulp views",
+    "build": "npm run build:css && npm run build:js && npm run build:views",
     "dev": "gulp watch",
     "start": "npm run build && npm run dev"
   },
@@ -21,7 +22,7 @@
     "gulp-babel": "^7.0.0",
     "gulp-less": "^3.3.2",
     "gulp-livereload": "^3.8.1",
-    "gulp-sourcemaps": "^2.6.1",
+    "gulp-pug": "^3.3.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.0.9",
     "pump": "^2.0.0"

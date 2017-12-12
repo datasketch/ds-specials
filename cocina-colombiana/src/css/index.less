@@ -22,6 +22,16 @@
 		.quote-body {
 			margin-bottom: 1.5vw;
 			position: relative;
+			font-size: medium;
+			@media only screen and (min-width: 768px) {
+				font-size: x-large;
+			}
+		}
+		.quote-author {
+			font-size: medium;
+			@media only screen and (min-width: 768px) {
+				font-size: x-large;
+			}
 		}
 	}
 	.owl-dots {
@@ -74,5 +84,16 @@
 		&:hover:before {
 			transform: scaleX(1);
 		}
+	}
+}
+.app-section {
+	background-color: #e8e8e8;
+	h1 {
+		margin: 0;
+    background: white;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    width: 85%;
 	}
 }
