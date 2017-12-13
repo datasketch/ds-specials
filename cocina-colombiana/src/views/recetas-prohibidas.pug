@@ -1,0 +1,32 @@
+extends ./blocks/head
+
+block title
+	title Recetas prohibidas | Especiales Datasketch
+
+block css
+	link(rel="stylesheet", href="assets/css/post.css")
+
+block header
+	include ./blocks/post-header.pug
+
+block main
+	.container-x-small
+		h1.post-title.slab.slab-semibold Título de la nota
+		.post-content.josefin-light.text-size-large
+			p La cocina colombiana está caracterizada por el mestizaje de las prácticas indígenas, españolas, negras y mestizas. Muchos de los platos que conocemos hoy son producto de la observación y apropiación del entorno: los cocineros tradicionales se valían de aquello que estaba a su alrededor para preparar sus platos.
+			p Por ello, hoy cocinas con achiote, que es oriundo del Amazonas, y se usa para darle color y sabor a los platos; hormiga culona, típica de Santander, y passifloras, plantas exóticas que se han hecho famosas a nivel internacional por sus frutos ácidos y comestibles, como son la maracuyá, la curuba, la gulupa y la cholupa.
+			p Sin embargo, muchos de los platos típicos del país tienen como ingredientes fundamentales animales que consideraríamos prohibidos por estar protegidos o en vías de extinción. 
+			p Según el análisis de los ingredientes en las 700 recetas del Gran libro de la cocina colombiana, 44 recetas podrían considerarse prohibidas o exóticas. De ellas, 19 se preparan en Guapi, Cauca, lo que lo convierte en el municipio con más recetas exóticas del país. Le sigue los departamentos de la región amazónica, como Amazonas y Putumayo.
+			p El ingrediente principal de los platos exóticos es la tortuga: se utilizan sus huevos, su caparazón, su picha y su carne para hacer arroces, caldos, picadillos, pinchos, hallacas e incluso postres.
+			p App
+			p En Colombia hay 36 especies distintas de tortugas, 28 son de agua dulce, y 11 están en peligro de extinción. Desde 1978 está prohibida su venta, sin embargo se sigue utilizando para cocinar. La recetas no especifican necesariamente el tipo de tortuga, pero cocinar con este animal pone en peligro a todos los reptiles.
+			p Además de la tortuga, se cocina con toyo, un tiburón pequeño; babilla, un cocodrilo pequeño, piangua, un molusco pequeño; erizo; iguana; sangre de toro fresca, y patos pelones, que pierden sus plumas mientras son casados.
+			p La población de todas estas especies se ha visto afectada por su caza para alimentación, lo que ha hecho que se promuevan iniciativas para evitar que sean usados en la cocina. Esto implica una pérdida para la tradición culinaria del país, pero una forma de proteger uno de sus mayores tesoros: su biodiversidad.
+			#disqus_thread
+
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="assets/js/post.js")
+	script(src="assets/js/disqus.js")

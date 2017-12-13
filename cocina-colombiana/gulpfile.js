@@ -42,7 +42,7 @@ gulp.task('views', function(cb) {
 		],
 		cb
 	);
-})
+});
 
 gulp.task('watch', function() {
 	livereload.listen();
