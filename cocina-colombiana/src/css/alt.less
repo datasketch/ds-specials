@@ -1,5 +1,9 @@
 @border-bottom: #9c9a9b;
 
+html {
+	position: relative;
+}
+
 header.nav.nav-gray,
 main {
 	background-color: #e8e8e8;
@@ -45,12 +49,20 @@ main {
 			width: auto !important;
 		}
 		.recipe-title {
+			align-items: center;
 			border-bottom: 1px solid @border-bottom;
-			font-style: italic;
-			font-size: 20px;
-			margin: 0 0 2px;
-			@media only screen and (min-width: 768px) {
-				font-size: 25px;
+			display: flex;
+			justify-content: space-between;
+			p {
+				font-style: italic;
+				font-size: 20px;
+				margin: 0 0 2px;
+				@media only screen and (min-width: 768px) {
+					font-size: 25px;
+				}
+			}
+			a {
+				color: #2a2a2a;
 			}
 		}
 	}
@@ -64,4 +76,57 @@ main {
 			margin: 0 20px 0 0;
 		}
 	}
+}
+
+.recipe-overlay {
+	background: white;
+	border: none;
+	height: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transition: all 0.25s linear;
+	width: 100%;
+	z-index: 20;
+	padding: 0;
+  &.show {
+  	border: 1.5vw solid #e8e8e8;
+		padding: 1.5vw 0;
+		height: 100vh;
+		overflow: auto;
+  }
+  & > .container-small {
+  	position: relative;
+  }
+  .close-overlay {
+  	position: absolute;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 100;
+    right: 0;
+  }
+  .overlay-title {
+  	border-bottom: 2px solid #e8e8e8;
+  	display: inline-block;
+  }
+  .overlay-intro {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	.overlay-intro-text,
+  	.overlay-intro-map {
+  		width: 100%;
+  	}
+		.overlay-intro-text {
+			@media only screen and (min-width: 768px) {
+				width: 50%;
+			}
+		}
+		.overlay-intro-map {
+			@media only screen and (min-width: 768px) {
+				width: 40%;
+			}
+		}
+  }
 }

@@ -9,7 +9,7 @@ block css
 	link(rel="stylesheet", href="assets/css/post.css")
 
 block header
-	include ./blocks/gray-header.pug
+	include ./blocks/recipes.pug
 
 block main
 	.container-x-small
@@ -20,7 +20,9 @@ block main
 					.recipe-image
 						img(src="assets/media/ajiaco.jpg", alt="Ajiaco")
 					.recipe-content.flex.flex--column
-						p.recipe-title.slab.slab-semibold Las mil caras del ajiaco
+						.recipe-title
+							p.slab.slab-semibold Las mil caras del ajiaco
+							a.recipe-modal(href="#"): small(data-recipe="recipe-1") Abrir
 						p.recipe-description.josefin-thin Pollo, papas, mazorca...
 						span.recipe-share
 							a(href="#"): span.fa.fa-facebook
@@ -31,7 +33,9 @@ block main
 					.recipe-image
 						img(src="assets/media/arepa.jpg", alt="Arepa")
 					.recipe-content.flex.flex--column
-						p.recipe-title.slab.slab-semibold De la tortilla a la arepa
+						.recipe-title
+							p.slab.slab-semibold De la tortilla a la arepa
+							a.recipe-modal(href="#"): small(data-recipe="recipe-2") Abrir
 						p.recipe-description.josefin-thin Pollo, papas, mazorca...
 						span.recipe-share
 							a(href="#"): span.fa.fa-facebook
@@ -42,7 +46,9 @@ block main
 					.recipe-image
 						img(src="assets/media/bandeja_paisa.jpg", alt="Bandeja paisa")
 					.recipe-content.flex.flex--column
-						p.recipe-title.slab.slab-semibold La bandeja paisa: más mercadotecnia que tradición
+						.recipe-title
+							p.slab.slab-semibold La bandeja paisa: más mercadotecnia que tradición
+							a.recipe-modal(href="#"): small(data-recipe="recipe-3") Abrir
 						p.recipe-description.josefin-thin Pollo, papas, mazorca...
 						span.recipe-share
 							a(href="#"): span.fa.fa-facebook
@@ -53,7 +59,9 @@ block main
 					.recipe-image
 						img(src="assets/media/papa.jpg", alt="Papa campesina")
 					.recipe-content.flex.flex--column
-						p.recipe-title.slab.slab-semibold Papas al rescate
+						.recipe-title
+							p.slab.slab-semibold Papas al rescate
+							a.recipe-modal(href="#"): small(data-recipe="recipe-4") Abrir
 						p.recipe-description.josefin-thin Pollo, papas, mazorca...
 						span.recipe-share
 							a(href="#"): span.fa.fa-facebook
@@ -68,3 +76,4 @@ block footer
 block js
 	script(src="assets/js/post.js")
 	script(src="assets/js/disqus.js")
+	script(src="assets/js/alt.js")
