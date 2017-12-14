@@ -11,23 +11,6 @@ html(lang="es")
 		link(rel="stylesheet", href="vendors/hamburgers.min.css")
 		link(rel="stylesheet", href="assets/css/shared.css")
 		block css
-		script.
-			window.fbAsyncInit = function() {
-				FB.init({
-					appId      : '283256382197189',
-					xfbml      : true,
-					version    : 'v2.11'
-				});
-				FB.AppEvents.logPageView();
-			};
-
-			(function(d, s, id){
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) {return;}
-				js = d.createElement(s); js.id = id;
-				js.src = "https://connect.facebook.net/es_CO/sdk.js";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
 	body
 		block header
 		#wrapper.flex.flex--column

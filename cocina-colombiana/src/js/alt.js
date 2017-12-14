@@ -25,15 +25,3 @@ function closeModal(event) {
 	removeClass(body, 'no-scroll');
 	removeClass(overlay, 'show');
 }
-
-const facebook = document.querySelectorAll('.fa-facebook');
-
-facebook.forEach(fb => fb.addEventListener('click', shareFb));
-
-function shareFb() {
-	FB.ui({
-		method: 'share',
-		href: 'http://especiales.datasketch.co/',
-		hashtag: '#CocinaColombiana'
-	}, response => {})
-}
