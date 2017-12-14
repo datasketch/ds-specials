@@ -1,6 +1,8 @@
 const recipes = document.querySelectorAll('.recipe-modal');
 const header = document.querySelector('.nav');
 const close = document.querySelectorAll('.close-overlay');
+
+
 const body = document.body;
 const addClass = (element, className) => element.classList.add(className);
 const removeClass = (element, className) => element.classList.remove(className);
