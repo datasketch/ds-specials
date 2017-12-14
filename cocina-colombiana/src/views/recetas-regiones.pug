@@ -1,0 +1,79 @@
+extends ./blocks/head
+
+block title
+	title Recetas en regiones de Colombia | Especiales Datasketch
+
+block css
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/css/alt.css")
+	link(rel="stylesheet", href="assets/css/post.css")
+
+block header
+	include ./blocks/recipes.pug
+
+block main
+	.container-x-small
+		h1.post-alt-title.slab.slab-light Recetas por región
+		.josefin-light.text-size-large
+			.recipes-container.flex.flex--column
+				.recipe.flex.flex--align-horizontal
+					.recipe-image
+						img(src="assets/media/ajiaco.jpg", alt="Ajiaco")
+					.recipe-content.flex.flex--column
+						.recipe-title
+							p.slab.slab-semibold Las mil caras del ajiaco
+							a.recipe-modal(href="#"): small(data-recipe="recipe-1") Abrir
+						p.recipe-description.josefin-thin Pollo, papas, mazorca...
+						span.recipe-share
+							a(href="#"): span.fa.fa-facebook
+							a(href="https://api.whatsapp.com/send?text=Mira%20este%20especial%20sobre%20cocina%20colombiana:%20http://especiales.datasketch.co/cocina-colombiana" target="_blank" rel="noopener noreferrer"): span.fa.fa-whatsapp
+							a(href="#"): span.fa.fa-pinterest-p
+							a(href="#"): span.fa.fa-twitter
+				.recipe.flex.flex--align-horizontal
+					.recipe-image
+						img(src="assets/media/arepa.jpg", alt="Arepa")
+					.recipe-content.flex.flex--column
+						.recipe-title
+							p.slab.slab-semibold De la tortilla a la arepa
+							a.recipe-modal(href="#"): small(data-recipe="recipe-2") Abrir
+						p.recipe-description.josefin-thin Pollo, papas, mazorca...
+						span.recipe-share
+							a(href="#"): span.fa.fa-facebook
+							a(href="https://api.whatsapp.com/send?text=Mira%20este%20especial%20sobre%20cocina%20colombiana:%20http://especiales.datasketch.co/cocina-colombiana" target="_blank" rel="noopener noreferrer"): span.fa.fa-whatsapp
+							a(href="#"): span.fa.fa-pinterest-p
+							a(href="#"): span.fa.fa-twitter
+				.recipe.flex.flex--align-horizontal
+					.recipe-image
+						img(src="assets/media/bandeja_paisa.jpg", alt="Bandeja paisa")
+					.recipe-content.flex.flex--column
+						.recipe-title
+							p.slab.slab-semibold La bandeja paisa: más mercadotecnia que tradición
+							a.recipe-modal(href="#"): small(data-recipe="recipe-3") Abrir
+						p.recipe-description.josefin-thin Pollo, papas, mazorca...
+						span.recipe-share
+							a(href="#"): span.fa.fa-facebook
+							a(href="https://api.whatsapp.com/send?text=Mira%20este%20especial%20sobre%20cocina%20colombiana:%20http://especiales.datasketch.co/cocina-colombiana" target="_blank" rel="noopener noreferrer"): span.fa.fa-whatsapp
+							a(href="#"): span.fa.fa-pinterest-p
+							a(href="#"): span.fa.fa-twitter
+				.recipe.flex.flex--align-horizontal
+					.recipe-image
+						img(src="assets/media/papa.jpg", alt="Papa campesina")
+					.recipe-content.flex.flex--column
+						.recipe-title
+							p.slab.slab-semibold Papas al rescate
+							a.recipe-modal(href="#"): small(data-recipe="recipe-4") Abrir
+						p.recipe-description.josefin-thin Pollo, papas, mazorca...
+						span.recipe-share
+							a(href="#"): span.fa.fa-facebook
+							a(href="https://api.whatsapp.com/send?text=Mira%20este%20especial%20sobre%20cocina%20colombiana:%20http://especiales.datasketch.co/cocina-colombiana" target="_blank" rel="noopener noreferrer"): span.fa.fa-whatsapp
+							a(href="#"): span.fa.fa-pinterest-p
+							a(href="#"): span.fa.fa-twitter
+			#disqus_thread
+
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="assets/js/post.js")
+	script(src="assets/js/disqus.js")
+	script(src="assets/js/alt.js")
