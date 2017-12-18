@@ -4,6 +4,7 @@ block title
 	title Cocina colombiana | Especiales Datasketch
 
 block css
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 	link(rel="stylesheet", href="vendors/owl/assets/owl.carousel.min.css")
 	link(rel="stylesheet", href="vendors/owl/assets/owl.theme.default.min.css")
 	link(rel="stylesheet", href="assets/css/index.css")
@@ -13,28 +14,35 @@ block header
 
 block main
 	section.full.background.parallax(style='background-image: url(assets/media/banner.jpg);')
+	section.half.main-banner.background.flex.flex--align-vertical.flex--column(style='background-image: url(assets/media/borde.png);')
+		.container-small
+			p.text-size-x-large La cocina colombiana puede definirse en una palabra: diversidad. La multiplicidad de ingredientes y regiones han permitido que tengamos al menos 700 platos con más de 500 ingredientes. 
+			p.text-size-x-large Pero el desconocimiento de la tradición está poniendo en peligro su permanencia. Así es como cocineros y chefs pretenden salvarla.
+			.text-center: a(href="colombia-es-paisaje-e-historia-en-un-plato.html") Ver más
 	section.half.flex.flex--wrap
 		.video-section
 			iframe(src="https://www.youtube.com/embed/4Tin7fHDAkI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media")
 		.quotes.flex.flex--column
-			a(href="#") Súmate al chat con los expertos cocineros de Colombia
+			a(href="#")
+				| Súmate al chat con los expertos cocineros de Colombia 
+				span.fa.fa-external-link
 			.flex.flex--column.quotes-container: .owl-carousel.owl-theme
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-						.quote-author.josefin-italic.text-right Ana María
+						.quote-body.josefin-light Para mí, cocinar es conectarme con esa herencia que mi mamá me transmitió.
+						.quote-author.josefin-italic.text-right Ana María Uribe
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-						.quote-author.josefin-italic.text-right Juliana Galvis
+						.quote-body.josefin-light Las nuevas generaciones deberían conservar la cocina colombiana y experimentar nuevos sabores.
+						.quote-author.josefin-italic.text-right Virginia Nieto
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-						.quote-author.josefin-italic.text-right Camila Achuri
+						.quote-body.josefin-light En mi casa casa todos los días comíamos frijoles y dos o tres veces a la semana, sancocho.
+						.quote-author.josefin-italic.text-right Aura María Díaz
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-						.quote-author.josefin-italic.text-right Verónica Toro					
+						.quote-body.josefin-light Para mí es esencial un asado con mazorcas colombiana a la parrilla.
+						.quote-author.josefin-italic.text-right Luisa Andrade
 	section.half-and-quarter.background.parallax.recipes.flex.flex--column.flex--align-vertical.flex--align-horizontal(style='background-image: url(assets/media/banner_recetas.jpg);')
 		h1.recipes-title.slab.slab-bold Recetas
 		h2.recipes-subtitle.josefin-bold Prohibidas
