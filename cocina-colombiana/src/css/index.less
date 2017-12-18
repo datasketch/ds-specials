@@ -1,5 +1,6 @@
 .video-section,
 .quotes {
+	min-height: 50vh;
 	width: 100%;
 	@media only screen and (min-width: 768px) {
 		width: 50%
@@ -11,11 +12,25 @@
 }
 .quotes {
 	position: relative;
+	a {
+		padding: 20px;
+	}
+	.quotes-container {
+		flex: 1 0 auto;
+		justify-content: center;
+	}
+	.owl-carousel {
+		position: static;
+	}
 	.owl-stage-outer,
 	.owl-stage-outer .owl-stage,
 	.owl-stage-outer .owl-stage .owl-item,
 	.owl-stage-outer .owl-stage .owl-item .quote {
 		height: 100%
+	}
+	.owl-dots {
+		bottom: 0;
+		position: relative;
 	}
 	.quote {
 		position: relative;
@@ -41,12 +56,15 @@
 		transform: translateX(-50%);
 	}
 }
-.quiz-info {
+.quiz-info,
+.quiz-frame {
 	width: 100%;
 	@media only screen and (min-width: 768px) {
-		width: 30%;
-		padding: 2vw;
+		width: 50%;
 	}
+}
+.quiz-info {
+	padding: 0 2vw;
 	.quiz-img {
 		max-width: 250px;
 	}
@@ -57,18 +75,33 @@
 .quiz-frame {
 	height: 75vh;
 	overflow: auto;
-	width: 100%;
 	iframe {
 		height: 100%;
 		width: 100%;
 	}
-	@media only screen and (min-width: 768px) {
-		width: 70%;
-	}
 }
 .recipes {
 	a {
+		color: white;
+		font-size: 30px;
+		margin: 5vw 0 0;
+		position: relative;
 		text-align: center;
+		text-shadow: 1px 1px #2a2a2a;
+		&:before {
+			background: white;
+			bottom: 0;
+			content: '';
+			height: 1px;
+			left: 0;
+			position: absolute;
+			transform: scaleX(0);
+			transition: all 0.25s ease-in-out;
+			width: 100%;
+		}
+		&:hover:before {
+			transform: scaleX(1);
+		}
 	}
 	.recipes-title {
 		color: rgba(255,255,255,0.7);

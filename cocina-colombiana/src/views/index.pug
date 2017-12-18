@@ -15,35 +15,38 @@ block main
 	section.full.background.parallax(style='background-image: url(assets/media/banner.jpg);')
 	section.half.flex.flex--wrap
 		.video-section
-			iframe(src='https://www.youtube.com/embed/z7yqtW4Isec?rel=0&controls=0&showinfo=0', frameborder='0', gesture='media', allow='encrypted-media', allowfullscreen='')
-		.quotes.owl-carousel.owl-theme
-			.quote
-				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-					.quote-author.josefin-italic.text-right Ana María
-			.quote
-				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-					.quote-author.josefin-italic.text-right Juliana Galvis
-			.quote
-				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-					.quote-author.josefin-italic.text-right Camila Achuri
-			.quote
-				.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-					.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
-					.quote-author.josefin-italic.text-right Verónica Toro					
-	section.half-and-quarter.flex.container-large.flex--wrap(style='padding: 2vw 0')
+			iframe(src="https://www.youtube.com/embed/4Tin7fHDAkI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media")
+		
+		.quotes.flex.flex--column
+			a.text-center(href="#") Cara a cara
+			.flex.flex--column.quotes-container: .owl-carousel.owl-theme
+				.quote
+					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+						.quote-author.josefin-italic.text-right Ana María
+				.quote
+					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+						.quote-author.josefin-italic.text-right Juliana Galvis
+				.quote
+					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+						.quote-author.josefin-italic.text-right Camila Achuri
+				.quote
+					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
+						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
+						.quote-author.josefin-italic.text-right Verónica Toro					
+	section.half-and-quarter.flex.flex--wrap
 		.quiz-info.flex.flex--column.self-center.josefin-thin
 			img.quiz-img(src="assets/media/quiz.png", alt="Quiz")
 			p.quiz-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi blanditiis laborum, sit error sapiente, deleniti ipsum aspernatur culpa! Ratione eligendi labore quasi, voluptatibus voluptatum amet. Harum dolorem quibusdam eius quo.
 		.quiz-frame
 			script(type="text/javascript" src="//cdn.playbuzz.com/widget/feed.js")
 			.pb_feed(data-embed-by="7759322d-853a-496d-b51e-cfea4a099851" data-item="ef41403b-d5d8-4a21-bfec-c90c53b2382e"  data-recommend="false" data-game-info="false" data-comments="false" data-shares="false")
-	section.full.background.parallax.recipes.flex.flex--column.flex--align-vertical.flex--align-horizontal(style='background-image: url(assets/media/banner_recetas.jpg);')
-		a(href="recetas-prohibidas.html")
-			h1.recipes-title.slab.slab-bold Recetas
-			h2.recipes-subtitle.josefin-bold Prohibidas
+	section.half-and-quarter.background.parallax.recipes.flex.flex--column.flex--align-vertical.flex--align-horizontal(style='background-image: url(assets/media/banner_recetas.jpg);')
+		h1.recipes-title.slab.slab-bold Recetas
+		h2.recipes-subtitle.josefin-bold Prohibidas
+		a(href="recetas-prohibidas.html") Ver más
 	section.half.background.app-section.flex.flex--align-vertical.flex--align-horizontal
 		h1
 			a(href='') App
