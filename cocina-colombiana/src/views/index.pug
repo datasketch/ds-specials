@@ -16,9 +16,8 @@ block main
 	section.half.flex.flex--wrap
 		.video-section
 			iframe(src="https://www.youtube.com/embed/4Tin7fHDAkI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media")
-		
 		.quotes.flex.flex--column
-			a.text-center(href="#") Cara a cara
+			a.text-center(href="#") Súmate al chat con los expertos cocineros de Colombia
 			.flex.flex--column.quotes-container: .owl-carousel.owl-theme
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
@@ -36,13 +35,6 @@ block main
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
 						.quote-body.josefin-light Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, explicabo!
 						.quote-author.josefin-italic.text-right Verónica Toro					
-	section.half-and-quarter.flex.flex--wrap
-		.quiz-info.flex.flex--column.self-center.josefin-thin
-			img.quiz-img(src="assets/media/quiz.png", alt="Quiz")
-			p.quiz-description ¿Qué tan experto en cocina colombiana eres? Si has crecido comiendo ajiaco, bandeja paisa y arepa, de seguro este quiz será "papitas" para ti. Mide qué tanto sabes de la sazón colombiana. Haz scroll y atrévete a llenarlo.
-		.quiz-frame
-			script(type="text/javascript" src="//cdn.playbuzz.com/widget/feed.js")
-			.pb_feed(data-embed-by="7759322d-853a-496d-b51e-cfea4a099851" data-item="ef41403b-d5d8-4a21-bfec-c90c53b2382e"  data-recommend="false" data-game-info="false" data-comments="false" data-shares="false")
 	section.half-and-quarter.background.parallax.recipes.flex.flex--column.flex--align-vertical.flex--align-horizontal(style='background-image: url(assets/media/banner_recetas.jpg);')
 		h1.recipes-title.slab.slab-bold Recetas
 		h2.recipes-subtitle.josefin-bold Prohibidas
@@ -61,6 +53,13 @@ block main
 		.text-white.story.self-center
 			h1.text-size-xx-large Metodología
 			a.text-white(href='metodologia.html') Ver más
+	section.half-and-quarter.flex.flex--wrap
+		.quiz-info.flex.flex--column.self-center.josefin-thin
+			img.quiz-img(src="assets/media/quiz.png", alt="Quiz")
+			p.quiz-description ¿Qué tan experto en cocina colombiana eres? Si has crecido comiendo ajiaco, bandeja paisa y arepa, de seguro este quiz será "papitas" para ti. Mide qué tanto sabes de la sazón colombiana. Haz scroll y atrévete a llenarlo.
+		.quiz-frame
+			script(type="text/javascript" src="//cdn.playbuzz.com/widget/feed.js")
+			.pb_feed(data-embed-by="7759322d-853a-496d-b51e-cfea4a099851" data-item="ef41403b-d5d8-4a21-bfec-c90c53b2382e"  data-recommend="false" data-game-info="false" data-comments="false" data-shares="false")
 block footer
 	include ./blocks/footer
 
