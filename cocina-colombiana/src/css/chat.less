@@ -4,11 +4,15 @@ header {
 #wrapper {
   margin-top: 0 !important;
 }
+.menu.background.overlayed {
+  z-index: 2;
+}
 .chat {
-  border-bottom: 1px solid #747474;
+  border-bottom: 1px solid #e8e8e8;
   height: 100%;
   display: flex;
   font-weight: 300;
+  margin-bottom: 5vw;
 }
 /* 
 =============================
@@ -25,15 +29,15 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 1.5vw;
 }
 .chat-list .chat-list-content .chat-list-item {
   align-items: center;
   border-top: 1px solid #e8e8e8;
   display: flex;
-  padding: 1.5vw 0;
+  padding: 1.5vw;
   flex-grow: 1;
   cursor: pointer;
+  transition: all 0.25 ease-in-out;
 }
 .chat-list .chat-list-content .chat-list-item:nth-child(1) {
   border-top: none;
@@ -52,8 +56,8 @@ header {
   flex-direction: column;
   margin-left: 10px;
 }
-.chat-list .chat-list-content .chat-list-item .chat-info .chat-name.chat-active {
-  font-weight: bold;
+.chat-list .chat-list-content .chat-list-item.chat-active {
+  background: #e8e8e8;
 }
 /* 
 =============================
