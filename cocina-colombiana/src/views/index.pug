@@ -25,32 +25,44 @@ block main
 	section.full.background.parallax(style='background-image: url(assets/media/banner.jpg);')
 	section.half.main-banner.background.flex.flex--align-vertical.flex--column(style='background-image: url(assets/media/borde.png);')
 		.container-small
-			p.text-size-x-large La cocina colombiana puede definirse en una palabra: diversidad. La multiplicidad de ingredientes y regiones han permitido que tengamos al menos 700 platos con más de 500 ingredientes. 
-			p.text-size-x-large Pero el desconocimiento de la tradición está poniendo en peligro su permanencia. Así es como cocineros y chefs pretenden salvarla.
+			p.text-size-x-large.slab La cocina colombiana puede definirse en una palabra: diversidad. La multiplicidad de ingredientes y regiones han permitido que tengamos al menos 700 platos con más de 500 ingredientes. 
+			p.text-size-x-large.slab Pero el desconocimiento de la tradición está poniendo en peligro su permanencia. Así es como cocineros y chefs pretenden salvarla.
 			.text-center: a(href="colombia-es-paisaje-e-historia-en-un-plato.html") Ver más
 	section.half.flex.flex--wrap
 		.video-section
 			iframe(src="https://www.youtube.com/embed/4Tin7fHDAkI?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media")
 		.quotes.flex.flex--column
 			a(href="expertos-cocineros.html")
-				| Súmate al chat con los expertos cocineros de Colombia 
+				| Acompáñanos en este chat para conocer cómo cocineras y chefs viven la cocina colombiana 
 				span.fa.fa-external-link
 			.flex.flex--column.quotes-container: .owl-carousel.owl-theme
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Para mí, cocinar es conectarme con esa herencia que mi mamá me transmitió.
+						.quote-body.josefin-light
+							sup: span.fa.fa-quote-left 
+							|  Para mí, cocinar es conectarme con esa herencia que mi mamá me transmitió. 
+							sup: span.fa.fa-quote-right
 						.quote-author.josefin-italic.text-right Ana María Uribe
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Las nuevas generaciones deberían conservar la cocina colombiana y experimentar nuevos sabores.
+						.quote-body.josefin-light 
+							sup: span.fa.fa-quote-left 
+							|  Las nuevas generaciones deberían conservar la cocina colombiana y experimentar nuevos sabores. 
+							sup: span.fa.fa-quote-right
 						.quote-author.josefin-italic.text-right Virginia Nieto
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light En mi casa casa todos los días comíamos frijoles y dos o tres veces a la semana, sancocho.
+						.quote-body.josefin-light 
+							sup: span.fa.fa-quote-left 
+							|  En mi casa casa todos los días comíamos frijoles y dos o tres veces a la semana, sancocho. 
+							sup: span.fa.fa-quote-right
 						.quote-author.josefin-italic.text-right Aura María Díaz
 				.quote
 					.container-small.flex.flex--column.flex--align-vertical(style='height: 100%;')
-						.quote-body.josefin-light Para mí es esencial un asado con mazorcas colombiana a la parrilla.
+						.quote-body.josefin-light 
+							sup: span.fa.fa-quote-left 
+							|  Para mí es esencial un asado con mazorcas colombiana a la parrilla. 
+							sup: span.fa.fa-quote-right
 						.quote-author.josefin-italic.text-right Luisa Andrade
 	section.half-and-quarter.background.parallax.recipes.flex.flex--column.flex--align-vertical.flex--align-horizontal(style='background-image: url(assets/media/banner_recetas.jpg);')
 		h1.recipes-title.slab.slab-bold Recetas
@@ -58,7 +70,7 @@ block main
 		a(href="recetas-prohibidas.html") Ver más
 	section.half.background.app-section.flex.flex--align-vertical.flex--align-horizontal
 		h1
-			a(href='') App
+			a(href='recetas-colombianas.html') Explora 700 recetas para cocinar como la abuela
 			img(src="assets/media/aguacate.png", alt="Aguacate")
 	section.full.background.flex.flex--wrap.parallax(style='background-image: url(assets/media/triada.jpg);')
 		.text-white.story.self-center
