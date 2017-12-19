@@ -3,8 +3,8 @@ const headerHeight = document.querySelector('.nav').clientHeight;
 
 const margin = () => {
 	wrapper.style.marginTop = `${headerHeight}px`;
-	if (window.location.pathname == '/recetas-colombianas.html') {
-		iframe()
+	if (window.location.pathname == '/cocina-colombiana/recetas-colombianas.html') {
+		iframe();
 	}
 }
 
@@ -28,5 +28,9 @@ const iframe = () => {
 				warning.style.display = 'none';
 			}
 		})
+	}
+	if (window.location.pathname == '/recetas-colombianas.html') {
+		iframe()
+		console.log('HP')
 	}
 })();
