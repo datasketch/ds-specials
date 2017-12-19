@@ -24,11 +24,13 @@ block main
 		h1.post-title.slab.slab-light Glosario de El gran libro de la cocina colombiana.
 		.josefin-light.text-size-large
 			include ./blocks/glossary
+			p.no-results No hay coincidencias
 			#disqus_thread
 
 block footer
 	include ./blocks/footer
 
 block js
+	script(src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.js")
 	script(src="assets/js/post.js")
 	script(src="assets/js/disqus.js")
