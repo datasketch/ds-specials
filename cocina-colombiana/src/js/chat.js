@@ -93,7 +93,7 @@ const messagesList = {
     'Los postres con ruibarbo.',
     'El merengón y el de copoazú.',
     'La gastronomía colombiana es tan extensa que podríamos recomendar un plato para cualquier ocasión, un plato que nos quieran recomendar para un momento romántico',
-    'Un asado con mazorcas colombiana en la parrilla.',
+    'Un asado con mazorcas colombiana a la parrilla.',
     'Una sopa sencilla sin tantos ingredientes.',
     'Y para una tusa',
     'Un merengue',
@@ -135,13 +135,15 @@ const chatListItem = document.getElementsByClassName('chat-list-item');
 function manageChat(event) {
   const { target } = event;
   const data = 
-    { data: target.getAttribute('data-chat'), element: target } ||
-    { data: target.parentNode.getAttribute('data-chat'), element: target.parentNode } ||
-    { data: target.parentNode.parentNode.getAttribute('data-chat'), element: target.parentNode.parentNode };
+    target.getAttribute('data-chat') ||
+    target.parentNode.getAttribute('data-chat') ||
+    target.parentNode.parentNode.getAttribute('data-chat') ;
   document.querySelector('.chat-messages-welcome').style.display = 'none';
   const chatList = document.querySelectorAll('.chat-list-item');
   [...chatList].forEach((n) => n.classList.remove('chat-active'));
-  data.element.classList.add('chat-active')
+  const active = [...chatList].filter((n) => n.getAttribute('data-chat') === data);
+  active[0].classList.add('chat-active');
+  //data.element.classList.add('chat-active')
   const chats = document.querySelectorAll('.chat-messages-content');
   [...chats].forEach((chat) => chat.style.display = 'none');
   const previousMessages = document.querySelectorAll('.chat-message');
@@ -152,8 +154,8 @@ function manageChat(event) {
   const cursor = document.querySelector('.typed-cursor') ? 
     document.querySelector('.typed-cursor').style.display = 'none' :
     null;
-  document.querySelector('.chat-header-name').innerHTML = nameChat[data.data]
-  const chat = document.getElementById(data.data);
+  document.querySelector('.chat-header-name').innerHTML = nameChat[data]
+  const chat = document.getElementById(data);
   chat.style.display = 'block';
   const messages = chat.getElementsByClassName('chat-message');
   options.onStringTyped = function(index) {
@@ -162,6 +164,6 @@ function manageChat(event) {
       messages[index].style.visibility = 'visible';
     }, 700)
   }
-  options.strings = messagesList[data.data];
+  options.strings = messagesList[data];
   const typed = new Typed('.chat-input-text', options);
 }

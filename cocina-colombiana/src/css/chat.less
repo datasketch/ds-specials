@@ -20,7 +20,6 @@ header {
 =============================
 */
 .chat-list {
-  flex: 0.5;
   max-height: 100%;
   border-right: 1px solid #e8e8e8;
 }
@@ -42,12 +41,13 @@ header {
 .chat-list .chat-list-content .chat-list-item:nth-child(1) {
   border-top: none;
 }
-.chat-list .chat-list-content .chat-list-item img {
+.chat-list .chat-list-content .chat-list-item span.fa {
   display: none;
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  .chat-list .chat-list-content .chat-list-item img {
+  .chat-list .chat-list-content .chat-list-item span.fa {
+    margin-right: 5px;
     display: block;
   }
 }

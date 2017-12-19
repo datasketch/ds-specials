@@ -1,8 +1,17 @@
 const wrapper = document.querySelector('#wrapper');
-const headerHeight = document.querySelector('header').clientHeight;
+const headerHeight = document.querySelector('.nav').clientHeight;
 
 const margin = () => {
 	wrapper.style.marginTop = `${headerHeight}px`;
+	if (window.location.pathname == '/recetas-colombianas.html') {
+		iframe()
+	}
+}
+
+const iframe = () => {
+	const windowHeight = window.innerHeight;
+	const iframeHeight = windowHeight - headerHeight;
+	document.querySelector('.app-frame').style.height = `${iframeHeight}px`;
 }
 
 (function() {
