@@ -38,7 +38,11 @@ block main
 				span.fa.fa-star 
 			p: strong Ingredientes
 			ul.ingredients
-				li Un equipo de 10 curiosos de los datos, preferiblemente con al menos 2 años de remojo en estos temas. El equipo debe contener dos especies diferentes: los científicos de datos (estadísticos, ingenieros o matemáticos) y los científicos sociales (periodistas, antropólogos o politólogos).
+				li 
+					| Un equipo de 10 curiosos de los datos, preferiblemente con al menos 2 años de remojo en estos temas. El 
+					a(href="https://www.datasketch.co/es/team" target="_blank" rel="noopener noreferrer") equipo 
+					| debe contener dos especies diferentes: los científicos de datos (estadísticos, ingenieros o matemáticos) y los científicos sociales (periodistas, antropólogos o politólogos).
+				li Un historiador amante de la comida y en particular de la arepa.
 				li
 					| Libro online 
 					a(href="http://www.mincultura.gov.co/Sitios/patrimonio/bibliotecas-de-cocinas/tomos/tomo09.pdf" target="_blank" rel="noopener noreferrer") Gran libro de la cocina colombiana
@@ -46,7 +50,7 @@ block main
 				li
 					| Datos nutricionales:  En Colombia son difíciles de conseguir. La primera opción fue buscar en el ICBF, sin embargo, ya 
 					a(href="http://alimentoscolombianos.icbf.gov.co/alimentos_colombianos/consulta_alimento.asp" rel="noopener noreferrer" target="_blank") no tienen su servidor activo. 
-					| Así que nos vemos en la necesidad de importar algunos datos. En particular, decidimos usar los datos del USDA Departamento de Agricultura de los Estados Unidos, en su Base de Datos de Nutrientes, que cuentan con toda la información nutricional de múltiples ingredientes. No solo existe un API para acceder la información, también se puede descargar la base de datos completa con muy buena documentación 
+					| Así que nos vimos en la necesidad de importar algunos datos. En particular, decidimos usar los datos del USDA Departamento de Agricultura de los Estados Unidos, en su Base de Datos de Nutrientes, que cuentan con toda la información nutricional de múltiples ingredientes. No solo existe un API para acceder la información, también se puede descargar la base de datos completa con muy buena documentación 
 					a(href="https://www.ars.usda.gov/northeast-area/beltsville-md/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/" target="_blank" rel="noopener noreferrer") aquí
 					| .
 				li Datos de precios de alimentos: Se obtuvieron sacando el promedio por ciudad de la información de la plataforma SIPSA del DANE.
@@ -56,12 +60,20 @@ block main
 				li Diseño: HTML/Javascript/CSS para darle una cara agradable al sitio estático del especial.
 			p: strong Preparación
 			p Toma el PDF del Gran Libro de la Cocina Colombiana. Sumérgelo en el paquete pdftools para que puedas leer todo el libro como un gran bloque de texto. Se extiende todo el texto a lo largo de la memoria RAM para identificar granos de textos similares. Los granos atienden a un patrón por el cual se pueden separar los ingredientes de cada receta, la dificultad y el tiempo de cocción. Se reduce cada grupo de granos a un archivo CSV con las columnas separadas por variable. Estos datos luego se muelen y con cuidado, lo vas a colar para remover lo que no sirve (como números de página, índices, etc).
-			p La harina de cada uno de estos grupos de granos será pasada por un nuevo proceso de colado con el que irás limpiando los datos.  A esto le llamamos desambiguación y sirve para que, por ejemplo, sepas que ‘cebolla larga’ es lo mismo que ‘cebolla junca’ o que ‘una pizca de sal’  equivale a ‘tres gramos de sal’.
+			p 
+				| La harina de cada uno de estos grupos de granos será pasada por un nuevo proceso de colado con el que irás limpiando los datos.  A esto le llamamos desambiguación y sirve para que, por ejemplo, sepas que 
+				i cebolla larga 
+				| es lo mismo que 
+				i cebolla junca 
+				| o que 
+				i una pizca de sal 
+				| equivale a 
+				i tres gramos de sal.
 			p Una vez hayas hecho la desambiguación tendrás datos estandarizados. Estos datos se mezclan con un paquetes de visualización que te permitirá crear una masa uniforme con la que crear mapas y otros tipos de gráficos que permitan entender todos los datos agregados.
-			p Múltiples historias de chefs, cocineras y expertos se agregan a la mezcla para darle sustancia. Revolver hasta que cuajen los diferentes ángulos. Se agregan especies adicionales con componentes multimedia como video e imágenes interactivas que permiten acercarse más a las experiencias de quienes en su día a día trabajan en la cocina.
+			p Múltiples historias de chefs, cocineras y expertos se agregan a la mezcla para darle sustancia. Revolver hasta que cuajen los diferentes ángulos. Se agregan especias adicionales con componentes multimedia como video e imágenes interactivas que permiten acercarse más a las experiencias de quienes en su día a día trabajan en la cocina.
 			p Se divide la mezcla en moldes de diferentes tamaños y formas, previamente engrasados con horas de diseño, con las que se presentará la información al comensal: quices, interactivos, aplicaciones y textos.
 			p Todo va al horno a fuego lento, porque lo bueno siempre toma tiempo, y se deja cocer hasta que huela y se vea bien.
-			p Recuerde que debe ajustar la presentación para platos pequeños (móviles) y para platos grandes (escritorio).
+			p Recuerda que debes ajustar la presentación para platos pequeños (móviles) y para platos grandes (escritorio).
 			p
 				| Sirva a sus amigos, conocidos e interesados a través de este 
 				a(href="http://especiales.datasketch.co/cocina-colombiana/" target="_blank" rel="noopener noreferrer") link.
