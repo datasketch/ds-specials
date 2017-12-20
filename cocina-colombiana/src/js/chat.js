@@ -1,3 +1,4 @@
+const { log, dir } = console;
 /* Fit chat height and scroll */
 function fitChat() {
   const windowHeight = window.innerHeight;
@@ -132,7 +133,10 @@ const chatListItem = document.getElementsByClassName('chat-list-item');
 
 [...chatListItem].forEach((chat) => chat.addEventListener('click', manageChat))
 
+let typed = undefined;
+
 function manageChat(event) {
+  if (typed instanceof Typed) typed.reset(false);
   const { target } = event;
   const data = 
     target.getAttribute('data-chat') ||
@@ -165,5 +169,5 @@ function manageChat(event) {
     }, 700)
   }
   options.strings = messagesList[data];
-  const typed = new Typed('.chat-input-text', options);
+  typed = new Typed('.chat-input-text', options);
 }

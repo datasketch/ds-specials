@@ -9,7 +9,6 @@ const margin = () => {
 }
 
 const iframe = () => {
-	console.log('Building iframe...')
 	const base = 'https://randommonkey.shinyapps.io/cocina-colombiana/';
 	const id = window.location.search;
 	const windowHeight = window.innerHeight;
