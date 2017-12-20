@@ -204,6 +204,12 @@ header {
 .self-center {
 	align-self: center;
 }
+.only-mobile {
+	display: initial;
+	@media only screen and (min-width: 768px) {
+		display: none !important;
+	}
+}
 /* ==================== */
 /*      Image/Video     */
 /* ==================== */

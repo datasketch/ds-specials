@@ -1,11 +1,31 @@
-const { log, dir } = console;
+let typed = undefined;
+
 /* Fit chat height and scroll */
 function fitChat() {
+  const isMobile = window.innerWidth < 768;
   const windowHeight = window.innerHeight;
+  const headerHeight = document.querySelector('header').clientHeight;
   const chatHeader = document.querySelector('.chat-header').clientHeight;
   const chatInput = document.querySelector('.chat-input').clientHeight;
   const chatContentHeight = windowHeight - chatHeader - chatInput;
-  document.querySelector('.chat-messages').style.height = chatContentHeight + 'px';
+  document.querySelector('.chat-messages').style.height = `${chatContentHeight}px`;
+  document.querySelector('.chat').style.height = `${windowHeight - headerHeight}px`;
+
+  /* Manage chat tabs */
+  const chatListItem = document.getElementsByClassName('chat-list-item');
+  if (!isMobile) {
+    document.querySelector('.chat-list').classList.remove('chat-triggered');
+    document.querySelector('.chat-detail').classList.remove('chat-triggered');
+    [...chatListItem].forEach((chat) => chat.removeEventListener('click', manageChatMobile));
+    [...chatListItem].forEach((chat) => chat.addEventListener('click', manageChatDesktop));
+  } else if (isMobile) {
+    if (typed instanceof Typed) typed.destroy();
+    document.querySelector('.chat-messages-welcome').style.display = 'none';
+    const chatList = document.querySelectorAll('.chat-list-item');
+    [...chatList].forEach((n) => n.classList.remove('chat-active'));
+    [...chatListItem].forEach((chat) => chat.addEventListener('click', manageChatMobile));
+    [...chatListItem].forEach((chat) => chat.removeEventListener('click', manageChatDesktop));
+  }
 }
 
 /* Define start point to update time message */
@@ -94,7 +114,7 @@ const messagesList = {
     'Los postres con ruibarbo.',
     'El merengón y el de copoazú.',
     'La gastronomía colombiana es tan extensa que podríamos recomendar un plato para cualquier ocasión, un plato que nos quieran recomendar para un momento romántico',
-    'Un asado con mazorcas colombiana a la parrilla.',
+    'Un asado con mazorca colombiana a la parrilla.',
     'Una sopa sencilla sin tantos ingredientes.',
     'Y para una tusa',
     'Un merengue',
@@ -127,21 +147,13 @@ const options =  {
   }
 };
 
-/* Manage chat tabs */
-
-const chatListItem = document.getElementsByClassName('chat-list-item');
-
-[...chatListItem].forEach((chat) => chat.addEventListener('click', manageChat))
-
-let typed = undefined;
-
-function manageChat(event) {
+function manageChatDesktop(event) {
   if (typed instanceof Typed) typed.reset(false);
   const { target } = event;
   const data = 
     target.getAttribute('data-chat') ||
     target.parentNode.getAttribute('data-chat') ||
-    target.parentNode.parentNode.getAttribute('data-chat') ;
+    target.parentNode.parentNode.getAttribute('data-chat');
   document.querySelector('.chat-messages-welcome').style.display = 'none';
   const chatList = document.querySelectorAll('.chat-list-item');
   [...chatList].forEach((n) => n.classList.remove('chat-active'));
@@ -171,3 +183,35 @@ function manageChat(event) {
   options.strings = messagesList[data];
   typed = new Typed('.chat-input-text', options);
 }
+
+function manageChatMobile(event) {
+  const { target } = event;
+  const data = 
+    target.getAttribute('data-chat') ||
+    target.parentNode.getAttribute('data-chat') ||
+    target.parentNode.parentNode.getAttribute('data-chat');
+  document.querySelector('.chat-list').classList.add('chat-triggered');
+  document.querySelector('.chat-detail').classList.add('chat-triggered');
+  document.querySelector('.chat-header-name').innerHTML = nameChat[data];
+  const chat = document.getElementById(data);
+  chat.classList.add('chat-opened');
+  chat.style.display = 'block';
+  const messages = chat.getElementsByClassName('chat-message');
+  [...messages].forEach((message) => {
+    message.style.opacity = '1';
+    message.style.visibility = 'visible';
+  })
+}
+
+document.querySelector('.list-chats').addEventListener('click', event => {
+  const chat = document.querySelector('.chat-opened');
+  const messages = chat.getElementsByClassName('chat-message');
+  [...messages].forEach((message) => {
+    message.style.opacity = '0';
+    message.style.visibility = 'hidden';
+  })
+  chat.style.display = 'none';
+  chat.classList.remove('chat-opened');
+  document.querySelector('.chat-list').classList.remove('chat-triggered');
+  document.querySelector('.chat-detail').classList.remove('chat-triggered');
+})
