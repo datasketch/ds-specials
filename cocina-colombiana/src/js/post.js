@@ -9,9 +9,14 @@ const margin = () => {
 }
 
 const iframe = () => {
+	console.log('Building iframe...')
+	const base = 'https://randommonkey.shinyapps.io/cocina-colombiana/';
+	const id = window.location.search;
 	const windowHeight = window.innerHeight;
 	const iframeHeight = windowHeight - headerHeight;
-	document.querySelector('.app-frame').style.height = `${iframeHeight}px`;
+	const iframe = document.querySelector('.app-frame')
+	iframe.style.height = `${iframeHeight}px`;
+	iframe.setAttribute('src', `${base}${id}`);
 }
 
 (function() {
@@ -28,9 +33,5 @@ const iframe = () => {
 				warning.style.display = 'none';
 			}
 		})
-	}
-	if (window.location.pathname == '/recetas-colombianas.html') {
-		iframe()
-		console.log('HP')
 	}
 })();
