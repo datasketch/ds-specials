@@ -1,0 +1,38 @@
+extends ./partials/layout
+
+block css
+  link(rel="stylesheet", href="assets/css/index.css")
+
+block main
+  main
+    .half-height.bg-emerald.Column.VCenter.HCenter
+      .container-section
+        h1.home-title.font-family--changa.text-color--white.text-align--center No bote el voto
+        p.home-description.font-family--exo.text-color--white.text-align--center Conoce las propuestas de los candidatos al senado
+        img.block(src="assets/media/voto.svg", alt="Ícono de votación" style="width: 50px;margin: 0 auto;")
+    .full-height
+    .half-height.bg-orange.Column.VCenter.HCenter
+      .container-section
+        h1.section-ten-more-title.font-family--changa.text-color--white.text-align--center
+          | Los 10 
+          span.font-family--bungee +
+        pre.section-ten-more-description.text-color--white.text-align--center.font-family--exo.
+          Quién lleva más tiempo en el congreso,
+          quién es el más activo, quién es el más vago
+        div.text-align--center: a.text-color--white.font-family--exo.anchor-ten-more(href="#") Quiero saber más
+    section
+      .container-section-story
+        .story
+          .Row
+            .text-shrinked
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia omnis nam perferendis animi ipsum amet. Accusantium, repellendus nisi, ea exercitationem, sed cum saepe praesentium quasi fuga ducimus necessitatibus neque libero provident deleniti officiis at? Libero ducimus atque aperiam. Ducimus cumque recusandae laudantium quis ab deserunt ratione odit? Vitae, tempore labore?
+          .Row
+            .text-shrinked
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia omnis nam perferendis animi ipsum amet. Accusantium, repellendus nisi, ea exercitationem, sed cum saepe praesentium quasi fuga ducimus necessitatibus neque libero provident deleniti officiis at? Libero ducimus atque aperiam. Ducimus cumque recusandae laudantium quis ab deserunt ratione odit? Vitae, tempore labore?
+          .Row
+            .text-shrinked
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia omnis nam perferendis animi ipsum amet. Accusantium, repellendus nisi, ea exercitationem, sed cum saepe praesentium quasi fuga ducimus necessitatibus neque libero provident deleniti officiis at? Libero ducimus atque aperiam. Ducimus cumque recusandae laudantium quis ab deserunt ratione odit? Vitae, tempore labore?
+          .Row
+            .text-shrinked
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia omnis nam perferendis animi ipsum amet. Accusantium, repellendus nisi, ea exercitationem, sed cum saepe praesentium quasi fuga ducimus necessitatibus neque libero provident deleniti officiis at? Libero ducimus atque aperiam. Ducimus cumque recusandae laudantium quis ab deserunt ratione odit? Vitae, tempore labore?
+        

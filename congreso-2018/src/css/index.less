@@ -1,0 +1,92 @@
+.container-section {
+  margin: 0 auto;
+  max-width: 95%;
+}
+.home-title {
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+  @media only screen and (min-width: 992px) {
+    font-size: 70px;
+  }
+}
+.home-description {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  @media only screen and (min-width: 992px) {
+    font-size: 20px;
+  }
+}
+.section-ten-more-title {
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 0;
+  text-transform: uppercase;
+  @media only screen and (min-width: 992px) {
+    font-size: 70px;
+  }
+}
+.section-ten-more-description {
+  font-size: 13px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  @media only screen and (min-width: 992px) {
+    font-size: 20px;
+  }
+}
+.anchor-ten-more {
+  border-bottom: 1px solid white;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  @media only screen and (min-width: 992px) {
+    font-size: 20px;
+  }
+}
+.container-section-story {
+  max-width: 80%;
+  margin: 0 auto;
+  @media only screen and (min-width: 992px) {
+    max-width: 60%;
+  }
+  .story {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    .Row {
+      margin-bottom: 20vh;
+    }
+    .Row:nth-child(1) {
+      margin-top: 20vh;
+    }
+    .Row:nth-child(odd) {
+      justify-content: flex-end;
+      text-align: right;
+    }
+    .Row:nth-child(even) {
+      color: #f26101;
+    }
+    .text-shrinked {
+      width: 100%;
+      @media only screen and (min-width: 768px) {
+        width: 80%;
+        p {
+          line-height: 25px;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        width: 50%;
+        p {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
