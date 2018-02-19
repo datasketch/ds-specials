@@ -11,7 +11,22 @@ block main
         h1.home-title.font-family--changa.text-color--white.text-align--center No bote el voto
         p.home-description.font-family--exo.text-color--white.text-align--center Conoce las propuestas de los candidatos al senado
         img.block(src="assets/media/voto.svg", alt="Ícono de votación" style="width: 50px;margin: 0 auto;")
-    .full-height
+    .full-height#app(:class="{ center: !loaded }")
+      template(v-if="!loaded")
+        p: i.fas.fa-spinner.fa-pulse.fa-3x
+        span Cargando...
+      template(v-if="loaded")
+        .app-content
+          .filters-box
+            p Filtros
+            //- app-filters
+          .people-box
+            input.font-family--exo(type="text" placeholder="Busca por nombre" v-model="search")
+            .people-box-content
+              template(v-if="master")
+                people-list(:people="peopleFiltered" @detail="showDetail")
+              template(v-else-if="!master")
+                person-detail(@master="showAll" :person="person")
     .half-height.bg-orange.Column.VCenter.HCenter
       .container-section
         h1.section-ten-more-title.font-family--changa.text-color--white.text-align--center
@@ -65,3 +80,7 @@ block main
             .text-shrinked
               p Conoce aquí a los candidatos que se postulan para el Congreso 2018.
 
+block js
+  script(src="vendors/vue.min.js")
+  script(src="vendors/tabletop.min.js")
+  script(src="assets/js/app.js")

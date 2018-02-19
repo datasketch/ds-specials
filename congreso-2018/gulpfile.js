@@ -11,6 +11,12 @@ const webserver = require('gulp-webserver')
 gulp.task('vendors', function () {
   gulp.src('./node_modules/balloon-css/balloon.min.css')
     .pipe(gulp.dest('./dist/vendors/'))
+
+  gulp.src('./node_modules/vue/dist/vue.min.js')
+    .pipe(gulp.dest('./dist/vendors/'))
+
+  gulp.src('./node_modules/tabletop/src/tabletop.min.js')
+    .pipe(gulp.dest('./dist/vendors/'))
 })
 
 gulp.task('css', function (cb) {
