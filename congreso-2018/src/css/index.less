@@ -129,6 +129,10 @@ span[data-balloon] {
   }
 }
 
+.people-box-content {
+  margin-top: 10px
+}
+
 .people-box {
   height: 100%;
   overflow: auto;
@@ -136,7 +140,6 @@ span[data-balloon] {
     border: none;
     border-bottom: 1px solid #cacece;
     box-shadow: none;
-    margin-bottom: 15px;
     max-width: 100%;
     padding: 10px;
     width: 100%;
@@ -276,5 +279,30 @@ span[data-balloon] {
     td:not(.filter-label) {
       text-align: center;
     }
+  }
+}
+.filters-navigation {
+  justify-content: flex-end;
+  a:nth-child(1) {
+    margin-right: 10px
+  }
+}
+.clear-all {
+  cursor: pointer;
+  display: inline-block;
+}
+.outro {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  h1 {
+    font-style: italic;
+  }
+  a {
+    background: #fa6271;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
   }
 }

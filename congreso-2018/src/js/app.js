@@ -1,13 +1,16 @@
 Vue.component('people-list', {
   props: ['people'],
   template: `
-    <ul class="people-container">
-      <li class="person" v-for="(person, index) in people" :key="person" @click="detail(person)">
-        <img :src="person.foto" alt="" class="person-avatar">
-        <p class="font-family--exo font-size--small">{{ person.nombre | titleCase }}</p>
-        <small class="font-family--exo font-weight-light">{{ person.partido }}</small>
-      </li>
-    </ul>
+    <div>
+      <p v-if="!people.length" class="font-family--exo">No hay resultados</p>
+      <ul class="people-container" v-if="people.length">
+        <li class="person" v-for="(person, index) in people" :key="person" @click="detail(person)">
+          <img :src="person.foto" alt="" class="person-avatar">
+          <p class="font-family--exo font-size--small">{{ person.nombre | titleCase }}</p>
+          <small class="font-family--exo font-weight-light">{{ person.partido }}</small>
+        </li>
+      </ul>
+    </div>
   `,
   data: function () {
     return {
@@ -113,7 +116,7 @@ const vm = new Vue({
       } else if (senado) {
         group = this.people.filter(p => p.senado === senado)
       }
-      
+
       return (
         group
           .filter(p => {
@@ -153,6 +156,27 @@ const vm = new Vue({
     },
     backup: function () {
       this.count -= 1
+    },
+    clearAll: function () {
+      const parties = this.parties
+      this.filters = {
+        matrimonio: '',
+        adopcion: '',
+        aborto: '',
+        marihuana: '',
+        eutanasia: '',
+        paz: '',
+        procuraduria: '',
+        contraloria: '',
+        policia: '',
+        camara: true,
+        senado: true,
+        parties: parties
+      }
+    },
+    reset: function () {
+      this.clearAll()
+      this.count = 1
     }
   },
   created () {
