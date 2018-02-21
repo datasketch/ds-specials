@@ -2,6 +2,16 @@
   margin: 0 auto;
   max-width: 95%;
 }
+nav {
+  background: transparent;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  img {
+    filter: brightness(0) invert(1);
+  }
+}
 .home-title {
   font-size: 50px;
   letter-spacing: 5px;
@@ -52,8 +62,9 @@
   }
 }
 span[data-balloon] {
-  text-align: center;
   background: rgba(242, 97, 1, 0.6);
+  line-height: 18px;
+  text-align: left;
 }
 .container-section-story {
   max-width: 80%;
@@ -64,6 +75,12 @@ span[data-balloon] {
   .story {
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
+    .story-item {
+      text-transform: uppercase;
+    }
+    .bigger {
+      font-size: 150%;
+    }
     .Row {
       margin-bottom: 20vh;
     }
