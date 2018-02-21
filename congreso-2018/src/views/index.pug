@@ -14,17 +14,106 @@ block main
     .full-height#app(:class="{ center: !loaded }")
       template(v-if="!loaded")
         p: i.fas.fa-spinner.fa-pulse.fa-3x
-        span Cargando...
+        span.font-family--exo Cargando...
       template(v-if="loaded")
+        p(style="display: none") {{filtered}}
         .app-content
-          .filters-box
-            p Filtros
-            //- app-filters
+          .filters-box(:class="{ center: !began }")
+            .filters-home(v-if="!began")
+              h1.font-family--changa Filtra
+              pre.font-family--exo.font-weight-light.
+                Dinos qué piensas y te diremos 
+                por quiénes podrías votar
+              a.font-family--exo(href="" @click.prevent="showFilterForm") Empezar
+            template(v-if="began")
+              .filters-form-box.SelfCenter(v-if="count == 1")
+                h1.text-salmon.font-family--changa ¿A favor o en contra?
+                form
+                  table
+                    tbody
+                      tr
+                        td
+                        td Favor
+                        td Contra
+                      tr.spacer
+                      tr
+                        td.filter-label: span Matrimonio homosexual
+                        td: input(type="radio" value="true" v-model="filters.matrimonio")
+                        td: input(type="radio" value="false" v-model="filters.matrimonio")
+                      tr
+                        td.filter-label: span Adopción por parte de homosexuales
+                        td: input(type="radio" value="true" v-model="filters.adopcion")
+                        td: input(type="radio" value="false" v-model="filters.adopcion")
+                      tr
+                        td.filter-label: span Legalización del aborto
+                        td: input(type="radio" value="true" v-model="filters.aborto")
+                        td: input(type="radio" value="false" v-model="filters.aborto")
+                      tr
+                        td.filter-label: span Legalización de la marihuana
+                        td: input(type="radio" value="true" v-model="filters.marihuana")
+                        td: input(type="radio" value="false" v-model="filters.marihuana")
+                      tr
+                        td.filter-label: span Legalización de la eutanasia
+                        td: input(type="radio" value="true" v-model="filters.eutanasia")
+                        td: input(type="radio" value="false" v-model="filters.eutanasia")
+                      tr
+                        td.filter-label: span Acuerdo de Paz
+                        td: input(type="radio" value="true" v-model="filters.paz")
+                        td: input(type="radio" value="false" v-model="filters.paz")
+                .filters-navigation.Row.SpaceBetween
+                  a(href="" @click.prevent="backup" class="text-salmon font-family--changa" v-show="count != 1") Anterior
+                  div(v-show="count == 1")
+                  a(href="" @click.prevent="advance" class="text-salmon font-family--changa" v-show="count <= 4") Siguiente
+              .filters-form-box.SelfCenter(v-if="count == 2")
+                h1.text-salmon.font-family--changa Investigaciones
+                form
+                  table
+                    tbody
+                      tr
+                        td.filter-label Procuraduría
+                        td: input(type="checkbox" v-model="filters.procuraduria" value="true")
+                      tr
+                        td.filter-label Contraloría
+                        td: input(type="checkbox" v-model="filters.contraloria" value="true")
+                      tr
+                        td.filter-label Policía
+                        td: input(type="checkbox" v-model="filters.policia" value="true")
+                .filters-navigation.Row.SpaceBetween
+                  a(href="" @click.prevent="backup" class="text-salmon font-family--changa" v-show="count != 1") Anterior
+                  div(v-show="count == 1")
+                  a(href="" @click.prevent="advance" class="text-salmon font-family--changa" v-show="count <= 4") Siguiente
+              .filters-form-box.SelfCenter(v-if="count == 3")
+                h1.text-salmon.font-family--changa Canditato a
+                form
+                  table
+                    tbody
+                      tr
+                        td.filter-label Cámara
+                        td: input(type="checkbox" v-model="filters.camara" value="true")
+                      tr
+                        td.filter-label Senado
+                        td: input(type="checkbox" v-model="filters.senado" value="true")
+                .filters-navigation.Row.SpaceBetween
+                  a(href="" @click.prevent="backup" class="text-salmon font-family--changa" v-show="count != 1") Anterior
+                  div(v-show="count == 1")
+                  a(href="" @click.prevent="advance" class="text-salmon font-family--changa" v-show="count <= 4") Siguiente
+            .filters-form-box(v-if="count == 4")
+                h1.text-salmon.font-family--changa Partido político
+                form
+                  table
+                    tbody
+                      tr(v-for="(party, key) in parties", :key="key")
+                        td.filter-label {{ party }}
+                        td: input(type="checkbox" v-model="filters.parties" :value="party")
+                .filters-navigation.Row.SpaceBetween
+                  a(href="" @click.prevent="backup" class="text-salmon font-family--changa" v-show="count != 1") Anterior
+                  div(v-show="count == 1")
+                  a(href="" @click.prevent="advance" class="text-salmon font-family--changa" v-show="count <= 4") Siguiente
           .people-box
-            input.font-family--exo(type="text" placeholder="Busca por nombre" v-model="search")
+            input.font-family--exo(type="text" placeholder="Busca por nombre" v-model.trim="search")
             .people-box-content
               template(v-if="master")
-                people-list(:people="peopleFiltered" @detail="showDetail")
+                people-list(:people="filtered" @detail="showDetail")
               template(v-else-if="!master")
                 person-detail(@master="showAll" :person="person")
     .half-height.bg-orange.Column.VCenter.HCenter
