@@ -232,10 +232,13 @@ span[data-balloon] {
   text-align: center;
   h1 {
     display: inline-block;
-    font-size: 5vw;
+    font-size: 50px;
     font-style: italic;
     margin: 0 0 15px;
     position: relative;
+    @media only screen and (min-width: 992px) {
+      font-size: 70px;
+    }
     &::before {
       background: #fa6271;
       bottom: 0;
