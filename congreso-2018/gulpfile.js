@@ -7,16 +7,21 @@ const pump = require('pump')
 const uglifyjs = require('gulp-uglify')
 const uglifycss = require('gulp-uglifycss')
 const webserver = require('gulp-webserver')
+const path = require('path')
+const vendors = path.join(__dirname, 'dist/vendors/')
 
 gulp.task('vendors', function () {
   gulp.src('./node_modules/balloon-css/balloon.min.css')
-    .pipe(gulp.dest('./dist/vendors/'))
+    .pipe(gulp.dest(vendors))
 
   gulp.src('./node_modules/vue/dist/vue.min.js')
-    .pipe(gulp.dest('./dist/vendors/'))
+    .pipe(gulp.dest(vendors))
 
   gulp.src('./node_modules/tabletop/src/tabletop.min.js')
-    .pipe(gulp.dest('./dist/vendors/'))
+    .pipe(gulp.dest(vendors))
+
+  gulp.src('./node_modules/scrollreveal/dist/scrollreveal.min.js')
+    .pipe(gulp.dest(vendors))
 })
 
 gulp.task('css', function (cb) {

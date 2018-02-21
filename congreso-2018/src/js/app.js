@@ -1,3 +1,10 @@
+window.sr = ScrollReveal()
+sr.reveal('.story-item', {
+  duration: 800,
+  delay: 500,
+  scale: 0.8,
+})
+
 Vue.component('people-list', {
   props: ['people'],
   template: `
