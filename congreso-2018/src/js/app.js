@@ -12,7 +12,7 @@ Vue.component('people-list', {
       <p v-if="!people.length" class="font-family--exo">No hay resultados</p>
       <ul class="people-container" v-if="people.length">
         <li class="person" v-for="(person, index) in people" :key="person" @click="detail(person)">
-          <img :src="person.foto" alt="" class="person-avatar">
+          <img :src="person.imagen" alt="" class="person-avatar">
           <p class="font-family--exo font-size--small">{{ person.nombre | titleCase }}</p>
           <small class="font-family--exo font-weight-light">{{ person.partido }}</small>
         </li>
@@ -37,7 +37,7 @@ Vue.component('person-detail', {
       <a @click.prevent="master" href="" class="font-family--exo">Volver</a>
       <div class="card">
         <div class="card-info Row">
-          <img :src="person.foto" alt="" class="card-avatar">
+          <img :src="person.imagen" alt="" class="card-avatar">
           <div class="card-header font-family--exo">
             <p>{{person.nombre | titleCase}}</p>
             <small class="font-weight-light">{{person.partido}}</small>

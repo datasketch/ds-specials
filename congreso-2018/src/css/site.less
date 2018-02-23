@@ -24,6 +24,9 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.Row.VCenter {
+  align-items: center;
+}
 
 .Column {
   display: flex;
@@ -111,5 +114,17 @@ footer {
   img {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+.container-section {
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.container-section-post {
+  margin: 0 auto;
+  max-width: 95%;
+  @media only screen and (min-width: 768px) {
+    max-width: 70%;
   }
 }
