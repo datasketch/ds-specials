@@ -27,7 +27,7 @@ block main
         p Alberto López de Mesa, que vivió en el Bronx de Bogotá quince años de su vida, adicto al bazuco, y  ahora aspira a la cámara por Bogotá estructurando una propuesta para los habitantes de calle.
         p Luz Marina Bernal es una de las muchas madres que sufrió los llamados falsos positivos y ahora aspira al Senado por la Lista de la Decencia para seguir su lucha.
     #whois
-      .Row
+      .whois-container
         <Sidebar :nodes="nodes" :index="index" @item="filter"></Sidebar>
         <Network :data="network" @reset="reset" :index="index"></Network>
 

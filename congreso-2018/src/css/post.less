@@ -89,14 +89,32 @@ main {
   }
 }
 
+.whois-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
 #whois #sidebar {
-  width: 20%;
+  width: 100%;
+  overflow: auto;
+  @media only screen and (min-width: 768px) {
+    width: 20%;
+  }
   .sidebar-list {
     height: 100%;
     list-style-type: none;
     border-right: 1px solid #f0f0f0;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (min-width: 768px) {
+      flex-direction: column;
+    }
     li {
       align-items: center;
       background: #fcfcfc;
@@ -120,7 +138,11 @@ main {
 }
 
 #whois #network-container {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  @media only screen and (min-width: 768px) {
+    width: 80%;
+  }
 }
 #whois #network-container .reset {
   text-decoration: none;
@@ -129,6 +151,6 @@ main {
   height: 90%;
 }
 .network-info {
+  background: #fcfcfc;
   height: 10%;
-  background: #fcfcfc
 }

@@ -4,7 +4,7 @@ const Sidebar = {
   props: ['nodes', 'index'],
   template: `
     <div id="sidebar">
-     <ul class="Column sidebar-list font-family--exo">
+     <ul class="sidebar-list font-family--exo">
       <li v-for="(n,i) in nodes" :key="i" :class="['Column', 'font-weight-light',{ 'active': index === i }]" @click="register(n,i)">{{n.label}}</li>
      </ul>
     </div>
@@ -23,7 +23,7 @@ const Network = {
       <div class="network-info Column VCenter">
         <div class="container-section">
          <p style="margin: 0" class="font-family--exo">Selecciona un político de la lista para filtrar la red</p>
-         <a href="" class="font-family--exo text-emerald reset" style="font-size: small" @click.prevent="reset" v-if="index">Reiniciar</a>
+         <a href="" class="font-family--exo text-emerald reset" style="font-size: small" @click.prevent="reset" v-if="index !== undefined">Reiniciar</a>
         </div>
       </div>
       <div id="network">
