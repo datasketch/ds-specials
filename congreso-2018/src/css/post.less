@@ -1,10 +1,13 @@
+@orange: #f26101;
+
 nav {
   img {
     filter: brightness(0) invert(1);
   }
-  a:nth-child(1) {
+  .nav-links a {
     color: white;
     font-size: large;
+    margin-right: 10px;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -16,7 +19,7 @@ nav {
       left: 0;
       position: absolute;
       transform: scaleX(0);
-      transition: all 0.25s ease-in-out;
+      transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       width: 100%;
     }
     &:hover:before {
@@ -35,6 +38,11 @@ main {
   letter-spacing: 3px;
 }
 
+.post-body p {
+  margin: 0 0 20px;
+  line-height: 30px;
+}
+
 .team-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -51,8 +59,76 @@ main {
 		.team-member-info {
       margin: 1vw 0;
       a {
+        color: @orange;
+        position: relative;
         text-decoration: none;
+        &:before {
+          background: @orange;
+          bottom: 0;
+          content: '';
+          height: 1px;
+          left: 0;
+          position: absolute;
+          transform: scaleX(0);
+          transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          width: 100%;
+        }
+        &:hover:before {
+          transform: scaleX(1);
+        }
       }
 		}
 	}
+}
+
+#whois {
+  height: 100vh;
+  width: 100%;
+  .Row {
+    height: 100%;
+  }
+}
+
+#whois #sidebar {
+  width: 20%;
+  .sidebar-list {
+    height: 100%;
+    list-style-type: none;
+    border-right: 1px solid #f0f0f0;
+    margin: 0;
+    padding: 0;
+    li {
+      align-items: center;
+      background: #fcfcfc;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      flex-grow: 1;
+      justify-content: center;
+      padding: 15px;
+      transition: all 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      &:hover {
+        border-bottom-width: 2px;
+        border-bottom-color: #dcdcdc;
+      }
+      &.active {
+        background: @orange;
+        color: white;
+        border-bottom-color: @orange;
+      }
+    }
+  }
+}
+
+#whois #network-container {
+  width: 80%;
+}
+#whois #network-container .reset {
+  text-decoration: none;
+}
+#network {
+  height: 90%;
+}
+.network-info {
+  height: 10%;
+  background: #fcfcfc
 }

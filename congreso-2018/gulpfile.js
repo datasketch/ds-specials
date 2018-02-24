@@ -22,6 +22,12 @@ gulp.task('vendors', function () {
 
   gulp.src('./node_modules/scrollreveal/dist/scrollreveal.min.js')
     .pipe(gulp.dest(vendors))
+
+  gulp.src('./node_modules/vis/dist/vis.min.js')
+    .pipe(gulp.dest(vendors))
+
+  gulp.src('./node_modules/vis/dist/vis.min.css')
+    .pipe(gulp.dest(vendors))
 })
 
 gulp.task('css', function (cb) {

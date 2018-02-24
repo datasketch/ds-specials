@@ -5,12 +5,34 @@ block title
 
 block css
   link(rel="stylesheet", href="assets/css/post.css")
+  link(rel="stylesheet", href="vendors/vis.min.css")
 
 block header
   nav.bg-emerald
     .container-section.Row.SpaceBetween.VCenter
-      a.font-family--exo(href="index.html") Inicio
+      .nav-links
+        a.font-family--exo(href="index.html") Inicio
+        a.font-family--exo(href="equipo.html") Nuestro equipo
       a(href="http://datasketch.co/" target="_blank", rel="noopener noreferrer"): img(src="assets/media/logo.png", alt="")
 
 block main
   main
+    .container-section-post
+      h1.font-family--changa.post-title Los diez más
+      div.font-family--exo.font-weight-light.post-body
+        p Los candidatos que esperan ganarse una curul este año en el Congreso parecieran los protagonistas de todo tipo de historias menos de la vida política. Estos son los más curiosos:
+        p David Jaramillo, exbajista de Doctor Krápula y ahora al Senado por la Lista de la Decencia de Petro. Miguel Matus, periodista que abandonó el oficio y que aspira a una curul en el senado con el partido Centro Democrático. Por el partido de la U está la candidata Carolina Flórez, que ha tenido que desmentir ser la protagonista de un video erótico que está circulando en redes.
+        p Otros aspirantes han despertado seguidores por tener propuestas sólidas para solucionar problemas de los que ellos han sido víctimas:
+        p Gina Potes, que se lanza a la Cámara por el partido de la U, y que fue una de las primeras víctima con ácido en Colombia. Ella lleva más de una década liderando la ayuda a mujeres que han sufrido como ella agresiones siniestras de este tipo y desde la Cámara quiere impulsar leyes que protejan la integridad de las mujeres.
+        p Alberto López de Mesa, que vivió en el Bronx de Bogotá quince años de su vida, adicto al bazuco, y  ahora aspira a la cámara por Bogotá estructurando una propuesta para los habitantes de calle.
+        p Luz Marina Bernal es una de las muchas madres que sufrió los llamados falsos positivos y ahora aspira al Senado por la Lista de la Decencia para seguir su lucha.
+    #whois
+      .Row
+        <Sidebar :nodes="nodes" :index="index" @item="filter"></Sidebar>
+        <Network :data="network" @reset="reset" :index="index"></Network>
+
+
+block js
+  script(src="vendors/vis.min.js")
+  script(src="vendors/vue.min.js")
+  script(src="assets/js/whois.js")
