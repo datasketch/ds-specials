@@ -218,10 +218,18 @@ block main
                 | y las plenarias, donde se votan los proyectos de Ley que han sido aprobados en las comisiones.
           .Row.story-item
             .text-shrinked
-              p Conoce aquí a los candidatos que se postulan para el Congreso 2018.
+              p
+                a.scroller(href="#app") Conoce aquí a los candidatos 
+                | que se postulan para el Congreso 2018.
 
 block js
+  script(src="vendors/sweet-scroll.min.js")
   script(src="vendors/vue.min.js")
   script(src="vendors/tabletop.min.js")
   script(src="vendors/scrollreveal.min.js")
   script(src="assets/js/app.js")
+  script.
+    const scroller = new SweetScroll({
+      trigger: '.scroller',
+      header: '#app'
+    })
