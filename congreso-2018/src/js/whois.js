@@ -12,7 +12,7 @@ const Sidebar = {
   methods: {
     register (n, i) {
       this.$emit('item', n, i)
-    } 
+    }
   }
 }
 
@@ -34,6 +34,8 @@ const Network = {
     return {
       options: {
         nodes: {
+          shape: 'dot',
+          color: '#f26101',
           font: {
             size: 12
           },
@@ -45,7 +47,7 @@ const Network = {
         },
         edges: {
           arrows: {
-            to: { enabled: true, scaleFactor: 1, type: 'arrow' },
+            to: { enabled: true, scaleFactor: 0.5, type: 'arrow' },
           }
         },
         physics:{
@@ -78,33 +80,12 @@ const Network = {
 const whois = new Vue({
   el: '#whois',
   data: {
-    nodes: [
-      { id: 'flory-elcome', label: 'Flory Elcome' },
-      { id: 'sybyl-noddings', label: 'Sybyl Noddings' },
-      { id: 'tony-townby', label: 'Tony Townby' },
-      { id: 'sherrie-jorden', label: 'Sherrie Jorden' },
-      { id: 'sindee-stabler', label: 'Sindee Stabler' },
-      { id: 'viki-broadway', label: 'Viki Broadway' },
-      { id: 'cyril-burgisi', label: 'Cyril Burgisi' },
-      { id: 'francklin-duthy', label: 'Francklin Duthy' },
-      { id: 'elly-rickersy', label: 'Elly Rickersy' },
-      { id: 'stu-hacquel', label: 'Stu Hacquel' },
-    ],
-    edges: [
-      { from: 'flory-elcome', to: 'tony-townby', label: 'REL_TYPE' },
-      { from: 'flory-elcome', to: 'cyril-burgisi', label: 'REL_TYPE' },
-      { from: 'sybyl-noddings', to: 'elly-rickersy', label: 'REL_TYPE' },
-      { from: 'tony-townby', to: 'cyril-burgisi', label: 'REL_TYPE' },
-      { from: 'sherrie-jorden', to: 'stu-hacquel', label: 'REL_TYPE' },
-      { from: 'sherrie-jorden', to: 'viki-broadway', label: 'REL_TYPE' },
-      { from: 'sindee-stabler', to: 'francklin-duthy', label: 'REL_TYPE' },
-      { from: 'sindee-stabler', to: 'flory-elcome', label: 'REL_TYPE' },
-      { from: 'francklin-duthy', to: 'elly-rickersy', label: 'REL_TYPE' },
-      { from: 'stu-hacquel', to: 'sybyl-noddings', label: 'REL_TYPE' }
-    ],
+    nodes: [],
+    edges: [],
     filtered_nodes: [],
     filtered_edges: [],
-    index: undefined
+    index: undefined,
+    loaded: false
   },
   computed: {
     network: function () {
@@ -134,8 +115,21 @@ const whois = new Vue({
     }
   },
   created () {
-    this.filtered_nodes = this.nodes.slice()
-    this.filtered_edges = this.edges.slice()
+    const self = this
+    Tabletop.init({
+      key: 'https://docs.google.com/spreadsheets/d/1y-GhkwBvNjhzAjLj3Syg1DZstGHhHUU7ssm82a4i9GQ/edit?usp=sharing',
+      callback: function (data, tabletop) {
+        const nodes = tabletop.sheets('nodos').all()
+
+        const edges = tabletop.sheets('links').all().map(({source, rel_type, target}) => ({ from: source, to: target, label: rel_type }))
+
+        self.nodes = nodes
+        self.edges = edges
+        self.filtered_nodes = self.nodes.slice()
+        self.filtered_edges = self.edges.slice()
+        self.loaded = true
+      }
+    })
   },
   components: {
     'Sidebar': Sidebar,

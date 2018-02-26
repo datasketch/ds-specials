@@ -9,7 +9,7 @@ block css
 
 block header
   nav.bg-emerald
-    .container-section.Row.SpaceBetween.VCenter
+    .container-section.Row.SpaceBetween.VCenter.WrapReverse
       .nav-links
         a.font-family--exo(href="index.html") Inicio
         a.font-family--exo(href="equipo.html") Nuestro equipo
@@ -18,21 +18,42 @@ block header
 block main
   main
     .container-section-post
-      h1.font-family--changa.post-title Los diez más
+      h1.font-family--changa.post-title Los más +
       div.font-family--exo.font-weight-light.post-body
-        p Los candidatos que esperan ganarse una curul este año en el Congreso parecieran los protagonistas de todo tipo de historias menos de la vida política. Estos son los más curiosos:
-        p David Jaramillo, exbajista de Doctor Krápula y ahora al Senado por la Lista de la Decencia de Petro. Miguel Matus, periodista que abandonó el oficio y que aspira a una curul en el senado con el partido Centro Democrático. Por el partido de la U está la candidata Carolina Flórez, que ha tenido que desmentir ser la protagonista de un video erótico que está circulando en redes.
-        p Otros aspirantes han despertado seguidores por tener propuestas sólidas para solucionar problemas de los que ellos han sido víctimas:
-        p Gina Potes, que se lanza a la Cámara por el partido de la U, y que fue una de las primeras víctima con ácido en Colombia. Ella lleva más de una década liderando la ayuda a mujeres que han sufrido como ella agresiones siniestras de este tipo y desde la Cámara quiere impulsar leyes que protejan la integridad de las mujeres.
-        p Alberto López de Mesa, que vivió en el Bronx de Bogotá quince años de su vida, adicto al bazuco, y  ahora aspira a la cámara por Bogotá estructurando una propuesta para los habitantes de calle.
-        p Luz Marina Bernal es una de las muchas madres que sufrió los llamados falsos positivos y ahora aspira al Senado por la Lista de la Decencia para seguir su lucha.
+        p El poder político en Colombia moldea las realidades nacionales: desde la manera en la que se invierte dinero público hasta las normas que se utilizan para moldear la manera en la que funciona el país. Lastimosamente, nuestros políticos han dejado de moverse por ideales altruistas y se han dejado comprar por el dinero, el poder y otros intereses. Para que haga un voto informado, le dejamos algunos datos importantes para que conozca antes de darle su confianza a un candidato. Vote como quiera, pero vote bien.
+        p.post-subtitle Total de Candidatos al Congreso 2018
+        p Este año se presentan al Congreso 2735 candidatos, en total 1794  van a Cámara y 853 van a Senado. Al final, solo tendrán curules 268 candidatos.
+        p spin
+        p.post-subtitle Los colombianos no votamos… y eso es un problema
+        p En las pasadas elecciones, solo el 44% de los colombianos que estaban habilitados para votar lo hicieron. Menos de la mitad. Eso es un problema. Antioquia fue uno de los departamentos con menos votantes… y es uno de los más importantes a nivel de población y producción económica en el país.
+        p spin
+        p El departamento con mayor votación fue Córdoba. Allí el partido de la U fue el que más votos tuvo. A raíz de esto, salió electo el senador Musa Besaile, que ahora está en al cárcel por corrupción.
+        p spin
+        p.post-subtitle El pasado de los candidatos
+        p Aunque en teoría los congresistas deberían representar a lo mejor del país, muchos de ellos tienen antecedentes con la Procuraduría, la Fiscalía, la Contraloría o la Policía.
+        p spin
+        p.post-subtitle Qué piensan los candidatos
+        p Las posturas ideológicas de los candidatos son fundamentales a la hora de votar temas polémicos como la adopción por parte de homosexuales o la eutanasia. Muchos congresistas se niegan a mantenerse firmes en una posición, pero los que ha revelado sus ideas son los siguientes.
+        p spin
+        p.post-subtitle Hay xx% de mujeres en el Congreso
+        p La participación política de las mujeres en Colombia ha sido estimulada a través de leyes como la de paridad: en la que las listas de los partidos deben tener igual número de candidatos por sexo. Así es el mapa político actual.
+        p spin
+        p.post-subtitle Los senadores legislan el absurdo en vez de lo necesario
+        p Legislar es una cosa seria… o al menos eso es lo que todos creemos. Pero con el fin de cumplir con la cuota de actividad, muchos congresistas plantean leyes absurdas. Aquí la tabla para que te rias.
+        p.post-subtitle Los más corruptos
     #whois
-      .whois-container
-        <Sidebar :nodes="nodes" :index="index" @item="filter"></Sidebar>
-        <Network :data="network" @reset="reset" :index="index"></Network>
+      .whois-container(:class="{center: !loaded}")
+        <template v-if="!loaded">
+          p: i.fas.fa-spinner.fa-pulse.fa-3x
+        </template>
+        <template v-else>
+            <Sidebar :nodes="nodes" :index="index" @item="filter"></Sidebar>
+            <Network :data="network" @reset="reset" :index="index"></Network>
+        </template>
 
 
 block js
+  script(src="vendors/tabletop.min.js")
   script(src="vendors/vis.min.js")
   script(src="vendors/vue.min.js")
   script(src="assets/js/whois.js")
