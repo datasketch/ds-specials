@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
+
+*,
+*:before,
+*:after {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  width: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.menu {
+  background: rgba(100,100,100,0.9);
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  &.opened {
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: x-large;
+      margin-bottom: 20px;
+      a {
+        text-decoration: none;
+        position: relative;
+        &:before {
+          background: #F4E61E;
+          bottom: 0;
+          content: '';
+          height: 1px;
+          left: 0;
+          position: absolute;
+          transform: scaleX(0);
+          transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+          width: 100%;
+        }
+        &:hover:before {
+          transform: scaleX(1)
+        }
+      }
+    }
+  }
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Row.VerticalCenter {
+  align-items: center;
+}
+
+.Row.HorizontalCenter {
+  justify-content: center;
+}
+
+.Row.Center {
+  align-items: center;
+  justify-content: center;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Column.VerticalCenter {
+  justify-content: center;
+}
+
+.Column.HorizontalCenter {
+  align-items: center;
+}
+
+.Column.Center {
+  align-items: center;
+  justify-content: center;
+}
+
+.SpaceBetween {
+  justify-content: space-between;
+}
+
+.Full {
+  min-height: 100vh;
+}
+
+.FullFixed {
+  height: 100vh;
+}
+
+.Half {
+  min-height: 50vh;
+}
+
+.HalfAndQuarter {
+  min-height: 75vh
+}
+
+.BgYellow {
+	background-color: #F4E61E;
+}
+
+.TextYellow {
+	color: #F4E61E;
+}
+
+.Titillium { 
+  font-family: 'Titillium Web', sans-serif; 
+}
+
+.WeightLight { 
+  font-weight: 300; 
+}
+
+.WeightSemibold { 
+  font-weight: 600; 
+}

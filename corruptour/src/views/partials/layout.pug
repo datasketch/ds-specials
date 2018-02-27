@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    block title
+    link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    
+    //- Global site tag (gtag.js) - Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-110128775-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-110128775-1');
+
+    link(rel="stylesheet", href="assets/css/site.css")
+    block css
+  body
+    #wrapper.Column
+      block header
+      block main
+      block footer
+      block js
+    script(src="assets/js/site.js")
+    block js
