@@ -1,5 +1,18 @@
 window.network = undefined
 
+function spider (main, checkpoint) {
+  const temp = main.slice().reduce((array, data) => {
+    checkpoint.forEach(point => {
+      if (data.from === point || data.to === point) {
+        array.push(data.from, data.to)
+      }
+    })
+    return array
+  }, [])
+
+  return [...new Set(temp)]
+}
+
 const Sidebar = {
   props: ['nodes', 'index'],
   template: `
@@ -97,17 +110,33 @@ const whois = new Vue({
     filter: function (p, i) {
       const id = p.id
       this.index = i
-      this.filtered_edges = this.edges.slice().filter(e => e.from === id || e.to === id)
-      const lookup = this.filtered_edges.reduce((arr, e) => {
-        if (!arr.includes(e.from)) {
-          arr.push(e.from)
-        }
-        if (!arr.includes(e.to)) {
-          arr.push(e.to)
-        }
-        return arr
-      }, [])
-      this.filtered_nodes = this.nodes.slice().filter(n => lookup.includes(n.id))
+      this.filtered_edges = []
+      
+      let firstDegree = this.edges.slice()
+        .filter(edge => edge.from === id || edge.to === id)
+        .reduce((array, edge) => {
+          this.filtered_edges.push(edge)
+          array.push(edge.from, edge.to)
+          return array
+        }, [])
+
+      firstDegree = [...new Set(firstDegree)]
+      
+      let secondDegree = this.edges.slice()
+        .reduce((array, edge) => {
+          firstDegree.forEach(degree => {
+            if (edge.from === degree || edge.to === degree) {
+              this.filtered_edges.push(edge)
+              array.push(edge.from, edge.to)
+            }
+          })
+          return array
+        }, [])
+
+      secondDegree = [...new Set(secondDegree)]
+      
+      this.filtered_edges = [...new Set(this.filtered_edges)]
+      this.filtered_nodes = this.nodes.slice().filter(n => secondDegree.includes(n.id))
     },
     reset: function () {
       this.filtered_nodes = this.nodes.slice()
