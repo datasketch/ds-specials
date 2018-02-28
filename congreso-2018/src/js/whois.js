@@ -80,6 +80,7 @@ const Network = {
 const whois = new Vue({
   el: '#whois',
   data: {
+    nodesList: [],
     nodes: [],
     edges: [],
     filtered_nodes: [],
@@ -119,10 +120,12 @@ const whois = new Vue({
     Tabletop.init({
       key: 'https://docs.google.com/spreadsheets/d/1y-GhkwBvNjhzAjLj3Syg1DZstGHhHUU7ssm82a4i9GQ/edit?usp=sharing',
       callback: function (data, tabletop) {
-        const nodes = tabletop.sheets('nodos').all()
+        const nodesList = tabletop.sheets('nodos-lista').all()
 
+        const nodes = tabletop.sheets('nodos-viz').all()
         const edges = tabletop.sheets('links').all().map(({source, rel_type, target}) => ({ from: source, to: target, label: rel_type }))
 
+        self.nodesList = nodesList
         self.nodes = nodes
         self.edges = edges
         self.filtered_nodes = self.nodes.slice()
