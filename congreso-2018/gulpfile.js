@@ -29,6 +29,9 @@ gulp.task('vendors', function () {
   gulp.src('./node_modules/vis/dist/vis.min.css')
     .pipe(gulp.dest(vendors))
 
+  gulp.src('./node_modules/vis/dist/vis-network.min.css')
+    .pipe(gulp.dest(vendors))
+
   gulp.src('./node_modules/sweet-scroll/sweet-scroll.min.js')
     .pipe(gulp.dest(vendors))
 })

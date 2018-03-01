@@ -46,6 +46,9 @@ const Network = {
   data () {
     return {
       options: {
+        interaction: {
+          navigationButtons: true
+        },
         nodes: {
           mass: 3,
           shape: 'dot',
