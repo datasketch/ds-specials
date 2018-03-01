@@ -14,7 +14,7 @@ block main
         h1.home-title.font-family--changa.text-color--white.text-align--center No bote el voto
         p.home-description.font-family--exo.text-color--white.text-align--center Conozca los candidatos al Congreso de la República
         img.block(src="assets/media/voto.svg", alt="Ícono de votación" style="width: 50px;margin: 0 auto;")
-    .full-height#app(:class="{ center: !loaded }")
+    .full-height-fixed#app(:class="{ center: !loaded }")
       template(v-if="!loaded")
         p: i.fas.fa-spinner.fa-pulse.fa-3x
         span.font-family--exo Cargando...
