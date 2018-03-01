@@ -47,10 +47,11 @@ const Network = {
     return {
       options: {
         nodes: {
+          mass: 3,
           shape: 'dot',
           color: '#f26101',
           font: {
-            size: 12
+            size: 10
           },
           scaling: {
             min: 1,
@@ -61,6 +62,10 @@ const Network = {
         edges: {
           arrows: {
             to: { enabled: true, scaleFactor: 0.5, type: 'arrow' },
+          },
+          font: {
+            align: 'top',
+            size: 8
           }
         },
         physics:{
