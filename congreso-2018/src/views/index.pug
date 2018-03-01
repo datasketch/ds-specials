@@ -7,19 +7,12 @@ block css
   link(rel="stylesheet", href="assets/css/index.css")
   link(rel="stylesheet", href="vendors/balloon.min.css")
 
-block header
-  nav
-    .container-section.Row.SpaceBetween
-      .TakeOver
-      a(href="http://datasketch.co/" target="_blank", rel="noopener noreferrer"): img(src="assets/media/logo.png", alt="")
-
-
 block main
   main
     .half-height.bg-emerald.Column.VCenter.HCenter
       .container-section
         h1.home-title.font-family--changa.text-color--white.text-align--center No bote el voto
-        p.home-description.font-family--exo.text-color--white.text-align--center Conoce las propuestas de los candidatos al senado
+        p.home-description.font-family--exo.text-color--white.text-align--center Conozca los candidatos al Congreso de la República
         img.block(src="assets/media/voto.svg", alt="Ícono de votación" style="width: 50px;margin: 0 auto;")
     .full-height#app(:class="{ center: !loaded }")
       template(v-if="!loaded")
@@ -32,8 +25,8 @@ block main
             .filters-home(v-if="!began")
               h1.font-family--changa Filtra
               pre.font-family--exo.font-weight-light.
-                Dinos qué piensas y te diremos 
-                por quiénes podrías votar
+                Los candidatos  
+                por categoría
               a.font-family--exo(href="" @click.prevent="showFilterForm") Empezar
             template(v-if="began")
               .filters-form-box.SelfCenter(v-if="count == 1")
@@ -137,8 +130,15 @@ block main
           span.font-family--bungee +
         pre.section-ten-more-description.text-color--white.text-align--center.font-family--exo.
           Quién lleva más tiempo en el congreso,
-          quién es el más activo, quién es el más vago
+          quiénes fueron los más votados, 
+          quiénes son los más cuestionados
         div.text-align--center: a.text-color--white.font-family--exo.anchor-ten-more(href="los-mas.html") Quiero saber más
+    .half-height.bg-emerald.Column.VCenter.HCenter
+      .container-section
+        h1.section-ten-more-title.font-family--changa.text-color--white.text-align--center Radiografía
+        pre.section-ten-more-description.text-color--white.text-align--center.font-family--exo.
+          De elecciones al congreso 2018
+        div.text-align--center: a.text-color--white.font-family--exo.anchor-ten-more(href="radiografia.html") Quiero saber más
     section
       .container-section-story
         .story

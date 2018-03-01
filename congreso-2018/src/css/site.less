@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Changa+One:400,400i|Exo+2:300,400,700,800');
+@import 'mixins/mixins.less';
 
 @orange: #f26101;
 
@@ -17,9 +18,70 @@ body {
   width: 100%;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 #wrapper {
   min-height: 100%;
   position: relative;
+}
+
+nav {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .BurgerBox(white);
+  img {
+    filter: brightness(0) invert(1);
+  }
+  .burger-box + a {
+    z-index: 2;
+  }
+}
+
+.menu {
+  background: rgba(5, 157, 142, 0.9);
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 0;
+  transition: all 0.25s linear;
+  z-index: 1;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 5px 0;
+      font-size: large;
+    }
+    a {
+      color: white;
+      position: relative;
+      text-decoration: none;
+      &:before {
+        background: white;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transform: scaleX(0);
+        transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        width: 100%;
+      }
+      &:hover:before {
+        transform: scaleX(1);
+      }
+    }
+  }
+  &.opened {
+    width: 100%;
+  }
 }
 
 .Row {
@@ -128,16 +190,16 @@ footer {
 }
 .container-section {
   margin: 0 auto;
-  max-width: 95%;
+  width: 95%;
 }
 
 .container-section-post {
   margin: 0 auto;
-  max-width: 95%;
+  width: 95%;
   @media only screen and (min-width: 768px) {
-    max-width: 60%;
+    width: 60%;
   }
   @media only screen and (min-width: 992px) {
-    max-width: 50%;
+    width: 50%;
   }
 }
