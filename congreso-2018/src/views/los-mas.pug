@@ -39,7 +39,21 @@ block main
         iframe(src="static/5.html", frameborder="0" width="100%" height="450px")
         p.post-subtitle Los senadores legislan el absurdo en vez de lo necesario
         p Legislar es una cosa seria… o al menos eso es lo que todos creemos. Pero con el fin de cumplir con la cuota de actividad, muchos congresistas plantean leyes absurdas. Aquí la tabla para que te rias.
-        iframe(src="static/6.html", frameborder="0" width="100%" height="450px")
+        #table
+          table
+            thead
+              tr
+                th Cargo
+                th Congresista
+                th(colspan="2") Propuesta
+                th Aprobado
+            tbody
+              template(v-for="(row, index) in table" :key="index")
+                tr
+                  td {{ row.position }}
+                  td {{ row.name }}
+                  td(colspan="2") {{ row.proposal }}
+                  td {{ row.approved }}
         p.post-subtitle Los más cuestionados
     #whois
       .whois-container(:class="{center: !loaded}")

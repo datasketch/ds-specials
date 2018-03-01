@@ -168,3 +168,27 @@ const whois = new Vue({
     'Network': Network
   }
 })
+
+const Table = new Vue({
+  el: '#table',
+  data: {
+    table: [
+      { position: 'Senador', name: 'Óscar Reyes', proposal: 'Unificar la forma de cantar el himno nacional', approved: 'No' },
+      { position: 'Senador', name: 'Manuel Velázquez', proposal: 'Heredar las armas de padre a hijo', approved: 'No' },
+      { position: 'Senador', name: 'Édgar Espíndola', proposal: 'Multa de ocho millones por ser infiel', approved: 'No' },
+      { position: 'Senador', name: 'Édgar Espíndola', proposal: 'El día de la Biblia', approved: 'No' },
+      { position: 'Presidente Cámara de Representantes', name: 'Augusto Posada', proposal: 'No se podrán hacer parodias', approved: 'No' },
+      { position: 'Senador', name: 'Armando Benedetti', proposal: 'Prohibir los nombres feos', approved: 'No' },
+      { position: 'Senador', name: 'Édgar Espíndola', proposal: 'Acabar con las tareas en los colegios', approved: 'No' },
+      { position: 'Senador', name: 'Efraín Cepeda', proposal: 'Sacar a Panamá del escudo nacional y poner a San Andrés', approved: 'No' },
+      { position: 'Senador', name: 'Édgar Espíndola', proposal: 'Viajar sin visa', approved: 'No' },
+      { position: 'Cámara de Representantes', name: 'Alfredo Cuello Baute', proposal: 'El proyecto del primer día hábil', approved: 'Reposado' },
+      { position: 'Cámara de Representantes', name: 'Yahir Acuña', proposal: 'Prohibir el uso de saleros en las mesas de los restaurantes', approved: 'Reposado' },
+      { position: 'Cámara de Representantes', name: 'Yahir Acuña', proposal: 'Prohibir la venta de comida chatarra en colegios', approved: 'Reposado' },
+      { position: 'Cámara de Representantes', name: 'Yahir Acuña', proposal: 'Prohibir la exhibición de bebidas alcohólicas en locales comerciales', approved: 'Reposado' },
+      { position: 'Cámara de Representantes', name: 'Yahir Acuña', proposal: 'Búsquedas en internet con palabras groseras serán prohibidas', approved: 'Reposado' },
+      { position: 'Cámara de Representantes', name: 'Laureano Acuña Díaz', proposal: 'Empleados no trabajarán más de diez horas en días previos a Navidad', approved: 'Reposado' },
+      { position: 'Senador', name: 'Jimmy Chamorro', proposal: 'Eliminar tres festivos y aumentar a 18 días las vacaciones', approved: 'Reposado' }
+    ]
+  }
+})
