@@ -1,7 +1,7 @@
 extends ./partials/layout
 
 block title
-  title Los diez más - Elecciones Congreso 2018 | Especiales Datasketch
+  title Metodología - Elecciones Congreso 2018 | Especiales Datasketch
 
 block css
   link(rel="stylesheet", href="assets/css/post.css")
@@ -12,6 +12,7 @@ block main
     .container-section-post
       h1.font-family--exo.post-title Metodología
       div.font-family--exo.font-weight-light.post-body
+        #disqus_thread
         
 
 
@@ -20,3 +21,4 @@ block js
   script(src="vendors/vis.min.js")
   script(src="vendors/vue.min.js")
   script(src="assets/js/whois.js")
+  script(src="assets/js/disqus.js")
