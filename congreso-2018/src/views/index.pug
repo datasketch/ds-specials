@@ -26,7 +26,7 @@ block main
               h1.font-family--changa Filtra
               pre.font-family--exo.font-weight-light.
                 Los candidatos  
-                por categoría
+                por categoría*
               a.font-family--exo(href="" @click.prevent="showFilterForm") Empezar
             template(v-if="began")
               .filters-form-box.SelfCenter(v-if="count == 1")
@@ -123,6 +123,8 @@ block main
                 people-list(:people="filtered" @detail="showDetail")
               template(v-else-if="!master")
                 person-detail(@master="showAll" :person="person")
+    .container-section
+      small(style="display: block;text-align: left") *Se encuentran disponibles 268 candidatos teniendo en cuenta dos criterios: el primero,, que sean personas que aspiran ser reelegidas como congresistas, y el segundo, que sean los primeros 5 candidatos de las listas por cada partido político
     .half-height.bg-orange.Column.VCenter.HCenter
       .container-section
         h1.section-ten-more-title.font-family--changa.text-color--white.text-align--center
