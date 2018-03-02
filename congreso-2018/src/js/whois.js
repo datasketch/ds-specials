@@ -30,12 +30,12 @@ const Sidebar = {
 }
 
 const Network = {
-  props: ['data', 'index'],
+  props: ['data', 'index', 'description'],
   template: `
     <div id="network-container" class="Column">
       <div class="network-info Column VCenter">
         <div class="container-section">
-         <p style="margin: 0" class="font-family--exo">Selecciona un político de la lista para filtrar la red</p>
+         <p style="margin: 0" class="font-family--exo">{{description}}</p>
          <a href="" class="font-family--exo text-emerald reset" style="font-size: small" @click.prevent="reset" v-if="index !== undefined">Reiniciar</a>
         </div>
       </div>
@@ -107,7 +107,8 @@ const whois = new Vue({
     filtered_nodes: [],
     filtered_edges: [],
     index: undefined,
-    loaded: false
+    loaded: false,
+    description: 'Selecciona un político de la lista para filtrar la red'
   },
   computed: {
     network: function () {
@@ -119,7 +120,8 @@ const whois = new Vue({
       const id = p.id
       this.index = i
       this.filtered_edges = []
-      
+      this.description = this.nodesList.slice().find(node => id === node.id).description
+
       let firstDegree = this.edges.slice()
         .filter(edge => edge.from === id || edge.to === id)
         .reduce((array, edge) => {
@@ -147,6 +149,7 @@ const whois = new Vue({
       this.filtered_nodes = this.nodes.slice().filter(n => secondDegree.includes(n.id))
     },
     reset: function () {
+      this.description = 'Selecciona un político de la lista para filtrar la red'
       this.filtered_nodes = this.nodes.slice()
       this.filtered_edges = this.edges.slice()
       this.index = undefined
