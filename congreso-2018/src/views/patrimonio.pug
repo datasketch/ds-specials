@@ -1,0 +1,18 @@
+extends ./partials/layout
+
+block title
+  title Patrimonio de congresistas - Elecciones Congreso 2018 | Especiales Datasketch
+
+block css
+  link(rel="stylesheet", href="assets/css/post.css")
+  style.
+    iframe {
+      height: 100vh;
+      width: 100%;
+    }
+
+block main
+  main
+    iframe(src="https://s3.amazonaws.com/cuestion-publica/perfiles/index.html", frameborder="0")
+    .container-section-post
+        #disqus_thread
