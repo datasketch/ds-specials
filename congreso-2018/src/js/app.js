@@ -170,7 +170,7 @@ const vm = new Vue({
         policia: '',
         camara: '',
         senado: '',
-        parties: parties
+        parties: []
       }
     },
     reset: function () {
