@@ -12,7 +12,7 @@ Vue.component('people-list', {
       <p v-if="!people.length" class="font-family--exo">No hay resultados</p>
       <ul class="people-container" v-if="people.length">
         <li class="person" v-for="(person, index) in people" :key="person" @click="detail(person)">
-          <img :src="person.imagen" alt="" class="person-avatar">
+          <img :src="person.photo" alt="" class="person-avatar">
           <p class="font-family--exo font-size--small">{{ person.nombre | titleCase }}</p>
           <small class="font-family--exo font-weight-light">{{ person.partido }}</small>
         </li>
@@ -37,7 +37,7 @@ Vue.component('person-detail', {
       <a @click.prevent="master" href="" class="font-family--exo">Volver</a>
       <div class="card">
         <div class="card-info Row">
-          <img :src="person.imagen" alt="" class="card-avatar">
+          <img :src="person.photo" alt="" class="card-avatar">
           <div class="card-header font-family--exo">
             <p>{{person.nombre | titleCase}}</p>
             <small class="font-weight-light">{{person.partido}}</small>
@@ -85,8 +85,8 @@ const vm = new Vue({
       procuraduria: '',
       contraloria: '',
       policia: '',
-      camara: true,
-      senado: true,
+      camara: '',
+      senado: '',
       parties: []
     }
   },
@@ -97,54 +97,46 @@ const vm = new Vue({
       })
     },
     filtered: function () {
-
-      let group = []
-
-			const matrimonio = this.filters.matrimonio ? this.filters.matrimonio === 'true' : ''
-			const adopcion = this.filters.adopcion ? this.filters.adopcion === 'true' : ''
-      const aborto = this.filters.aborto ? this.filters.aborto === 'true' : ''
-      const marihuana = this.filters.marihuana ? this.filters.marihuana === 'true' : ''
-      const eutanasia = this.filters.eutanasia ? this.filters.eutanasia === 'true' : ''
-      const paz = this.filters.paz ? this.filters.paz === 'true' : ''
-
-      const procuraduria = this.filters.procuraduria ? true : ''
-      const contraloria = this.filters.contraloria ? true : ''
-      const policia = this.filters.policia ? true : ''
-
-      const camara = this.filters.camara
-      const senado = this.filters.senado
-
-      const partidos = this.filters.parties
-
-      if (camara && senado) {
-        group = this.people
-      } else if (camara) {
-        group = this.people.filter(p => p.camara === camara)
-      } else if (senado) {
-        group = this.people.filter(p => p.senado === senado)
+      let people = this.people
+      if (this.filters.matrimonio !== '') {
+        people = people.filter(p => p.matrimonio === this.filters.matrimonio)
       }
-
-      return (
-        group
-          .filter(p => {
-            return partidos.find(partido => partido == p.partido)
-          })
-          .filter(p => {
-            const result = (
-              (p.adopcion === adopcion || adopcion === '') &&
-              (p.matrimonio === matrimonio || matrimonio === '') &&
-              (p.aborto === aborto || aborto === '') &&
-              (p.eutanasia === eutanasia || eutanasia === '') &&
-              (p.marihuana === marihuana || marihuana === '') &&
-              (p.paz === paz || paz === '') &&
-              (p.procuraduria === procuraduria || procuraduria === '') &&
-              (p.contraloria === contraloria || contraloria === '') &&
-              (p.policia === policia || policia === '')
-            )
-            return result
-          })
-          .filter(person => person.nombre.toLowerCase().includes(this.search.toLowerCase()))
-      )
+      if (this.filters.adopcion !== '') {
+        people = people.filter(p => p.adopcion === this.filters.adopcion)
+      }
+      if (this.filters.aborto !== '') {
+        people = people.filter(p => p.aborto === this.filters.aborto)
+      }
+      if (this.filters.marihuana !== '') {
+        people = people.filter(p => p.marihuana === this.filters.marihuana)
+      }
+      if (this.filters.eutanasia !== '') {
+        people = people.filter(p => p.eutanasia === this.filters.eutanasia)
+      }
+      if (this.filters.paz !== '') {
+        people = people.filter(p => p.paz === this.filters.paz)
+      }
+      if (this.filters.policia) {
+        people = people.filter(p => p.policia)
+      }
+      if (this.filters.contraloria) {
+        people = people.filter(p => p.contraloria)
+      }
+      if (this.filters.procuraduria) {
+        people = people.filter(p => p.procuraduria)
+      }
+      if (this.filters.camara) {
+        people = people.filter(p => p.camara)
+      }
+      if (this.filters.senado) {
+        people = people.filter(p => p.senado)
+      }
+      if (this.filters.parties.length) {
+        people = people.filter(p => this.filters.parties.includes(p.partido))
+      }
+      return people.filter(person => {
+        return person.nombre.toLowerCase().includes(this.search.toLowerCase())
+      })
     }
   },
   methods: {
@@ -176,8 +168,8 @@ const vm = new Vue({
         procuraduria: '',
         contraloria: '',
         policia: '',
-        camara: true,
-        senado: true,
+        camara: '',
+        senado: '',
         parties: parties
       }
     },
@@ -194,18 +186,26 @@ const vm = new Vue({
         const data_parties = data.map(({ partido }) => partido)
         const parties = []
         self.people = data.map(row => {
-          row.matrimonio = row.matrimonio_homosexual.trim().match('A favor') ? true : false
-          row.adopcion = row.adopcion_por_parte_de_homosexuales.trim().match('A favor') ? true : false
-          row.aborto = row.legalizacion_aborto.trim().match('A favor') ? true : false
-          row.marihuana = row.legalizacion_marihuana.trim().match('A favor') ? true : false
-          row.eutanasia = row.legalizacion_eutanasia.trim().match('A favor') ? true : false
-          row.paz = row.acuerdo_de_paz.trim().match('A favor') ? true : false
-          row.camara = row.camara.toLowerCase().trim().match('x') ? true : false
-          row.senado = row.senado.toLowerCase().trim().match('x') ? true : false
-          row.policia = row.antecedentes_policia.trim().toLowerCase().match('si') ? true : false
-          row.contraloria = row.contraloria.trim().toLowerCase().match('si') ? true : false
-          row.procuraduria = row.procuraduria.trim().toLowerCase().match('si') ? true : false
-          return row
+          return {
+            nombre: row.nombre,
+            perfil: row.perfil,
+            photo: row.imagen,
+            partido: row.partido,
+            camara: row.camara.trim().toLowerCase(),
+            senado: row.senado.trim().toLowerCase(),
+            matrimonio: row.matrimonio_homosexual.trim().toLowerCase() || 'vacío',
+            adopcion: row.adopcion_por_parte_de_homosexuales.trim().toLowerCase() || 'vacío',
+            aborto: row.legalizacion_aborto.trim().toLowerCase() || 'vacío',
+            marihuana: row.legalizacion_marihuana.trim().toLowerCase() || 'vacío',
+            eutanasia: row.legalizacion_eutanasia.trim().toLowerCase() || 'vacío',
+            paz: row.acuerdo_de_paz.trim().toLowerCase() || 'vacío',
+            camara: row.camara.toLowerCase().trim().toLowerCase() === 'x',
+            senado: row.senado.toLowerCase().trim().toLowerCase() === 'x',
+            policia: row.antecedentes_policia.trim().toLowerCase() === 'si',
+            contraloria: row.contraloria.trim().toLowerCase() === 'si',
+            procuraduria: row.procuraduria.trim().toLowerCase() === 'si',
+            observation: row.observaciones.trim()
+          }
         })
         data_parties.map(d => {
           if (!parties.includes(d)) {
@@ -213,7 +213,6 @@ const vm = new Vue({
           }
         })
         self.parties = parties
-        self.filters.parties = self.parties
         self.loaded = true
       },
       simpleSheet: true

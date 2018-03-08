@@ -19,7 +19,6 @@ block main
         p: i.fas.fa-spinner.fa-pulse.fa-3x
         span.font-family--exo Cargando...
       template(v-if="loaded")
-        p(style="display: none") {{filtered}}
         .app-content
           .filters-box(:class="{ center: !began }")
             .filters-home(v-if="!began")
@@ -38,31 +37,38 @@ block main
                         td
                         td Favor
                         td Contra
+                        td N/A
                       tr.spacer
                       tr
                         td.filter-label: span Matrimonio homosexual
-                        td: input(type="radio" value="true" v-model="filters.matrimonio")
-                        td: input(type="radio" value="false" v-model="filters.matrimonio")
+                        td: input(type="radio" value="a favor" v-model="filters.matrimonio")
+                        td: input(type="radio" value="en contra" v-model="filters.matrimonio")
+                        td: input(type="radio" value="vacío" v-model="filters.matrimonio")
                       tr
                         td.filter-label: span Adopción por parte de homosexuales
-                        td: input(type="radio" value="true" v-model="filters.adopcion")
-                        td: input(type="radio" value="false" v-model="filters.adopcion")
+                        td: input(type="radio" value="a favor" v-model="filters.adopcion")
+                        td: input(type="radio" value="en contra" v-model="filters.adopcion")
+                        td: input(type="radio" value="vacío" v-model="filters.adopcion")
                       tr
                         td.filter-label: span Legalización del aborto
-                        td: input(type="radio" value="true" v-model="filters.aborto")
-                        td: input(type="radio" value="false" v-model="filters.aborto")
+                        td: input(type="radio" value="a favor" v-model="filters.aborto")
+                        td: input(type="radio" value="en contra" v-model="filters.aborto")
+                        td: input(type="radio" value="vacío" v-model="filters.aborto")
                       tr
                         td.filter-label: span Legalización de la marihuana
-                        td: input(type="radio" value="true" v-model="filters.marihuana")
-                        td: input(type="radio" value="false" v-model="filters.marihuana")
+                        td: input(type="radio" value="a favor" v-model="filters.marihuana")
+                        td: input(type="radio" value="en contra" v-model="filters.marihuana")
+                        td: input(type="radio" value="vacío" v-model="filters.marihuana")
                       tr
                         td.filter-label: span Legalización de la eutanasia
-                        td: input(type="radio" value="true" v-model="filters.eutanasia")
-                        td: input(type="radio" value="false" v-model="filters.eutanasia")
+                        td: input(type="radio" value="a favor" v-model="filters.eutanasia")
+                        td: input(type="radio" value="en contra" v-model="filters.eutanasia")
+                        td: input(type="radio" value="vacío" v-model="filters.eutanasia")
                       tr
                         td.filter-label: span Acuerdo de Paz
-                        td: input(type="radio" value="true" v-model="filters.paz")
-                        td: input(type="radio" value="false" v-model="filters.paz")
+                        td: input(type="radio" value="a favor" v-model="filters.paz")
+                        td: input(type="radio" value="en contra" v-model="filters.paz")
+                        td: input(type="radio" value="vacío" v-model="filters.paz")
                 .filters-navigation.Row
                   a(href="" @click.prevent="backup" class="text-salmon font-family--changa" v-show="count != 1") Anterior
                   div(v-show="count == 1")
