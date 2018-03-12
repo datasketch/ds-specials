@@ -147,6 +147,12 @@ block main
         pre.section-ten-more-description.text-color--white.text-align--center.font-family--exo.
           De elecciones al congreso 2018
         div.text-align--center: a.text-color--white.font-family--exo.anchor-ten-more(href="radiografia.html") Quiero saber más
+    .half-height.Column.VCenter.HCenter(style="background: #fa6271")
+      .container-section
+        h1.section-ten-more-title.font-family--changa.text-color--white.text-align--center El patrimonio
+        pre.section-ten-more-description.text-color--white.text-align--center.font-family--exo.
+          Conoce el patrimonio de diez congresistas
+        div.text-align--center: a.text-color--white.font-family--exo.anchor-ten-more(href="patrimonio.html") Quiero saber más
     section
       .container-section-story
         .story
@@ -182,18 +188,6 @@ block main
                 | , es decir por cada departamento. Otros 4 corresponden a 
                 span.bigger circunscripciones especiales
                 | : 2 para afrodescendientes, 1 para indígenas, y 1 para colombianos en el exterior.
-          //- .Row.story-item
-          //-   .text-shrinked
-          //-     p
-          //-       | En esta reforma se establece que 
-          //-       span.bigger habrá 102 senadores y que serán elegidos 
-          //-       span.highlight(data-balloon="Compiten en todo el territorio nacional por los votos" data-balloon-pos="up") en circunscripción nacional. 
-          //-       | Para la Cámara de Representantes, la elección queda sujeta a 
-          //-       span.highlight(data-balloon="Los representantes a la Cámara son elegidos por un departamento, y solo allí pueden votar por él. Se asignarán más curules a aquellos departamentos que tengan más población" data-balloon-pos="up" data-balloon-length="large") circunscripciones territoriales 
-          //-       | y 
-          //-       span.highlight(data-balloon="Garantizar la representación de determinados grupos étnicos, sociales y políticos. Se asignan dos curules a los indígenas, dos curules a las negritudes y una curul a los extranjeros" data-balloon-pos="up" data-balloon-length="large") especiales. 
-          //-       span.bigger Habrá dos representantes por cada circunscripción territorial 
-          //-       | y uno adicional por cada 365.000 habitantes. A la fecha son 166.
           .Row.story-item
             .text-shrinked
               p 
@@ -230,8 +224,14 @@ block main
               p
                 a.scroller(href="radiografia.html") Conoce aquí a los candidatos 
                 | que se postulan para el Congreso 2018.
-    .bg-emerald
-      iframe.data(src="https://randommonkey.shinyapps.io/2018-03-01-descargaCongreso/", frameborder="0" width="100%")
+    iframe.data(src="https://randommonkey.shinyapps.io/2018-03-01-descargaCongreso/", frameborder="0" width="100%")
+    .half-height.Column.VCenter.HCenter
+      .container-section
+        h1.section-ten-more-title.font-family--changa.text-align--center Aprende a renovar el congreso
+        div
+          a.font-family--exo.anchor-ten-more.Row.VCenter.HCenter(href="documents/periodico_no_bote_el_voto_web.pdf" target="_blank" rel="noopener noreferrer")
+            img(src="assets/media/logo_alianza.png", alt="" style="max-width: 10%")
+            | Ver periódico
 
 block js
   script(src="vendors/sweet-scroll.min.js")
