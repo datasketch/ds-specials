@@ -1,0 +1,69 @@
+0000000000000000000000000000000000000000 5c22a4962fbde4406afcec5dcbef46e39c988996 David Daza <03dazal@gmail.com> 1511525478 -0500	clone: from git@github.com:randommonkey/ds-specials.git
+5c22a4962fbde4406afcec5dcbef46e39c988996 ac1e4a502ccc6ca1fcc3a44e000eea516c3b9a20 David Daza <03dazal@gmail.com> 1511611615 -0500	pull origin master: Fast-forward
+ac1e4a502ccc6ca1fcc3a44e000eea516c3b9a20 c8538c1c7838d9fa1b81fd02348e4a94d14b0274 David Daza <03dazal@gmail.com> 1511612696 -0500	commit: Fix responsive home (ni-una-mas)
+c8538c1c7838d9fa1b81fd02348e4a94d14b0274 2ee7fe5802823070106c1e47e63a2ca4c653fcd6 David Daza <03dazal@gmail.com> 1511613914 -0500	commit: Add photo and change url of second post
+2ee7fe5802823070106c1e47e63a2ca4c653fcd6 3a38c8fc6229bb29a669328cc9d6038b784a4f5f David Daza <03dazal@gmail.com> 1511614322 -0500	commit: Migrate content to sobrevivientes folder
+3a38c8fc6229bb29a669328cc9d6038b784a4f5f 84679ede02aff3493f35342beea5d25c36ab77e4 David Daza <03dazal@gmail.com> 1511617551 -0500	commit: Main note responsive
+84679ede02aff3493f35342beea5d25c36ab77e4 4eb8a9e56d01e2886067efdff799656c2e061e2b David Daza <03dazal@gmail.com> 1511619182 -0500	commit: Encuesta (sobrevivientes)
+4eb8a9e56d01e2886067efdff799656c2e061e2b 332ff71088f2af930deceda928b0acbe245677cd David Daza <03dazal@gmail.com> 1511632082 -0500	commit: Changes (sobrevivientes)
+332ff71088f2af930deceda928b0acbe245677cd 2b9bc7b7290814fa7b729d2d688fb52998d87840 David Daza <03dazal@gmail.com> 1511635657 -0500	commit: KMN (sobrevivientes)
+2b9bc7b7290814fa7b729d2d688fb52998d87840 500744b1efa54f0041189c465517d728ddf3e285 David Daza <03dazal@gmail.com> 1512246875 -0500	pull origin master: Fast-forward
+500744b1efa54f0041189c465517d728ddf3e285 14116c303d7efbfabeb7c57afa6dda063c121013 David Daza <03dazal@gmail.com> 1512248992 -0500	commit: Add python script to automate the deployment to S3 bucket
+14116c303d7efbfabeb7c57afa6dda063c121013 8ac2d5881fdfb30fbcfea94034065b0b975702be David Daza <03dazal@gmail.com> 1518219651 -0500	merge origin: Fast-forward
+8ac2d5881fdfb30fbcfea94034065b0b975702be 52afff4589eeb86fce2cea1452119614a5dc7e71 David Daza <03dazal@gmail.com> 1518220726 -0500	commit: Homepage structured
+52afff4589eeb86fce2cea1452119614a5dc7e71 9cef2a7515d69d422db3dd16ce1e8cf06705dec8 David Daza <03dazal@gmail.com> 1518220733 -0500	commit (amend): Homepage structured (congreso-2018)
+9cef2a7515d69d422db3dd16ce1e8cf06705dec8 98b472d9e6a88c825e4f57cd229a4c277c1328c9 David Daza <03dazal@gmail.com> 1519076757 -0500	commit: Add main text
+98b472d9e6a88c825e4f57cd229a4c277c1328c9 5ff76cee5d3fd66ef50b21e7384cb36b12c44669 David Daza <03dazal@gmail.com> 1519082021 -0500	commit: Search, master and detail page for app
+5ff76cee5d3fd66ef50b21e7384cb36b12c44669 8967f748fb36c03664cf9d3ae0382506b0276dd9 David Daza <03dazal@gmail.com> 1519222903 -0500	commit: Enable filters
+8967f748fb36c03664cf9d3ae0382506b0276dd9 990181f38e28be051db3335ac8357bafe9788dd7 David Daza <03dazal@gmail.com> 1519225108 -0500	commit: Little improve to UX
+990181f38e28be051db3335ac8357bafe9788dd7 7c09d798ef35cd1799f044506517c7823b95227b David Daza <03dazal@gmail.com> 1519225964 -0500	commit: Add favicon
+7c09d798ef35cd1799f044506517c7823b95227b 4fe25e8b7a0c27f1a53677e87804811433a49562 David Daza <03dazal@gmail.com> 1519227775 -0500	commit: Reveal text when scroll
+4fe25e8b7a0c27f1a53677e87804811433a49562 7170e378475a51f0929a883e5fde010c79da5de4 David Daza <03dazal@gmail.com> 1519229963 -0500	commit: Mobile app
+7170e378475a51f0929a883e5fde010c79da5de4 fb06f3f1c94f818aac3cd90c6c3eca87e06e2953 David Daza <03dazal@gmail.com> 1519239476 -0500	commit: Instagram-like text
+fb06f3f1c94f818aac3cd90c6c3eca87e06e2953 0983586737898761edc785e907a10b06556922f5 David Daza <03dazal@gmail.com> 1519358320 -0500	commit: Update photos
+0983586737898761edc785e907a10b06556922f5 62884116568e774da6e8f7464c9f672164bdfcc2 David Daza <03dazal@gmail.com> 1519496488 -0500	commit: Whois app mockup
+62884116568e774da6e8f7464c9f672164bdfcc2 5ca2a669b55c4707013e680a08a86106a74450e7 David Daza <03dazal@gmail.com> 1519501832 -0500	commit: Responsive whois app
+5ca2a669b55c4707013e680a08a86106a74450e7 d28ce34b8916328bceac0845a53cb378f045ca15 David Daza <03dazal@gmail.com> 1519672897 -0500	commit: Style network and update post text
+d28ce34b8916328bceac0845a53cb378f045ca15 4f2fee30f8ecb684e7c1e144f3bf81b3b75ecab8 David Daza <03dazal@gmail.com> 1519673122 -0500	commit: Change post container size
+4f2fee30f8ecb684e7c1e144f3bf81b3b75ecab8 dff50c4df70b92175d4ab86e689c004673c732a0 David Daza <03dazal@gmail.com> 1519677318 -0500	commit: Add scroller
+dff50c4df70b92175d4ab86e689c004673c732a0 9b64be7afdf0d187bbf4957cb43b03c05845858d David Daza <03dazal@gmail.com> 1519677922 -0500	commit: Add meta tags
+9b64be7afdf0d187bbf4957cb43b03c05845858d a3ff373def6e8723102544f676976ad0666fc993 David Daza <03dazal@gmail.com> 1519684144 -0500	commit: Add static html charts
+a3ff373def6e8723102544f676976ad0666fc993 837fef111831f12a219ce7a88488f1d51007f410 David Daza <03dazal@gmail.com> 1519692428 -0500	commit: Old page as section. New page as home
+837fef111831f12a219ce7a88488f1d51007f410 96e2568174aa44f288f37727a0d1c35e5774e66e David Daza <03dazal@gmail.com> 1519738904 -0500	commit: Remove corruptour from this repository. Moved to https://github.com/randommonkey/corruptour
+96e2568174aa44f288f37727a0d1c35e5774e66e 362ecf3a20220cc041c20593d1b61f8f2f161aa3 David Daza <03dazal@gmail.com> 1519836522 -0500	commit: Fixing Whois network. Change "los-diez-mas" to "los-mas"
+362ecf3a20220cc041c20593d1b61f8f2f161aa3 10bf4ec9c67dd9503312e053123b9f58800744be David Daza <03dazal@gmail.com> 1519843790 -0500	commit: Render up to two degrees away from node selected
+10bf4ec9c67dd9503312e053123b9f58800744be 135fce12b5545a7485abd19ca0f14656c06b3741 David Daza <03dazal@gmail.com> 1519843911 -0500	commit: Delete error log
+135fce12b5545a7485abd19ca0f14656c06b3741 5df8bfde55d24d9a8ede321d33fbb5147309dba7 David Daza <03dazal@gmail.com> 1519914324 -0500	commit: Replace datatable with HTML table
+5df8bfde55d24d9a8ede321d33fbb5147309dba7 7c5997b52968c6ccddfdba4e765bc8456b99e285 David Daza <03dazal@gmail.com> 1519916811 -0500	commit: Improve network visualization
+7c5997b52968c6ccddfdba4e765bc8456b99e285 1cdc5b0b382f08fbf29ed17c921dcd4faeba2517 David Daza <03dazal@gmail.com> 1519919108 -0500	commit: Add descriptive text
+1cdc5b0b382f08fbf29ed17c921dcd4faeba2517 71d05926bd7f4303094b675582f76085ad514a38 David Daza <03dazal@gmail.com> 1519937770 -0500	commit: Add menu
+71d05926bd7f4303094b675582f76085ad514a38 6b213609843cf621d35e02f0fa421b1fda6ede69 David Daza <03dazal@gmail.com> 1519938744 -0500	commit: Fix bug in Firefox
+6b213609843cf621d35e02f0fa421b1fda6ede69 486844b82c969d25eea64bcf6b76d6f19afade44 David Daza <03dazal@gmail.com> 1519941392 -0500	commit: Update main text
+486844b82c969d25eea64bcf6b76d6f19afade44 b83bbfe0b7701284846089d990a98433d8e62f5c David Daza <03dazal@gmail.com> 1519941499 -0500	commit: Skeleton of method view
+b83bbfe0b7701284846089d990a98433d8e62f5c 521ca9f8944a1af0327db5d422396c265b46a27a David Daza <03dazal@gmail.com> 1519942279 -0500	commit: Add controls to network
+521ca9f8944a1af0327db5d422396c265b46a27a 14bcce7299bed3b4f0dcd27ed8d9589f129e0249 David Daza <03dazal@gmail.com> 1519947930 -0500	commit: Update los-mas
+14bcce7299bed3b4f0dcd27ed8d9589f129e0249 10c8b38760024fd3842d2c7c0af6df704c1e36ba David Daza <03dazal@gmail.com> 1519990357 -0500	commit: Show descriptive message in whois app. Need to get better for mobile devices
+10c8b38760024fd3842d2c7c0af6df704c1e36ba 010101b78896c453ff13ea939b0ac8eb2c09181a David Daza <03dazal@gmail.com> 1519991382 -0500	commit: Add disqus thread
+010101b78896c453ff13ea939b0ac8eb2c09181a 7841def9249f77b8d1e5390f36d102c2fb57fac0 David Daza <03dazal@gmail.com> 1520000195 -0500	commit: Add spin
+7841def9249f77b8d1e5390f36d102c2fb57fac0 a1ec09c146611b7d02d533105dafd5d17413b705 David Daza <03dazal@gmail.com> 1520000991 -0500	commit: Add GA script
+a1ec09c146611b7d02d533105dafd5d17413b705 17461bf84d2d28976a73727236eb022a125e8929 David Daza <03dazal@gmail.com> 1520003355 -0500	commit: Add methodology
+17461bf84d2d28976a73727236eb022a125e8929 87dfc99d343def6aff0191240c8d585e5be46f66 David Daza <03dazal@gmail.com> 1520003817 -0500	commit: Add download frame
+87dfc99d343def6aff0191240c8d585e5be46f66 ea0a0db36f17b0ac919ab4da6387b85cc95482c2 David Daza <03dazal@gmail.com> 1520005279 -0500	commit: Improve iframe datatable
+ea0a0db36f17b0ac919ab4da6387b85cc95482c2 a446c10b462a8c80951fb975b6e4a07a7261e455 David Daza <03dazal@gmail.com> 1520005775 -0500	commit: Updates
+a446c10b462a8c80951fb975b6e4a07a7261e455 9691eb35c0b2cc83a45647a0bc67ab880b562293 David Daza <03dazal@gmail.com> 1520006196 -0500	commit: Updates
+9691eb35c0b2cc83a45647a0bc67ab880b562293 1f1fcf5c97c4cb676a1a80d7ade04059833bc010 David Daza <03dazal@gmail.com> 1520006985 -0500	commit: Updates
+1f1fcf5c97c4cb676a1a80d7ade04059833bc010 904a5942263faab133c26186fd54f47e72c92bb4 David Daza <03dazal@gmail.com> 1520010133 -0500	commit: Updates
+904a5942263faab133c26186fd54f47e72c92bb4 31ec1ac2c28b396ca6519e6122bf3ccdb95b9a94 David Daza <03dazal@gmail.com> 1520010168 -0500	commit: Build updated site
+31ec1ac2c28b396ca6519e6122bf3ccdb95b9a94 d1212bebc1cff3c3dfcfcc93bebb5f4ffd739630 David Daza <03dazal@gmail.com> 1520022137 -0500	commit: Updates
+d1212bebc1cff3c3dfcfcc93bebb5f4ffd739630 e69e765ecacbcb54d696bf0a51b44851d3954fb0 David Daza <03dazal@gmail.com> 1520028613 -0500	commit: Updates
+e69e765ecacbcb54d696bf0a51b44851d3954fb0 9cfbe6954137a9abdc3a4f351aaa4d208a0f71bf David Daza <03dazal@gmail.com> 1520029066 -0500	commit: Change SEO image
+9cfbe6954137a9abdc3a4f351aaa4d208a0f71bf 1c4c128a344cdc4ef39ccd5acd821d12867d5a15 David Daza <03dazal@gmail.com> 1520033714 -0500	commit: Add disclaimer to app
+1c4c128a344cdc4ef39ccd5acd821d12867d5a15 e8169ff2cc407c1177c716391becc59885762ea4 David Daza <03dazal@gmail.com> 1520034841 -0500	commit: Updates
+e8169ff2cc407c1177c716391becc59885762ea4 bdb753f7db1b5fff25e9cb6f6f2c853c4a0485e6 David Daza <03dazal@gmail.com> 1520034962 -0500	commit: Updates
+bdb753f7db1b5fff25e9cb6f6f2c853c4a0485e6 5220bd7261ed6188963caa844e1c94af8013b715 David Daza <03dazal@gmail.com> 1520035098 -0500	commit: CSS
+5220bd7261ed6188963caa844e1c94af8013b715 b6c6ab7042a0d26affe77ee8a6fde4830a5bfd01 David Daza <03dazal@gmail.com> 1520035234 -0500	commit: More css
+b6c6ab7042a0d26affe77ee8a6fde4830a5bfd01 70f8befb9ba92ffaeb5838886d48f5c6472af5f9 David Daza <03dazal@gmail.com> 1520270704 -0500	commit: Updates
+70f8befb9ba92ffaeb5838886d48f5c6472af5f9 d3832fe71c314852e0bc86c028bd0125825d4309 David Daza <03dazal@gmail.com> 1520285023 -0500	commit: Add CP app preview
+d3832fe71c314852e0bc86c028bd0125825d4309 c76d64d37573da499db9751ffcdf10479f3369af David Daza <03dazal@gmail.com> 1520540674 -0500	commit: Improve app filtering
+c76d64d37573da499db9751ffcdf10479f3369af eafa142b5df033ac656aa44da5ab6349b9de9f54 David Daza <03dazal@gmail.com> 1520540858 -0500	commit: Fix filters reset
+                                                                                                                                                        
