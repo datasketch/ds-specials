@@ -2,11 +2,19 @@ const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
 const gulp = require('gulp')
 const less = require('gulp-less')
+const path = require('path')
 const pug = require('gulp-pug')
 const pump = require('pump')
 const uglifyjs = require('gulp-uglify')
 const uglifycss = require('gulp-uglifycss')
 const webserver = require('gulp-webserver')
+
+const vendors = path.join(__dirname, 'dist/vendors/')
+
+gulp.task('vendors', function () {
+  gulp.src('./node_modules/vue/dist/vue.min.js')
+    .pipe(gulp.dest(vendors))
+})
 
 gulp.task('css', function (cb) {
   pump([
@@ -53,4 +61,4 @@ gulp.task('watch', function () {
 
 gulp.task('development', ['webserver', 'watch'])
 
-gulp.task('default', ['css', 'js', 'views'])
+gulp.task('default', ['vendors', 'css', 'js', 'views'])
