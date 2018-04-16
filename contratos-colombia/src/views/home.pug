@@ -1,0 +1,78 @@
+extends ./partials/default
+
+block title
+  title La letra menuda | Especiales Datasketch
+
+block css
+  link(rel="stylesheet", href="assets/css/index.css")
+
+block main
+  main.fill
+    #main-section.full-section.column.centered
+      .container
+        h1.font-rubik
+          pre.
+            LA LETRA
+            MENUDA
+        p Descripción del especial
+    #intro-section
+      .intro-section-content
+        .splitted.column
+          p.splitted-text
+            | Cuando el Estado hace acuerdos con personas naturales o empresas -públicas o privadas- para cumplir ciertas tareas, se les conoce como 
+            strong contratos públicos.
+          p.splitted-text El Estado no siempre tiene dentro de su poder la facilidad de hacer y prestar todos los bienes y servicios necesarios para toda la población. Además, es la forma de poner las reglas de juego para usar los recursos públicos.
+          p.splitted-text
+            | Con Contratos Públicos el Estado puede materializar su política pública y ejecutar su presupuesto con orden y optimización... 
+            strong al menos en la teoría.
+          p.splitted-text: strong Los dineros para esos contratos salen de nuestros bolsillos.
+          p.splitted-text La contratación pública se financia con los impuestos que todos pagamos. Por lo tanto, es nuestro derecho y deber hacerle monitoreo al gasto público y saber en qué se está invirtiendo nuestro dinero.
+    #video-section.full-section.column.centered
+      .container
+        h1.font-rubik VIDEO DATO
+    #red-flags-section.full-section
+      .container
+        .red-flags-grid
+          .red-flags-fixed
+            h1.font-rubik
+              pre.
+                LAS
+                BANDERAS
+                ROJAS
+            p
+              i Las banderas rojas son señales de que algo puede andar mal. No indican que haya corrupción en los contratos, pero sí que hay que poner la lupa sobre ciertos detalles que pudieron pasarse por alto.
+            p
+              | Si quieres ver todas las banderas rojas da 
+              a(href="#") click acá
+              | .
+          .red-flags-scroll
+            .flag
+              h1.flag-number 1 / 6
+              h3.flag-title Errada Evaluación previa
+              p.flag-description La entidad contratante puede hacer un manejo inadecuado en la apertura de un contrato, puede abrir procesos innecesarios, informales, o con ausencia de actores externos.
+            .flag
+              h1.flag-number 2 / 6
+              p.flag-title Posibles sobornos
+              p.flag-description En algunos casos ha sucedido que el contrato se adjudica por el pago de sobornos. Esto puede suceder cuando el contratista tiene muchos contratos, tiene antecedentes de ilegalidad, o en el contrato se realizan adiciones presupuestales súbitamente.
+            .flag
+              h1.flag-number 3 / 6
+              p.flag-title Procesos amañados
+              p.flag-description Los contratos pueden presentar irregularidades cuando es evidente que se está beneficiando algún proponente en específico, cuando hay pliegos de condiciones que son muy específicos e inusuales o cuando no se hace público el contrato.
+            .flag
+              h1.flag-number 4 / 6
+              p.flag-title Eliminación de la competencia
+              p.flag-description Esta modalidad se presenta cuando no hay motivos suficientes para no realizar procesos competitivos, o cuando los criterios o la publicidad del contrato no sea anunciado.
+            .flag
+              h1.flag-number 5 / 6
+              p.flag-title Conflicto de intereses
+              p.flag-description Puede haber una relación estrecha o cercana entre el contratista y el contratante, aún más, cuando no hay una declaración de intereses expresa entre las dos partes.
+            .flag
+              h1.flag-number 6 / 6
+              p.flag-title Falsificación o deficiente documentación
+              p.flag-description Existen casos donde los contratos tienen la documentación errada o incompleta.
+    .full-section
+
+block js
+  script(src="vendors/scrollmagic.min.js")
+  script(src="vendors/debug.min.js")
+  script(src="assets/js/index.js")

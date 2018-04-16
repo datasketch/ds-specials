@@ -1,0 +1,159 @@
+@import 'config/default';
+
+/* MAIN SECTION */
+#main-section {
+  background: $ds-dark-blue;
+  color: white;
+}
+#main-section h1 {
+  color: $ds-blue;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0 0 20px;
+  text-align: center;
+}
+#main-section pre {
+  margin: 0;
+}
+#main-section p {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+/* INTRO SECTION */
+#intro-section {
+  background: $ds-dark-blue;
+}
+#intro-section .intro-section-content {
+  margin: 0 auto;
+  width: 90%;
+}
+#intro-section .splitted {
+  color: white;
+  width: 100%;
+}
+#intro-section .splitted .splitted-text {
+  line-height: 30px;
+  margin: 0 0 75px;
+  opacity: 0;
+  position: relative;
+  transform: translateY(20px) scale(0.8);
+  transition: all 0.8s cubic-bezier(0.6, 0.2, 0.1, 1);
+  visibility: hidden;
+  width: 100%;
+}
+#intro-section .splitted .splitted-text.showed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+}
+#intro-section .splitted .splitted-text:nth-child(odd) {
+  margin-left: auto;
+  text-align: right;
+}
+#intro-section .splitted .splitted-text:after {
+  background: $ds-blue;
+  bottom: -10px;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: auto;
+  width: 85%;
+}
+#intro-section .splitted .splitted-text:nth-child(odd):after {
+  left: auto;
+  right: 0;
+}
+@media only screen and (min-width: 768px) {
+  #intro-section .intro-section-content {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #intro-section .intro-section-content {
+    width: 30%;
+  }
+}
+
+/* VIDEO */
+#video-section h1 {
+  color: gray;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* RED FLAGS */
+#red-flags-section {
+  background: $ds-dark-blue;
+  color: white;
+  position: relative;
+}
+.red-flags-grid {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.red-flags-spacer {
+  margin-top: 25vh !important;
+}
+.red-flags-grid .red-flags-fixed {
+  position: relative;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 45%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 40%;
+  }
+}
+.red-flags-grid .red-flags-fixed h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 20px 0;
+  text-align: right;
+  @media screen and (min-width: 768px) {
+    font-size: 65px;
+  }
+}
+.red-flags-grid .red-flags-fixed pre {
+  margin: 0;
+}
+.red-flags-grid .red-flags-fixed p {
+  font-size: 14px;
+}
+
+.red-flags-scroll {
+  align-self: center;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 45%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 50%;
+  }
+}
+.red-flags-scroll .flag {
+  width: 100%;
+  margin: 0 0 10%;
+  @media screen and (min-width: 992px) {
+    margin: 50% 0;
+    width: 75%;
+  }
+}
+.red-flags-scroll .flag-number {
+  color: $ds-teal;
+  margin: 0 0 15px;
+}
+.red-flags-scroll .flag-title {
+  color: $ds-blue;
+  margin: 0 0 10px;
+}
+.red-flags-scroll .flag-description {
+  margin: 0 0 20px;
+}

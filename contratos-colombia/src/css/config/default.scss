@@ -1,0 +1,63 @@
+@import 'vars';
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* NAVBAR */
+.nav {
+  background: $ds-dark-blue;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.25s linear;
+  width: 100%;
+  z-index: 500;
+}
+.nav img {
+  filter: brightness(0) invert(1);
+}
+.nav.nav-affixed {
+  transform: translateY(-100%);
+}
+.nav.nav-minimized {
+  visibility: hidden;
+}
+.nav.nav-maximized {
+  transform: translateY(0)
+}
+
+/* FOOTER */
+footer {
+  background: $ds-dark-blue;
+  color: white;
+  padding: 20px 0;
+}
+footer .footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+footer p {
+  margin: 0 0 10px;
+}
+footer a {
+  color: inherit;
+}
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-container {
+    width: 75%;
+  } 
+}
+
+/* HELPERS */
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+.font-rubik {
+  font-family: 'Rubik', sans-serif;
+}

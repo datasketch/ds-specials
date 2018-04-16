@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@temp: #006064;
+$temp: #006064;
 
 html {
   font-family: 'Raleway', sans-serif;
 }
 
 nav {
-  background: @temp;
+  background: $temp;
   img {
     filter: brightness(0) invert(1);
   }
 }
 
 footer {
-  background: @temp;
+  background: $temp;
   color: white;
   padding: 2vw;
   .container-small {

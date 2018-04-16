@@ -1,12 +1,13 @@
 const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
 const gulp = require('gulp')
-const less = require('gulp-less')
 const path = require('path')
 const pug = require('gulp-pug')
 const pump = require('pump')
-const uglifyjs = require('gulp-uglify')
+const rename = require('gulp-rename')
+const sass = require('gulp-sass')
 const uglifycss = require('gulp-uglifycss')
+const uglifyjs = require('gulp-uglify')
 const webserver = require('gulp-webserver')
 
 const vendors = path.join(__dirname, 'dist/vendors/')
@@ -14,12 +15,20 @@ const vendors = path.join(__dirname, 'dist/vendors/')
 gulp.task('vendors', function () {
   gulp.src('./node_modules/vue/dist/vue.min.js')
     .pipe(gulp.dest(vendors))
+
+  gulp.src('./node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js')
+    .pipe(rename('scrollmagic.min.js'))
+    .pipe(gulp.dest(vendors))
+
+  gulp.src('./node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js')
+    .pipe(rename('debug.min.js'))
+    .pipe(gulp.dest(vendors))
 })
 
 gulp.task('css', function (cb) {
   pump([
-    gulp.src('./src/css/*.less'),
-    less(),
+    gulp.src('./src/css/*.scss'),
+    sass(),
     autoprefixer(),
     uglifycss(),
     gulp.dest('./dist/assets/css')
@@ -54,7 +63,7 @@ gulp.task('webserver', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('./src/css/*.less', ['css'])
+  gulp.watch('./src/css/**/*.scss', ['css'])
   gulp.watch('./src/js/*.js', ['js'])
   gulp.watch('./src/views/**/*.pug', ['views'])
 })
