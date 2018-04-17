@@ -9,15 +9,16 @@ block css
 block main
   main.fill
     #main-section.full-section.column.centered
-      .container
-        h1.font-rubik
+      .container.text-center
+        h1.font-rubik.font-300.text-blue
           pre.
             LA LETRA
             MENUDA
-        p Descripción del especial
+        p.text-white Descripción del especial
+    
     #intro-section
       .intro-section-content
-        .splitted.column
+        .splitted.column.text-white
           p.splitted-text
             | Cuando el Estado hace acuerdos con personas naturales o empresas -públicas o privadas- para cumplir ciertas tareas, se les conoce como 
             strong contratos públicos.
@@ -27,14 +28,16 @@ block main
             strong al menos en la teoría.
           p.splitted-text: strong Los dineros para esos contratos salen de nuestros bolsillos.
           p.splitted-text La contratación pública se financia con los impuestos que todos pagamos. Por lo tanto, es nuestro derecho y deber hacerle monitoreo al gasto público y saber en qué se está invirtiendo nuestro dinero.
-    #video-section.full-section.column.centered
-      .container
+    
+    #video-section.full-section.column.centered.bg-white
+      .container.text-center
         h1.font-rubik VIDEO DATO
-    #red-flags-section.full-section
+    
+    #red-flags-section.full-section.text-white
       .container
         .red-flags-grid
           .red-flags-fixed
-            h1.font-rubik
+            h1.font-rubik.font-300
               pre.
                 LAS
                 BANDERAS
@@ -43,34 +46,56 @@ block main
               i Las banderas rojas son señales de que algo puede andar mal. No indican que haya corrupción en los contratos, pero sí que hay que poner la lupa sobre ciertos detalles que pudieron pasarse por alto.
             p
               | Si quieres ver todas las banderas rojas da 
-              a(href="#") click acá
+              a.text-teal(href="#") click acá
               | .
           .red-flags-scroll
             .flag
-              h1.flag-number 1 / 6
-              h3.flag-title Errada Evaluación previa
+              h1.flag-number.text-teal 1 / 6
+              h3.flag-titl.text-blue Errada Evaluación previa
               p.flag-description La entidad contratante puede hacer un manejo inadecuado en la apertura de un contrato, puede abrir procesos innecesarios, informales, o con ausencia de actores externos.
             .flag
-              h1.flag-number 2 / 6
-              p.flag-title Posibles sobornos
+              h1.flag-number.text-teal 2 / 6
+              h3.flag-title.text-blue Posibles sobornos
               p.flag-description En algunos casos ha sucedido que el contrato se adjudica por el pago de sobornos. Esto puede suceder cuando el contratista tiene muchos contratos, tiene antecedentes de ilegalidad, o en el contrato se realizan adiciones presupuestales súbitamente.
             .flag
-              h1.flag-number 3 / 6
-              p.flag-title Procesos amañados
+              h1.flag-number.text-teal 3 / 6
+              h3.flag-title.text-blue Procesos amañados
               p.flag-description Los contratos pueden presentar irregularidades cuando es evidente que se está beneficiando algún proponente en específico, cuando hay pliegos de condiciones que son muy específicos e inusuales o cuando no se hace público el contrato.
             .flag
-              h1.flag-number 4 / 6
-              p.flag-title Eliminación de la competencia
+              h1.flag-number.text-teal 4 / 6
+              h3.flag-title.text-blue Eliminación de la competencia
               p.flag-description Esta modalidad se presenta cuando no hay motivos suficientes para no realizar procesos competitivos, o cuando los criterios o la publicidad del contrato no sea anunciado.
             .flag
-              h1.flag-number 5 / 6
-              p.flag-title Conflicto de intereses
+              h1.flag-number.text-teal 5 / 6
+              h3.flag-title.text-blue Conflicto de intereses
               p.flag-description Puede haber una relación estrecha o cercana entre el contratista y el contratante, aún más, cuando no hay una declaración de intereses expresa entre las dos partes.
             .flag
-              h1.flag-number 6 / 6
-              p.flag-title Falsificación o deficiente documentación
+              h1.flag-number.text-teal 6 / 6
+              h3.flag-title.text-blue Falsificación o deficiente documentación
               p.flag-description Existen casos donde los contratos tienen la documentación errada o incompleta.
-    .full-section
+    #law-section.full-section.bg-white
+      .container
+        .law-section-grid
+          .law-section-fixed
+            h1.font-rubik.font-300 LEY 80
+            p Existen reglas y principios de la contratación con el Estado. La Ley 80 de 1993 cuenta con tres principios generales
+          .law-section-scroll
+            .law
+              p
+                span.highlight Principio de transparencia:
+                |  considera que la totalidad de la contratación estatal debe hacerse mediante licitación o concurso público. De esta forma, se pretende evitar que la contratación pública se convierta en un negocio de pocos y se tengan en cuenta todas las opciones con igualdad de condiciones
+            .law
+              p
+                span.highlight Principio de economía:
+                |  pretende reducir los costos de la contratación con el fin de evitar trámites innecesarios que fuera de su costo también incentivan prácticas corruptas. Busca facilitar el acceso de la mayor cantidad de competidores eliminando las posibles barreras de posibles contratistas
+            .law
+              p
+                span.highlight Principio de responsabilidad:
+                |  son mecanismos para que los funcionarios encargados de la contratación respondan con lo pactado. La función de contratar queda en cabeza del representante legal de la entidad que contrata, entonces se reitera la obligación de los servidores públicos de proteger en todo momento los intereses del Estado
+    #secop-section.half-quarter-section.column.centered
+      .container-m.text-white
+        h1.font-300 En el El Sistema Electrónico de Contratación Pública (SECOP),  que es una plataforma web que sirve como instrumento de gestión contractual entre el Estado y proveedores.
+        h2.text-center.font-300: a.text-yellow(href="#") Ver más
 
 block js
   script(src="vendors/scrollmagic.min.js")

@@ -4,6 +4,14 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
+pre {
+  margin: 0;
+}
+
 /* NAVBAR */
 .nav {
   background: $ds-dark-blue;
@@ -54,10 +62,52 @@ footer img {
 }
 
 /* HELPERS */
+// Container
 .container {
   margin: 0 auto;
   width: 90%;
 }
+.container-m {
+  margin: 0 auto;
+  width: 90%;
+  @media screen and (min-width: 768px) {
+    width: 75%;
+  }
+}
+// Fonts
 .font-rubik {
   font-family: 'Rubik', sans-serif;
+}
+.font-300 {
+  font-weight: 300;
+}
+// Backgrounds
+.bg-white {
+  background: white;
+}
+// Text colors
+.text-pink {
+  color: $ds-pink
+}
+.text-violet {
+  color: $ds-violet;
+}
+.text-blue {
+  color: $ds-blue
+}
+.text-teal {
+  color: $ds-teal
+}
+.text-yellow {
+  color: $ds-yellow;
+}
+.text-dark-blue {
+  color: $ds-dark-blue
+}
+.text-white {
+  color: white;
+}
+// Text alignment
+.text-center {
+  text-align: center;
 }

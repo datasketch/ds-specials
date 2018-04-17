@@ -1,37 +1,32 @@
 @import 'config/default';
 
-/* MAIN SECTION */
-#main-section {
+body {
   background: $ds-dark-blue;
-  color: white;
 }
+
+/* MAIN SECTION */
 #main-section h1 {
-  color: $ds-blue;
   font-size: 50px;
-  font-weight: 300;
   margin: 0 0 20px;
-  text-align: center;
-}
-#main-section pre {
-  margin: 0;
 }
 #main-section p {
   font-size: 25px;
   line-height: 30px;
   margin: 0 0 20px;
-  text-align: center;
 }
 
 /* INTRO SECTION */
-#intro-section {
-  background: $ds-dark-blue;
-}
 #intro-section .intro-section-content {
   margin: 0 auto;
   width: 90%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 30%;
+  }
 }
 #intro-section .splitted {
-  color: white;
   width: 100%;
 }
 #intro-section .splitted .splitted-text {
@@ -67,28 +62,15 @@
   left: auto;
   right: 0;
 }
-@media only screen and (min-width: 768px) {
-  #intro-section .intro-section-content {
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #intro-section .intro-section-content {
-    width: 30%;
-  }
-}
 
 /* VIDEO */
 #video-section h1 {
   color: gray;
   font-size: 50px;
-  text-align: center;
 }
 
 /* RED FLAGS */
 #red-flags-section {
-  background: $ds-dark-blue;
-  color: white;
   position: relative;
 }
 .red-flags-grid {
@@ -114,16 +96,13 @@
 }
 .red-flags-grid .red-flags-fixed h1 {
   font-size: 50px;
-  font-weight: 300;
   margin: 20px 0;
   text-align: right;
   @media screen and (min-width: 768px) {
     font-size: 65px;
   }
 }
-.red-flags-grid .red-flags-fixed pre {
-  margin: 0;
-}
+
 .red-flags-grid .red-flags-fixed p {
   font-size: 14px;
 }
@@ -141,19 +120,86 @@
 .red-flags-scroll .flag {
   width: 100%;
   margin: 0 0 10%;
+  &:nth-child(1) {
+    margin: 10% 0;
+  }
   @media screen and (min-width: 992px) {
-    margin: 50% 0;
+    margin: 50% 0 !important;
     width: 75%;
   }
 }
 .red-flags-scroll .flag-number {
-  color: $ds-teal;
   margin: 0 0 15px;
 }
 .red-flags-scroll .flag-title {
-  color: $ds-blue;
   margin: 0 0 10px;
 }
 .red-flags-scroll .flag-description {
   margin: 0 0 20px;
 }
+
+/* LAW SECTION */
+.law-section-grid {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.law-section-grid .law-section-fixed {
+  position: relative;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    align-self: center;
+    width: 45%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 40%;
+  }
+}
+
+// .law-section-spacer {
+//   margin-top: 20vh !important;
+// }
+
+.law-section-grid .law-section-fixed h1 {
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 65px;
+  }
+}
+.law-section-grid .law-section-fixed p {
+  font-size: 14px;
+}
+
+.law-section-grid .law-section-scroll {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 45%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 50%;
+  }
+}
+
+.law {
+  margin: 10% 0;
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    width: 80%;
+  }
+}
+.law p {
+  line-height: 25px;
+}
+.law .highlight {
+  background: $ds-yellow;
+  font-weight: bold;
+}
+
+/* SECOP SECTION */
