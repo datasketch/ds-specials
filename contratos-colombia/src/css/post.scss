@@ -1,0 +1,68 @@
+@import 'config/default';
+
+p, li {
+  font-weight: 300;
+  line-height: 30px;
+}
+p, ul {
+  margin: 0 0 20px;
+}
+li {
+  margin: 0 0 10px;
+}
+.post-title {
+  font-weight: normal;
+  margin: 35px 0;
+  position: relative;
+  &:after {
+    background: black;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+.post-subtitle {
+  font-weight: bold;
+}
+
+/* TEAM */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 20px;
+	.team-member {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		//padding: 2vw;
+		img {
+			border-radius: 50%;
+		}
+		.team-member-info {
+      margin: 1vw 0;
+      a {
+        color: $ds-blue;
+        position: relative;
+        text-decoration: none;
+        &:before {
+          background: $ds-blue;
+          bottom: 0;
+          content: '';
+          height: 1px;
+          left: 0;
+          position: absolute;
+          transform: scaleX(0);
+          transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          width: 100%;
+        }
+        &:hover:before {
+          transform: scaleX(1);
+        }
+      }
+		}
+	}
+}

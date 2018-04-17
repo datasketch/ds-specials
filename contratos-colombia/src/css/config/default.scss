@@ -58,7 +58,7 @@ footer img {
 @media only screen and (min-width: 768px) {
   footer .footer-container {
     width: 75%;
-  } 
+  }
 }
 
 /* HELPERS */
@@ -72,6 +72,16 @@ footer img {
   width: 90%;
   @media screen and (min-width: 768px) {
     width: 75%;
+  }
+}
+.post-container {
+  margin: 0 auto;
+  width: 90%;
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 50%;
   }
 }
 // Fonts
