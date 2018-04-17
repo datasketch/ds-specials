@@ -3,6 +3,25 @@
 body {
   background: $ds-dark-blue;
 }
+.chevron {
+  animation: bounce 0.6s ease-in infinite alternate;
+  border: 2.5px solid $ds-yellow;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+  transform: rotate(-45deg);
+  width: 30px;
+  position: relative;
+}
+
+@keyframes bounce {
+  0% { top: 0px }
+  50% { top: 2.5px }
+  100% { top: 5px }
+}
 
 /* MAIN SECTION */
 #main-section h1 {

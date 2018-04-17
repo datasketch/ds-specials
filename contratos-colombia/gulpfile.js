@@ -23,6 +23,10 @@ gulp.task('vendors', function () {
   gulp.src('./node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js')
     .pipe(rename('debug.min.js'))
     .pipe(gulp.dest(vendors))
+
+  gulp.src('./node_modules/moveto/dist/moveTo.min.js')
+    .pipe(rename('moveto.min.js'))
+    .pipe(gulp.dest(vendors))
 })
 
 gulp.task('css', function (cb) {

@@ -1,4 +1,10 @@
 const controller = new ScrollMagic.Controller()
+const moveTo = new MoveTo({
+  tolerance: 100
+})
+
+const introTrigger = document.querySelector('.chevron')
+moveTo.registerTrigger(introTrigger)
 
 const splittedTexts = Array.from(document.querySelectorAll('.splitted-text'))
 
@@ -17,6 +23,11 @@ updateScene()
 
 function updateScene () {
   const flags = Array.from(document.querySelectorAll('.flag'))
+  
+  if (window.flagScene) {
+    window.flagScene.destroy(true)
+  }
+
   if (!isMobile()) {
     window.flagScene = new ScrollMagic.Scene({
       triggerElement: '#red-flags-section',
@@ -27,8 +38,6 @@ function updateScene () {
       spacerClass: 'red-flags-spacer'
     })
     .addTo(controller)
-  } else if (window.flagScene) {
-    window.flagScene.destroy(true)
   }
 }
 
