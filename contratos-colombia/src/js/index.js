@@ -18,18 +18,23 @@ splittedTexts.forEach(text => {
   .addTo(controller)
 })
 
+window.flagsScene = undefined
 window.flagScene = undefined
 updateScene()
 
 function updateScene () {
   const flags = Array.from(document.querySelectorAll('.flag'))
   
+  if (window.flagsScene) {
+    window.flagsScene.destroy(true)
+  }
+
   if (window.flagScene) {
     window.flagScene.destroy(true)
   }
 
   if (!isMobile()) {
-    window.flagScene = new ScrollMagic.Scene({
+    window.flagsScene = new ScrollMagic.Scene({
       triggerElement: '#red-flags-section',
       triggerHook: 0,
       duration: flags[flags.length - 2].offsetTop + (flags[flags.length - 2].offsetHeight * 0.75)
@@ -38,6 +43,21 @@ function updateScene () {
       spacerClass: 'red-flags-spacer'
     })
     .addTo(controller)
+
+    flags.forEach((flag, index) => {
+      if (index === (flags.length - 1)) return
+      window.flagScene = new ScrollMagic.Scene({
+        triggerElement: flag,
+        triggerHook: 0,
+        offset: (flag.offsetHeight * 0.5) - flag.offsetHeight,
+        duration: flag.offsetHeight + (flag.offsetHeight * 0.5)
+      })
+      .on('progress', event => {
+        const opacity = 1 - event.progress
+        flag.style.opacity = opacity
+      })
+      .addTo(controller)
+    })
   }
 }
 
