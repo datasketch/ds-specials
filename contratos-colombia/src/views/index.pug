@@ -1,96 +1,106 @@
-extends ./partials/layout
+extends ./partials/default
 
 block title
-  title La letra menuda | Datasketch
+  title La letra menuda | Especiales Datasketch
 
 block css
-  script(src="vendors/vue.min.js")
-  style.
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .file-title {
-      font-weight: bold;
-    }
-    .file-size {
-      font-weight: normal;
-    }
+  link(rel="stylesheet", href="assets/css/index.css")
+
 block main
-  main.fill.container-section-post
-    h1 Datos de contratación
-    #app
-      ul
-        li(
-          v-for="(file, index) in files",
-          :key="index"
-        )
-          p.file-title
-            | {{ file.title }} - 
-            small.file-size {{file.size | toMB}}
-          a(:href="file.file") Descargar
+  main.fill
+    #main-section.full-section.column.centered
+      .post-container.text-center
+        h1.font-rubik.font-300.text-blue
+          pre.
+            LA LETRA
+            MENUDA
+        p.text-white.font-300 Les presentamos la letra menuda de los contratos públicos en Colombia
+        a.chevron.chevron-yellow(href="#intro-section")
+    #intro-section
+      .intro-section-content
+        .splitted.column.text-white
+          p.splitted-text
+            | Cuando el Estado hace acuerdos con personas naturales o empresas -públicas o privadas- para cumplir ciertas tareas, se les conoce como 
+            strong contratos públicos.
+          p.splitted-text El Estado no siempre tiene dentro de su poder la facilidad de hacer y prestar todos los bienes y servicios necesarios para toda la población. Además, es la forma de poner las reglas de juego para usar los recursos públicos.
+          p.splitted-text
+            | Con Contratos Públicos el Estado puede materializar su política pública y ejecutar su presupuesto con orden y optimización... 
+            strong al menos en la teoría.
+          p.splitted-text: strong Los dineros para esos contratos salen de nuestros bolsillos.
+          p.splitted-text La contratación pública se financia con los impuestos que todos pagamos. Por lo tanto, es nuestro derecho y deber hacerle monitoreo al gasto público y saber en qué se está invirtiendo nuestro dinero.
+    
+    #video-section.full-section.column.centered.bg-white
+      .container.text-center
+        h1.font-rubik VIDEO DATO
+    
+    #red-flags-section.full-section.text-white
+      .container
+        .red-flags-grid
+          .red-flags-fixed
+            h1.font-rubik.font-300
+              pre.
+                LAS
+                BANDERAS
+                ROJAS
+            p
+              i Las banderas rojas son señales de que algo puede andar mal. No indican que haya corrupción en los contratos, pero sí que hay que poner la lupa sobre ciertos detalles que pudieron pasarse por alto.
+            p
+              | Si quieres ver todas las banderas rojas da 
+              a.text-teal(href="banderas-rojas.html") click acá
+              | .
+          .red-flags-scroll
+            .flag
+              h2.flag-number.text-teal 1 / 6
+              h3.flag-titl.text-blue Errada Evaluación previa
+              p.flag-description La entidad contratante puede hacer un manejo inadecuado en la apertura de un contrato, puede abrir procesos innecesarios, informales, o con ausencia de actores externos.
+            .flag
+              h2.flag-number.text-teal 2 / 6
+              h3.flag-title.text-blue Posibles sobornos
+              p.flag-description En algunos casos ha sucedido que el contrato se adjudica por el pago de sobornos. Esto puede suceder cuando el contratista tiene muchos contratos, tiene antecedentes de ilegalidad, o en el contrato se realizan adiciones presupuestales súbitamente.
+            .flag
+              h2.flag-number.text-teal 3 / 6
+              h3.flag-title.text-blue Procesos amañados
+              p.flag-description Los contratos pueden presentar irregularidades cuando es evidente que se está beneficiando algún proponente en específico, cuando hay pliegos de condiciones que son muy específicos e inusuales o cuando no se hace público el contrato.
+            .flag
+              h2.flag-number.text-teal 4 / 6
+              h3.flag-title.text-blue Eliminación de la competencia
+              p.flag-description Esta modalidad se presenta cuando no hay motivos suficientes para no realizar procesos competitivos, o cuando los criterios o la publicidad del contrato no sea anunciado.
+            .flag
+              h2.flag-number.text-teal 5 / 6
+              h3.flag-title.text-blue Conflicto de intereses
+              p.flag-description Puede haber una relación estrecha o cercana entre el contratista y el contratante, aún más, cuando no hay una declaración de intereses expresa entre las dos partes.
+            .flag
+              h2.flag-number.text-teal 6 / 6
+              h3.flag-title.text-blue Falsificación o deficiente documentación
+              p.flag-description Existen casos donde los contratos tienen la documentación errada o incompleta.
+    #law-section.full-section.bg-white
+      .container
+        .law-section-grid
+          .law-section-fixed
+            h1.font-rubik.font-300 LEY 80
+            p Existen reglas y principios de la contratación con el Estado. La Ley 80 de 1993 cuenta con tres principios generales
+          .law-section-scroll
+            .law
+              p
+                span.highlight Principio de transparencia:
+                |  considera que la totalidad de la contratación estatal debe hacerse mediante licitación o concurso público. De esta forma, se pretende evitar que la contratación pública se convierta en un negocio de pocos y se tengan en cuenta todas las opciones con igualdad de condiciones
+            .law
+              p
+                span.highlight Principio de economía:
+                |  pretende reducir los costos de la contratación con el fin de evitar trámites innecesarios que fuera de su costo también incentivan prácticas corruptas. Busca facilitar el acceso de la mayor cantidad de competidores eliminando las posibles barreras de posibles contratistas
+            .law
+              p
+                span.highlight Principio de responsabilidad:
+                |  son mecanismos para que los funcionarios encargados de la contratación respondan con lo pactado. La función de contratar queda en cabeza del representante legal de la entidad que contrata, entonces se reitera la obligación de los servidores públicos de proteger en todo momento los intereses del Estado
+    #secop-section.half-quarter-section.column.centered
+      .container-m.text-white
+        h3.font-300 El Sistema Electrónico de Contratación Pública (SECOP) es una plataforma web que sirve como instrumento de gestión contractual entre el Estado y proveedores.
+        h3.text-center.font-300: a.text-yellow(href="#" style="font-size: inherit") Ver más
+        a.chevron.chevron-blue(href="#ray")
+    #ray.full-section.bg-white
 
 block js
-  script.
-    new Vue({
-      el: '#app',
-      filters: {
-        toMB: function (val) {
-          return `${val} MB`
-        }
-      },
-      data: {
-        files: [
-          {
-            "title": "Contratos prestación de servicios personas",
-            "file": "tmp-files/contratos-prestacion-de-servicios-personas.csv",
-            "size": 3597.1
-          },
-          {
-            "title": "Redes de contratación",
-            "file": "tmp-files/redes-de-contratacion.csv",
-            "size": 282.5
-          },
-          {
-            "title": "Totales de contratos por entidad, contratista y regiones",
-            "file": "tmp-files/totales-de-contratos-por-entidad-contratista-y-regiones.csv",
-            "size": 234.0
-          },
-          {
-            "title": "Totales de contratos por entidad",
-            "file": "tmp-files/totales-de-contratos-por-entidad.csv",
-            "size": 0.4
-          },
-          {
-            "title": "Totales de contratos por contratista",
-            "file": "tmp-files/totales-de-contratos-por-contratista.csv",
-            "size": 115.1
-          },
-          {
-            "title": "Totales de contratos por region",
-            "file": "tmp-files/totales-de-contratos-por-region.csv",
-            "size": 5.2
-          },
-          {
-            "title": "Totales de contratos por año firma",
-            "file": "tmp-files/totales-de-contratos-por-anno-firma.csv",
-            "size": 0.2
-          },
-          {
-            "title": "Totales contractos por entidad y año",
-            "file": "tmp-files/totales-contractos-por-entidad-y-ano.csv",
-            "size": 7.1
-          },
-          {
-            "title": "Totales contractos por año y region",
-            "file": "tmp-files/totales-contractos-por-ano-y-region.csv",
-            "size": 7.1
-          },
-          {
-            "title": "Totales contractos por entidad y año",
-            "file": "tmp-files/totales-contractos-por-entidad-y-ano.csv",
-            "size": 7.1
-          }
-        ]
-      }
-    })
+  script(src="vendors/moveto.min.js")
+  script(src="vendors/scrollmagic.min.js")
+  script(src="vendors/debug.min.js")
+  script(src="assets/js/index.js")

@@ -1,10 +1,9 @@
 const controller = new ScrollMagic.Controller()
-const moveTo = new MoveTo({
-  tolerance: 100
-})
+const moveTo = new MoveTo()
 
-const introTrigger = document.querySelector('.chevron')
-moveTo.registerTrigger(introTrigger)
+const chevron = document.querySelectorAll('.chevron')
+moveTo.registerTrigger(chevron[0])
+moveTo.registerTrigger(chevron[1])
 
 const splittedTexts = Array.from(document.querySelectorAll('.splitted-text'))
 

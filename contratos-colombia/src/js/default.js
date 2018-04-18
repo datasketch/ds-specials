@@ -8,6 +8,7 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('burger-open')
   menu.classList.toggle('opened')
   document.body.classList.toggle('no-scroll')
+  nav.classList.toggle('activated')
 })
 
 window.addEventListener('scroll', (e) => {
