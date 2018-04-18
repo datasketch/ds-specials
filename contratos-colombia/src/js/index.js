@@ -37,7 +37,7 @@ function updateScene () {
     window.flagsScene = new ScrollMagic.Scene({
       triggerElement: '#red-flags-section',
       triggerHook: 0,
-      duration: flags[flags.length - 2].offsetTop + (flags[flags.length - 2].offsetHeight * 0.75)
+      duration: flags[flags.length - 1].offsetTop - (flags[flags.length - 1].offsetHeight)
     })
     .setPin('.red-flags-fixed', {
       spacerClass: 'red-flags-spacer'

@@ -3,6 +3,37 @@
 body {
   background: $ds-dark-blue;
 }
+
+h1 {
+  font-size: 5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 5.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 6.5rem;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 5.5rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+  // @media screen and (min-width: 992px) {
+  //   font-size: 3rem;
+  // }
+}
+
 .chevron {
   animation: bounce 0.6s ease-in infinite alternate;
   border: 2.5px solid $ds-yellow;
@@ -25,13 +56,25 @@ body {
 
 /* MAIN SECTION */
 #main-section h1 {
-  font-size: 50px;
+  font-size: 5.5rem;
   margin: 0 0 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 6.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 7rem;
+  }
 }
 #main-section p {
-  font-size: 25px;
+  font-size: 2.2rem;
   line-height: 30px;
   margin: 0 0 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 2.6rem
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 2.8rem
+  }
 }
 
 /* INTRO SECTION */
@@ -114,16 +157,18 @@ body {
   }
 }
 .red-flags-grid .red-flags-fixed h1 {
-  font-size: 50px;
   margin: 20px 0;
   text-align: right;
-  @media screen and (min-width: 768px) {
-    font-size: 65px;
-  }
 }
 
 .red-flags-grid .red-flags-fixed p {
-  font-size: 14px;
+  font-size: 1.3rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 1.5rem;
+  }
 }
 
 .red-flags-scroll {
@@ -144,7 +189,7 @@ body {
   }
   @media screen and (min-width: 992px) {
     margin: 50% 0 !important;
-    width: 75%;
+    width: 80%;
   }
 }
 .red-flags-scroll .flag-number {
@@ -185,15 +230,18 @@ body {
 // }
 
 .law-section-grid .law-section-fixed h1 {
-  font-size: 50px;
   margin: 20px 0;
   text-align: center;
-  @media screen and (min-width: 768px) {
-    font-size: 65px;
-  }
 }
+
 .law-section-grid .law-section-fixed p {
-  font-size: 14px;
+  font-size: 1.3rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 1.5rem;
+  }
 }
 
 .law-section-grid .law-section-scroll {

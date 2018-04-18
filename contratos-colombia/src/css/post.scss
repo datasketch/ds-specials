@@ -1,5 +1,12 @@
 @import 'config/default';
 
+h1 {
+  font-size: 2.2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2.7rem;
+  }
+}
+
 p, li {
   font-weight: 300;
   line-height: 30px;
@@ -10,6 +17,7 @@ p, ul {
 li {
   margin: 0 0 10px;
 }
+
 .post-title {
   font-weight: normal;
   margin: 35px 0;
