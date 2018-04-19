@@ -227,9 +227,16 @@ footer img {
 .font-300 {
   font-weight: 300;
 }
+// Images
+.responsive {
+  max-width: 100%;
+}
 // Backgrounds
 .bg-white {
   background: white;
+}
+.bg-yellow {
+  background: $ds-yellow;
 }
 // Text colors
 .text-pink {

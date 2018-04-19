@@ -287,3 +287,44 @@ h3 {
 }
 
 /* SECOP SECTION */
+/* RAY SECTION */
+#scroll {
+  position: relative;
+  padding-bottom: 100vh;
+}
+.scroll__graphics {
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.scroll__graphics.is-fixed {
+  position: fixed;
+}
+.scroll__graphics .chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step {
+  padding: 100vh 0 0;
+}
+.step-inner {
+  background: $ds-yellow;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 90%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 992px) {
+    width: 40%;
+  }
+}
+.step p {
+  line-height: 30px;
+  margin: 0;
+}

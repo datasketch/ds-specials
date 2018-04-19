@@ -21,6 +21,41 @@ window.flagsScene = undefined
 window.flagScene = undefined
 updateScene()
 
+const container = document.getElementById('scroll')
+const graphic = container.querySelector('.scroll__graphics')
+const steps = Array.from(container.querySelectorAll('.step'))
+
+new ScrollMagic.Scene({
+  triggerElement: container,
+  triggerHook: 0,
+  duration: container.offsetHeight
+})
+.on('enter', handleContainerEnter)
+.on('leave', handleContainerExit)
+.addIndicators({
+  name: 'container'
+})
+.addTo(controller)
+
+steps.forEach((step, index) => {
+  new ScrollMagic.Scene({
+    triggerElement: step,
+    triggerHook: 0,
+    duration: step.offsetHeight
+  })
+  .setClassToggle(step, 'is-active')
+  .addTo(controller)
+})
+
+function handleContainerEnter (event) {
+  const { scrollDirection } = event
+  graphic.classList.add('is-fixed')
+}
+
+function handleContainerExit (event) {
+  graphic.classList.remove('is-fixed')
+}
+
 function updateScene () {
   const flags = Array.from(document.querySelectorAll('.flag'))
   

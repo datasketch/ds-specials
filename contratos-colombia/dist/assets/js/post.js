@@ -1,1 +1,1 @@
-"use strict";var spacer=document.querySelector(".spacer");function setSpacerHeight(){var e=document.querySelector(".nav").offsetHeight;console.log(e),spacer.style.height=e+"px"}setSpacerHeight(),window.addEventListener("resize",function(){setSpacerHeight()});
+"use strict";var spacer=document.querySelector(".spacer");function setSpacerHeight(){var e=document.querySelector(".nav").offsetHeight;spacer.style.height=e+"px"}setSpacerHeight(),window.addEventListener("resize",function(){setSpacerHeight()});
