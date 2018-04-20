@@ -40,7 +40,6 @@ const containerScene = new ScrollMagic.Scene({
   triggerHook: 0,
   duration: steps[steps.length - 1].offsetTop + window.innerHeight + steps[steps.length - 1].clientHeight
 })
-.addIndicators()
 .on('enter', handleContainerEnter)
 .on('leave', handleContainerExit)
 .addTo(controller)
