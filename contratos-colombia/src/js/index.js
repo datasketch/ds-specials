@@ -5,6 +5,7 @@ const chevron = document.querySelectorAll('.chevron')
 moveTo.registerTrigger(chevron[0])
 moveTo.registerTrigger(chevron[1])
 
+// Scene for splitted text
 const splittedTexts = Array.from(document.querySelectorAll('.splitted-text'))
 
 splittedTexts.forEach(text => {
@@ -17,26 +18,12 @@ splittedTexts.forEach(text => {
   .addTo(controller)
 })
 
-window.flagsScene = undefined
-window.flagScene = undefined
-updateScene()
-
+// Scene for storytelling section
 const container = document.getElementById('scroll')
 const graphic = container.querySelector('.scroll__graphics')
-const steps = Array.from(container.querySelectorAll('.step'))
+let steps = Array.from(container.querySelectorAll('.step'))
 
-new ScrollMagic.Scene({
-  triggerElement: container,
-  triggerHook: 0,
-  duration: container.offsetHeight
-})
-.on('enter', handleContainerEnter)
-.on('leave', handleContainerExit)
-.addIndicators({
-  name: 'container'
-})
-.addTo(controller)
-
+// Steps
 steps.forEach((step, index) => {
   new ScrollMagic.Scene({
     triggerElement: step,
@@ -46,6 +33,21 @@ steps.forEach((step, index) => {
   .setClassToggle(step, 'is-active')
   .addTo(controller)
 })
+
+// Container
+const containerScene = new ScrollMagic.Scene({
+  triggerElement: container,
+  triggerHook: 0,
+  duration: steps[steps.length - 1].offsetTop + window.innerHeight + steps[steps.length - 1].clientHeight
+})
+.addIndicators()
+.on('enter', handleContainerEnter)
+.on('leave', handleContainerExit)
+.addTo(controller)
+
+window.flagsScene = undefined
+window.flagScene = undefined
+updateScene()
 
 function handleContainerEnter (event) {
   const { scrollDirection } = event
@@ -57,7 +59,11 @@ function handleContainerExit (event) {
 }
 
 function updateScene () {
+  steps = Array.from(container.querySelectorAll('.step'))
   const flags = Array.from(document.querySelectorAll('.flag'))
+  
+  containerScene.duration(steps[steps.length - 1].offsetTop + window.innerHeight + steps[steps.length - 1].clientHeight)
+  containerScene.update(true)
   
   if (window.flagsScene) {
     window.flagsScene.destroy(true)
