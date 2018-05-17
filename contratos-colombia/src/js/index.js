@@ -19,50 +19,104 @@ splittedTexts.forEach(text => {
 })
 
 // Scene for storytelling section
-const container = document.getElementById('scroll')
-const graphic = container.querySelector('.scroll__graphics')
-let steps = Array.from(container.querySelectorAll('.step'))
+const initialScroll = document.getElementById('first_scroll')
+const initialGraphics = initialScroll.querySelector('.first_scroll__graphics')
+let initialSteps = Array.from(initialScroll.querySelectorAll('.first_scroll_step'))
 
-// Steps
-steps.forEach((step, index) => {
+const secondScroll = document.getElementById('second_scroll')
+const secondGraphics = secondScroll.querySelector('.second_scroll__graphics')
+let secondSteps = Array.from(secondScroll.querySelectorAll('.second_scroll_step'))
+
+initialSteps.forEach((step, index) => { // Steps - initial scroll
   new ScrollMagic.Scene({
     triggerElement: step,
     triggerHook: 0,
     duration: step.offsetHeight
   })
   .setClassToggle(step, 'is-active')
+  .on('enter', handleStepEnter)
+  .on('leave', handleStepExit)
   .addTo(controller)
 })
 
-// Container
-const containerScene = new ScrollMagic.Scene({
-  triggerElement: container,
-  triggerHook: 0,
-  duration: steps[steps.length - 1].offsetTop + window.innerHeight + steps[steps.length - 1].clientHeight
+secondSteps.forEach((step, index) => { // Steps - initial scroll
+  new ScrollMagic.Scene({
+    triggerElement: step,
+    triggerHook: 0,
+    duration: step.offsetHeight
+  })
+  .setClassToggle(step, 'is-active')
+  .on('enter', handleStepEnter)
+  .on('leave', handleStepExit)
+  .addTo(controller)
 })
-.on('enter', handleContainerEnter)
-.on('leave', handleContainerExit)
+
+function handleStepEnter (event) {
+  const element = event.target.triggerElement()
+  const id = element.dataset.chart
+  if (id) {
+    document.getElementById(id).classList.add('visible')
+  }
+}
+
+function handleStepExit (event) {
+  const element = event.target.triggerElement()
+  const id = element.dataset.chart
+  if (id) {
+    document.getElementById(id).classList.remove('visible')
+  }
+}
+
+const initialScrollContainer = new ScrollMagic.Scene({ // Container - initial scroll
+  triggerElement: initialScroll,
+  triggerHook: 0,
+  duration: initialSteps[initialSteps.length - 1].offsetTop + window.innerHeight + initialSteps[initialSteps.length - 1].clientHeight
+})
+.on('enter', handleFirstContainerEnter)
+.on('leave', handleFirstContainerExit)
+.addTo(controller)
+
+const secondScrollContainer = new ScrollMagic.Scene({ // Container - second scroll
+  triggerElement: secondScroll,
+  triggerHook: 0,
+  duration: secondSteps[secondSteps.length - 1].offsetTop + window.innerHeight + secondSteps[secondSteps.length - 1].clientHeight
+})
+.on('enter', handleSecondContainerEnter)
+.on('leave', handleSecondContainerExit)
 .addTo(controller)
 
 window.flagsScene = undefined
 window.flagScene = undefined
 updateScene()
 
-function handleContainerEnter (event) {
+function handleFirstContainerEnter (event) {
   const { scrollDirection } = event
-  graphic.classList.add('is-fixed')
+  initialGraphics.classList.add('is-fixed')
 }
 
-function handleContainerExit (event) {
-  graphic.classList.remove('is-fixed')
+function handleFirstContainerExit (event) {
+  initialGraphics.classList.remove('is-fixed')
+}
+
+function handleSecondContainerEnter (event) {
+  const { scrollDirection } = event
+  secondGraphics.classList.add('is-fixed')
+}
+
+function handleSecondContainerExit (event) {
+  secondGraphics.classList.remove('is-fixed')
 }
 
 function updateScene () {
-  steps = Array.from(container.querySelectorAll('.step'))
+  initialSteps = Array.from(initialScroll.querySelectorAll('.first_scroll_step'))
+  secondSteps = Array.from(secondScroll.querySelectorAll('.second_scroll_step'))
   const flags = Array.from(document.querySelectorAll('.flag'))
   
-  containerScene.duration(steps[steps.length - 1].offsetTop + window.innerHeight + steps[steps.length - 1].clientHeight)
-  containerScene.update(true)
+  initialScrollContainer.duration(initialSteps[initialSteps.length - 1].offsetTop + window.innerHeight + initialSteps[initialSteps.length - 1].clientHeight)
+  initialScrollContainer.update(true)
+
+  secondScrollContainer.duration(secondSteps[secondSteps.length - 1].offsetTop + window.innerHeight + secondSteps[secondSteps.length - 1].clientHeight)
+  secondScrollContainer.update(true)
   
   if (window.flagsScene) {
     window.flagsScene.destroy(true)

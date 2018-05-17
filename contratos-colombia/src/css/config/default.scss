@@ -224,6 +224,11 @@ footer img {
     width: 50%;
   }
 }
+.post-container img {
+  display: block;
+  margin-bottom: 0 auto 20px;
+  max-width: 100%;
+}
 // Fonts
 .font-rubik {
   font-family: 'Rubik', sans-serif;
@@ -247,6 +252,9 @@ footer img {
 }
 .bg-dark-blue {
   background-color: $ds-dark-blue;
+}
+.bg-teal {
+  background-color: $ds-teal;
 }
 // Text colors
 .text-pink {
