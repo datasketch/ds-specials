@@ -312,7 +312,7 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
   visibility: hidden;
   &.visible {
     opacity: 1;
@@ -368,5 +368,10 @@ h3 {
  .stalker-link {
    flex-direction: row;
    align-items: center;
+   .stalker-text {
+    h2 {
+      margin: 0 0 15px 15px;
+    }
+  }
  }   
 }

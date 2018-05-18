@@ -7,15 +7,20 @@ h1 {
   }
 }
 
-p, li {
+p, li, blockquote {
   font-weight: 300;
   line-height: 30px;
 }
-p, ul {
+p, ul, blockquote {
   margin: 0 0 20px;
 }
 li {
   margin: 0 0 10px;
+}
+blockquote {
+  font-size: 2rem;
+  padding: 0 0 0 15px;
+  border-left: $ds-dark-blue 5px solid;
 }
 
 .post-title {

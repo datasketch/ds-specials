@@ -7,8 +7,17 @@ html
     meta(name="theme-color" content="#0A092B")
     block meta
     block title
+    link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="/favicon.ico" type="image/x-icon")
     link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/randommonkey/ds.css/dist/ds.min.css")
     block css
+    //- Global site tag (gtag.js) - Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-110184023-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-110184023-1');
   body
     #wrapper
       include ./navbar
