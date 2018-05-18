@@ -287,8 +287,12 @@ h3 {
 }
 
 /* SECOP SECTION */
+#secop-section p {
+  font-size: 2rem;
+}
 /* RAY SECTION */
-#first_scroll {
+#first_scroll,
+#second_scroll {
   position: relative;
   padding-bottom: 100vh;
 }
@@ -317,6 +321,9 @@ h3 {
 }
 .step {
   border-top: 100vh solid transparent;
+  &:nth-child(1) {
+    border-top-width: 50vh;
+  }
   // padding: 100vh 0 0;
 }
 .step-inner {
@@ -341,4 +348,25 @@ h3 {
   p {
     line-height: 30px;
   }
+}
+
+.stalker-link {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 200px;
+    align-self: center;
+    filter: brightness(0) invert(1);
+  }
+  .stalker-text {
+    h2 {
+      margin: 0 0 15px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+ .stalker-link {
+   flex-direction: row;
+   align-items: center;
+ }   
 }

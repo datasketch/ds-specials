@@ -21,7 +21,7 @@ block main
         img.responsive(src="assets/media/gifs/map_transparent.gif", alt="")
         .splitted.column.text-white
           p.splitted-text
-            | Cuando el Estado hace acuerdos con personas naturales o empresas -públicas o privadas- para cumplir ciertas tareas, se les conoce como
+            | Cuando el Estado hace acuerdos con personas naturales o empresas -públicas o privadas- para cumplir ciertas tareas, se les conoce como 
             strong contratos públicos.
           p.splitted-text El Estado no siempre tiene dentro de su poder la facilidad de hacer y prestar todos los bienes y servicios necesarios para toda la población. Además, es la forma de poner las reglas de juego para usar los recursos públicos.
           p.splitted-text
@@ -45,7 +45,7 @@ block main
             p
               i Las banderas rojas son señales de que algo puede andar mal. No indican que haya corrupción en los contratos, pero sí que hay que poner la lupa sobre ciertos detalles que pudieron pasarse por alto.
             p
-              | Si quieres ver todas las banderas rojas da
+              | Si quieres ver todas las banderas rojas da 
               a.text-teal(href="banderas-rojas.html") click acá
               | .
           .red-flags-scroll
@@ -101,7 +101,7 @@ block main
           |  en nuestro diagnóstico de los datos.
         p Los datos de contratación pública en Colombia, a pesar de sus problemas de calidad de información no dejan de ser unos de los sistemas con mejor cobertura de América Latina. Y aunque sí se han utilizado para investigar casos puntuales de corrupción existe una deuda con la sociedad de utilizarlos en masa para generar otros cambios.
         p Analizamos 6.2M de contratos...esto fue lo que encontramos
-        a.chevron.chevron-blue(href="#scroll")
+        a.chevron.chevron-blue(href="#first_scroll")
     #first_scroll.bg-dark-blue
       .scroll__graphics.first_scroll__graphics
         .chart#spin-1
@@ -162,7 +162,12 @@ block main
         .step.second_scroll_step(data-chart="spin-9")
           .step-inner
             p También, los tipos contratos que han tenido mayores adiciones corresponden a los contratos de prestación de servicios.
-    .bg-teal.half-section
+    #stalker.bg-teal.half-section.column.v-centered.text-white
+      .container
+        a.stalker-link.text-white(href="stalker-de-la-contratacion.html")
+          img(src="assets/media/stalker.svg", alt="stalker")
+          .stalker-text
+            h2 El Stacker de la contratación
 
 block js
   script(src="vendors/moveto.min.js")
