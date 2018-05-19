@@ -23,7 +23,7 @@ block main
           p.splitted-text
             | El Estado hace acuerdos con personas naturales o empresas -públicas o privadas- para cumplir ciertas tareas, estos son los 
             strong contratos públicos.
-            |  Cada año se liberan más datos en 2017 se publicaron XX.
+            |  Cada año se liberan más datos. En 2017, se publicaron 1.1 millones.
           p.splitted-text Esto sucede porque el Estado no siempre tiene dentro de su poder la facilidad de hacer y prestar todos los bienes y servicios necesarios para la población. Además, es la forma de poner las reglas de juego para usar los recursos públicos.
           p.splitted-text: strong Los dineros para esos contratos salen de nuestros bolsillos, con nuestros impuestos.
           p.splitted-text
@@ -86,6 +86,7 @@ block main
         a.chevron.chevron-blue(href="#first_scroll")
     #first_scroll.bg-dark-blue
       .scroll__graphics.first_scroll__graphics
+        .chart#watch.full-chart(style="background: url(assets/media/gifs/watch.gif) no-repeat center center; background-size: cover")
         .chart#spin-1
           img.responsive(src="assets/media/spin/1.png", alt="Número de contratos")
         .chart#spin-2
@@ -95,13 +96,13 @@ block main
         .chart#spin-4
           img.responsive(src="assets/media/spin/1.png", alt="Número de contratos")
       .scroll__text.first_scroll__text
-        .step.first_scroll_step
+        .step.first_scroll_step(data-chart="watch")
           .step-inner
             p En 2017 el estado colombiano suministró al menos 383 billones de pesos a contratos públicos, es decir alrededor de 12 millones de pesos por segundo.
-        .step.first_scroll_step
+        .step.first_scroll_step(data-chart="watch")
           .step-inner
             p Se estima que por corrupción en Colombia, se pueden perder hasta 50 billones de pesos en un año, o el equivalente a 1 millón y medio de pesos por segundo. En consecuencia, los corruptos desaparecen más del 10% de la inversión reportada en contratos del país.
-        .step.first_scroll_step
+        .step.first_scroll_step(data-chart="watch")
           .step-inner
             p Si bien la base de datos es grande, el reporte de información es voluntario. Así, los resultados de análisis se deben manejar con cuidado, ya que cualquier conclusión puede ser sobre las entidades que reportan y no necesariamente sobre tendencias nacionales.
         .step.first_scroll_step(data-chart="spin-1")
