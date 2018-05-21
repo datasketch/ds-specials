@@ -324,6 +324,11 @@ h3 {
     visibility: visible;
   }
 }
+.scroll__graphics .chart.full-chart {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
 .step {
   border-top: 100vh solid transparent;
   &:nth-child(1) {
