@@ -1,0 +1,46 @@
+@import 'vars';
+@import 'mixins';
+
+/* NAVBAR */
+.nav {
+  background: purple;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.25s linear;
+  width: 100%;
+  z-index: 500;
+  @include burger(white);
+}
+.nav img {
+  filter: brightness(0) invert(1);
+  transition: all 0.25s linear;
+}
+.nav.activated {
+  @include burger(black);
+  img {
+    filter: brightness(0) invert(0);
+  }
+}
+.nav.nav-affixed {
+  transform: translateY(-100%);
+}
+.nav.nav-minimized {
+  visibility: hidden;
+}
+.nav.nav-maximized {
+  transform: translateY(0)
+}
+.menu {
+  background: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: all 250ms ease-in;
+  width: 0;
+  &.opened {
+    width: 100%;
+  }
+}
