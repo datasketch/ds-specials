@@ -23,5 +23,8 @@
     "gulp-uglifycss": "^1.0.9",
     "gulp-webserver": "^0.9.1",
     "pump": "^3.0.0"
+  },
+  "dependencies": {
+    "webfontloader": "^1.6.28"
   }
 }

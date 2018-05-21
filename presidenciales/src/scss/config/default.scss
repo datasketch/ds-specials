@@ -1,46 +1,59 @@
+// Order: vars, mixins, others
 @import 'vars';
 @import 'mixins';
+@import 'nav';
 
-/* NAVBAR */
-.nav {
-  background: purple;
-  position: fixed;
-  top: 0;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.25s linear;
-  width: 100%;
-  z-index: 500;
-  @include burger(white);
+body {
+  font-family: 'Press Start 2P', cursive;
 }
-.nav img {
-  filter: brightness(0) invert(1);
-  transition: all 0.25s linear;
+// Images
+figure {
+  margin: 0 0 20px;
 }
-.nav.activated {
-  @include burger(black);
-  img {
-    filter: brightness(0) invert(0);
-  }
+figure img {
+  margin: auto;
+  max-width: 100%;
 }
-.nav.nav-affixed {
-  transform: translateY(-100%);
+figcaption {
+  border-radius: 4px;
+  border: 1px solid #000000;
+  margin: 5px 0 0 0;
+  padding: 10px;
+  position: relative;
 }
-.nav.nav-minimized {
-  visibility: hidden;
-}
-.nav.nav-maximized {
-  transform: translateY(0)
-}
-.menu {
-  background: rgba(255, 255, 255, 0.9);
-  height: 100vh;
-  left: 0;
-  overflow: hidden;
+figcaption:before {
+  border-radius: 4px;
+  border: 1px solid #000000;
+  bottom: 2px;
+  content: '';
+  left: 2px;
   position: absolute;
-  top: 0;
-  transition: all 250ms ease-in;
-  width: 0;
-  &.opened {
-    width: 100%;
-  }
+  right: 2px;
+  top: 2px;
+}
+// Layout
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+}
+
+// Fonts
+.font-exo {
+  font-family: 'Exo 2', sans-serif;
+}
+.font-press {
+  font-family: 'Press Start 2P', cursive;
+}
+// Background
+.bg-blue {
+  background-color: $ds-blue;
+}
+.bg-bluegray {
+  background-color: $ds-bluegray;
+}
+
+// Text
+.text-yellow-primary {
+  color: $ds-yellow-primary;
 }
