@@ -6,6 +6,9 @@
 body {
   font-family: 'Press Start 2P', cursive;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 // Images
 figure {
   margin: 0 0 20px;
@@ -56,4 +59,7 @@ figcaption:before {
 // Text
 .text-yellow-primary {
   color: $ds-yellow-primary;
+}
+.text-center {
+  text-align: center;
 }

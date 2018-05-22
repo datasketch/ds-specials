@@ -1,5 +1,5 @@
 .nav {
-  background: $ds-blue;
+  background: $ds-bluegray;
   position: fixed;
   top: 0;
   transform: translate3d(0, 0, 0);
@@ -10,13 +10,6 @@
 }
 .nav img {
   filter: brightness(0) invert(1);
-  transition: all 0.25s linear;
-}
-.nav.activated {
-  @include burger(black);
-  img {
-    filter: brightness(0) invert(0);
-  }
 }
 .nav.nav-affixed {
   transform: translateY(-100%);
@@ -28,7 +21,7 @@
   transform: translateY(0)
 }
 .menu {
-  background: rgba(255, 255, 255, 0.9);
+  background: $ds-bluegray;
   height: 100vh;
   left: 0;
   overflow: hidden;
@@ -39,4 +32,41 @@
   &.opened {
     width: 100%;
   }
+}
+.menu-link {
+  margin: 10px 0;
+  text-decoration: none;
+  position: relative;
+  margin-left: 0;
+}
+.menu-link:before {
+  background-size: cover;
+  background: url(../media/hand.svg) no-repeat center center;
+  content: '';
+  display: none;
+  height: 32px;
+  margin-right: 5px;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  transform: translateY(-25%);
+  width: 32px;
+}
+.menu-link:after {
+  background: $ds-yellow-primary;
+  bottom: -1px;
+  content: '';
+  display: none;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.menu-link:hover {
+  border-bottom: 1px solid $ds-yellow-primary;
+  margin-left: 32px;
+}
+.menu-link:hover:before,
+.menu-link:hover:after {
+  display: block;
 }
