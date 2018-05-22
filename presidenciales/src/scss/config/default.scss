@@ -3,12 +3,23 @@
 @import 'mixins';
 @import 'nav';
 
+html,
 body {
   font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
 }
 body.no-scroll {
   overflow: hidden;
 }
+
+// Reset
+* {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 2rem;
+}
+
 // Images
 figure {
   margin: 0 0 20px;
@@ -34,6 +45,7 @@ figcaption:before {
   right: 2px;
   top: 2px;
 }
+
 // Layout
 .container {
   margin: 0 auto;
@@ -48,6 +60,7 @@ figcaption:before {
 .font-press {
   font-family: 'Press Start 2P', cursive;
 }
+
 // Background
 .bg-blue {
   background-color: $ds-blue;
@@ -62,4 +75,17 @@ figcaption:before {
 }
 .text-center {
   text-align: center;
+}
+
+// Breakpoints
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
