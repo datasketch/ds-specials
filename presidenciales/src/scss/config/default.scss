@@ -13,7 +13,7 @@ body.no-scroll {
 }
 
 // Reset
-* {
+p, ul {
   font-size: 1.5rem;
 }
 h1 {
@@ -67,6 +67,9 @@ figcaption:before {
 }
 .bg-bluegray {
   background-color: $ds-bluegray;
+}
+.bg-green {
+  background-color: $ds-green; 
 }
 
 // Text

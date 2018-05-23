@@ -25,6 +25,8 @@
     "pump": "^3.0.0"
   },
   "dependencies": {
+    "tabletop": "^1.5.2",
+    "vue": "^2.5.16",
     "webfontloader": "^1.6.28"
   }
 }
