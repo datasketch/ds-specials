@@ -50,7 +50,7 @@ const app = new Vue({
   },
   methods: {
     getReports () {
-      fetch('../../data/data.json')
+      fetch('data/data.json')
         .then(res => res.json())
         .then(json => {
           this.reports = json.sort((a, b) => b.number - a.number)
@@ -59,9 +59,6 @@ const app = new Vue({
     },
     getRandomInt (min, max) {
       return Math.floor(Math.random() * (max - min)) + min
-    },
-    showControls () {
-      
     }
   }
 })
