@@ -1,5 +1,28 @@
 @import './config/default';
-
+#app {
+  padding: 0 0 56.25% 0;
+  position: relative;
+  width: 100%;
+}
+#gif-placeholder {
+  background-size: cover !important;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.refresh {
+  background: $ds-green;
+  border-color: rgb(0, 89, 0);
+  color: white;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  // left: 10px;
+  padding: 10px;
+  // position: absolute;
+  // top: 10px;
+}
 // Video
 .video-manager {
   background: $ds-bluegray;

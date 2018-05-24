@@ -20,24 +20,26 @@ function onBurgerClick () {
   nav.classList.toggle('activated')
 }
 
+// Should refactor this listener
 function onWindowScroll (e) {
   const scrollValue = window.scrollY
   const navHeight = nav.offsetHeight
   if (scrollValue > navHeight) {
-    nav.classList.add('nav-affixed')
     if (lastScrollPosition >= scrollValue) {
-      lastScrollPosition = scrollValue
+      resetNav()
+    } else {
+      nav.classList.remove('nav-affixed')
       nav.classList.remove('nav-minimized')
       nav.classList.add('nav-maximized')
-    } else {
-      lastScrollPosition = scrollValue
-      if (!menu.classList.contains('opened')) {
-        nav.classList.remove('nav-maximized')
-        nav.classList.add('nav-minimized')
-      }
     }
     lastScrollPosition = scrollValue
   } else if (scrollValue <= navHeight) {
-    nav.classList.remove('nav-affixed')
+    resetNav()
   }
+}
+
+function resetNav () {
+  nav.classList.add('nav-affixed')
+  nav.classList.add('nav-minimized')
+  nav.classList.remove('nav-maximized')
 }

@@ -8,6 +8,25 @@ block css
 
 block main
   main.fill
+    #app
+      #gif-placeholder(:style="background")
+        button.refresh(@click="getReports") Refrescar
+        select(v-model="department")
+          option(v-for="(dpto, index) in departments" :key="index") {{ dpto }}
+        select(v-model="report")
+          option(v-for="(r, index) in reports" :value="r") Reporte {{ r.number }}
+        table
+          thead
+            tr
+              th Nombre
+              th # Votos
+              th Porcentaje
+          tbody
+            tr(v-for="(row, index) in results" :key="index")
+              td {{ row.name }}
+              td {{ row.votes }}
+              td {{ row.percentage }}
+
     .half-section.column.v-centered.bg-bluegray
       .container.text-yellow-primary
         h1.text-center.main-title RUN PRESIDENT, RUN
@@ -45,4 +64,5 @@ block main
           | Ver más
 
 block js
+  script(src="vendors/vue.min.js")
   script(src="assets/js/index.js")
