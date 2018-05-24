@@ -59,6 +59,9 @@ const app = new Vue({
     },
     getRandomInt (min, max) {
       return Math.floor(Math.random() * (max - min)) + min
+    },
+    showControls () {
+      
     }
   }
 })

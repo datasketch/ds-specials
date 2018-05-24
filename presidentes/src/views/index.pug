@@ -9,23 +9,25 @@ block css
 block main
   main.fill
     #app
-      #gif-placeholder(:style="background")
-        button.refresh(@click="getReports") Refrescar
+      .app-controls
+        button.refresh(@click="getReports"): small Refrescar
         select(v-model="department")
           option(v-for="(dpto, index) in departments" :key="index") {{ dpto }}
         select(v-model="report")
           option(v-for="(r, index) in reports" :value="r") Reporte {{ r.number }}
-        table
+        table.results
           thead
             tr
-              th Nombre
-              th # Votos
-              th Porcentaje
+              th: small Nombre
+              th: small Votos
+              th: small %
           tbody
             tr(v-for="(row, index) in results" :key="index")
-              td {{ row.name }}
-              td {{ row.votes }}
-              td {{ row.percentage }}
+              td: small {{ row.name }}
+              td: small {{ row.votes }}
+              td: small {{ row.percentage }}
+      #gif-container
+        #gif(:style="background")
 
     .half-section.column.v-centered.bg-bluegray
       .container.text-yellow-primary
