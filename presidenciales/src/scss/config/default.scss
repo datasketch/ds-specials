@@ -12,8 +12,33 @@ body.no-scroll {
   overflow: hidden;
 }
 
+// Footer
+footer {
+  font-size: small !important;
+  padding: 20px 0;
+}
+footer .footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+footer p {
+  margin: 0 0 10px;
+}
+footer a {
+  color: inherit;
+}
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  footer .footer-container {
+    width: 75%;
+  }
+}
+
 // Reset
-p, ul {
+p, ul, a {
   font-size: 1.5rem;
 }
 h1 {

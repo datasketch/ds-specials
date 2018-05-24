@@ -13,6 +13,20 @@ html(lang="en")
     #wrapper
       include ./nav
       block main
+      footer.bg-bluegray
+        .footer-container
+          .text-yellow-primary
+            p
+              | Este es un trabajo de periodismo de datos del 
+              a(href="equipo.html") equipo
+              |  de Datasketch. Revisa cómo hicimos este especial en la 
+              a(href="metodologia.html") metodología
+              | .
+            p
+              | Todo el material en esta página es 
+              a(href="") CC-BY-SA
+              |  . Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.
+            img.column.centered(src="assets/media/cc.png", alt="")
     script(src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js")
     script(src="assets/js/default.js")
     block js
