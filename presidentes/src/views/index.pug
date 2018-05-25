@@ -10,7 +10,9 @@ block main
   main.fill
     #app
       .app-controls
-        button.refresh(@click="getReports"): small Refrescar
+        button.refresh.line.centered(@click="getReports")
+          small ACTUALIZAR
+          img(src="assets/media/refresh.svg", alt="")
         select(v-model="department")
           option(v-for="(dpto, index) in departments" :key="index") {{ dpto }}
         select(v-model="report")
@@ -18,9 +20,11 @@ block main
         table.results
           thead
             tr
-              th: small Nombre
-              th: small Votos
-              th: small %
+              th(colspan="3" style="text-align: center") SCORE
+            tr
+              th Nombre
+              th Votos
+              th %
           tbody
             tr(v-for="(row, index) in results" :key="index")
               td: small {{ row.name }}
