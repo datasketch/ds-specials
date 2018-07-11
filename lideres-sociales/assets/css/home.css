@@ -64,6 +64,53 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sign-banner {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.sign-banner img {
+  max-width: 100%;
+}
+.sign-banner .externals {
+  align-items: center;
+  display: flex;
+  flex-grow: 2;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #0f2f3f;
+}
+.sign-banner .externals a {
+  background: #cdff00;;
+  border-width: 3px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 35px 7px;
+}
+.sign-banner .externals a:hover {
+  text-decoration: none;
+}
+.sign-banner .logos {
+  align-items: center;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sign-banner .media-image { 
+  min-width: 0;
+}
+
+.sign-banner .media-image img {
+  width: 150px;
+  max-width: 100%;
+}
+
+.sign-banner .logos img {
+  max-width: 100%;
+}
 .home-section {
   height: 105vh;
   position: relative;
