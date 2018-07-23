@@ -222,3 +222,7 @@ video {
     background-size: cover !important;
   }
 }
+/* Calendar */
+.tui-full-calendar-popup-section {
+  height: auto !important;
+}
