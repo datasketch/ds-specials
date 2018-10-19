@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  src: url(~assets/fonts/PT_Sans-Web-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  src: url(~assets/fonts/PT_Sans-Web-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-weight: 400;
+  src: url(~assets/fonts/PT_Sans-Narrow-Web-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-weight: 700;
+  src: url(~assets/fonts/PT_Sans-Narrow-Web-Bold.ttf);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  word-spacing: 1px;
+}
+
+#__nuxt, #__layout {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+}
