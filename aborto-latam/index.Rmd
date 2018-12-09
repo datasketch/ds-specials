@@ -1,0 +1,11 @@
+---
+site: blogdown:::blogdown_site
+---
+
+{{< banner
+  height = "60"
+  title = "Aborto en Colombia"
+  color = "black"
+  bg = "#280003"
+>}}
+{{< /banner >}}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Titi</title>
+    <link>/</link>
+    <description>Recent content in Home on Titi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Dec 2018 10:44:50 -0500</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>descargue Los Datos</title>
+      <link>/posts/descargue-los-datos/</link>
+      <pubDate>Sun, 09 Dec 2018 10:44:50 -0500</pubDate>
+      
+      <guid>/posts/descargue-los-datos/</guid>
+      <description>Descargue los datos
+Descargue los datos
+Descargue los datos</description>
+    </item>
+    
+    <item>
+      <title>Radiografía</title>
+      <link>/posts/radiografia/</link>
+      <pubDate>Sun, 09 Dec 2018 10:35:11 -0500</pubDate>
+      
+      <guid>/posts/radiografia/</guid>
+      <description>Radiografía del aborto en Colombia    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</description>
+    </item>
+    
+    <item>
+      <title>Brecha Para Acceder Al Aborto en Colombia</title>
+      <link>/posts/brecha-para-acceder-al-aborto/</link>
+      <pubDate>Sun, 09 Dec 2018 10:32:04 -0500</pubDate>
+      
+      <guid>/posts/brecha-para-acceder-al-aborto/</guid>
+      <description>Brecha Para Acceder Al Aborto en Colombia    ¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</description>
+    </item>
+    
+    <item>
+      <title>Posición Del Congreso Frente Al Aborto</title>
+      <link>/posts/posici%C3%B3n-del-congreso-frente-al-aborto/</link>
+      <pubDate>Sun, 09 Dec 2018 10:14:52 -0500</pubDate>
+      
+      <guid>/posts/posici%C3%B3n-del-congreso-frente-al-aborto/</guid>
+      <description>Posición Del Congreso Frente Al Aborto    ¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</description>
+    </item>
+    
+    <item>
+      <title>Los pros y los contra del aborto</title>
+      <link>/posts/cara-a-cara/</link>
+      <pubDate>Sun, 09 Dec 2018 10:11:49 -0500</pubDate>
+      
+      <guid>/posts/cara-a-cara/</guid>
+      <description>Los pros y los contra del aborto    ¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Metodología</title>
+      <link>/metodologia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/metodologia/</guid>
+      <description>This is how we built this page. First we Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>

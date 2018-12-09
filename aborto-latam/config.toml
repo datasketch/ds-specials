@@ -1,0 +1,58 @@
+baseURL = "/"
+title = "Aborto en América Latina"
+theme = "hugo-titi"
+disqusShortname = "datasketch"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "../docs/aborto-latam"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[menu]
+  [[menu.burger]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Metodología"
+    url = "/metodologia"
+    weight = 1
+
+[params]
+  # SEO general site description
+  description = "Site SEO description"
+
+  # Custom css and js
+  css = []
+  js = []
+
+  # External css and js
+  [params.vendors]
+    css = []
+    js = []
+
+  [params.fonts]
+    body = "Karla"
+    headings = "Spectral"
+
+  [params.nav]
+    bg = "#C2847A"
+    color = "white"
+    logo = "images/logoblanco.png"
+    logoWidth = "150px"
+    fixed = true
+
+  [[params.social]]
+    icon = "twitter"
+    url = "https://twitter.com/datasketch"
+  [[params.social]]
+    icon = "facebook"
+    url = "https://www.facebook.com/datasketch/"
+  [[params.social]]
+    icon = "instagram"
+    url = "https://www.instagram.com/datasketch/"
+
+  [params.footer]
+    text = "Todo el material en esta página es [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web."
+    bg = "#280003"
+    color = "white"
