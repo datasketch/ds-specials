@@ -1,0 +1,62 @@
+extends ./blocks/head
+
+block title
+	title Recetas prohibidas | Especiales Datasketch
+
+block meta
+	meta(name='description', content='Testículos de tortuga y sangre de toro fresca son dos de los ingredientes exóticos presentes en la gastronomía colombiana.')
+	meta(property='og:title', content='Conoce las recetas prohibidas de la cocina colombiana')
+	meta(property='og:type', content='article')
+	meta(property='og:url', content='http://especiales.datasketch.co/cocina-colombiana/recetas-prohibidas.html')
+	meta(property='og:image', content='http://especiales.datasketch.co/cocina-colombiana/assets/media/banner.jpg')
+	meta(property="og:description" content="Testículos de tortuga y sangre de toro fresca son dos de los ingredientes exóticos presentes en la gastronomía colombiana.")
+	meta(property="og:locale" content="es_CO")
+
+block css
+	link(rel="stylesheet", href="assets/css/post.css")
+
+block header
+	include ./blocks/post-header.pug
+
+block main
+	.container-x-small
+		h1.post-title.slab.slab-semibold En Colombia se cocina con sangre de toro fresca y picha de tortuga 
+		img.img-header.img-center(src="http://res.cloudinary.com/randommonkey/image/upload/q_auto:eco/v1513285092/especiales/cocina-colombiana/tortuga.jpg", alt="Tortuga")
+		.post-content.josefin-light.text-size-large
+			p La cocina colombiana está caracterizada por el mestizaje de las prácticas indígenas, españolas, negras y mestizas. Muchos de los platos que conocemos hoy, son producto de la observación y apropiación del entorno: los cocineros tradicionales se valían de aquello que estaba a su alrededor para preparar sus platos.
+			p Por ello, hoy en el país se cocina con achiote, que es oriundo del Amazonas, y se usa para darle color y sabor a los platos; hormiga culona, típica de Santander, Chontaduro y passifloras, plantas exóticas que se han hecho famosas a nivel internacional por sus frutos ácidos y comestibles, como son la maracuyá, la curuba, la gulupa y la cholupa.
+			p 
+				| Sin embargo, 
+				strong muchos de los platos típicos del país tienen como ingredientes fundamentales animales que consideraríamos prohibidos por estar protegidos 
+				| o en vías de extinción.
+			p 
+				| Según el análisis de los ingredientes en las 700 recetas del Gran libro de la cocina colombiana, 
+				strong 44 recetas podrían considerarse prohibidas o exóticas
+				| . De ellas, 
+				strong 19 se preparan en Guapi, Cauca
+				| , lo que lo convierte en el municipio con más recetas exóticas del país. Le sigue los departamentos de la región amazónica, como Amazonas y Putumayo.
+			blockquote 44 recetas podrían considerarse prohibidas o exóticas
+			p 
+				| El 
+				strong ingrediente principal de los platos exóticos es la tortuga: 
+				| se utilizan sus huevos, su caparazón, su picha (sus genitales) y su carne para hacer arroces, caldos, picadillos, pinchos, hallacas e incluso postres.
+			a(href="http://especiales.datasketch.co/cocina-colombiana/recetas-colombianas.html?id=recetas_prohibidas" target="_blank"): img.img-body.img-center.img-captioned(src="https://res.cloudinary.com/randommonkey/image/upload/c_scale,q_auto:eco,w_800/v1513872593/equipo/recetas_prohibidas_imagen.png", alt="Recetas prohibidas")
+			.caption 
+				| Conoce las recetas 
+				a(href="http://especiales.datasketch.co/cocina-colombiana/recetas-colombianas.html?id=recetas_prohibidas" target="_blank") aquí
+			p 
+				| En Colombia 
+				strong hay 36 especies distintas de tortugas, 28 son de agua dulce, y 11 están en peligro de extinción
+				| . Desde 1978 está prohibida su venta, sin embargo se sigue utilizando para cocinar. La recetas no especifican el tipo de tortuga, pero cocinar con este animal pone en peligro a todos los reptiles.
+			p Además de la tortuga, se cocina con toyo, un tiburón pequeño; babilla, un cocodrilo pequeño; piangua, un molusco pequeño; erizo; iguana; sangre de toro fresca, y patos pelones, que pierden sus plumas mientras son cazados.
+			p 
+				| La población de todas estas especies se ha visto afectada por su caza para alimentación, lo que ha hecho que se promuevan iniciativas para evitar que sean usados en la cocina. 
+				strong Esto implica una pérdida para la tradición culinaria del país, pero una forma de proteger uno de sus mayores tesoros: su biodiversidad.
+			#disqus_thread
+
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="assets/js/post.js")
+	script(src="assets/js/disqus.js")

@@ -1,0 +1,32 @@
+{
+  "name": "presidenciales",
+  "version": "1.0.0",
+  "description": "A Datasketch special - Presidenciales 2018",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp && gulp development",
+    "build": "gulp",
+    "start": "npm run build"
+  },
+  "author": "David Daza <03dazal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9",
+    "gulp-webserver": "^0.9.1",
+    "pump": "^3.0.0"
+  },
+  "dependencies": {
+    "tabletop": "^1.5.2",
+    "vue": "^2.5.16",
+    "webfontloader": "^1.6.28"
+  }
+}

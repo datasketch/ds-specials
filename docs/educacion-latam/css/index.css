@@ -1,0 +1,15 @@
+:root {
+  --tory-blue: #105EAD;
+  --denim: #1272DF;
+  --amaranth: #E6374A;
+  --black-bean: #091E1B;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.text--white {
+  color: white;
+}

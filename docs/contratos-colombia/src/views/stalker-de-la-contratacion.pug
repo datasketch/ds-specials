@@ -1,0 +1,46 @@
+extends ./partials/default
+
+block title
+  title Stalker de la contratación - La letra menuda | Especiales Datasketch
+
+block css
+  link(rel="stylesheet", href="assets/css/post.css")
+
+block main
+  .spacer
+  main.fill
+    .post-container
+      h1.post-title Stalker de la contratación
+      p La única forma de alertar a tiempo sobre las irregularidades en los contratos es si la ciudadanía se empodera de lo público y en lugar de pensarlo como si fuera de nadie, pensarlo como si fuera de todos. Así, cuantos más ojos haya sobre la contratación pública, más fácil será reducir los 50 Billones que se pierden al año por corrupción.
+      p Como primer ejercicio invitamos a ciudadanos, investigadores y periodistas a apropiarse de la información de la contratación pública. Para tal fin, hemos preparado información para que los entusiastas de la transparencia.
+      p Algunas banderas rojas para investigar:
+      ul.font-300
+        li
+          | Personas con más de un contrato en el mismo periodo de tiempo - 
+          a(href="tmp-files/totales-de-contratos-por-contratista.csv") Descargar
+        li
+          | Personas que además de ser contratistas, son representantes legales de una empresa contratista - 
+          a(href="tmp-files/totales-de-contratos-por-contratista.csv") Descargar
+        li
+          | Montos de adiciones que no corresponden con el total del contrato y las adiciones reportadas - 
+          a(href="https://s3.amazonaws.com/especiales.datasketch.co/contratos-colombia/tmp-files/adiciones-veces-ma%CC%81s.csv") Descargar
+        li Objetos repetidos para evaluar posibles casos de fraccionamiento
+        li Contratos que tienen montos redondeados
+        li Contratos con único proponente
+      p Así mismo, preparamos información sobre contratos de algunas coyunturas:
+      ul.font-300
+        li
+          | Contratos del Fondo Colombia en Paz - 
+          a(href="tmp-files/contratos-fondo-paz.csv") Descargar
+        li
+          | Contratos que mencionan al túnel de la línea - 
+          a(href="tmp-files/contratos-tunel-linea.csv") Descargar
+        li
+          | Contratos que tienen que ver con alimentación escolar - 
+          a(href="tmp-files/contratos-pae.csv") Descargar
+      p Déjanos tu correo y un comentario si necesitas información específica sobre contratación para evaluar un proyecto juntos.
+      #disqus_thread
+
+block js
+  script(src="assets/js/post.js")
+  script(src="assets/js/disqus.js")

@@ -1,0 +1,33 @@
+extends ./partials/default
+
+block title
+  title Metodología - La letra menuda | Especiales Datasketch
+
+block css
+  link(rel="stylesheet", href="assets/css/post.css")
+
+block main
+  .spacer
+  main.fill
+    .post-container
+      h1.post-title Metodología
+      p La contratación pública en Colombia ha sido siempre un hito en la realidad política de los países, porque es la forma más tangible de describir la formación de un Estado, de las políticas públicas, pero además de la transparencia en la información. Por eso desde Datasketch decidimos extraer los datos de la contratación pública en Colombia del portal virtual SECOP I, la plataforma de publicación de contratos de Colombia Compra Eficiente.
+      p Se abordaron los 6.2 millones de datos con un enfoque de análisis de información pública.  La información se tomó del portal de contratación pública en su versión para descarga de la base de datos completa disponible en el portal de datos abiertos del gobierno colombiano.
+      p El SECOP está conformado por una plataforma de publicación de información (SECOP I) que cuenta con 6'225.175 contratos y dos plataformas transaccionales,  el SECOP II que cuenta con 114.000 publicados a la fecha y la Tienda Virtual del Estado Colombiano. Este especial se enfoca en SECOP I, debido al volumen de información con la que cuenta.
+      p
+        | SECOP I: 
+        a(href="https://www.datos.gov.co/Gastos-Gubernamentales/SECOP-I-Consolidado/ewm2-yzgs/data" rel="noopener noreferrer" target="_blank") https://www.datos.gov.co/Gastos-Gubernamentales/SECOP-I-Consolidado/ewm2-yzgs/data
+      p
+        | SECOP II: 
+        a(href="https://www.datos.gov.co/Gastos-Gubernamentales/SECOP-II-Consolidado/m58t-y685/data" rel="noopener noreferrer" target="_blank") https://www.datos.gov.co/Gastos-Gubernamentales/SECOP-II-Consolidado/m58t-y685/data
+      p Para explicar las “banderas rojas” en la contratación, realizamos un video-dato, con entrevistas a expertos en la materia: Nicolás Penagos (Gerente para América Latina de Open Contracting Partnership y ex funcionario de Colombia Compra Eficiente), Marcela Restrepo (Directora del Área de gestión del conocimiento de Transparencia por Colombia), Camilo Vallejo Giraldo (Gerente de la Corporación cívica de Caldas) y Aura Cifuentes (Coordinadora del Observatorio Anticorrupción de la Secretaría de Transparencia), acompañados de información relevante disponible en los datos abiertos.
+      p
+        | Todos los datos preparados en este especial están disponibles para descargar 
+        a(href="http://especiales.datasketch.co/contratos-colombia/data.html") aquí.
+      p Los análisis y visualizaciones se realizaron utilizando el lenguaje de programación R. Si tienes interés en tener más acceso a datos e información sobre contratación déjanos tu correo aquí.
+      p Esta investigación se realizó gracias al apoyo de Open Contracting Partnership.
+      #disqus_thread
+
+block js
+  script(src="assets/js/post.js")
+  script(src="assets/js/disqus.js")

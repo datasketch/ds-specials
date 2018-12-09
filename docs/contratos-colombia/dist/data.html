@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><meta name="theme-color" content="#0A092B"/><meta name="description" content="Conoce la letra menuda de la contratación pública en Colombia, analizamos más de 6 millones de contratos públicos y esto fue lo que encontramos."/><meta itemprop="name" content="La letra menuda | Especiales Datasketch"/><meta itemprop="description" content="Conoce la letra menuda de la contratación pública en Colombia, analizamos más de 6 millones de contratos públicos y esto fue lo que encontramos."/><meta itemprop="image" content=""/><meta property="og:url" content="http://especiales.datasketch.co/contratos-colombia"/><meta property="og:type" content="website"/><meta property="og:title" content="La letra menuda | Especiales Datasketch"/><meta property="og:description" content="Conoce la letra menuda de la contratación pública en Colombia, analizamos más de 6 millones de contratos públicos y esto fue lo que encontramos."/><meta property="og:image" content="http://especiales.datasketch.co/contratos-colombia/assets/media/bannerseo.png"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="La letra menuda | Especiales Datasketch"/><meta name="twitter:description" content="Conoce la letra menuda de la contratación pública en Colombia, analizamos más de 6 millones de contratos públicos y esto fue lo que encontramos."/><meta name="twitter:image" content="http://especiales.datasketch.co/contratos-colombia/assets/media/bannerseo.png"/><title>Datos de contratación - La letra menuda | Especiales Datasketch</title><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/><link rel="icon" href="/favicon.ico" type="image/x-icon"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/randommonkey/ds.css/dist/ds.min.css"/><script src="vendors/vue.min.js"></script><link rel="stylesheet" href="assets/css/post.css"/><style>ul {
+  list-style-type: none;
+  padding: 0;
+}
+.file-title {
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+.file-size {
+  font-weight: normal;
+}
+</style><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-110184023-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-110184023-1');</script></head><body><div id="wrapper"><nav class="nav"><div class="menu column v-centered"><div class="container column"><a class="menu-link" href="/contratos-colombia">Inicio</a><a class="menu-link" href="banderas-rojas.html">Banderas rojas en la contratación estatal</a><a class="menu-link" href="diagnostico.html">Diagnóstico de datos</a><a class="menu-link" href="stalker-de-la-contratacion.html">Stalker de la contratación</a><a class="menu-link" href="data.html">Datos de contratación</a><a class="menu-link" href="metodologia.html">Metodología</a><a class="menu-link" href="equipo.html">Nuestro equipo</a></div></div><div class="container line justify-between v-centered"><div class="burger-box"><div class="burger"><span></span></div></div><a href="https://www.datasketch.co/es"><img src="assets/media/logo.png" alt="Logo Datasketch"/></a></div></nav><div class="spacer"></div><main class="fill post-container"><h1 class="post-title">Datos de contratación</h1><div id="app"><ul><li v-for="(file, index) in files" :key="index"><p class="file-title">{{ file.title }} - <small class="file-size">{{file.size | toMB}}</small></p><a :href="file.file">Descargar</a></li></ul></div></main><footer class="font-rubik font-300"><div class="footer-container"><p>Este es un trabajo de periodismo de datos del equipo de <a class="text-white" href="equipo.html" style="text-decoration: underline">Datasketch</a>. Revisa cómo creamos este especial en la <a class="text-white" href="metodologia.html">metodología</a></p><p>Todo el material en esta página es <a class="text-white" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline">CC-BY-SA</a>. Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.</p><img class="block" src="assets/media/cc.png" alt="Creative Commons"/></div></footer></div><script src="assets/js/default.js"></script><script src="assets/js/post.js"></script><script>new Vue({
+  el: '#app',
+  filters: {
+    toMB: function (val) {
+      let size = parseFloat(val, 10)
+      if (size >= 1000) {
+        size = size / 1000
+        return `${size.toFixed(2)} GB`
+      }
+      return `${val} MB`
+    }
+  },
+  data: {
+    files: [
+      {
+        "title": "Contratos prestación de servicios personas",
+        "file": "tmp-files/contratos-prestacion-de-servicios-personas.csv",
+        "size": 3597.1
+      },
+      {
+        "title": "Redes de contratación",
+        "file": "tmp-files/redes-de-contratacion.csv",
+        "size": 282.5
+      },
+      {
+        "title": "Totales de contratos por entidad, contratista y regiones",
+        "file": "tmp-files/totales-de-contratos-por-entidad-contratista-y-regiones.csv",
+        "size": 234.0
+      },
+      {
+        "title": "Totales de contratos por entidad",
+        "file": "tmp-files/totales-de-contratos-por-entidad.csv",
+        "size": 0.4
+      },
+      {
+        "title": "Totales de contratos por contratista",
+        "file": "tmp-files/totales-de-contratos-por-contratista.csv",
+        "size": 115.1
+      },
+      {
+        "title": "Totales de contratos por region",
+        "file": "tmp-files/totales-de-contratos-por-region.csv",
+        "size": 5.2
+      },
+      {
+        "title": "Totales de contratos por año firma",
+        "file": "tmp-files/totales-de-contratos-por-anno-firma.csv",
+        "size": 0.2
+      },
+      {
+        "title": "Totales contractos por entidad y año",
+        "file": "tmp-files/totales-contractos-por-entidad-y-ano.csv",
+        "size": 7.1
+      },
+      {
+        "title": "Totales contractos por año y region",
+        "file": "tmp-files/totales-contractos-por-ano-y-region.csv",
+        "size": 7.1
+      },
+      {
+        "title": "Totales contractos por entidad y año",
+        "file": "tmp-files/totales-contractos-por-entidad-y-ano.csv",
+        "size": 7.1
+      }
+    ]
+  }
+})</script></body></html>

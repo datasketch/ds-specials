@@ -1,0 +1,230 @@
+.main-banner {
+	color: white;
+	a {
+		background: rgba(188, 196, 30, 0.5);
+		border-radius: 10px;
+		color: white;
+		font-size: medium;
+		padding: 10px;
+		position: relative;
+		text-align: center;
+		font-size: large;
+		@media only screen and (min-width: 768px) {
+			font-size: large;
+		}
+	}
+	p {
+		font-size: large;
+		@media only screen and (min-width: 768px) {
+			font-size: x-large;
+		}
+	}
+}
+.video-section,
+.quotes {
+	min-height: 50vh;
+	width: 100%;
+	@media only screen and (min-width: 768px) {
+		width: 50%
+	}
+}
+.video-section iframe {
+	height: 100%;
+	width: 100%;
+}
+.quotes {
+	position: relative;
+	a {
+		color: black;
+		position: relative;
+		background: #e8e8e8;
+		padding: 10px;
+		text-align: center;
+	}
+	.quotes-container {
+		flex: 1 0 auto;
+		justify-content: center;
+	}
+	.owl-carousel {
+		position: static;
+	}
+	.owl-stage-outer,
+	.owl-stage-outer .owl-stage,
+	.owl-stage-outer .owl-stage .owl-item,
+	.owl-stage-outer .owl-stage .owl-item .quote {
+		height: 100%
+	}
+	.owl-dots {
+		bottom: 0;
+		position: relative;
+	}
+	.quote {
+		position: relative;
+		.quote-body {
+			margin-bottom: 1.5vw;
+			position: relative;
+			font-size: medium;
+			@media only screen and (min-width: 768px) {
+				font-size: x-large;
+			}
+		}
+		.quote-author {
+			font-size: medium;
+			@media only screen and (min-width: 768px) {
+				font-size: x-large;
+			}
+		}
+	}
+	.owl-dots {
+		bottom: 0;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+}
+.quiz-info,
+.quiz-frame {
+	width: 100%;
+	@media only screen and (min-width: 768px) {
+		width: 50%;
+	}
+}
+.quiz-info {
+	padding: 0 2vw;
+	.quiz-img {
+		max-width: 250px;
+	}
+	.quiz-description {
+		font-size: 20px;
+	}
+}
+.quiz-frame {
+	height: 75vh;
+	overflow: auto;
+	iframe {
+		height: 100%;
+		width: 100%;
+	}
+}
+.recipes {
+	a {
+		color: white;
+		font-size: 30px;
+		margin: 5vw 0 0; 
+		position: relative;
+		text-align: center;
+		text-shadow: 1px 1px #2a2a2a;
+		&:before {
+			background: white;
+			bottom: 0;
+			content: '';
+			height: 1px;
+			left: 0;
+			position: absolute;
+			transform: scaleX(0);
+			transition: all 0.25s ease-in-out;
+			width: 100%;
+		}
+		&:hover:before {
+			transform: scaleX(1);
+		}
+	}
+	.recipes-title {
+		color: rgba(255,255,255,0.7);
+		font-size: 100px;
+		margin: 0;
+		@media only screen and (min-width: 768px) {
+			font-size: 150px;
+		}
+		@media only screen and (min-width: 992px) {
+			font-size: 180px;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-size: 200px;
+		}
+	}
+	.recipes-subtitle {
+		color: black;
+		font-size: 40px;
+		text-transform: uppercase;
+		margin: 0;
+		@media only screen and (min-width: 768px) {
+			font-size: 60px;
+		}
+		@media only screen and (min-width: 992px) {
+			font-size: 70px;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-size: 80px;
+		}
+	}
+}
+.story {
+	flex-basis: 100%;
+	text-align: center;
+	@media only screen and (min-width: 768px) {
+		flex-basis: 33.33%;
+	}
+	h1 {
+		text-transform: uppercase;
+	}
+	a {
+		font-size: 30px;
+		position: relative;
+		text-decoration: none;
+		&:before {
+			background-color: #ffffff;
+			bottom: 0;
+			content: '';
+			height: 1px;
+			left: 0;
+			position: absolute;
+			transform: scaleX(0);
+			transition: all 250ms linear;
+			width: 100%;
+		}
+		&:hover:before {
+			transform: scaleX(1);
+		}
+	}
+}
+.app-section {
+	background-color: #e8e8e8;
+	a {
+		color: black;
+		position: relative;
+		&:before {
+			background: black;
+			bottom: 0;
+			content: '';
+			height: 1px;
+			left: 0;
+			position: absolute;
+			transform: scaleX(0);
+			transition: all 0.25s ease-in-out;
+			width: 100%;
+		}
+		&:hover:before {
+			transform: scaleX(1);
+		}
+	}
+	h1 {
+		margin: 0;
+    background: white;
+    color: black;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    width: 85%;
+    img {
+	    max-width: 50px;
+    	left: 0;
+    	position: absolute;
+    	top: 50%;
+    	transform: translate(-50%,-50%);
+    	@media only screen and (min-width: 768px) {
+    		max-width: 70px;
+    	}
+    }
+	}
+}

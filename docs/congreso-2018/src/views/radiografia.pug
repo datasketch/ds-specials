@@ -1,0 +1,61 @@
+extends ./partials/layout
+
+block title
+  title Radiografía - Elecciones Congreso 2018 | Especiales Datasketch
+
+block css
+  link(rel="stylesheet", href="assets/css/post.css")
+  link(rel="stylesheet", href="vendors/vis.min.css")
+
+block main
+  main
+    .container-section-post
+      h1.font-family--exo.post-title Radiografía de las elecciones al congreso 2018
+      div.font-family--exo.font-weight-light.post-body
+        p Encontramos ciertos datos curiosos sobre las elecciones al congreso 2018. Esta es su radiografía
+        p.post-subtitle Casi 3.000 candidatos peleando por 268 plazas
+        p Este año se presentan al Congreso 2.735 candidatos: 1.794 aspiran a una silla en la Cámara y 853 quieren una en el Senado. Al final, solo habrá 268 candidatos: 102 senadores y 166 representantes a la cámara.
+        iframe(src="static/total.html", frameborder="0" width="100%" height="450px" style="margin-bottom: 20px")
+        p.post-subtitle ¿Equidad de género en los partidos?
+        p Cada partido político en Colombia debe tener al menos un 30% de mujeres en sus listas de candidatos, según la Ley 1475 de 2011. Senadoras como Claudia López han hecho proyectos de Ley que buscan elevar la cuota al 50%, pero no han sido aprobadas aun.  Así está la distribución de candidatas mujeres al congreso.
+        iframe(src="static/genero.html", frameborder="0" width="100%" height="450px" style="margin-bottom: 20px")
+        //- iframe(src="static/genero-partido.html", frameborder="0" width="100%" height="450px" style="margin-bottom: 20px")
+        p.post-subtitle Los jóvenes se vinculan a la política 
+        p Si quieres postularte a la Cámara de Representantes debes tener al menos 25 años; si quieres ser candidato al Senado, la edad mínima son 30 años. Aunque se cree que los jóvenes no están interesados en política, este año el 10% de los candidatos son “millennials” nacidos después del año 1985. 
+        iframe(src="static/edad.html", frameborder="0" width="100%" height="450px" style="margin-bottom: 20px")
+        p.post-subtitle Los candidatos se comparten el nombre
+        p José y María son los nombre más comunes que hay entre los candidatos al Congreso. Ambos están entre los nombres preferidos por los colombianos para sus bebés.
+        iframe(src="static/nombres.html", frameborder="0" height="450px" width="100%" style="margin-bottom: 20px")
+        p.post-subtitle Partidos con antecedentes en la Procuraduría
+        p La Procuraduría hace públicas las sanciones o investigaciones disciplinarias de los últimos cinco años que tenga cualquier persona en Colombia. Si alguien tiene una anotación en esta base de datos significa que ha afectado directamente el comportamiento o desarrollo de las actividades del Estado.
+        iframe(src="static/procuraduria.html", frameborder="0" height="450px" width="100%" style="margin-bottom: 20px")
+        p.post-subtitle Antecedentes en la Policía
+        p La Policía Nacional hace públicos los delitos o investigaciones que haya cometido o que involucren a cualquier persona en Colombia.  Estos son los candidatos que tienen alguna anotación en esta base de datos.
+        iframe(src="static/policia.html", frameborder="0" height="450px" width="100%" style="margin-bottom: 20px")
+        p.post-subtitle Contaduría General de la Nación
+        p La Contaduría General de la Nación hace públicas las anotaciones que tienen todos los ciudadanos en temas de deudas con el estado. Aquí se muestra la información de los candidatos que aparecen en La Base de datos de Deudores Morosos del Estado BDME cuenta con alguna anotación.
+        iframe(src="static/contaduria.html", frameborder="0" height="450px" width="100%" style="margin-bottom: 20px")
+        p.post-subtitle Algunos han tenido contratos con el Estado
+        p A pesar de que la Ley lo prohíbe, algunos candidatos tienen contratos con el Estado o han ejecutado recursos públicos. Esta información se encuentra en la base de datos conocida como SECOP . El candidato con mayor número de contratos acumula la suma de 307. Sin embargo, es importante aclarar que la búsqueda de contratos públicos puede arrojar resultados positivos para los congresistas que se reeligen, ya que para los contratos de sus  equipos de trabajo se usa la cédula del congresista contratante.
+        iframe(src="static/secop.html", frameborder="0" height="450px" width="100%" style="margin-bottom: 20px")
+        p.post-subtitle Multas de tránsito
+        p
+          | Varios candidatos al Congreso tienen multas de tránsito que no han pagado o multas millonarias que no pagaron nunca y se procedió con el cobro coactivo. Estas multas están registradas en la base de datos del SIMIT, la más bajita que se ha registrado es por 
+          strong $16,437.00
+          |  (ya pagó) y la más alta es por 
+          strong $115,748,074
+          | ; el cual es un valor acumulado de 6 multas, dos de las cuales son por conducir en estado de ebriedad (las más costosas). De esas 6, 5 fueron saldadas por cobro coactivo y una por el valor de $52,713,646 está en mora desde el 2015.
+        p Con muchas de las multas presentadas a continuación se procedió con el cobro coactivo, en el que se ordena la práctica de medidas cautelares; embargo de bienes, salarios, dineros de cuentas bancarias, etc.
+        img(src="assets/media/images/deuda.png", alt="Deudas SIMIT" style="max-width: 100%")
+        iframe(src="static/simit.html", frameborder="0" height="450px" width="100%" style="margin-bottom: 20px")
+        p
+          small Los datos retratados en este artículo y los publicados en el especial corresponden al esfuerzo el equipo investigativo de datos de Datasketch. Datasketch ha tomado grandes medidas para garantizar que la información es actual y precisa. Confiamos en los esfuerzos de nuestro equipo y las tecnologías utilizadas publicar la mejor información disponible consolidando múltiples fuentes. Los datos se publican como tal, con licencia abierta de Creative Commons y sin garantía. Datasketch no se hace responsable por cualquier acción derivada del uso de esta información agregada. Los usuarios asumen toda responsabilidad y riesgo sobre el uso de los datos disponibles en este especial y sitio. Para garantizar la fiabilidad de la información en trabajos derivados de estos datos, los usuarios garantizan que cualquier uso será contrastado con las fuentes oficiales descritas en la 
+          a(href="metodologia.html" target="_blank"): small metodología.
+        #disqus_thread
+
+block js
+  script(src="vendors/tabletop.min.js")
+  script(src="vendors/vis.min.js")
+  script(src="vendors/vue.min.js")
+  script(src="assets/js/whois.js")
+  script(src="assets/js/disqus.js")

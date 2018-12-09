@@ -1,0 +1,106 @@
+extends ./partials/default
+
+block title
+  title Datos de contratación - La letra menuda | Especiales Datasketch
+
+block css
+  script(src="vendors/vue.min.js")
+  link(rel="stylesheet", href="assets/css/post.css")
+  style.
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .file-title {
+      font-weight: bold;
+      margin: 0 0 5px;
+    }
+    .file-size {
+      font-weight: normal;
+    }
+
+block main
+  .spacer
+  main.fill.post-container
+    h1.post-title Datos de contratación
+    #app
+      ul
+        li(
+          v-for="(file, index) in files",
+          :key="index"
+        )
+          p.file-title
+            | {{ file.title }} - 
+            small.file-size {{file.size | toMB}}
+          a(:href="file.file") Descargar
+
+block js
+  script(src="assets/js/post.js")
+  script.
+    new Vue({
+      el: '#app',
+      filters: {
+        toMB: function (val) {
+          let size = parseFloat(val, 10)
+          if (size >= 1000) {
+            size = size / 1000
+            return `${size.toFixed(2)} GB`
+          }
+          return `${val} MB`
+        }
+      },
+      data: {
+        files: [
+          {
+            "title": "Contratos prestación de servicios personas",
+            "file": "tmp-files/contratos-prestacion-de-servicios-personas.csv",
+            "size": 3597.1
+          },
+          {
+            "title": "Redes de contratación",
+            "file": "tmp-files/redes-de-contratacion.csv",
+            "size": 282.5
+          },
+          {
+            "title": "Totales de contratos por entidad, contratista y regiones",
+            "file": "tmp-files/totales-de-contratos-por-entidad-contratista-y-regiones.csv",
+            "size": 234.0
+          },
+          {
+            "title": "Totales de contratos por entidad",
+            "file": "tmp-files/totales-de-contratos-por-entidad.csv",
+            "size": 0.4
+          },
+          {
+            "title": "Totales de contratos por contratista",
+            "file": "tmp-files/totales-de-contratos-por-contratista.csv",
+            "size": 115.1
+          },
+          {
+            "title": "Totales de contratos por region",
+            "file": "tmp-files/totales-de-contratos-por-region.csv",
+            "size": 5.2
+          },
+          {
+            "title": "Totales de contratos por año firma",
+            "file": "tmp-files/totales-de-contratos-por-anno-firma.csv",
+            "size": 0.2
+          },
+          {
+            "title": "Totales contractos por entidad y año",
+            "file": "tmp-files/totales-contractos-por-entidad-y-ano.csv",
+            "size": 7.1
+          },
+          {
+            "title": "Totales contractos por año y region",
+            "file": "tmp-files/totales-contractos-por-ano-y-region.csv",
+            "size": 7.1
+          },
+          {
+            "title": "Totales contractos por entidad y año",
+            "file": "tmp-files/totales-contractos-por-entidad-y-ano.csv",
+            "size": 7.1
+          }
+        ]
+      }
+    })

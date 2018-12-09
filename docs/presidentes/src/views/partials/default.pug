@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="theme-color" content="#0A092B")
+    meta(name="description" content="Haz seguimiento en vivo de los resultados de las elecciones presidenciales 2018, mientras conoces qué tienen en común los presidentes de colombia")
+    meta(itemprop="name" content="Run president, run | Especiales Datasketch")
+    meta(itemprop="description" content="Haz seguimiento en vivo de los resultados de las elecciones presidenciales 2018, mientras conoces qué tienen en común los presidentes de colombia")
+    meta(itemprop="image" content="")
+    meta(property="og:url" content="http://especiales.datasketch.co/presidentes")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Run president, run | Especiales Datasketch")
+    meta(property="og:description" content="Haz seguimiento en vivo de los resultados de las elecciones presidenciales 2018, mientras conoces qué tienen en común los presidentes de colombia")
+    meta(property="og:image" content="")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content="Run president, run | Especiales Datasketch")
+    meta(name="twitter:description" content="Haz seguimiento en vivo de los resultados de las elecciones presidenciales 2018, mientras conoces qué tienen en común los presidentes de colombia")
+    meta(name="twitter:image" content="")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/randommonkey/titi@1.0.0/dist/ds.min.css")
+    link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="/favicon.ico" type="image/x-icon")
+    block title
+    block css
+    //- Global site tag (gtag.js) - Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-110184023-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-110184023-1');
+  
+  body
+    #wrapper
+      include ./nav
+      block main
+      footer.bg-bluegray
+        .footer-container
+          .text-yellow-primary
+            p
+              | Este es un trabajo de periodismo de datos del 
+              a(href="equipo.html") equipo
+              |  de Datasketch. Revisa cómo hicimos este especial en la 
+              a(href="metodologia.html") metodología
+              | .
+            p
+              | Todo el material en esta página es 
+              a(href="") CC-BY-SA
+              |  . Si reusas o adaptas recursos de esta página, por favor vincula y referencia nuestro artículo o sitio web.
+            img.column.centered(src="assets/media/cc.png", alt="")
+    script(src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js")
+    script(src="assets/js/default.js")
+    block js

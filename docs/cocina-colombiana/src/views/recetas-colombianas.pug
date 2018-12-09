@@ -1,0 +1,32 @@
+extends ./blocks/head
+
+block title
+	title 700 recetas de la abuela | Especiales Datasketch
+
+block meta
+	meta(name='description', content='Haz tus propios platos con precios, gramos y tiempo de preparación. Crea tu propia receta colombiana y prueba el sabor de Colombia.')
+	meta(property='og:title', content='Busca tu receta favorita de comida colombiana')
+	meta(property='og:type', content='article')
+	meta(property='og:url', content='http://especiales.datasketch.co/cocina-colombiana/recetas-colombianas.html')
+	meta(property='og:image', content='http://especiales.datasketch.co/cocina-colombiana/assets/media/banner.jpg')
+	meta(property="og:description" content="Haz tus propios platos con precios, gramos y tiempo de preparación. Crea tu propia receta colombiana y prueba el sabor de Colombia.")
+	meta(property="og:locale" content="es_CO")
+
+block css
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/css/post.css")
+	link(rel="stylesheet", href="assets/css/chat.css")
+
+block header
+	include ./blocks/post-header.pug
+
+block main
+	iframe.app-frame(frameborder="0", width="100%")
+	.container-small: #disqus_thread
+
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="assets/js/post.js")
+	script(src="assets/js/disqus.js")

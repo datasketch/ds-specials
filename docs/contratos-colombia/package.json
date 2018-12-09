@@ -1,0 +1,34 @@
+{
+  "name": "contratos-colombia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp && gulp development",
+    "start": "npm run build",
+    "deploy": "cd .. && python deploy.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9",
+    "gulp-webserver": "^0.9.1",
+    "pump": "^3.0.0"
+  },
+  "dependencies": {
+    "moveto": "^1.7.1",
+    "scrollmagic": "^2.0.5",
+    "vue": "^2.5.16"
+  }
+}

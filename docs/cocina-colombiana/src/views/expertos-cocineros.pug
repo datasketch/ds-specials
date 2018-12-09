@@ -1,0 +1,500 @@
+extends ./blocks/head
+
+block title
+	title Expertos cocineros | Especiales Datasketch
+
+block css
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/css/post.css")
+	link(rel="stylesheet", href="assets/css/chat.css")
+
+block header
+	include ./blocks/post-header.pug
+
+block main
+	.chat
+		.chat-list
+			.chat-list-content
+				.chat-list-item(data-chat='chat-1')
+					span.fa.fa-users.fa-2x
+					.chat-info
+						span.chat-name Ana & Alejo
+						small.chat-time
+					.only-mobile.chat-opener: small Abrir chat
+				.chat-list-item(data-chat='chat-2')
+					span.fa.fa-users.fa-2x
+					.chat-info
+						span.chat-name Iván & Virginia
+						small.chat-time
+					.only-mobile.chat-opener: small Abrir chat
+				.chat-list-item(data-chat='chat-3')
+					span.fa.fa-users.fa-2x
+					.chat-info
+						span.chat-name Aura & Dominique
+						small.chat-time
+					.only-mobile.chat-opener: small Abrir chat
+				.chat-list-item(data-chat='chat-4')
+					span.fa.fa-users.fa-2x
+					.chat-info
+						span.chat-name Luisa & Antonuela
+						small.chat-time
+					.only-mobile.chat-opener: small Abrir chat
+				.chat-list-item(data-chat='chat-5')
+					span.fa.fa-users.fa-2x
+					.chat-info
+						span.chat-name Ivan & María
+						small.chat-time
+					.only-mobile.chat-opener: small Abrir chat
+		.chat-detail
+			.chat-area
+				.chat-header
+					.chat-header-content
+						span.fa.fa-arrow-left.only-mobile.list-chats
+						div
+							p.chat-header-name Cocina colombiana
+							small en línea
+						span.fa.fa-search
+						span.fa.fa-paperclip
+						span.fa.fa-ellipsis-h
+				.chat-messages
+					// Welcome
+					.chat-messages-welcome
+						p Acompáñanos en este chat para conocer cómo cocineras y chefs viven la cocina colombiana.
+					// Chat 1
+					#chat-1.chat-messages-content
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span ¿Tienes alguna anécdota en la cocina que quieras compartir?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,q_auto:eco,w_300/v1513601565/especiales/ana_maria_uribe.jpg', alt='Ana María Uribe')
+							.chat-body
+								small Ana María Uribe
+								span
+									| La cocina es una de las actividades que he compartido toda la vida con mi mamá. Para mí, cocinar es conectarme con esa herencia que ella me ha transmitido de cuidar a la familia a través de la comida.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/alejandro_gutierrez.jpg', alt='Alejandro Gutiérrez')
+							.chat-body
+								small Alejandro Gutiérrez
+								span
+									| El recuerdo de un buen tamal en navidad, su aroma cuando se abren sus hojas. Eso es una cosa que uno llevará en su corazón durante toda la vida. Me parece una cosa hermosa.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Sabemos que la cocina colombiana es muy amplia, ¿Podrías decirnos cuales son esos platos que preparas con frecuencia?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,q_auto:eco,w_300/v1513601565/especiales/ana_maria_uribe.jpg', alt='Ana María Uribe')
+							.chat-body
+								small Ana María Uribe
+								span
+									| Normalmente no preparo mucha comida colombiana porque me gusta la cocina sencilla. Me parece que la nuestra es una cocina muy elaborada y yo soy más práctica cuando cocino. Si tengo que preparar algo colombiano hago sopa de lentejas y me gusta el ajiaco y el caldo con huevo y arepa amarilla santandereana.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/alejandro_gutierrez.jpg', alt='Alejandro Gutiérrez')
+							.chat-body
+								small Alejandro Gutiérrez
+								span
+									| Chorizo con arepa y sancocho valluno. Si uno entiende bien la cocina colombiana, uno entiende que todos esos platos cuentan una historia en particular, las culturas que han vivido allí, los ingredientes abundantes en esa región. Un sancocho es el paisaje de una región metido en una olla con agua.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span
+									| Nuestra infancia está marcada por muchos recuerdos, entre esos sabores y aromas que se grabaron en nuestra memoria, para ti ¿Cuál es ese plato típico que te recuerda a tu casa?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,q_auto:eco,w_300/v1513601565/especiales/ana_maria_uribe.jpg', alt='Ana María Uribe')
+							.chat-body
+								small Ana María Uribe
+								span
+									| El mondongo porque es el plato típico de la familia de mi mamá, que es paisa. Es el plato especial que le pedimos a la abuelita y es el plato que nos reúne como familia.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/alejandro_gutierrez.jpg', alt='Alejandro Gutiérrez')
+							.chat-body
+								small Alejandro Gutiérrez
+								span
+									| El chorizo santarrosano me parece increíble o un chicharrón tostado con guiso, como lo hacen en Armenia.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span
+									| ¿Recuerdas a esa persona qué te inspiró  aprender a cocinar?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,q_auto:eco,w_300/v1513601565/especiales/ana_maria_uribe.jpg', alt='Ana María Uribe')
+							.chat-body
+								small Ana María Uribe
+								span
+									| Mi mamá. Más que enseñarme fue el aprendizaje de verla a ella toda la vida cocinar y eso me hizo querer ayudarla e interesarme por la cocina.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/alejandro_gutierrez.jpg', alt='Alejandro Gutiérrez')
+							.chat-body
+								small Alejandro Gutiérrez
+								span
+									| Estaba estudiando biología, pero no me gustaba la carrera a pesar de que ya había cursado varios semestres. Sin embargo, cocinar me liberaba de esa angustia que sentía. Eso me permitió entender lo que quería. Además, aprendí que a uno nadie le enseña a cocinar y uno nunca termina de cocinar.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span
+									| ¿Qué consejo le daría a futuras generaciones de cocineros colombianos?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,q_auto:eco,w_300/v1513601565/especiales/ana_maria_uribe.jpg', alt='Ana María Uribe')
+							.chat-body
+								small Ana María Uribe
+								span
+									| No dejar perder los ingredientes tradicionales y las formas en las que son preparados. La vida moderna nos lleva a querer comer cosas preparadas y menos elaboradas y eso nos hace perder la costumbre de cocinar, cocinar lentamente.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/alejandro_gutierrez.jpg', alt='Alejandro Gutiérrez')
+							.chat-body
+								small Alejandro Gutiérrez
+								span
+									| En términos de sabor uno puede enseñarles a otros cocineros qué está rico y qué no. Pero creo que es un proceso en el que no se enseña de una forma, sino que esa persona está en un continuo aprendizaje de sabores y aromas que solo se adquieren practicando.
+					// Chat 2
+					#chat-2.chat-messages-content
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Todos tenemos unos platos típicos que nos llenan más que otros, ¿Podrías decirnos cuales son esos platos de cocina colombiana qué más te gustan?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513601559/especiales/virginia_nieto.jpg', alt='Virginia Nieto')
+							.chat-body
+								small Virginia Nieto
+								span
+									| El ajiaco porque contiene los ingredientes de los alrededores de Cundinamarca como la crema de leche de Ubaté o las guascas y el aguacate de Mariquita.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/ivan_gelvez.jpg', alt='Ivan Gelvez')
+							.chat-body
+								small Iván Darío Gélvez
+								span
+									| Yo soy muy fanático de los guisos tradicionales colombianos y los sudados también me encantan.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Nuestra infancia está marcada por muchos recuerdos, entre esos sabores y aromas que se grabaron en nuestra memoria, para ti ¿Cuál es ese plato típico que te recuerda a tu casa?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513601559/especiales/virginia_nieto.jpg', alt='Virginia Nieto')
+							.chat-body
+								small Virginia Nieto
+								span
+									| El ajiaco y el entero con Bagre o Gallina.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/ivan_gelvez.jpg', alt='Ivan Gélvez')
+							.chat-body
+								small Iván Darío Gélvez
+								span
+									| Las chorotas de maíz, que no son muy conocidas, pero son como nuestra versión boyacense de los raviolis y van rellenos de queso y cuajada. Son deliciosas.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span A la hora de cocinar, siempre hay unos ingredientes que son fundamentales para sazonar nuestros platos, para ti ¿Cuál es el ingrediente que consideras  fundamental?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513601559/especiales/virginia_nieto.jpg', alt='Virginia Nieto')
+							.chat-body
+								small Virginia Nieto
+								span
+									| El pollo, el ajo y la cebolla...
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/ivan_gelvez.jpg', alt='Ivan Gélvez')
+							.chat-body
+								small Iván Darío Gélvez
+								span
+									| El cilantro
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span La cocina no podría existir sin esas herramientas que hacen que todo pueda prepararse, podrías decirnos ¿Cuál es el utensilio de cocina que no puede faltar para ti?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513601559/especiales/virginia_nieto.jpg', alt='Virginia Nieto')
+							.chat-body
+								small Virginia Nieto
+								span
+									| El sartén.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/ivan_gelvez.jpg', alt='Ivan Gélvez')
+							.chat-body
+								small Iván Darío Gélvez
+								span
+									| El cuchillo y el batidor de mano.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span ¿Qué consejo le daría a futuras generaciones de cocineros colombianos?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513601559/especiales/virginia_nieto.jpg', alt='Virginia Nieto')
+							.chat-body
+								small Virginia Nieto
+								span
+									| Las nuevas generaciones deberían conservar la cocina colombiana y experimentar nuevos sabores con nuevos ingredientes.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614123/especiales/ivan_gelvez.jpg', alt='Ivan Gélvez')
+							.chat-body
+								small Iván Darío Gélvez
+								span
+									| Que cocinen con respeto. Es muy triste que hasta ahora estemos haciendo una apropiación cultural de nuestra cocina. Por ejemplo, he visto eso en cocineros que hacen puchero boyacense con otros ingredientes. Eso quiere decir que nunca han ido al campo y que no conocen la cocina colombiana.
+					// Chat 3
+					#chat-3.chat-messages-content
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Nuestra infancia está marcada por muchos recuerdos, entre esos sabores y aromas que se grabaron en nuestra memoria, para ti ¿Cuál es ese plato típico que te recuerda a tu casa?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601562/especiales/aura_maria_diaz.jpg', alt='Aura María Díaz')
+							.chat-body
+								small Aura María Díaz
+								span
+									| En la casa todos los días comíamos frijoles y dos o tres veces a la semana, sancocho. Nuestra familia es muy antioqueña y cocinaba muy paisa.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513613894/especiales/dominique_lemoine.jpg', alt='Dominique Lemoine')
+							.chat-body
+								small Dominique Lemoine
+								span
+									| Mi casa era rara porque podíamos tener un plato europeo con uno colombiano. Si me pides un plato colombiano yo pensaría en el ajiaco.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span La cocina es un proceso alquímico en el que todos los sentidos están activos, ¿Cuáles son esos aromas que disfrutas cuando estas cocinando?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601562/especiales/aura_maria_diaz.jpg', alt='Aura María Díaz')
+							.chat-body
+								small Aura María Díaz
+								span
+									| Me gusta la salsa de soya, el ajo, la canela, las guascas, que no solo las uso en el ajiaco.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513613894/especiales/dominique_lemoine.jpg', alt='Dominique Lemoine')
+							.chat-body
+								small Dominique Lemoine
+								span
+									| El olor de la cebolla, el ajo y del guiso colombiano.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Todos tenemos un sabor que nos recuerda a la infancia ¿Cuál es el tuyo?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601562/especiales/aura_maria_diaz.jpg', alt='Aura María Díaz')
+							.chat-body
+								small Aura María Díaz
+								span
+									| El arroz con arvejas que hacía mi mamá. Lo preparaba con plátano maduro frito y albóndigas. Era muy rico.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513613894/especiales/dominique_lemoine.jpg', alt='Dominique Lemoine')
+							.chat-body
+								small Dominique Lemoine
+								span
+									| Los caracoles con mantequilla y ajo me recuerdan mucho a mi infancia. También el poleo y la morcilla, que me recuerdan a una  visita a la finca.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span En la cocina se entremezclan todo tipo de procesos, cuando se pican  cosas en una tabla o cuando la cebolla entra en el aceite caliente. ¿Para ti, cuáles son esos sonidos que te gustan cuando cocinas?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601562/especiales/aura_maria_diaz.jpg', alt='Aura María Díaz')
+							.chat-body
+								small Aura María Díaz
+								span
+									| Me gusta cocinar con el ruido de la radio y por eso siempre la tengo prendida. Me parece que es un sonido que le da vida a la cocina.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513613894/especiales/dominique_lemoine.jpg', alt='Dominique Lemoine')
+							.chat-body
+								small Dominique Lemoine
+								span
+									| El sonido del ajo que se asa en una olla. También el sonido de un cuchillo muy afilado cortando sobre una tabla.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Hay restaurantes que nos gustan tanto que lo recordamos con cariño y lo recomendamos ¿Qué restaurante de cocina colombiana te gusta?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601562/especiales/aura_maria_diaz.jpg', alt='Aura María Díaz')
+							.chat-body
+								small Aura María Díaz
+								span
+									| En Circasia, Quindío, hay un restaurante que se llama La Patasola. Me llama mucho la atención por la comida que sirven. A uno le venden frijoles, comida casera, pescado y chuleta. Es pura comida típica colombiana.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,w_300/v1513613894/especiales/dominique_lemoine.jpg', alt='Dominique Lemoine')
+							.chat-body
+								small Dominique Lemoine
+								span
+									| Casa Vieja, que es un clásico. También para probar cosas distintas de la cocina me iría por Mini-Mal.
+					// Chat 4
+					#chat-4.chat-messages-content
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span ¿Recuerdas a esa persona qué te inspiró  aprender a cocinar?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601605/especiales/luisa_andrade.jpg', alt='Luisa Andrade')
+							.chat-body
+								small Luisa Andrade
+								span
+									| Mi abuela y mi mamá. Les ayudé muchas veces, mi tía abuela escribió un libro de cocina. A ella le heredé muchas de esas recetas.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614170/especiales/antonuela.jpg', alt='Antonuela Ariza')
+							.chat-body
+								small Antonuela Ariza
+								span
+									| La niñera de la casa cocinaba y eso me despertó la curiosidad. Además, soy autodidacta, lo que me permitió aprender por mi cuenta.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span En el momento de cocinar, hay aromas que quizá no son tan agradables pero son importantes para los platillos que queremos hacer. ¿Cuáles son esos aromas que te molestan cuando estas cocinando?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601605/especiales/luisa_andrade.jpg', alt='Luisa Andrade')
+							.chat-body
+								small Luisa Andrade
+								span
+									| En realidad casi ninguno, de pronto el comino, el anís o el hinojo porque tienen un olor fuerte y casi no saben tan rico.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614170/especiales/antonuela.jpg', alt='Antonuela Ariza')
+							.chat-body
+								small Antonuela Ariza
+								span
+									| En realidad no tengo uno que me disguste.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Los postres son el toque dulce que no puede faltar en la gastronomía colombiana ¿Hay algún postre que nos quieras recomendar?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601605/especiales/luisa_andrade.jpg', alt='Luisa Andrade')
+							.chat-body
+								small Luisa Andrade
+								span
+									| Los postres con ruibarbo.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614170/especiales/antonuela.jpg', alt='Antonuela Ariza')
+							.chat-body
+								small Antonuela Ariza
+								span
+									| El merengón y el de copoazú.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span La gastronomía colombiana es tan extensa que podríamos recomendar un plato para cualquier ocasión, un plato que nos quieran recomendar para un momento romántico
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601605/especiales/luisa_andrade.jpg', alt='Luisa Andrade')
+							.chat-body
+								small Luisa Andrade
+								span
+									| Un asado con mazorca colombiana a la parrilla.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614170/especiales/antonuela.jpg', alt='Antonuela Ariza')
+							.chat-body
+								small Antonuela Ariza
+								span
+									| Una sopa sencilla sin tantos ingredientes.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Y para una tusa
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601605/especiales/luisa_andrade.jpg', alt='Luisa Andrade')
+							.chat-body
+								small Luisa Andrade
+								span
+									| Un merengue
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513614170/especiales/antonuela.jpg', alt='Antonuela Ariza')
+							.chat-body
+								small Antonuela Ariza
+								span
+									| Chocolate con ají.
+					// Chat 5
+					#chat-5.chat-messages-content
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span A la hora de cocinar, siempre hay unos ingredientes que son fundamentales para sazonar nuestros platos, para ti ¿Cuál es el ingrediente que consideras  fundamental?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601560/especiales/maria_del_pilar_berrio.jpg', alt='María del Pilar Berrío')
+							.chat-body
+								small María del Pilar Berrío
+								span
+									| El ajo.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513613902/especiales/ivan_cadena.png', alt='Iván Cadena')
+							.chat-body
+								small Iván Cadena
+								span
+									| El ají, los cítricos y el cilantro cimarrón.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Nuestra infancia está marcada por muchos recuerdos, entre esos sabores y aromas que se grabaron en nuestra memoria, para ti ¿Cuál es ese plato típico que te recuerda a tu casa?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601560/especiales/maria_del_pilar_berrio.jpg', alt='María del Pilar Berrío')
+							.chat-body
+								small María del Pilar Berrío
+								span
+									| El mondongo no puede faltar en ninguna reunión.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513613902/especiales/ivan_cadena.png', alt='Iván Cadena')
+							.chat-body
+								small Iván Cadena
+								span
+									| El hogao porque es un fondo que permite sacar muchos platos y eso me obsesiona, poder aprovecha muy bien los sabores.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span Un plato de cocina colombiana que quieras recomendar para una tusa
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601560/especiales/maria_del_pilar_berrio.jpg', alt='María del Pilar Berrío')
+							.chat-body
+								small María del Pilar Berrío
+								span
+									| Un pollo asado que sea bien rico. Bien preparado.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513613902/especiales/ivan_cadena.png', alt='Iván Cadena')
+							.chat-body
+								small Iván Cadena
+								span
+									| Los dulces porque generan felicidad. Pienso en el chocolate.
+						.chat-message.right
+							img.chat-avatar(src='assets/media/ds.png', alt='Datasketch')
+							.chat-body
+								small Datasketch
+								span ¿Y para un momento romántico?
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513601560/especiales/maria_del_pilar_berrio.jpg', alt='María del Pilar Berrío')
+							.chat-body
+								small María del Pilar Berrío
+								span
+									| Un róbalo al ajillo.
+						.chat-message
+							img.chat-avatar(src='https://res.cloudinary.com/randommonkey/image/upload/c_thumb,g_face,h_300,w_300/v1513613902/especiales/ivan_cadena.png', alt='Iván Cadena')
+							.chat-body
+								small Iván Cadena
+								span
+									| Un ceviche o un enyucado delicioso con arroz crocante es lo mejor.
+				.chat-input
+					.chat-input-content
+						span.fa.fa-smile-o
+						.chat-input-placeholder
+							.chat-input-text
+						span.fa.fa-paper-plane-o
+	.container-small: #disqus_thread
+
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="vendors/moment.js")
+	script(src="vendors/typed.js")
+	script(src="assets/js/post.js")
+	script(src="assets/js/disqus.js")
+	script(src="assets/js/chat.js")

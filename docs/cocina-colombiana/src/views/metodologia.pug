@@ -1,0 +1,87 @@
+extends ./blocks/head
+
+block title
+	title Metodología y base de datos | Especiales Datasketch
+
+block css
+	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/css/post.css")
+
+block meta
+	meta(name='description', content='Somos diez curiosos de la gastronomía de Colombia que pusieron manos a la obra para visualizar estos datos para todos. ')
+	meta(property='og:title', content='Así hicimos este especial sobre la cocina colombiana')
+	meta(property='og:type', content='article')
+	meta(property='og:url', content='http://especiales.datasketch.co/cocina-colombiana/metodologia.html')
+	meta(property='og:image', content='http://especiales.datasketch.co/cocina-colombiana/assets/media/banner.jpg')
+	meta(property="og:description" content="Somos diez curiosos de la gastronomía de Colombia que pusieron manos a la obra para visualizar estos datos para todos. ")
+	meta(property="og:locale" content="es_CO")
+
+block header
+	include ./blocks/post-header.pug
+
+block main
+	.container-x-small
+		h1.post-title.slab.slab-light Metodología y bases de datos
+		.post-content.josefin-light.text-size-large
+			p
+				strong Grado de dificultad: 
+				| Alto
+			p
+				strong Tiempo de preparación: 
+				| 2 meses
+			p
+				strong Rating: 
+				span.fa.fa-star 
+				span.fa.fa-star 
+				span.fa.fa-star 
+				span.fa.fa-star 
+				span.fa.fa-star 
+			p: strong Ingredientes
+			ul.ingredients
+				li 
+					| Un equipo de 10 curiosos de los datos, preferiblemente con al menos 2 años de remojo en estos temas. El 
+					a(href="equipo.html" target="_blank" rel="noopener noreferrer") equipo 
+					| debe contener dos especies diferentes: los científicos de datos (estadísticos, ingenieros o matemáticos) y los científicos sociales (periodistas, antropólogos o politólogos).
+				li Un historiador amante de la comida y en particular de la arepa.
+				li
+					| Libro online 
+					a(href="http://www.mincultura.gov.co/Sitios/patrimonio/bibliotecas-de-cocinas/tomos/tomo09.pdf" target="_blank" rel="noopener noreferrer") Gran libro de la cocina colombiana
+					| , del Ministerio de Cultura de la República. El libro viene envuelto en una coraza de PDF que es necesario remover para extraer toda la sustancia
+				li
+					| Datos nutricionales:  En Colombia son difíciles de conseguir. La primera opción fue buscar en el ICBF, sin embargo, ya 
+					a(href="http://alimentoscolombianos.icbf.gov.co/alimentos_colombianos/consulta_alimento.asp" rel="noopener noreferrer" target="_blank") no tienen su servidor activo. 
+					| Así que nos vimos en la necesidad de importar algunos datos. En particular, decidimos usar los datos del USDA Departamento de Agricultura de los Estados Unidos, en su Base de Datos de Nutrientes, que cuentan con toda la información nutricional de múltiples ingredientes. No solo existe un API para acceder la información, también se puede descargar la base de datos completa con muy buena documentación 
+					a(href="https://www.ars.usda.gov/northeast-area/beltsville-md/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/sr28-download-files/" target="_blank" rel="noopener noreferrer") aquí
+					| .
+				li Datos de precios de alimentos: Se obtuvieron sacando el promedio por ciudad de la información de la plataforma SIPSA del DANE.
+				li Sustancia: La única forma de obtener la sustancia para esta pieza es yendo a quienes saben mezclar las raíces históricas de la tradición culinaria colombiana con los vapores de la modernidad: chefs, cocineros profesionales y amas de casa que saben preparar los más ricos platos y a los que les debemos que la tradición se mantenga viva.
+				li Paciencia y análisis: Verificar y validar los datos de manera que sean comparables entre sí toma tiempo. No hay que desesperarse. Desde estandarizar los múltiples nombres que un ingrediente puede tener, hasta normalizar los pesos y las porciones de cada ingrediente es fundamental. Hágale con calma.
+				li Programación: Para nosotros, R como lenguaje de programación para todo el flujo de análisis de datos y visualización. Rstudio es nuestro IDE de preferencia.
+				li Diseño: HTML/Javascript/CSS para darle una cara agradable al sitio estático del especial.
+			p: strong Preparación
+			p Toma el PDF del Gran Libro de la Cocina Colombiana. Sumérgelo en el paquete pdftools para que puedas leer todo el libro como un gran bloque de texto. Se extiende todo el texto a lo largo de la memoria RAM para identificar granos de textos similares. Los granos atienden a un patrón por el cual se pueden separar los ingredientes de cada receta, la dificultad y el tiempo de cocción. Se reduce cada grupo de granos a un archivo CSV con las columnas separadas por variable. Estos datos luego se muelen y con cuidado, lo vas a colar para remover lo que no sirve (como números de página, índices, etc).
+			p 
+				| La harina de cada uno de estos grupos de granos será pasada por un nuevo proceso de colado con el que irás limpiando los datos.  A esto le llamamos desambiguación y sirve para que, por ejemplo, sepas que 
+				i cebolla larga 
+				| es lo mismo que 
+				i cebolla junca 
+				| o que 
+				i una pizca de sal 
+				| equivale a 
+				i tres gramos de sal.
+			p Una vez hayas hecho la desambiguación tendrás datos estandarizados. Estos datos se mezclan con un paquetes de visualización que te permitirá crear una masa uniforme con la que crear mapas y otros tipos de gráficos que permitan entender todos los datos agregados.
+			p Múltiples historias de chefs, cocineras y expertos se agregan a la mezcla para darle sustancia. Revolver hasta que cuajen los diferentes ángulos. Se agregan especias adicionales con componentes multimedia como video e imágenes interactivas que permiten acercarse más a las experiencias de quienes en su día a día trabajan en la cocina.
+			p Se divide la mezcla en moldes de diferentes tamaños y formas, previamente engrasados con horas de diseño, con las que se presentará la información al comensal: quices, interactivos, aplicaciones y textos.
+			p Todo va al horno a fuego lento, porque lo bueno siempre toma tiempo, y se deja cocer hasta que huela y se vea bien.
+			p Recuerda que debes ajustar la presentación para platos pequeños (móviles) y para platos grandes (escritorio).
+			p
+				| Sirva a sus amigos, conocidos e interesados a través de este 
+				a(href="http://especiales.datasketch.co/cocina-colombiana/recetas-colombianas.html" target="_blank" rel="noopener noreferrer") link.
+			#disqus_thread
+
+block footer
+	include ./blocks/footer
+
+block js
+	script(src="assets/js/post.js")
+	script(src="assets/js/disqus.js")
