@@ -1,1 +1,0 @@
-"use strict";var nav=document.querySelector(".nav"),carousel=$(".owl-carousel"),affix=function(){window.scrollY>window.innerHeight-nav.clientHeight?nav.classList.add("scrolled"):nav.classList.remove("scrolled")};carousel.owlCarousel({autoplay:!0,items:1}),affix(),window.addEventListener("scroll",affix);

@@ -1,1 +1,0 @@
-"use strict";var disqus_config=function(){this.page.url=window.location.href,this.page.identifier=window.location.href,this.language="es_MX"};!function(){var t=document.createElement("script");t.src="//datasketch.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),document.body.appendChild(t)}();
