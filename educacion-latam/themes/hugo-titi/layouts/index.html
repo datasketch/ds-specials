@@ -1,0 +1,61 @@
+{{ define "style" }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/home.css">
+{{ end }}
+
+{{ define "main" }}
+  <section id="cover" class="background section__full" style="background-image: url(images/cover.png)"></section>
+  <section id="stories">
+    <div class="stories">
+      <div class="stories__tabs">
+        <div class="story__tab active column centered" data-summary="0">
+          <p class="story__title">Aprendizajes</p>
+          <p class="story__subtitle">para toda la vida</p>
+        </div>
+        <div class="story__tab column centered" data-summary="1">
+          <p class="story__title">Inversión</p>
+          <p class="story__subtitle">social inteligente</p>
+        </div>
+        <div class="story__tab column centered" data-summary="2">
+          <p class="story__title">Desempleo juvenil</p>
+          <p class="story__subtitle">como oportunidad</p>
+        </div>
+      </div>
+      <div class="stories__image">
+        <img class="img-responsive" src="images/nina.png">
+      </div>
+      <div class="stories__summary">
+        <div class="ribbon ribbon-dark"></div>
+        {{ range $index, $post := where .Pages "Section" "posts" }}
+          <div id="summary-{{ $index }}" class="summary {{if eq $index 0}}active{{end}}">
+            <p>{{ $post.Params.summary }}</p>
+            <p style="margin-top: 5px"><a style="color: #105EAD" href="{{ $post.URL }}">Leer más</a></p>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews__container">
+    <div class="container">
+      <div class="reviews"></div>
+      <div class="switch__group">
+        <button class="switch active" onclick="showReviewByTopic(this)">Por temas</button>
+        <button class="switch" onclick="showReviewByCountry(this)">Por países</button>
+      </div>
+      <div class="ribbon"></div>
+      <h3 class="story__author"></h3>
+      <div class="story__content"></div>
+    </div>
+  </section>
+
+  <section class="background section__full column v-centered" style="background-image: url(images/mapa.png); background-color: var(--black-bean)">
+    <div class="container column h-centered">
+      <h1 class="section__title text--white text-center">Mapa de actores</h1>
+      <a href="{{ `mapa` | absURL }}" class="btn--red">VER</a>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "script" }}
+  <script src="js/home.js"></script>
+{{ end }}
