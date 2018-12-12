@@ -84,7 +84,7 @@
 .stories__image img {
   display: block;
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 300px
 }
 
 .stories__summary {

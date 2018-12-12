@@ -5,6 +5,7 @@ const storyContent = document.querySelector('.story__content')
 const switchGroup = document.querySelector('.switch__group')
 let activeTab = document.querySelector('.story__tab.active')
 let activeSummary = document.querySelector('.summary.active')
+const tabImage = document.querySelector('.stories__image img')
 
 /* HTTP Request */
 let fragments, groupedByTopic, groupedByCountry
@@ -39,6 +40,10 @@ storiesTabs.addEventListener('click', event => {
   const dataSummary = activeTab.dataset.summary
   const summaryId = 'summary-' + dataSummary
   const summary = document.getElementById(summaryId)
+
+  // Get image
+  const dataImage = activeTab.dataset.image
+  tabImage.setAttribute('src', `images/${dataImage}`)
 
   // Update active summary
   activeSummary.classList.toggle('active')
