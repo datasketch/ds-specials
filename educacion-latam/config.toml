@@ -19,7 +19,7 @@ publishDir = "../docs/educacion-latam"
   [params.nav]
     bg = "#ffffff"
     color = "#105EAD"
-    # logo = "images/ds-logo.svg"
+    logo = "images/logo-bid.png"
     logoWidth = "150px"
     # Optional, true by default
     # fixed = true
