@@ -22,3 +22,11 @@ header {
 .burger-menu.open {
   z-index: 1500 !important;
 }
+
+.nav__logo img {
+  transition: all 0.25s ease;
+}
+
+header.affixed .nav__logo img {
+  width: 100px !important;
+}
