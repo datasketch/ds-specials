@@ -81,8 +81,12 @@
   display: none;
 }
 
-.stories__image img {
+.stories__image img.active {
   display: block;
+}
+
+.stories__image img {
+  display: none;
   margin: 0 auto;
   max-width: 300px
 }
