@@ -1,4 +1,7 @@
 const storiesTabs = document.querySelector('.stories__tabs')
+const moveTo = new MoveTo({ tolerance: 80 })
+const trigger0 = document.querySelector('.trigger-0')
+const trigger1 = document.querySelector('.trigger-1')
 const reviews = document.querySelector('.reviews')
 const storyAuthor = document.querySelector('.story__author')
 const storyContent = document.querySelector('.story__content')
@@ -6,6 +9,9 @@ const switchGroup = document.querySelector('.switch__group')
 let activeTab = document.querySelector('.story__tab.active')
 let activeSummary = document.querySelector('.summary.active')
 let activeTabImage = document.querySelector('.stories__image img.active')
+
+moveTo.registerTrigger(trigger0)
+moveTo.registerTrigger(trigger1)
 
 /* HTTP Request */
 let fragments, groupedByTopic, groupedByCountry
@@ -116,18 +122,20 @@ function makeRequest () {
 function reviewsTemplate (object) {
   const dictionary = createCountriesDictionary(fragments)
   const templates = []
-  for (const key in object) {
-    if (object.hasOwnProperty(key) && key !== "" && Array.isArray(object[key])) {
+  let keysSorted
+  if (object.key === 'topics') {
+    keysSorted = Object.keys(object).filter(key => Array.isArray(object[key])).sort();
+    for (const key of keysSorted) {
       const review = document.createElement('div')
       review.classList.add('review')
-
+  
       const reviewTitle = document.createElement('p')
       reviewTitle.classList.add('review__title')
       reviewTitle.textContent = humanize(key)
-
+  
       const reviewFragments = document.createElement('ul')
       reviewFragments.classList.add('review__fragments')
-
+  
       object[key].forEach(function (item) {
         const reviewBullet = document.createElement('li')
         reviewBullet.classList.add('review__bullet')
@@ -135,25 +143,66 @@ function reviewsTemplate (object) {
         reviewBullet.dataset.key = key
         reviewFragments.appendChild(reviewBullet)
       })
-
+  
       const reviewImage = document.createElement('div')
       reviewImage.classList.add('review__image')
-
+  
       const image = document.createElement('img')
-      
+        
       if (object.key === 'countries') {
         image.setAttribute('src', `https://www.countryflags.io/${dictionary[key]}/flat/64.png`)
       } else {
         image.setAttribute('src', `images/${key}.png`)
       }
-
+  
       reviewImage.appendChild(image)
-
+  
       review.appendChild(reviewTitle)
       review.appendChild(reviewFragments)
       review.appendChild(reviewImage)
-
+  
       templates.push(review)
+    }
+  } else {
+    for (const key in object) {
+      if (object.hasOwnProperty(key) && key !== "" && Array.isArray(object[key])) {
+        const review = document.createElement('div')
+        review.classList.add('review')
+  
+        const reviewTitle = document.createElement('p')
+        reviewTitle.classList.add('review__title')
+        reviewTitle.textContent = humanize(key)
+  
+        const reviewFragments = document.createElement('ul')
+        reviewFragments.classList.add('review__fragments')
+  
+        object[key].forEach(function (item) {
+          const reviewBullet = document.createElement('li')
+          reviewBullet.classList.add('review__bullet')
+          reviewBullet.dataset.id = item.id
+          reviewBullet.dataset.key = key
+          reviewFragments.appendChild(reviewBullet)
+        })
+  
+        const reviewImage = document.createElement('div')
+        reviewImage.classList.add('review__image')
+  
+        const image = document.createElement('img')
+        
+        if (object.key === 'countries') {
+          image.setAttribute('src', `https://www.countryflags.io/${dictionary[key]}/flat/64.png`)
+        } else {
+          image.setAttribute('src', `images/${key}.png`)
+        }
+  
+        reviewImage.appendChild(image)
+  
+        review.appendChild(reviewTitle)
+        review.appendChild(reviewFragments)
+        review.appendChild(reviewImage)
+  
+        templates.push(review)
+      }
     }
   }
   return templates

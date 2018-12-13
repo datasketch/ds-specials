@@ -3,7 +3,12 @@
 {{ end }}
 
 {{ define "main" }}
-  <section id="cover" class="background section__full" style="background-image: url(images/cover.png)"></section>
+  <section id="cover" class="background section__full column" style="background-image: url(images/cover.png)">
+    <div id="sections__buttons">
+      <a href="#reviews" class="btn trigger-0">¿Qué dicen los líderes de opinión?</a>
+      <a href="#map" class="btn trigger-1">Mapa de actores</a>
+    </div>
+  </section>
   <section id="stories">
     <div class="stories">
       <div class="stories__tabs">
@@ -37,7 +42,7 @@
     </div>
   </section>
 
-  <section class="reviews__container">
+  <section class="reviews__container" id="reviews">
     <div class="container">
       <div class="reviews"></div>
       <div class="switch__group">
@@ -50,7 +55,7 @@
     </div>
   </section>
 
-  <section class="background section__full column v-centered" style="background-image: url(images/mapa.png); background-color: var(--black-bean)">
+  <section id="map" class="background section__full column v-centered" style="background-image: url(images/mapa.png); background-color: var(--black-bean)">
     <div class="container column h-centered">
       <h1 class="section__title text--white text-center">Mapa de actores</h1>
       <a href="{{ `mapa` | absURL }}" class="btn--red">VER</a>
@@ -59,6 +64,7 @@
 {{ end }}
 
 {{ define "script" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.7.4/moveTo.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/home.js"></script>
 {{ end }}

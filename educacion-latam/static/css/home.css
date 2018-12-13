@@ -1,3 +1,19 @@
+#sections__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto 25vh;
+}
+
+.btn {
+  background: var(--denim);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0 0 5px;
+  padding: 6px 10px;
+  text-align: center;
+}
+
 .ribbon {
   background: white;
   height: 10px;
@@ -265,6 +281,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  #sections__buttons {
+    flex-direction: row;
+  }
+  .btn {
+    margin: 0 5px;
+  }
   #stories {
     padding: 10em 0;
   }
