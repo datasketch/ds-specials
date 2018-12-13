@@ -2,7 +2,6 @@ baseUrl = "/educacion-latam/"
 title = "Educación Latam"
 theme = "hugo-titi"
 googleAnalytics = ""
-disqusShortname = "datasketch"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 publishDir = "../docs/educacion-latam"
 

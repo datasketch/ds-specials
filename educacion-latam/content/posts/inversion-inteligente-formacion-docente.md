@@ -16,8 +16,7 @@ summary: "El llamado a la acción es romper los silos institucionales o temátic
   subtitle = "Formación docente"
   image = "images/post_inversion.png"
   color = "white"
-  bg = "aliceblue"
->}}{{< /banner >}}
+  bg = "aliceblue">}}TST{{< /banner >}}
 
 Para nadie es un secreto que la labor de los docentes en la educación de una sociedad es fundamental para que esta avance. Es un ejercicio de formación del futuro de los países que en América Latina se ha visto constantemente atropellada por el descrédito, poco reconocimiento y baja remuneración de estos actores tan importantes para el avance de nuestros países.
 
@@ -54,10 +53,10 @@ Pero estas exigencias en las carreras de educación, se pueden fortalecer sólo 
 Aquí va la gráfica de relación de sueldo
 
 <iframe width='550' height='620' frameBorder='0' src='//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0'></iframe> 
-{{< iframe
+< iframe
   url = "//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0"
   width = "80"
->}}
+>
 -->
 
 

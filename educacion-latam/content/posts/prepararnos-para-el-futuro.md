@@ -41,10 +41,10 @@ A esta situación, hay que añadirle que alrededor del 50% de los estudiantes de
 <!-- 
 Aquí va el mapa de pisa
 <iframe width="100%" height="650" src="//www.compareyourcountry.org/pisa/?lg=es" frameborder="0" allowfullscreen></iframe>
-{{< iframe
+< iframe
   url = "//www.compareyourcountry.org/pisa/?lg=es"
   width = "80"
->}}
+>
 -->
 
 
