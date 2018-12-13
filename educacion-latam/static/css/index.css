@@ -27,6 +27,14 @@ header {
   transition: all 0.25s ease;
 }
 
+.logo-ds {
+  margin-left: 10px;
+}
+
+.logo-ds img {
+  width: 200px;
+}
+
 header.affixed .nav__logo img {
   width: 100px !important;
 }
