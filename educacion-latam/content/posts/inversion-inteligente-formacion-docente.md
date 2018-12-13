@@ -16,7 +16,7 @@ summary: "El llamado a la acción es romper los silos institucionales o temátic
   subtitle = "Formación docente"
   image = "images/post_inversion.png"
   color = "white"
-  bg = "aliceblue">}}TST{{< /banner >}}
+  bg = "aliceblue">}}{{< /banner >}}
 
 Para nadie es un secreto que la labor de los docentes en la educación de una sociedad es fundamental para que esta avance. Es un ejercicio de formación del futuro de los países que en América Latina se ha visto constantemente atropellada por el descrédito, poco reconocimiento y baja remuneración de estos actores tan importantes para el avance de nuestros países.
 

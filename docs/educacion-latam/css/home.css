@@ -313,6 +313,6 @@
 
 @media screen and (min-width: 992px) {
   .story__content {
-    column-count: 3;
+    column-count: 2s;
   }
 }
