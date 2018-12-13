@@ -24,6 +24,7 @@ header {
 }
 
 .nav__logo img {
+  width: 80px !important;
   transition: all 0.25s ease;
 }
 
@@ -36,5 +37,11 @@ header {
 }
 
 header.affixed .nav__logo img {
-  width: 100px !important;
+  width: 80px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__logo img {
+    width: 120px !important;
+  }
 }

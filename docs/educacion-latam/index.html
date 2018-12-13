@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta name="generator" content="Hugo 0.43" />
+	<meta name="generator" content="Hugo 0.52" />
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,19 +31,7 @@
 <meta property="og:description" content="Site SEO description" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/educacion-latam/" />
-
-
-
 <meta property="og:updated_time" content="2018-11-26T12:48:52-05:00"/>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -155,7 +143,12 @@
 
 		<main id="content" class="column item-fill">
 			
-  <section id="cover" class="background section__full" style="background-image: url(images/cover.png)"></section>
+  <section id="cover" class="background section__full column" style="background-image: url(images/cover.png)">
+    <div id="sections__buttons">
+      <a href="#reviews" class="btn trigger-0">¿Qué dicen los líderes de opinión?</a>
+      <a href="#map" class="btn trigger-1">Mapa de actores</a>
+    </div>
+  </section>
   <section id="stories">
     <div class="stories">
       <div class="stories__tabs">
@@ -199,7 +192,7 @@
     </div>
   </section>
 
-  <section class="reviews__container">
+  <section class="reviews__container" id="reviews">
     <div class="container">
       <div class="reviews"></div>
       <div class="switch__group">
@@ -212,7 +205,7 @@
     </div>
   </section>
 
-  <section class="background section__full column v-centered" style="background-image: url(images/mapa.png); background-color: var(--black-bean)">
+  <section id="map" class="background section__full column v-centered" style="background-image: url(images/mapa.png); background-color: var(--black-bean)">
     <div class="container column h-centered">
       <h1 class="section__title text--white text-center">Mapa de actores</h1>
       <a href="/educacion-latam/mapa" class="btn--red">VER</a>
@@ -230,6 +223,7 @@
 	</div>
 	<script src='/educacion-latam/js/titi.js'></script>
 	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moveTo/1.7.4/moveTo.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/home.js"></script>
 
