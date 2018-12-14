@@ -1,9 +1,16 @@
 .cover__inner {
   display: flex;
   flex-direction: column;
-  margin: auto auto 20px;
+  margin: auto auto 25vh;
   text-align: center;
   padding: 0 2.5%;
+}
+
+.notice {
+  background: #1272DF;
+  color: white;
+  font-size: 1.6rem;
+  padding: 20px 0;
 }
 
 .cover__intro p {
@@ -18,7 +25,7 @@
 }
 
 .btn {
-  background: var(--denim);
+  background: #1272DF;
   border-radius: 5px;
   color: #ffffff;
   font-size: 1.2rem;
@@ -38,7 +45,7 @@
 }
 
 .ribbon-dark {
-  background: var(--black-bean);
+  background: #091E1B;
 }
 
 .section__full {
@@ -58,7 +65,7 @@
 }
 
 .btn--red {
-  background: var(--amaranth);
+  background: #E6374A;
   color: white;
   font-size: 4em;
   letter-spacing: 0.1em;
@@ -66,7 +73,7 @@
 }
 
 #stories {
-  border-bottom: 10px solid var(--denim);
+  border-bottom: 10px solid #1272DF;
   padding: 0 0 20px;
 }
 
@@ -83,7 +90,7 @@
 }
 
 .story__tab {
-  background: var(--denim);
+  background: #1272DF;
   box-shadow: 1px 1px 3px rgba(9, 30, 27, .8);
   color: white;
   cursor: pointer;
@@ -105,7 +112,7 @@
 }
 
 .story__tab.active {
-  background: var(--amaranth);
+  background: #E6374A;
 }
 
 .stories__image {
@@ -139,7 +146,7 @@
 }
 
 .reviews__container {
-  background: var(--black-bean);
+  background: #091E1B;
   color: white;
   padding: 0 0 20px;
 }
@@ -193,7 +200,7 @@
 }
 
 .review__bullet {
-  background: var(--denim);
+  background: #1272DF;
   border-radius: 50%;
   cursor: pointer;
   height: 10px;
@@ -204,7 +211,7 @@
 }
 
 .review__bullet.active {
-  background: var(--amaranth);
+  background: #E6374A;
   transform: scale(1.2)
 }
 
@@ -246,7 +253,7 @@
 }
 
 .switch {
-  background: var(--tory-blue);
+  background: #105EAD;
   border: none;
   color: white;
   cursor: pointer;
@@ -271,7 +278,7 @@
 }
 
 .switch:before {
-  background: var(--denim);
+  background: #1272DF;
   border-radius: 5px;
   content: '';
   height: 100%;
