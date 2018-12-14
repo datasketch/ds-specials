@@ -40,7 +40,7 @@ En muchos países de latinoamérica no es obligatorio cursar el preescolar, sin 
 <!-- 
 Aquí va gráfica de UNESCO matrículas en educación primaria
 -->
-![](/images/matriculas-educativas.png)
+![](/educacion-latam/images/matriculas-educativas.png)
 
 Según cifras de la Unesco, el acceso a la educación pre-primaria aún sigue siendo muy insuficiente en América Latina -especialmente si se habla de Paraguay, Honduras y Colombia-, sin embargo los niños que asisten a la primaria son muchos más, es decir, no cursan pre-primaria y siguen a primaria sin pasar por los procesos de aprendizaje anteriores.
 

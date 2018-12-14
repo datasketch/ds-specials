@@ -24,7 +24,7 @@ Rosario, Víctor y Mercedes se graduaron hace dos años de secundaria y a pesar 
 <!-- 
 Aquí va la gráfica de desempleo
 -->
-![](/images/desempleo.png)
+![](/educacion-latam/images/desempleo.png)
 
 Santiago y Carolina de la misma edad de Rosario, Víctor y Mercedes, decidieron dejar el colegio antes de graduarse y hacer parte del 50% de jóvenes que según el Banco Interamericano de Desarrollo (BID) abandonan las escuelas y que entran a formar parte de las personas desempleadas que no cuentan con un título de bachillerato.
 
