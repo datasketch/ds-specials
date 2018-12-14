@@ -1,17 +1,33 @@
-#sections__buttons {
+.cover__inner {
   display: flex;
   flex-direction: column;
-  margin: auto auto 25vh;
+  margin: auto auto 20px;
+  text-align: center;
+  padding: 0 2.5%;
+}
+
+.cover__intro p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 0 20px;
+}
+
+.cover__actions {
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
   background: var(--denim);
   border-radius: 5px;
   color: #ffffff;
-  font-size: 2rem;
-  margin: 0 0 5px;
-  padding: 6px 10px;
+  font-size: 1.2rem;
+  padding: 5px;
   text-align: center;
+}
+
+.btn:nth-of-type(1) {
+  margin-right: 5px;
 }
 
 .ribbon {
@@ -104,7 +120,6 @@
 .stories__image img {
   display: none;
   margin: 0 auto;
-  max-width: 300px
 }
 
 .stories__summary {
@@ -281,23 +296,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  #sections__buttons {
-    flex-direction: row;
+  .cover__inner {
+    padding: 0 15%;
   }
+  .cover__intro p,
   .btn {
-    margin: 0 5px;
-  }
-  #stories {
-    padding: 10em 0;
-  }
-  .stories {
-    grid-template-columns: 300px repeat(2, 1fr);
-  }
-  .stories__image {
-    display: block;
-  }
-  .story__tab {
-    padding: 0;
+    font-size: 1.6rem;
   }
   .reviews__container {
     padding: 40px 0;
@@ -331,10 +335,46 @@
   .story__content {
     column-count: 2
   }
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'tab tab''image summary';
+  }
+  .stories__image {
+    display: block;
+    grid-area: image;
+  }
+  .stories__image img {
+    max-width: 200px;
+  }
+  .stories__tabs {
+    grid-area: tab;
+  }
+  .stories__summary {
+    grid-area: summary;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .story__content {
-    column-count: 2s;
+  .cover__inner {
+    padding: 0 20%;
+  }
+  #stories {
+    padding: 10em 0;
+  }
+  .stories {
+    grid-template-columns: 300px repeat(2, 1fr);
+    grid-template-areas: 'tab image summary';
+    grid-template-rows: auto;
+  }
+  .stories__image {
+    display: block;
+  }
+  .story__tab {
+    padding: 0;
+  }
+  .stories__image img {
+    max-width: 300px
   }
 }

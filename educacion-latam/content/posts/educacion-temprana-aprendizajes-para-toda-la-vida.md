@@ -24,9 +24,7 @@ María es una estudiante de segundo de primaria de la escuelita pública #80139 
 
 Este caso peruano, se repite en las diversas regiones de latinoamérica, donde acceder a la educación es muy complicado por la calidad cada vez más precaria y las brechas tan amplias para gozar de este derecho, especialmente si hablamos de las desigualdades de género, de etnia, económicas, de ruralidad, entre otras.
 
-<!-- 
-Aquí va la tabla
--->
+<!-- {{< iframe url="/educacion-latam/docs/tabla.html" >}} -->
 
 Especialmente cuando se habla del acceso a la educación de niños y niñas pertenecientes a minorías étnicas y otros grupos minoritarios que han sido los más afectados por las condiciones de desigualdad en la región, se hace imperante que estas brechas en los niveles educativos, sean una lucha constante en los países de América Latina. 
 

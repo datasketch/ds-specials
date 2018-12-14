@@ -25,15 +25,12 @@ publishDir = "../docs/educacion-latam"
 
   [[params.social]]
     icon = "twitter"
-    url = "https://twitter.com/datasketch"
+    url = "https://twitter.com/bideducacion"
   [[params.social]]
-    icon = "facebook"
-    url = "https://www.facebook.com/datasketch/"
-  [[params.social]]
-    icon = "instagram"
-    url = "https://www.instagram.com/datasketch/"
+    icon = "rss"
+    url = "https://blogs.iadb.org/educacion/"
 
   [params.footer]
-    text = "La división de Educación del Banco Interamericano de Desarrollo convocó en 2018 a líderes de opinión de más de 16 países de América Latina y el Caribe al Curso Movilizando Políticas Educativas Efectivas. Periodistas, Rectores de Universidades, filántropos y activistas sociales trabajaron juntos durante 8 semanas y en esta edición usted podrá acercarse a la realidad y prioridades que ellos identificaron para la región"
+    text = ""
     bg = "black"
     color = "white"
