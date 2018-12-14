@@ -39,15 +39,7 @@ En promedio, la mitad de los estudiantes de América Latina y el Caribe no logra
 
 A esta situación, hay que añadirle que alrededor del 50% de los estudiantes desertan de las escuelas, y una gran parte de ellos no lo hace porque considera que la educación no es relevante para sus vidas. 
 
-<!-- 
-Aquí va el mapa de pisa
-<iframe width="100%" height="650" src="//www.compareyourcountry.org/pisa/?lg=es" frameborder="0" allowfullscreen></iframe>
-< iframe
-  url = "//www.compareyourcountry.org/pisa/?lg=es"
-  width = "80"
->
--->
-
+{{< iframe url="//www.compareyourcountry.org/pisa/?lg=es" >}}
 
 Con un nivel educativo como el que tenemos en América Latina y el Caribe, en el que como se dijo, nos encontramos ubicados muy por debajo del promedio de la OCDE y que es demostrable que nuestros estudiantes no saben aplicar los conocimientos en situaciones de la vida real para enfrentar “situaciones novedosas” ¿cómo creemos que los estudiantes van a salir a afrontar el mundo?
 

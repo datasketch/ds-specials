@@ -49,16 +49,7 @@ Para contar con un sistema educativo con alto desempeño, se debe poner el foco 
 
 Pero estas exigencias en las carreras de educación, se pueden fortalecer sólo si se promueven buenas condiciones para el desarrollo profesional, prestigio de la profesión, motivación a los estudiantes, mejoras en las condiciones laborales. Y especialmente mejoras en salarios, que deben ir en ascenso a medida que la profesión docente se ejerce. 
 
-<!-- 
-Aquí va la gráfica de relación de sueldo
-
-<iframe width='550' height='620' frameBorder='0' src='//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0'></iframe> 
-< iframe
-  url = "//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0"
-  width = "80"
->
--->
-
+{{< iframe url="//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0" >}}
 
 Esto requiere un cambio en el paradigma general de la educación, especialmente reconocer que la docencia es una vocación que que requiere competencias y disciplina para construir un mejor futuro de la sociedad. Para eso es primordial la labor de los gobiernos en la generación de políticas públicas en torno a que las personas escojan esta profesión y que se les garantice unas correctas condiciones laborales.
 
