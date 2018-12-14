@@ -19,6 +19,7 @@ summary: "Las secuelas de no integrar la oferta de servicios sociales (salud, al
   El gran esfuerzo que debe hacer el Estado para incentivarla educación es crear unas buenas condiciones de infraestructura, recursos didácticos, ambiente socioafectivo, y alianzas internacionales.
 {{< /banner >}}
 
+
 María es una estudiante de segundo de primaria de la escuelita pública #80139 del distrito de Curgos, el más pobre de Perú, que cuando se le piden leer una frase de un libro, no puede hacerlo. Caso contrario de si viajamos cuatro horas desde el distrito de Curgos hacia Trujillo en Perú, el distrito más importante de la región La Libertad, conoceremos a Micaela, quién tiene la misma edad que María, pero además de saber leer, ha aprendido a presentarse en inglés.
 
 Este caso peruano, se repite en las diversas regiones de latinoamérica, donde acceder a la educación es muy complicado por la calidad cada vez más precaria y las brechas tan amplias para gozar de este derecho, especialmente si hablamos de las desigualdades de género, de etnia, económicas, de ruralidad, entre otras.
@@ -39,6 +40,7 @@ En muchos países de latinoamérica no es obligatorio cursar el preescolar, sin 
 <!-- 
 Aquí va gráfica de UNESCO matrículas en educación primaria
 -->
+![](/images/matriculas-educativas.png)
 
 Según cifras de la Unesco, el acceso a la educación pre-primaria aún sigue siendo muy insuficiente en América Latina -especialmente si se habla de Paraguay, Honduras y Colombia-, sin embargo los niños que asisten a la primaria son muchos más, es decir, no cursan pre-primaria y siguen a primaria sin pasar por los procesos de aprendizaje anteriores.
 
