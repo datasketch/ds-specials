@@ -16,15 +16,14 @@ summary: "Los participantes nos invitan a hacer eficiencias entre los países de
   subtitle = "Desarrollo y fortalecimiento de habilidades"
   image = "images/post_futuro.png"
   color = "white"
-  bg = "aliceblue"
->}}{{< /banner >}}
+  bg = "aliceblue">}}{{< /banner >}}
 
 Rosario, Víctor y Mercedes se graduaron hace dos años de secundaria y a pesar de su larga búsqueda de trabajo siguen desempleados. Ellos creían que si terminaban el bachillerato podrían seguir adelante, pero ahora hacen parte del grueso de desempleo del América Latina, que según las estimaciones modeladas de la OIT (Organización Internacional del Trabajo) alcanza los 10 millones de jóvenes entre los 15 y 24 años que se encuentran desempleados en el 2017. 
 
 <!-- 
 Aquí va la gráfica de desempleo
 -->
-![](/educacion-latam/images/desempleo.png)
+![](/educacion-latam/images/preparanos_img_1.png)
 
 Santiago y Carolina de la misma edad de Rosario, Víctor y Mercedes, decidieron dejar el colegio antes de graduarse y hacer parte del 50% de jóvenes que según el Banco Interamericano de Desarrollo (BID) abandonan las escuelas y que entran a formar parte de las personas desempleadas que no cuentan con un título de bachillerato.
 
@@ -59,6 +58,5 @@ La educación para la vida supone un análisis sobre las competencias blandas y 
 {{< quote >}}“Es importante que la educación superior en México no solo conozca de las oportunidades para impulsar la educación de calidad en México o bien las necesidades del sector productivo, si no que se ponga en acción incorporando en el modelo educativo nuevas competencias en los jóvenes como lo son las socioemocionales.”  (British Council, 2016){{< /quote >}}
 
 El fortalecimiento de las competencias supone también que los empleos que hoy en día existen, se podrán ir transformando en el futuro, y se van a necesitar progresivamente habilidades relacionadas con el manejo e interacción con computadoras inteligentes, pero también con la integración de los jóvenes a las nueva dinámicas económicas demandadas por el futuro.
-
 
 Por esto, es necesario que las instituciones educativas integren en sus currículos que los estudiantes sepan resolver de manera adecuada los problemas a los que se va a enfrentar el resto de su vida, desde una actividad tan simple como hacer una consignación en un banco a una de vital importancia como votar en las elecciones. Si conocimientos que parecen alejados de la academia se integrarán en la educación en el día a día de los estudiantes, tendríamos ciudadanos mejor preparados para salir al mundo. 

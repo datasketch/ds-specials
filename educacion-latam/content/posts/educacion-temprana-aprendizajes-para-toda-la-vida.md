@@ -38,7 +38,7 @@ En muchos países de latinoamérica no es obligatorio cursar el preescolar, sin 
 <!-- 
 Aquí va gráfica de UNESCO matrículas en educación primaria
 -->
-![](/educacion-latam/images/matriculas-educativas.png)
+![](/educacion-latam/images/educacion_temprana_img_1.png)
 
 Según cifras de la Unesco, el acceso a la educación pre-primaria aún sigue siendo muy insuficiente en América Latina -especialmente si se habla de Paraguay, Honduras y Colombia-, sin embargo los niños que asisten a la primaria son muchos más, es decir, no cursan pre-primaria y siguen a primaria sin pasar por los procesos de aprendizaje anteriores.
 
@@ -56,5 +56,6 @@ El gran esfuerzo que debe hacer el Estado para incentivar la educación, es crea
 <!-- 
 Aquí va la gráfica de unesco gasto público en educación primaria
 -->
+{{< iframe url="/educacion-latam/docs/gasto_publico_educacion_temprana.html" >}}
 
 A pesar de que la mayoría de países de América Latina, ha aumentado el gasto público en educación primaria, este porcentaje debe seguir en aumento. Porque es necesario incentivar a los Estados, a reconocer la educación como un derecho fundamental al que deben gozar todos los infantes desde la educación pre-básica, con la finalidad de favorecer el crecimiento y desarrollo integral de las capacidades físicas y motoras, socio-afectivas, lingüísticas y cognitivas de los niños. Todo esto dentro de una dinámica de formación en torno a la equidad, la inclusión y la democracia en nuestros países.

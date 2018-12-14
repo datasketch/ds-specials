@@ -44,6 +44,8 @@ Por lo tanto, invertir en un buen equipo de docencia es fundamental para la form
 <!-- 
 Aquí va la gráfica de profesores certificados
 -->
+{{< iframe url="/educacion-latam/docs/profesores_cualificados_inversion_inteligente.html" >}}
+{{< iframe url="/educacion-latam/docs/profesores_entrenados_inversion_inteligente.html" >}}
 
 Para contar con un sistema educativo con alto desempeño, se debe poner el foco en la formación profesional docente. Para eso, es fundamental atraer a potenciales pedagogos hacia las carreras de educación, y especialmente que estas carreras de educación tengan un alto porcentaje de exigencia requeridos por la profesión, porque en muchos casos los requerimientos para estudiar este tipo de carreras son muy básicos. Es necesario que cada vez más haya un aumento en los profesores certificados para la enseñanza en cada uno de los niveles educativos.
 
