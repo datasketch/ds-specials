@@ -1,5 +1,5 @@
 ---
-title: "Prepararnos Para El Futuro: Habilidades"
+title: "Habilidades para el futuro"
 date: "2018-11-26T14:56:58-05:00"
 description: "Type SEO description here"
 menu: "burger"
