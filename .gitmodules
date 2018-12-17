@@ -1,0 +1,3 @@
+[submodule "lideres-sociales/themes/hugo-titi"]
+	path = lideres-sociales/themes/hugo-titi
+	url = https://github.com/datasketch/hugo-titi.git
