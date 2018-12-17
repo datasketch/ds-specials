@@ -1,5 +1,5 @@
 ---
-title: "Educacion Temprana: Aprendizajes Para Toda La Vida"
+title: "Educación temprana: aprendizajes para toda la vida"
 date: 2018-11-26T12:48:52-05:00
 hideTitle: true
 menu: "burger"
@@ -26,7 +26,7 @@ Este caso peruano, se repite en las diversas regiones de latinoamérica, donde a
 
 <!-- {{< iframe url="/educacion-latam/docs/tabla.html" >}} -->
 
-Especialmente cuando se habla del acceso a la educación de niños y niñas pertenecientes a minorías étnicas y otros grupos minoritarios que han sido los más afectados por las condiciones de desigualdad en la región, se hace imperante que estas brechas en los niveles educativos, sean una lucha constante en los países de América Latina. 
+Especialmente cuando se habla del acceso a la educación de niños y niñas pertenecientes a minorías étnicas y otros grupos minoritarios que han sido los más afectados por las condiciones de desigualdad en la región, se hace imperante que estas brechas en los niveles educativos, sean una lucha constante en los países de América Latina.
 
 Principalmente esta lucha se debe dar porque los primeros años de escuela, son los más importantes para el aprendizaje de los niños, en este periodo se desarrollan las capacidades cognitivas que son fundamentales para el crecimiento de los infantes.
 
@@ -35,7 +35,7 @@ En muchos países de latinoamérica no es obligatorio cursar el preescolar, sin 
 
 {{< quote >}}De acuerdo a estudios realizados por la Organización para la Cooperación y el Desarrollo Económico (OCDE), el individuo que cursa su educación pre básica, cuenta con un mayor desarrollo de sus habilidades cognitivas y motrices, que los prepara para enfrentar con éxito los procesos de formación en los siguientes niveles de educación básica. Por ende, impacta en los resultados del rendimiento académico de manera favorable, debido a que la preparación en los primeros años de vida es crucial, para el desarrollo integral de cada niña y niño. Carolina Maduro, Honduras.{{< /quote >}}
 
-<!-- 
+<!--
 Aquí va gráfica de UNESCO matrículas en educación primaria
 -->
 ![](/educacion-latam/images/educacion_temprana_img_1.png)
@@ -43,7 +43,7 @@ Aquí va gráfica de UNESCO matrículas en educación primaria
 Según cifras de la Unesco, el acceso a la educación pre-primaria aún sigue siendo muy insuficiente en América Latina -especialmente si se habla de Paraguay, Honduras y Colombia-, sin embargo los niños que asisten a la primaria son muchos más, es decir, no cursan pre-primaria y siguen a primaria sin pasar por los procesos de aprendizaje anteriores.
 
 
-<!-- 
+<!--
 Aquí va la inforgrafía
 -->
 
@@ -53,7 +53,7 @@ Es por eso que en gran parte, debe educarse a padres, docentes y gobiernos para 
 
 El gran esfuerzo que debe hacer el Estado para incentivar la educación, es crear unas buenas condiciones de infraestructura, recursos didácticos, ambiente socioafectivo y alianzas internacionales. Para formarse una gran política pública, donde se puedan promover grandes metas en torno a la educación, donde los grandes tomadores de decisiones pueden cumplir las necesidades en torno al tema de primera infancia.
 
-<!-- 
+<!--
 Aquí va la gráfica de unesco gasto público en educación primaria
 -->
 {{< iframe url="/educacion-latam/docs/gasto_publico_educacion_temprana.html" >}}

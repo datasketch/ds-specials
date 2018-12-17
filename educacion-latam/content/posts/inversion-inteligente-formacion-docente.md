@@ -1,5 +1,5 @@
 ---
-title: "Inversion Inteligente: Formacion Docente"
+title: "Inversión inteligente: formación docente"
 date: "2018-11-26T14:52:30-05:00"
 description: "Type SEO description here"
 menu: "burger"
@@ -27,13 +27,13 @@ Arlen Regina Pérez, Nicaragua.{{< /quote >}}
 
 Por eso, hablar de la importancia en la educación preescolar, también conlleva a que exista una correcta cobertura de docentes por cada alumno. La tasa de alumnos por profesor en la educación preprimaria alcanzó en 2013 un promedio de 17,5 niños en la región latinoamericana.
 
-<!-- 
+<!--
 Aquí va la gráfica de razón de alumnos por profesor
 -->
 
 La poca cantidad de docentes en el sector pre-escolar, también se ve truncada en muchos casos por situaciones que no son de su entera competencia, tales como los paros educativos, las protestas, los bloqueos o toma a instalaciones educativas, entre otros, pero además, de otras múltiples situaciones sociales que afectan los entornos educativos y hacen que esta labor en muchos casos se vea limitada y hasta impedida.
 
-Es evidente que la distribución desigual de docentes en el sistema educativo de latinoamérica hace que se hagan más evidentes las brechas en el acceso a la educación. Los educadores con más bajo desempeño se encuentran trabajando en establecimientos con bajos ingresos y con estudiantes con menos recursos, y viceversa. Lo que refleja una constante brecha de educación tanto en la formación de docentes como de estudiantes, especialmente estancando a aquellos que tienen más bajos recursos. 
+Es evidente que la distribución desigual de docentes en el sistema educativo de latinoamérica hace que se hagan más evidentes las brechas en el acceso a la educación. Los educadores con más bajo desempeño se encuentran trabajando en establecimientos con bajos ingresos y con estudiantes con menos recursos, y viceversa. Lo que refleja una constante brecha de educación tanto en la formación de docentes como de estudiantes, especialmente estancando a aquellos que tienen más bajos recursos.
 
 De esta manera, cuando se observa que el desempeño de los estudiantes es bajo a causa de la baja efectividad de los profesores, es necesario entonces, crear una política pública que apunte a asegurar buenos profesores con buenas condiciones de formación y de aprendizaje.
 
@@ -41,7 +41,7 @@ Para tener un mejor sistema educativo, es necesaria la asignación de recursos, 
 
 Por lo tanto, invertir en un buen equipo de docencia es fundamental para la formación de alumnos, específicamente es necesario invertir en que los maestros asuman un papel de promotores de aprendizaje a través de su propia formación. Es necesario tomar en cuenta los programas impulsados en varios países de latinoamérica que apoyan financieramente la estrategia de acompañamiento y capacitación a docentes en temas relacionados con la enseñanza del sistema educativo de cada país. Y más aún, es importante saber cómo se han invertido estos recursos en la generación de estos programas, estableciendo el presupuesto para estos, cuanto se ha gastado y en qué.
 
-<!-- 
+<!--
 Aquí va la gráfica de profesores certificados
 -->
 {{< iframe url="/educacion-latam/docs/profesores_cualificados.html" >}}
@@ -49,9 +49,8 @@ Aquí va la gráfica de profesores certificados
 
 Para contar con un sistema educativo con alto desempeño, se debe poner el foco en la formación profesional docente. Para eso, es fundamental atraer a potenciales pedagogos hacia las carreras de educación, y especialmente que estas carreras de educación tengan un alto porcentaje de exigencia requeridos por la profesión, porque en muchos casos los requerimientos para estudiar este tipo de carreras son muy básicos. Es necesario que cada vez más haya un aumento en los profesores certificados para la enseñanza en cada uno de los niveles educativos.
 
-Pero estas exigencias en las carreras de educación, se pueden fortalecer sólo si se promueven buenas condiciones para el desarrollo profesional, prestigio de la profesión, motivación a los estudiantes, mejoras en las condiciones laborales. Y especialmente mejoras en salarios, que deben ir en ascenso a medida que la profesión docente se ejerce. 
+Pero estas exigencias en las carreras de educación, se pueden fortalecer sólo si se promueven buenas condiciones para el desarrollo profesional, prestigio de la profesión, motivación a los estudiantes, mejoras en las condiciones laborales. Y especialmente mejoras en salarios, que deben ir en ascenso a medida que la profesión docente se ejerce.
 
 {{< iframe url="//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0" >}}
 
 Esto requiere un cambio en el paradigma general de la educación, especialmente reconocer que la docencia es una vocación que que requiere competencias y disciplina para construir un mejor futuro de la sociedad. Para eso es primordial la labor de los gobiernos en la generación de políticas públicas en torno a que las personas escojan esta profesión y que se les garantice unas correctas condiciones laborales.
-
