@@ -1,45 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/</loc>
-  <lastmod>2017-10-26T17:11:45+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/index.html</loc>
-  <lastmod>2017-10-26T17:11:45+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/lideres-asesinados.html</loc>
-  <lastmod>2017-10-26T17:11:47+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/lideres-reconocidos.html</loc>
-  <lastmod>2017-10-26T17:11:48+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/app.html</loc>
-  <lastmod>2017-10-26T17:11:04+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/asi-es-la-vida-de-un-lider-social.html</loc>
-  <lastmod>2017-10-26T17:11:27+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/estadisticas.html</loc>
-  <lastmod>2017-10-26T19:39:25+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/faq.html</loc>
-  <lastmod>2017-10-26T17:11:31+00:00</lastmod>
-</url>
-<url>
-  <loc>http://especiales.datasketch.co/lideres-sociales/metodologia.html</loc>
-  <lastmod>2017-10-26T17:11:49+00:00</lastmod>
-</url>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/lideres-sociales/metodologia/</loc>
+    <lastmod>2018-12-17T16:41:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/protejamos-a-los-defensores-de-los-derechos-humanos/</loc>
+    <lastmod>2018-09-05T17:36:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/lideres-a-salvo-una-iniciativa-para-salvar-vidas/</loc>
+    <lastmod>2018-07-26T17:23:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/cuatro-lideres-sociales-son-reconocidos-por-su-labor-en-colombia/</loc>
+    <lastmod>2017-09-20T17:12:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/asi-es-la-vida-de-un-lider-social-socorro-aceros/</loc>
+    <lastmod>2017-09-20T17:07:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/preguntas-frecuentes/</loc>
+    <lastmod>2017-09-18T17:43:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/el-90-de-los-asesinatos-a-lideres-sociales-esta-en-la-impunidad/</loc>
+    <lastmod>2017-09-17T16:56:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/</loc>
+    <lastmod>2018-12-17T16:41:23-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/posts/</loc>
+    <lastmod>2018-09-05T17:36:37-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/lideres-sociales/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
 </urlset>
