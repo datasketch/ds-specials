@@ -41,7 +41,7 @@ El gran esfuerzo que debe hacer el Estado para incentivar la educación, es crea
 library(DT)
 library(tidyverse)
 
-data <- read_csv('../../static/data/gasto_publico.csv') %>% arrange(País)
+data <- read_csv('../../static/csv/gasto_publico.csv') %>% arrange(País)
 datatable(data, rownames = FALSE, options = list(
   initComplete = JS(
     "function (settings, json) {",
