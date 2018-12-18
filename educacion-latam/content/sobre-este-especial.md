@@ -24,3 +24,10 @@ Celebramos el apoyo de Emiliana Vegas, Federico Basañes, Soledad Bos y Edgar Go
 Andrés 	Ángulo, Giovanny Anzola-Pardo, Adriana Arellano, Irene Arellano Pineda, Marta Avanci, Mauricio Azofeifa, Rosario Ballesteros, Belén Carmona Soto, Santiago José Castro Agudelo, Lina Marcela Chaverra, Margherita María Cordano, Monserrat Creamer, Aurys Cruz Jáquez, Gabriela de Burbano, Ines Elvira de Escallón, Adriana del Valle Tovar, Pilar Egaña, Rodrigo Fuentes Reveco, Carolina García, Adriana Gaviria Duque, Constanza Gómez, Laura Noemí Herrera Ortiz, Evelyn Mabel Huarcaya Espino, Mario Fernando Hurtado, Goldin Siomara López García de Bonilla, Carolina Maduro, María de los Ángeles, Murillo Flores, Pilar Palacios Portales, Arlen Regina Pérez, María	Pivaral, Alejandra Restrepo, Gabriel Jaime Rico Betancur, Patricio Rodríguez, Mateo Samper, Adriana Sánchez, Elizabeth Simonsen, Carolina Torres Banegas, María Belén Troya Porras, Erika	Twani, Tania Velásquez Rodríguez y Juan Villate. Más el apoyo de Juliana Galvis y Andrea Cervera de Datasketch.
 
 Durante 8 semanas este grupo construyó esta edición periodística y colaborativa que priorizó 3 llamados a la acción: **educación temprana, inversión inteligente en formación de docentes y habilidades para el futuro**. Lo invitamos a postular más líderes al mapa de voces por la educación. Reconocemos que la influencia del mapa de actores alcanza a millones de personas en América Latina y el Caribe y por eso queremos que siga creciendo ¿Quién más está comprometido con lograr aprendizajes efectivos en América Latina y el Caribe? Cuéntanos [aquí](https://docs.google.com/forms/d/1ZerkyboRnFbAgJdakX2ooigezjXRx9izhrArTT0TLBM/prefill).
+
+
+## Fuentes de datos e información 
+
+Durante la elaboración de este especial diversas fuentes de información y fuentes fueron consultadas por los participantes del curso.
+Para la preparación de los gráficos finales para los archivos se usó información de OCDE y Unesco.
+
