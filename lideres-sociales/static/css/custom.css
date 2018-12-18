@@ -3,7 +3,7 @@
 }
 
 .intro__banner {
-  text-shadow: 2px 2px 0 #2a2a2
+  text-shadow: 2px 2px 0 #2a2a2a
 }
 .intro__banner .banner__title {
   font-size: 6rem;
@@ -18,8 +18,30 @@
   text-align: center;
 }
 
+.intro__caption {
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+
+.leader__photo {
+  text-align: center;
+}
+
+.leader__summary {
+  font-size: 1.6rem;
+}
+
+.leader__summary h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
 @media screen and (min-width: 600px) {
   .intro__banner .banner__subtitle {
     padding: 0 25%;
+  }
+  .intro__caption {
+    font-size: 2rem;
   }
 }
