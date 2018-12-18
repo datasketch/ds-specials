@@ -683,6 +683,10 @@
   transition: 0.2s ease-in;
 }
 
+.story__content a {
+  text-decoration: underline;
+}
+
 .story__content p {
   letter-spacing: 0.1em;
   margin: 0 0 10px;
