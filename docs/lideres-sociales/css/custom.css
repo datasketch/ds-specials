@@ -1,3 +1,25 @@
 .nav__logo img {
   filter: brightness(0) invert(1);
 }
+
+.intro__banner {
+  text-shadow: 2px 2px 0 #2a2a2
+}
+.intro__banner .banner__title {
+  font-size: 6rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.intro__banner .banner__subtitle {
+  font-size: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .intro__banner .banner__subtitle {
+    padding: 0 25%;
+  }
+}
