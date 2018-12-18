@@ -10,13 +10,7 @@ weight: 4
 summary: "Los participantes nos invitan a hacer eficiencias entre los países de América Latina para eliminar las barreras institucionales y permitir currículos flexibles y útiles a lo largo de la vida. Millones de trabajos serán automatizados, lo que implica que en el futuro cercano todos vamos a volver a ser entrenados. Pero por ahora, se hace difícil conseguir trabajo, lo que hace pensar que tal vez los estudiantes no están aprendiendo lo que realmente necesitan aprender para afrontar el mundo real. Estas son sólo oportunidades de colaboración para permitirle al sistema educativo adaptarse a las necesidades del siglo XXI."
 ---
 
-{{< banner
-  h = "60"
-  title = "Prepararnos para el futuro"
-  subtitle = "Desarrollo y fortalecimiento de habilidades"
-  image = "images/post_futuro.png"
-  color = "white"
-  bg = "aliceblue">}}{{< /banner >}}
+{{< banner h = "60" title = "Prepararnos para el futuro" subtitle = "Desarrollo y fortalecimiento de habilidades" image = "images/post_futuro.png" color = "white" bg = "#004e70" >}}{{< /banner >}}
 
 Rosario, Víctor y Mercedes se graduaron hace dos años de secundaria y a pesar de su larga búsqueda de trabajo siguen desempleados. Ellos creían que si terminaban el bachillerato podrían seguir adelante, pero ahora hacen parte del grueso de desempleo del América Latina, que según las estimaciones modeladas de la OIT (Organización Internacional del Trabajo) alcanza los 10 millones de jóvenes entre los 15 y 24 años que se encuentran desempleados en el 2017. 
 
