@@ -38,7 +38,7 @@ Por lo tanto, invertir en un buen equipo de docencia es fundamental para la form
 library(DT)
 library(tidyverse)
 
-data <- read_csv('../../static/data/profesores_cualificados.csv') %>% arrange(País)
+data <- read_csv('../../static/csv/profesores_cualificados.csv') %>% arrange(País)
 datatable(data, rownames = FALSE, options = list(
   initComplete = JS(
     "function (settings, json) {",
@@ -47,7 +47,7 @@ datatable(data, rownames = FALSE, options = list(
   )
 ))
 
-data <- read_csv('../../static/data/profesores_entrenados.csv') %>% arrange(País)
+data <- read_csv('../../static/csv/profesores_entrenados.csv') %>% arrange(País)
 datatable(data, rownames = FALSE, options = list(
   initComplete = JS(
     "function (settings, json) {",
