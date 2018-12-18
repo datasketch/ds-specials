@@ -16,7 +16,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     logo = "images/ds-logo.svg"
     logoWidth = "150px"
   [params.fonts]
-    body = "Maven Pro:300,400,700"
+    body = "Maven Pro:400,700"
+    headings = "Patua One"
   [[params.social]]
     icon = "twitter"
     url = "https://twitter.com/datasketch"
