@@ -28,6 +28,8 @@ Durante 8 semanas este grupo construyó esta edición periodística y colaborati
 
 ## Fuentes de datos e información 
 
-Durante la elaboración de este especial diversas fuentes de información y fuentes fueron consultadas por los participantes del curso.
-Para la preparación de los gráficos finales para los archivos se usó información de OCDE y Unesco.
+Durante la elaboración de este especial diversas fuentes de información y fuentes fueron consultadas por los participantes del curso, entre ellas, varios informes de organizaciones internacionales que han realizado informes explicando la situación de la educación en los diferentes países del mundo. 
+
+Para la preparación de los gráficos finales de los archivos se utilizó información de los datos abiertos de la Organización Internacional del Trabajo, los datos sobre educación consignados en [Unesco Institute for Statistics](http://data.uis.unesco.org/#), y la iniciativa [‘Compare your country’](https://www1.compareyourcountry.org/en) realizada por la OCDE a cada país.
+
 
