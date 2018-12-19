@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/lideres-sociales/posts/</loc>
+    <lastmod>2018-12-19T12:16:45-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/lideres-sociales/metodologia/</loc>
     <lastmod>2018-12-17T16:41:23-05:00</lastmod>
   </url>
@@ -45,12 +50,6 @@
   <url>
     <loc>/lideres-sociales/</loc>
     <lastmod>2018-12-17T16:41:23-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/lideres-sociales/posts/</loc>
-    <lastmod>2018-09-05T17:36:37-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

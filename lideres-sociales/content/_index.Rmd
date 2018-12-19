@@ -1,0 +1,82 @@
+---
+title: "Líderes sociales"
+---
+
+```{r echo = FALSE}
+blogdown::shortcode('banner', image='/lideres-sociales/images/banner.jpg', height = '100', title = '0', subtitle = 'líderes sociales en Colombia han sido asesinados desde el primero de Enero de 2016. Conoce más sobre ellos.', color = '#FFFFFF', class = 'intro__banner', .content = ' ')
+blogdown::shortcode('jump', 25)
+blogdown::shortcode('title', align = 'center', weight = '700', size = '32px', .content = 'LÍDERES SOCIALES')
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'intro__caption', .content = 'Cada 3 días es asesinado un líder social en Colombia. Mientras las denuncias aumentan, el Gobierno se mantiene en su teoría de que son casos aislados. Cada vez se cuentan más víctimas, cada día la impunidad continúa.')
+
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+```
+
+```{r echo = FALSE}
+leaders <- c()
+
+# Ana María Cortés
+leader_photo <- blogdown::shortcode('img_coin', size = '80', url = 'https://res.cloudinary.com/randommonkey/image/upload/c_thumb,f_auto,g_face,h_100,w_100,z_0.7/v1533149904/datasketch/lideres/dnb4pbm3pe8musqro5gc.png')
+leader_summary <- blogdown::shortcode('box', mobile = '12', tablet = '9', pc = '10', class = 'leader__summary', .content = '## Ana María Cortés\nLíder comunitaria de Cáceres, Antioquia. Fue asesinada a tiros en una cafetería del municipio el 4 de julio del 2018.')
+leader_photo_container <- blogdown::shortcode('box', mobile = '12', tablet = '3', pc = '2', class = 'leader__photo', .content = leader_photo)
+leader_grid <- blogdown::shortcode('boxes', .content = c(leader_photo_container, leader_summary))
+leader_box <- blogdown::shortcode('box', mobile = '12', class = 'leader', tablet = '8', pc = '7', .content = leader_grid)
+leaders[1] <- leader_box
+
+# Luis Alberto Torres Montoya
+leader_photo <- blogdown::shortcode('img_coin', size = '80', url = 'https://res.cloudinary.com/randommonkey/image/upload/c_thumb,f_auto,g_face,h_100,w_100,z_0.7/v1533150004/datasketch/lideres/s0pdwjcxparpxbfhezwd.png')
+leader_summary <- blogdown::shortcode('box', mobile = '12', tablet = '9', pc = '10', class = 'leader__summary', .content = '## Luis Alberto Torres Montoya\nLíder ambiental de Puerto Valdivia, Antioquia. Fue asesinado junto con su hermano menor mientras realizaba barequeo. Pertenecía al Movimiento Ríos Vivos.')
+leader_photo_container <- blogdown::shortcode('box', mobile = '12', tablet = '3', pc = '2', class = 'leader__photo', .content = leader_photo)
+leader_grid <- blogdown::shortcode('boxes', .content = c(leader_photo_container, leader_summary))
+leader_box <- blogdown::shortcode('box', mobile = '12', class = 'leader', tablet = '8', pc = '7', .content = leader_grid)
+leaders[2] <- leader_box
+
+# Luis Cuarto Barrios Machado
+leader_photo <- blogdown::shortcode('img_coin', size = '80', url = 'https://res.cloudinary.com/randommonkey/image/upload/c_thumb,f_auto,g_face,h_100,w_100,z_0.7/v1533150061/datasketch/lideres/hu3xdrlh34um9ry5sbdb.png')
+leader_summary <- blogdown::shortcode('box', mobile = '12', tablet = '9', pc = '10', class = 'leader__summary', .content = '## Luis Cuarto Barrios Machado\nLíder comunal de Palmar de Varela, Atlántico. A sus 55 años fue asesinado con dos tiros en la cabeza mientras dormía en medio del partido de Colombia - Inglaterra del Mundial de Rusia 2018.')
+leader_photo_container <- blogdown::shortcode('box', mobile = '12', tablet = '3', pc = '2', class = 'leader__photo', .content = leader_photo)
+leader_grid <- blogdown::shortcode('boxes', .content = c(leader_photo_container, leader_summary))
+leader_box <- blogdown::shortcode('box', mobile = '12', class = 'leader', tablet = '8', pc = '7', .content = leader_grid)
+leaders[3] <- leader_box
+
+blogdown::shortcode('boxes', justify = 'center', .content = leaders)
+```
+
+```{r echo = FALSE}
+blogdown::shortcode('jump', 10)
+blogdown::shortcode('cta', align = 'center', bg = '#c93d1b', color = '#f4f4f4', size = '1.6rem', url = 'https://docs.google.com/spreadsheets/d/1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM/edit#gid=0', external = '', .content = 'Todos los líderes asesinados')
+blogdown::shortcode('jump', 25)
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = 'Los datos recolectados de los líderes sociales asesinados desde el 2016 hasta hoy _(fecha de corte: 16 de agosto del 2018),_ tienen ciertos aspectos destacables como el tipo de liderazgo y el lugar del crímen. Aquí les presentamos un resumen estadístico de las víctimas.')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Departamento con más líderes asesinados\nEl departamento del Cauca es el que más presenta número de víctimas. Desde el 2016, en este departamento han sido asesinados 78 líderes. El único departamento que le sigue es Antioquia, con 56 líderes. La situación del Cauca se agrava por la presencia de bandas criminales, minería ilegal y cultivos ilícitos.')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+# Gráfica de líderes sociales asesinados por departamento
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = 'Además, se puede decir que donde más se han presentado asesinatos a líderes sociales es en la Región Pacífica que comprende los departamentos de Nariño, Cauca, Valle del Cauca, Chocó, Antioquia y Córdoba.')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+# Mapa
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Municipios con más líderes asesinados\nEl municipio con más líderes asesinados es Tumaco, ubicado en el departamento de Nariño, en este hay presencia de bandas criminales, minería ilegal y cultivos ilícitos, que agravan el conflicto. Los siguientes son Corinto en Cauca. Y la ciudad de Medellín con 8 líderes asesinados.')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+# Gráfica de líderes sociales asesinados por municipio
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Tipos de líderes que más asesinan\nLa mayoría de los líderes asesinados son aquellos que pertenecen o son directivos de Juntas de Acción Comunal o Juntas Administradoras Locales. Le siguen aquellos que por sus labores de liderazgo defienden más de una causa, como es el caso de los líderes comunales que a la vez son líderes campesinos o agrarios, entre otros.')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+# Gráfica de tipos de líderes sociales asesinados
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### El histórico de víctimas\nEl mes con más víctimas ha sido enero de 2017, con 23 asesinatos, seguido de julio de 2018 con 21 víctimas que conmocionaron al país a tal punto que se realizaron marchas y manifestaciones en contra de esta violencia sistemática.')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+# Gráfica de histórico de víctimas
+
+box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Estas son cada una de las víctimas que ha registrado Datasketch desde 2016')
+blogdown::shortcode('boxes', justify = 'center', .content = box)
+
+# Víctimas
+```
+

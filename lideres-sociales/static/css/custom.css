@@ -27,7 +27,8 @@
   text-align: center;
 }
 
-.leader__summary {
+.leader__summary,
+.home__text {
   font-size: 1.6rem;
 }
 
@@ -35,6 +36,19 @@
   margin: 0 0 10px;
   font-size: 2rem;
   font-weight: lighter;
+}
+
+.box h3 {
+  margin: 0 0 15px;
+  font-family: 'Maven Pro';
+}
+
+.post-list-item__date {
+  font-size: 1.3rem;
+}
+
+.post-list-item__summary {
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 600px) {
