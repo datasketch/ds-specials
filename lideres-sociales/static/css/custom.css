@@ -51,6 +51,11 @@
   font-size: 1.6rem;
 }
 
+.highcharts-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 600px) {
   .intro__banner .banner__subtitle {
     padding: 0 25%;

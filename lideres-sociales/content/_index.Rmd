@@ -53,7 +53,7 @@ lideres <- gs_key('1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM') %>% gs_read_cs
 
 
 
-```{r echo = FALSE,  message=FALSE}
+```{r echo = FALSE,  message=FALSE, cache=FALSE, results="asis"}
 blogdown::shortcode('jump', 10)
 blogdown::shortcode('cta', align = 'center', bg = '#c93d1b', color = '#f4f4f4', size = '1.6rem', url = 'https://docs.google.com/spreadsheets/d/1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM/edit#gid=0', external = '', .content = 'Todos los líderes asesinados')
 blogdown::shortcode('jump', 25)
@@ -71,9 +71,8 @@ top_lideres <- lideres %>%
 top_lideres <- top_lideres %>% select(Departamento,  Total = total)
 
 hgch_bar_CatNum(top_lideres, sort = 'desc', colors = '#c93d1b', orientation = 'hor',
-theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700, height = 550))
-
-
+theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700))
+##############################
 
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = 'Además, se puede decir que donde más se han presentado asesinatos a líderes sociales es en la Región Pacífica que comprende los departamentos de Nariño, Cauca, Valle del Cauca, Chocó, Antioquia y Córdoba.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
@@ -105,8 +104,7 @@ hcmap("countries/co/co-all",
                 
     ) %>%  
       hc_chart(backgroundColor = 'transparent',
-               width = 700,
-               heigth = 550) %>% 
+               width = 700) %>% 
       #hc_title(text = list('Mapa cloropleta de líderes asesinados')) %>% 
       hc_colorAxis(minColor = "#fbf1ef", maxColor = "#7F0000") %>% 
       hc_legend(
@@ -142,7 +140,7 @@ mun_lideres <- lideres %>%
 mun_lideres <- mun_lideres %>% select(Municipio,  Total = total)
 
 hgch_bar_CatNum(mun_lideres, sort = 'desc', sliceN = 10,  colors = '#c93d1b', orientation = 'hor',
-theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700, height = 550))
+theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700))
 
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Tipos de líderes que más asesinan\nLa mayoría de los líderes asesinados son aquellos que pertenecen o son directivos de Juntas de Acción Comunal o Juntas Administradoras Locales. Le siguen aquellos que por sus labores de liderazgo defienden más de una causa, como es el caso de los líderes comunales que a la vez son líderes campesinos o agrarios, entre otros.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
@@ -161,7 +159,7 @@ typ_lideres <- typ_lideres %>%
 typ_lideres$`Tipo de líder` <- gsub('Líder ', '', typ_lideres$`Tipo de líder`)
 typ_lideres$`Tipo de líder` <- Hmisc::capitalize(typ_lideres$`Tipo de líder`)
 
-hgch_bar_CatNum(typ_lideres, colors = c("#35d0ba", "#C44D58", "#c93d1b", "#f8c43a", "#04322e"), theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700, height = 550))
+hgch_bar_CatNum(typ_lideres, colors = c("#35d0ba", "#C44D58", "#c93d1b", "#f8c43a", "#04322e"), theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700))
 
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### El histórico de víctimas\nEl mes con más víctimas ha sido enero de 2017, con 23 asesinatos, seguido de julio de 2018 con 21 víctimas que conmocionaron al país a tal punto que se realizaron marchas y manifestaciones en contra de esta violencia sistemática.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
@@ -188,7 +186,7 @@ conteo <- conteo %>% inner_join(ddf) %>% arrange(id)
       hc_chart( type = "area",
                 inverted = TRUE,
                 backgroundColor = "transparent",
-                width = 700, height = 550) %>% 
+                width = 700) %>% 
       hc_xAxis( 
         categories = map(conteo$Fecha, function(x) x),
         labels= list(
@@ -237,13 +235,11 @@ conteo <- conteo %>% inner_join(ddf) %>% arrange(id)
       ) %>% 
       hc_exporting(enabled = TRUE) 
 
+
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Estas son cada una de las víctimas que ha registrado Datasketch desde 2016')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Víctimas
-
-
+blogdown::shortcode('iframe', url = 'https://randommonkey.shinyapps.io/specials_derechos_humanos/', resize = '')
+blogdown::shortcode('jump', 20)
 ```
-
-
-<iframe height="3778" scrolling="no" frameborder="no"  src="https://randommonkey.shinyapps.io/specials_derechos_humanos/"> </iframe>
