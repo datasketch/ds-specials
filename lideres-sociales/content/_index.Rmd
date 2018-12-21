@@ -1,5 +1,6 @@
 ---
 title: "Líderes sociales"
+runtime: shiny
 ---
 
 ```{r echo = FALSE}
@@ -42,7 +43,16 @@ leaders[3] <- leader_box
 blogdown::shortcode('boxes', justify = 'center', .content = leaders)
 ```
 
-```{r echo = FALSE}
+
+```{r include=FALSE}
+library(googlesheets)
+library(hgchmagic)
+lideres <- gs_key('1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM') %>% gs_read_csv()
+```
+
+
+
+```{r echo = FALSE,  message=FALSE}
 blogdown::shortcode('jump', 10)
 blogdown::shortcode('cta', align = 'center', bg = '#c93d1b', color = '#f4f4f4', size = '1.6rem', url = 'https://docs.google.com/spreadsheets/d/1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM/edit#gid=0', external = '', .content = 'Todos los líderes asesinados')
 blogdown::shortcode('jump', 25)
@@ -53,30 +63,186 @@ box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class =
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Gráfica de líderes sociales asesinados por departamento
+top_lideres <- lideres %>% 
+  group_by(Departamento) %>% 
+  dplyr::summarise(total = n())
+
+top_lideres <- top_lideres %>% select(Departamento,  Total = total)
+
+hgch_bar_CatNum(top_lideres, sort = 'desc', colors = '#c93d1b', orientation = 'hor',
+theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700, height = 550))
+
+
 
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = 'Además, se puede decir que donde más se han presentado asesinatos a líderes sociales es en la Región Pacífica que comprende los departamentos de Nariño, Cauca, Valle del Cauca, Chocó, Antioquia y Córdoba.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Mapa
+top_lideres <- top_lideres %>% select(name = Departamento,  value = Total)
+mapV <- read_csv('aux/codes.csv')
+
+map_lideres <- left_join(top_lideres, mapV, by = 'name')
+map_lideres$`hc-a2`[is.na(map_lideres$`hc-a2`)] <- 'NA'
+hcmap("countries/co/co-all",
+                data = map_lideres, 
+                value = "value",
+                joinBy = list('hc-a2', 'hc-a2'),
+                name = 'Líderes asesinados',
+                nullColor = '#FFF',
+                borderColor = '#AAA',
+                dataLabels = list(
+                  enabled = TRUE,
+                  color = '#323232',
+                  format = '{point.name}',
+                  style = list(
+                    fontSize = '9px',
+                    textShadow = FALSE,
+                    textOutline = FALSE,
+                    fontFamily= '\"Maven Pro\",sans-serif')
+                  ),
+                showInLegend = FALSE
+                
+    ) %>%  
+      hc_chart(backgroundColor = 'transparent',
+               width = 700,
+               heigth = 550) %>% 
+      #hc_title(text = list('Mapa cloropleta de líderes asesinados')) %>% 
+      hc_colorAxis(minColor = "#fbf1ef", maxColor = "#7F0000") %>% 
+      hc_legend(
+        layout = 'vertical',
+        align = 'left',
+        verticalAlign = 'middle',
+        floating =TRUE
+      ) %>% 
+      hc_mapNavigation(
+        enabled = TRUE,
+        enableButtons = FALSE
+      ) %>% 
+      hc_credits(enabled = TRUE, text = 'Fuente: Datasketch', 
+                 style= list(
+                   fontFamily= '\"Maven Pro\",sans-serif',
+                   color = '#000'
+                 )) %>% 
+      hc_exporting(
+        enabled = TRUE
+      )
+
 
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Municipios con más líderes asesinados\nEl municipio con más líderes asesinados es Tumaco, ubicado en el departamento de Nariño, en este hay presencia de bandas criminales, minería ilegal y cultivos ilícitos, que agravan el conflicto. Los siguientes son Corinto en Cauca. Y la ciudad de Medellín con 8 líderes asesinados.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Gráfica de líderes sociales asesinados por municipio
 
+mun_lideres <- lideres %>% 
+                 group_by(Municipio) %>% 
+                    dplyr::summarise(total = n())
+
+
+mun_lideres <- mun_lideres %>% select(Municipio,  Total = total)
+
+hgch_bar_CatNum(mun_lideres, sort = 'desc', sliceN = 10,  colors = '#c93d1b', orientation = 'hor',
+theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700, height = 550))
+
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Tipos de líderes que más asesinan\nLa mayoría de los líderes asesinados son aquellos que pertenecen o son directivos de Juntas de Acción Comunal o Juntas Administradoras Locales. Le siguen aquellos que por sus labores de liderazgo defienden más de una causa, como es el caso de los líderes comunales que a la vez son líderes campesinos o agrarios, entre otros.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Gráfica de tipos de líderes sociales asesinados
+
+typ_lideres <- lideres %>% 
+  group_by(`Tipo de líder`) %>% 
+  dplyr::summarise(total = n()) %>% arrange(-total)
+
+typ_lideres$`Tipo de líder` <- ifelse(typ_lideres$total < 12, 'Otro', typ_lideres$`Tipo de líder`) 
+typ_lideres <- typ_lideres %>% 
+             group_by(`Tipo de líder`) %>% 
+               dplyr::summarise(total = sum(total))
+
+typ_lideres$`Tipo de líder` <- gsub('Líder ', '', typ_lideres$`Tipo de líder`)
+typ_lideres$`Tipo de líder` <- Hmisc::capitalize(typ_lideres$`Tipo de líder`)
+
+hgch_bar_CatNum(typ_lideres, colors = c("#35d0ba", "#C44D58", "#c93d1b", "#f8c43a", "#04322e"), theme = tma(fontFamily = '\"Maven Pro\",sans-serif',  width = 700, height = 550))
 
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### El histórico de víctimas\nEl mes con más víctimas ha sido enero de 2017, con 23 asesinatos, seguido de julio de 2018 con 21 víctimas que conmocionaron al país a tal punto que se realizaron marchas y manifestaciones en contra de esta violencia sistemática.')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Gráfica de histórico de víctimas
 
+ddf <- lideres %>% 
+  select(Nombre, Fecha) %>% arrange(Fecha) %>%  mutate(id = seq_len(n()))
+
+ddf <- ddf %>% separate(Fecha, c('Año', 'Mes',  'Día'))
+ddf$Mes <-  plyr::revalue(ddf$Mes, c('06' = 'Junio', '07' = 'Julio', '08' = 'Agosto', '09' = 'Septiembre',
+                                     '10' = 'Octubre', '11' = 'Noviembre', '12' = 'Diciembre', '01' = 'Enero', '02' = 'Febrero', '03' = 'Marzo', '04' = 'Abril', '05' = 'Mayo')) 
+ddf <- ddf %>% unite(Fecha, c('Mes', 'Año'), sep = '-') %>%
+  group_by(Fecha)
+
+conteo <- ddf %>% group_by(Fecha) %>% 
+  summarise(total = n())
+
+ddf <- ddf %>% distinct(Fecha, .keep_all = TRUE)
+
+conteo <- conteo %>% inner_join(ddf) %>% arrange(id)
+
+    highchart() %>% 
+      hc_chart( type = "area",
+                inverted = TRUE,
+                backgroundColor = "transparent",
+                width = 700, height = 550) %>% 
+      hc_xAxis( 
+        categories = map(conteo$Fecha, function(x) x),
+        labels= list(
+          style = list(
+            fontSize = '15px',
+            color = '#0E0329',
+            fontFamily= '\"Maven Pro\",sans-serif'
+          )
+        ),
+        lineWidth= 2,
+        lineColor = '#868888'
+      ) %>% 
+      hc_yAxis(
+        labels = list(
+          style = list(
+            color = '#0E0329',
+            fontSize = '17px',
+            fontFamily= '\"Maven Pro\",sans-serif'
+          )
+        ),
+        lineWidth= 2,
+        lineColor = '#868888', 
+        gridLineColor = '#868888',
+        minorTickLength = 0,
+        tickLength = 0
+      ) %>% 
+      hc_series(
+        list(
+          data = conteo$total,
+          color = '#c93d1b',
+          fillOpacity = 1,
+          marker = list(
+            enabled = FALSE,
+            symbol = NULL
+          )
+        )
+      ) %>% 
+      hc_tooltip(
+        useHTML = TRUE,
+        headerFormat = 'En {point.key} ',
+        pointFormat = paste0("fueron asesinados <b>{point.y}</b> lideres sociales en Colombia
+                         ")
+      ) %>% 
+      hc_legend(
+        enabled =FALSE
+      ) %>% 
+      hc_exporting(enabled = TRUE) 
+
 box <- blogdown::shortcode('box', mobile = '12', tablet = '8', pc = '7', class = 'home__text', .content = '### Estas son cada una de las víctimas que ha registrado Datasketch desde 2016')
 blogdown::shortcode('boxes', justify = 'center', .content = box)
 
 # Víctimas
+
+
 ```
+
+
 
