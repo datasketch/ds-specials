@@ -412,6 +412,27 @@
   margin: 0 0 20px;
 }
 
+.cover__title {
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  margin: auto;
+  letter-spacing: 0.2em;
+}
+
+.cover__count {
+  color: #E6374A;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.cover__keyword {
+  color: #1272DF;
+  font-size: 5rem;
+  font-weight: 400;
+  text-shadow: 3px 2px #F4F4F4, 6px 4px #E6374A;
+  letter-spacing: 0.2em;
+}
+
 .cover__actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,6 +849,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .cover__count {
+    font-size: 5rem;
+  }
+  .cover__keyword {
+    font-size: 10rem;
+  }
   .stories__image {
     grid-row: 3;
     -ms-grid-row: 3;
@@ -850,6 +877,12 @@
 }
 
 @media screen and (min-width: 992px) {
+  .cover__count {
+    font-size: 7rem;
+  }
+  .cover__keyword {
+    font-size: 15rem;
+  }
   .cover__inner {
     padding: 0 20%;
   }
