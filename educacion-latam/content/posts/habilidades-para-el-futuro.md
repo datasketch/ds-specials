@@ -7,7 +7,7 @@ cover: false
 hideTitle: true
 highlight: "#E6374A"
 weight: 4
-summary: "Los participantes nos invitan a hacer eficiencias entre los países de América Latina para eliminar las barreras institucionales y permitir currículos flexibles y útiles a lo largo de la vida. Millones de trabajos serán automatizados, lo que implica que en el futuro cercano todos vamos a volver a ser entrenados. Pero por ahora, se hace difícil conseguir trabajo, lo que hace pensar que tal vez los estudiantes no están aprendiendo lo que realmente necesitan aprender para afrontar el mundo real. Estas son sólo oportunidades de colaboración para permitirle al sistema educativo adaptarse a las necesidades del siglo XXI."
+summary: "Si usted tiene un doctorado, un entrenamiento en tecnología o un título de bachiller obtenido hace más de 5 años, hoy la mayor parte del conocimiento que le enseñaron ya está obsoleto o no es relevante frente a los nuevos retos. Si las entidades públicas, agencias de desarrollo y empresas siguen lideradas por personas sin método para actualizar el conocimiento organizacional y además con mentalidad resistente al cambio, los trabajos de millones de latinoamericanos están en riesgo de desaparecer. Los líderes deben tomar acciones urgentes y todos tenemos que volver a entrenarnos o a señalizar mejor las competencias que tenemos, las notas y los títulos tradicionales no dan señales claras al mercado laboral. Para empezar lo responsable sería eliminar las barreras institucionales y hacer inversiones conjuntas para garantizar calidad en currículos flexibles, actualizables y útiles a lo largo de la vida, tanto en el lugar de trabajo como en el sistema educativo.  Así como mejorar los sistemas de evaluación para que capturen la evidencia de los aprendizajes y las competencias de estudiantes y empleados."
 ---
 
 {{< banner h = "60" title = "Prepararnos para el futuro" subtitle = "Desarrollo y fortalecimiento de habilidades" image = "images/post_futuro.png" color = "white" bg = "#004e70" >}}{{< /banner >}}
@@ -17,40 +17,47 @@ Rosario, Víctor y Mercedes se graduaron hace dos años de secundaria y a pesar 
 <!-- 
 Aquí va la gráfica de desempleo
 -->
-![](/educacion-latam/images/preparanos_img_1.png)
+![](/educacion-latam/images/desempleo.png)
 
-Santiago y Carolina de la misma edad de Rosario, Víctor y Mercedes, decidieron dejar el colegio antes de graduarse y hacer parte del 50% de jóvenes que según el Banco Interamericano de Desarrollo (BID) abandonan las escuelas y que entran a formar parte de las personas desempleadas que no cuentan con un título de bachillerato.
+Santiago y Carolina de la misma edad de Rosario, Víctor y Mercedes, decidieron dejar el colegio antes de graduarse y hacer parte del 50% de jóvenes (del total de jovenes matriculados) que según el Banco Interamericano de Desarrollo (BID) abandonan las escuelas.  Y que más tarde, entran a formar parte de las personas desempleadas que no cuentan con un título de bachillerato.
 
 Todos hablan de lo difícil que es conseguir trabajo, y lo es. Pero, ¿están los estudiantes aprendiendo lo que realmente necesitan aprender para afrontar el mundo real? 
 
+El mundo cambia aceleradamente, la tecnología, la política, la manera en la que nos relacionamos con los demás, la economía, las dinámicas de la sociedad, todo cambia pero, ¿está cambiando la educación que reciben los niños y los jóvenes?. En pocas palabras no. El modelo educativo actual es obsoleto, se quedó enseñando a niños del pasado, que se sentaban en filas ordenadas oyendo a un profesor todo el día, que estudiaban para pasar las pruebas y siguiendo instrucciones. 
 
-El mundo cambia aceleradamente, la tecnología, la política, la manera en la que nos relacionamos con los demás, la economía, las dinámicas de la sociedad, todo cambia pero, ¿está cambiando la educación que reciben los niños y los jóvenes?. Someramente no. El modelo educativo actual es obsoleto, se quedó enseñando a niños del pasado, que se sentaban en filas ordenadas oyendo a un profesor todo el día, que estudiaban memorizando contenidos y siguiendo instrucciones. 
+Las pruebas del Programa de Evaluación Internacional de Alumnos (PISA) de la OCDE, que mide los conocimiento, habilidades y aplicabilidad de esos conocimientos en situaciones reales; colocan a la región en el ranking más bajo, en promedio, los estudiantes están 2,5 años de escolaridad rezagados con respecto a resto de alumnos promedio de la OCDE.
 
-Las pruebas del Programa de Evaluación Internacional de Alumnos (PISA) de la OCDE, que miden los conocimiento, habilidades y aplicabilidad de esos conocimientos en situaciones reales de los estudiantes colocan a la región en el ranking más bajo; estando 2,5 años de escolaridad rezagada con respecto al promedio de la OCDE.
+En promedio, la mitad de los estudiantes de América Latina y el Caribe no logran un nivel básico de aprendizaje en ciencias, no cuentan con un nivel básico de lectura y un porcentaje aún mayor no tiene conocimientos básicos en matemáticas. “Si se incluyen todos los jóvenes de 15 años, 2 de cada 3 no lograrían las competencias básicas” (BID, 2016)
 
-En promedio, la mitad de los estudiantes de América Latina y el Caribe no logran un nivel básico de aprendizaje en ciencias, no cuentan con un nivel básico de lectura y un porcentaje aún mayor no tiene conocimientos básicos en matemáticas. “Si se incluyen todos los jóvenes de 15 años, 2 de cada 3 no lograrían las competencias básicas” (BID, 2016).
-
-A esta situación, hay que añadirle que alrededor del 50% de los estudiantes desertan de las escuelas, y una gran parte de ellos no lo hace porque considera que la educación no es relevante para sus vidas. 
+A esta situación, hay que añadirle que alrededor del 50% de los estudiantes desertan de las escuelas, y una gran parte de ellos lo hace porque considera que la educación no es relevante para sus vidas. 
 
 {{< iframe url="//www.compareyourcountry.org/pisa/?lg=es" >}}
 
-Con un nivel educativo como el que tenemos en América Latina y el Caribe, en el que como se dijo, nos encontramos ubicados muy por debajo del promedio de la OCDE y que es demostrable que nuestros estudiantes no saben aplicar los conocimientos en situaciones de la vida real para enfrentar “situaciones novedosas” ¿cómo creemos que los estudiantes van a salir a afrontar el mundo?
+Con un nivel educativo como el que tenemos en América Latina y el Caribe ¿cómo creemos que los estudiantes van a salir a enfrentar el mundo?
 
-Ahora se vive en un mundo donde el contenido lo encuentran en cualquier lugar de la web (en caso de tener acceso a ella) y donde no se sigue al pie de la letra todo. Hoy por hoy se cuenta con más libertad a hora de enseñar y aprender, pero no se usa esa libertad. 
+La paradoja es cómo darle forma a la oportunidad que ofrece el contenido abierto ofrecido en la web (en caso de tener acceso a ella) y a la libertad de enseñar y aprender, que actualmente no ejercen a plenitud estudiantes ni profesores.
 
-Dicen que lo que se aprende en las escuelas, queda para toda la vida. Por eso es necesario poner sobre la mesa de diálogo el desarrollo de habilidades y destrezas que se pueden adquirir y fortalecer. Que lo que los niños y jóvenes aprendan les sea útil, que les funcione para el futuro, que sea una educación para toda la vida y no por ganar las mejores notas en un colegio.
+El sistema educativo tiene el poder escaso de tener la atención de millones de estudiantes y profesores por un buen número de años. Para hacer memorable y significativa esa etapa, y conquistar el interés de los estudiantes de volver al sistema a lo largo de la vida es necesario volver más activa la experiencia de aprender. 
 
-Estas habilidades pueden comprender el uso de tecnologías, como por ejemplo, aprender de computadoras (programas de computación) que permiten la realización de test de lectura y matemáticas, a partir de ello se puede aprender a usar la tecnología de una manera eficiente. 
+Hay que sumar esfuerzos para actualizar los currículos introduciendo aprendizaje activo y basado en la resolución de proyectos reales. Los estudiantes deben tener la oportunidad de desarrollar actitudes, habilidades y conocimientos útiles, que les funcione para el futuro, que aprendan a aprender y trascender estudiar para la prueba.
 
-En el día de hoy se requieren habilidades digitales para comprender y analizar grandes cantidades de información, el aprender este tipo de habilidades permite que se fortalezcan las habilidades cognitivas de las personas desde edades muy tempranas. Por ende, impactar en el rendimiento de un niño en preescolar es fundamental para que luego pueda tener un nivel satisfactorio en diferentes áreas como matemáticas o español.
+El llamado a las universidades es a ser protagonistas del cambio y romper el círculo de qué es primero, el huevo o la gallina. Las universidades pueden dedicar equipos de investigación interdisciplinarios a hacer curaduría de contenidos basados en evidencia que le permitan al sistema educativo entender la importancia de diseñar con intencionalidad la conexión entre currículos de pre-escolar, primaria, bachillerato, formación técnica y vocacional, educación superior y formación en el lugar de trabajo.  Las habilidades y el conocimiento son acumulables solo si están diseñados con pertinencia y si le permiten a cada individuo explorar su potencial para poner en contexto el conocimiento aprendido.
 
-Los aprendizajes cognitivos anteriormente mencionados también se refieren a la noción de educación para la industria, con la incorporación temprana de los jóvenes en contextos de trabajo que impliquen nuevas relaciones sociales y experiencias prácticas.
+Un ejemplo para explorar, sería  la incorporación temprana de los jóvenes en contextos de trabajo que impliquen nuevas relaciones sociales y experiencias prácticas.
 
-La educación para la vida supone un análisis sobre las competencias blandas y habilidades y competencias sociales para la era actual que desde el empleo son las requeridas por los estudiantes para pasar de la educación al mundo laboral. Competencias sociales como el pensamiento crítico y racional, pero también el autocontrol y la empatía, que permiten un mayor desarrollo en sociabilidad y las interrelaciones sociales.
-
+La educación para la vida supone desarrollar habilidades blandas y socioemocionales, en alta demanda por el mundo laboral. Competencias sociales como el pensamiento crítico y racional, pero también el autocontrol y la empatía,  permiten una mayor capacidad de trabajo en equipo.
 
 {{< quote >}}“Es importante que la educación superior en México no solo conozca de las oportunidades para impulsar la educación de calidad en México o bien las necesidades del sector productivo, si no que se ponga en acción incorporando en el modelo educativo nuevas competencias en los jóvenes como lo son las socioemocionales.”  (British Council, 2016){{< /quote >}}
 
-El fortalecimiento de las competencias supone también que los empleos que hoy en día existen, se podrán ir transformando en el futuro, y se van a necesitar progresivamente habilidades relacionadas con el manejo e interacción con computadoras inteligentes, pero también con la integración de los jóvenes a las nueva dinámicas económicas demandadas por el futuro.
+El fortalecimiento de las competencias supone adaptarse y aprender desde ya  habilidades digitales que incluyan la interacción con computadoras inteligentes, realidad aumentada, sistemas de administración datos e información en la nube, internet de las cosas, blockchain, entre otras tecnologías que predominarán en los contextos laborales del futuro.
 
-Por esto, es necesario que las instituciones educativas integren en sus currículos que los estudiantes sepan resolver de manera adecuada los problemas a los que se va a enfrentar el resto de su vida, desde una actividad tan simple como hacer una consignación en un banco a una de vital importancia como votar en las elecciones. Si conocimientos que parecen alejados de la academia se integrarán en la educación en el día a día de los estudiantes, tendríamos ciudadanos mejor preparados para salir al mundo. 
+Para no ir tan lejos, las instituciones educativas pueden empezar a integrar a sus currículos cosas tan simples pero tan útiles como hacer una consignación en un banco, explicar la trascendencia de votar en las elecciones, apoyar a su abuela a acceder a una cita médica en el sistema de salud o experimentar con la ruta de reciclaje de su barrio. 
+
+Si integramos conocimientos interdisciplinarios, que parecen alejados de la academia, pero que hacen la vida más práctica, los estudiantes estarían más motivados y tendríamos ciudadanos mejor preparados para la vida en comunidad.
+
+# Autores
+
+- Inés Escallón 
+- Mateo Samper 
+- Rosario B. Casas 
+- Maria de los Angeles Murillo Flores
