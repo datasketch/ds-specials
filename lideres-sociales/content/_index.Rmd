@@ -1,5 +1,6 @@
 ---
 title: "Líderes sociales"
+output: html_document
 runtime: shiny
 ---
 
@@ -245,4 +246,4 @@ blogdown::shortcode('boxes', justify = 'center', .content = box)
 ```
 
 
-
+<iframe height="3778" scrolling="no" frameborder="no"  src="https://randommonkey.shinyapps.io/specials_derechos_humanos/"> </iframe>
