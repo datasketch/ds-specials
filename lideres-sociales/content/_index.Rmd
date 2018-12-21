@@ -53,7 +53,7 @@ lideres <- gs_key('1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM') %>% gs_read_cs
 
 
 
-```{r echo = FALSE,  message=FALSE, cache=FALSE, results="asis"}
+```{r echo = FALSE,  message=FALSE, cache=FALSE, results="asis", warning=FALSE}
 blogdown::shortcode('jump', 10)
 blogdown::shortcode('cta', align = 'center', bg = '#c93d1b', color = '#f4f4f4', size = '1.6rem', url = 'https://docs.google.com/spreadsheets/d/1I9NHXhAPSzruE5s94_X5FQpRMksz6MTHgLCgrTviqfM/edit#gid=0', external = '', .content = 'Todos los líderes asesinados')
 blogdown::shortcode('jump', 25)
