@@ -62,4 +62,4 @@ Si integramos conocimientos interdisciplinarios, que parecen alejados de la acad
 - Rosario B. Casas 
 - Maria de los Angeles Murillo Flores
 
-Con aportes de todos los participantes del curso. Ver más en [Sobre este especial](/sobre-este-especial/)
+Con aportes de todos los participantes del curso. Ver más en [Sobre este especial](/educacion-latam/sobre-este-especial/)
