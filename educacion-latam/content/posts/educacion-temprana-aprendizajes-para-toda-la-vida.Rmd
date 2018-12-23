@@ -33,14 +33,17 @@ Aún más, si nos detenemos a analizar los datos sobre los estudiantes que llega
 
 Es por eso que en gran parte, debe educarse a padres, docentes y gobiernos para que se comprometan con el conocimiento de los niños y proporcionen adecuadas condiciones para que los infantes accedan a este derecho. 
 
-El esfuerzo que debe hacer el Estado  para incentivar la educación inicial, es crear las condiciones para las alianzas público-privadas para crear infraestructura adecuada, garantizar recursos didácticos, trabajar con padres y cuidadores en ambientes socioafectivos y aprovechar la evidencia de investigaciones, así como fortalecer alianzas internacionales. 
+El esfuerzo que debe hacer el Estado  para incentivar la educación inicial, es crear las condiciones para las alianzas público-privadas para crear infraestructura adecuada, garantizar recursos didácticos, trabajar con padres y cuidadores en ambientes socioafectivos y aprovechar la evidencia de investigaciones, así como fortalecer alianzas internacionales.  
+
+
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+suppressWarnings(library(DT))
+suppressWarnings(library(tidyverse))
+data <- read_csv('../../static/csv/gasto_publico.csv') %>% arrange(País)
+```
 
 
 ```{r echo = FALSE, message = FALSE}
-library(DT)
-library(tidyverse)
-
-data <- read_csv('../../static/csv/gasto_publico.csv') %>% arrange(País)
 datatable(data, rownames = FALSE, options = list(
   initComplete = JS(
     "function (settings, json) {",
@@ -52,15 +55,12 @@ datatable(data, rownames = FALSE, options = list(
 
 A pesar de que la mayoría de países de América Latina ha aumentado el gasto público en educación primaria, este porcentaje debe seguir en aumento para que el Estado pueda garantizar este  derecho fundamental para todos los infantes desde la educación pre-básica y para el resto de la vida. En esos años se desarrollan  las capacidades físicas y motoras, socio-afectivas, lingüísticas y cognitivas de los niños. Con infantes más atendidos, América Latina tendrá más equidad,  inclusión y  democracia.
 
-# Autores:
+### Autores:
 
 - Carolina Torres - Honduras.
-
 - Arlen Regina Pérez - Nicaragua.
-
 - Irene Arellano Pineda.
-
 - Carolina Maduro - Honduras.
-
 - Noemí Herrera - México.
 
+Con aportes de todos los participantes del curso. Ver más en [Sobre este especial](/sobre-este-especial/)

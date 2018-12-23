@@ -23,13 +23,13 @@ Santiago y Carolina de la misma edad de Rosario, Víctor y Mercedes, decidieron 
 
 Todos hablan de lo difícil que es conseguir trabajo, y lo es. Pero, ¿están los estudiantes aprendiendo lo que realmente necesitan aprender para afrontar el mundo real? 
 
-El mundo cambia aceleradamente, la tecnología, la política, la manera en la que nos relacionamos con los demás, la economía, las dinámicas de la sociedad, todo cambia pero, ¿está cambiando la educación que reciben los niños y los jóvenes?. En pocas palabras no. El modelo educativo actual es obsoleto, se quedó enseñando a niños del pasado, que se sentaban en filas ordenadas oyendo a un profesor todo el día, que estudiaban para pasar las pruebas y siguiendo instrucciones. 
+El mundo cambia aceleradamente, la tecnología, la política, la manera en la que nos relacionamos con los demás, la economía, las dinámicas de la sociedad, todo cambia pero, ¿está cambiando la educación que reciben los niños y los jóvenes?. En pocas palabras no. El modelo educativo actual es obsoleto, se quedó enseñando a niños del pasado, que se sentaban en filas ordenadas oyendo a un profesor todo el día, que estudiaban para pasar las pruebas y siguiendo instrucciones.
 
 Las pruebas del Programa de Evaluación Internacional de Alumnos (PISA) de la OCDE, que mide los conocimiento, habilidades y aplicabilidad de esos conocimientos en situaciones reales; colocan a la región en el ranking más bajo, en promedio, los estudiantes están 2,5 años de escolaridad rezagados con respecto a resto de alumnos promedio de la OCDE.
 
-En promedio, la mitad de los estudiantes de América Latina y el Caribe no logran un nivel básico de aprendizaje en ciencias, no cuentan con un nivel básico de lectura y un porcentaje aún mayor no tiene conocimientos básicos en matemáticas. “Si se incluyen todos los jóvenes de 15 años, 2 de cada 3 no lograrían las competencias básicas” (BID, 2016)
+En promedio, la mitad de los estudiantes de América Latina y el Caribe no logran un nivel básico de aprendizaje en ciencias, no cuentan con un nivel básico de lectura y un porcentaje aún mayor no tiene conocimientos básicos en matemáticas. “Si se incluyen todos los jóvenes de 15 años, 2 de cada 3 no lograrían las competencias básicas” (BID, 2016).
 
-A esta situación, hay que añadirle que alrededor del 50% de los estudiantes desertan de las escuelas, y una gran parte de ellos lo hace porque considera que la educación no es relevante para sus vidas. 
+A esta situación, hay que añadirle que alrededor del 50% de los estudiantes desertan de las escuelas, y una gran parte de ellos lo hace porque considera que la educación no es relevante para sus vidas.  
 
 {{< iframe url="//www.compareyourcountry.org/pisa/?lg=es" >}}
 
@@ -55,9 +55,11 @@ Para no ir tan lejos, las instituciones educativas pueden empezar a integrar a s
 
 Si integramos conocimientos interdisciplinarios, que parecen alejados de la academia, pero que hacen la vida más práctica, los estudiantes estarían más motivados y tendríamos ciudadanos mejor preparados para la vida en comunidad.
 
-# Autores
+### Autores
 
 - Inés Escallón 
 - Mateo Samper 
 - Rosario B. Casas 
 - Maria de los Angeles Murillo Flores
+
+Con aportes de todos los participantes del curso. Ver más en [Sobre este especial](/sobre-este-especial/)

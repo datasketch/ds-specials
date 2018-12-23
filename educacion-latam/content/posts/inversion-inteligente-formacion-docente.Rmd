@@ -14,26 +14,29 @@ summary: "El llamado a la acción es derrumbar las fronteras territoriales, inst
 blogdown::shortcode('banner', h = '60', title = 'INVERSIÓN INTELIGENTE', subtitle = 'Formación docente', image = 'images/post_inversion.png', color = 'white', bg = '#004e70', .content = ' ')
 ```
 
-En América Latina y el Caribe hay aproximadamente 7 millones de profesores. La nómina es el mayor gasto de cualquier Ministerio de Educación, en promedio el 83% del total del gasto total. Los líderes globales son conscientes de la crisis de los aprendizajes y que estar escolarizado no es lo mismo que estar aprendiendo.  La evidencia internacional y de la región indica que los profesores son el factor más importante -por el lado de la escuela- para promover aprendizajes y habilidades estudiantiles. 
+En América Latina y el Caribe hay aproximadamente 7 millones de profesores. La nómina es el mayor gasto de cualquier Ministerio de Educación, en promedio el 83% del total del gasto total. Los líderes globales son conscientes de la crisis de los aprendizajes y que estar escolarizado no es lo mismo que estar aprendiendo.  La evidencia internacional y de la región indica que los profesores son el factor más importante -por el lado de la escuela- para promover aprendizajes y habilidades estudiantiles.  
 
 Por eso la invitación de la sociedad civil es a comenzar una nueva era de inversión social inteligente en la que los recursos humanos, financieros y los datos del sistema educativo son usados para tomar decisiones a tiempo, incluso aprovechando las nuevas tecnologías como blockchain y machine learning.  
 
-Saber cuánto, cómo, por qué y quién invierte, importa. Recientemente un estudio empírico del BID reveló  que en Chile, Colombia y Perú ¨los docentes con mayor experiencia y contratos de largo plazo se concentran en las escuelas de mayor nivel socioeconómico¨, es un hallazgo de evidencia importante y preocupante.  
+Saber cuánto, cómo, por qué y quién invierte, importa. Recientemente un estudio empírico del BID reveló  que en Chile, Colombia y Perú ¨los docentes con mayor experiencia y contratos de largo plazo se concentran en las escuelas de mayor nivel socioeconómico¨, es un hallazgo de evidencia importante y preocupante.   
 
 No es tan obvio, pero la forma como se invierten los recursos sí afecta los aprendizajes y el desempeño del sistema educativo. Para hacer inversión inteligente se necesita saber si el dinero para la escuela lo direcciona el gobierno central o el gobierno local; si los sistemas de evaluación de escuelas tienen consecuencias asociadas a recibir más o menos recursos cuando implementan planes de mejoramiento; si el poder de decidir en qué tipo de programas invertir se le permite a la escuela o está dictaminado desde otro nivel del sistema, etc.
 
 De otra parte, la sociedad civil invita a priorizar la inversión en formación de profesores de primera infancia. La tasa de alumnos por profesor en la educación preprimaria alcanzó en 2013 un promedio de 17,5 niños en la región latinoamericana.
 
 ```{r echo = FALSE}
-blogdown::shortcode('quote', .content = '"Las habilidades como comunicadora y el conocimiento de los docentes de preescolar y primer grado pueden contribuir a diseñar mejores estrategias y capacitaciones, preparando a esos docentes efectivos que requerimos y que tienen el potencial, pero requieren el conocimiento y acompañamiento para mejorar su práctica docente." Arlen Regina Pérez, Nicaragua.')
+blogdown::shortcode('quote', .content = '"Las habilidades como comunicación y el conocimiento de los docentes de preescolar y primer grado pueden contribuir a diseñar mejores estrategias y capacitaciones, preparando a esos docentes efectivos que requerimos y que tienen el potencial, pero requieren el conocimiento y acompañamiento para mejorar su práctica docente." Arlen Regina Pérez, Nicaragua.')
 ```
 
 
-```{r echo = FALSE, message = FALSE}
-library(DT)
-library(tidyverse)
-
+```{r echo=FALSE, results='hide', message=FALSE, warning=FALSE, include = FALSE}
+suppressWarnings(library(DT))
+suppressWarnings(library(tidyverse))
 data <- read_csv('../../static/csv/profesores_cualificados.csv') %>% arrange(País)
+```
+
+```{r echo=FALSE, message=FALSE}
+
 datatable(data, rownames = FALSE, options = list(
   initComplete = JS(
     "function (settings, json) {",
@@ -59,10 +62,13 @@ blogdown::shortcode('iframe', url='//www.compareyourcountry.org/teacher-survey?c
 ```
 
 Por eso desarrollar un plan de contingencia aprovechando las tecnologías, la educación on-line tutorizada y otras herramientas, es la alternativa para mantener los aprendizajes en marcha y sin pausa, más allá de las fronteras, las protestas o los problemas de las infraestructuras físicas. 
+
 Es necesario invertir en que los maestros asuman un papel activo de promotores de aprendizaje a través de su propia formación y sirviendo de puente con los estudiantes para explorar juntos las nuevas opciones que ofrece internet. Varios países de Latinoamérica desarrollan con éxito estrategias de acompañamiento y capacitación docentes entre pares y co-diseñando con estudiantes. 
+
 El cambio de paradigma ya empezó. Gobiernos y sociedad civil están tomando acciones para la generación de políticas públicas para dejar de criticar a los profesores y valorar su aporte, así como centrar los recursos del sistema en garantizar la promesa educativa a los estudiantes. Esa es la inversión más inteligente para la sociedad.
 
-# Autores:
+### Autores:
+
 - Carolina Torres - Honduras.
 - Noemí Herrera - México.
 - Constanza Gómez - Chile.
@@ -70,3 +76,4 @@ El cambio de paradigma ya empezó. Gobiernos y sociedad civil están tomando acc
 - Helga Cuellar Marchelli - El Salvador.
 - Adriana del Valle - México.
 
+Con aportes de todos los participantes del curso. Ver más en [Sobre este especial](/sobre-este-especial/)
