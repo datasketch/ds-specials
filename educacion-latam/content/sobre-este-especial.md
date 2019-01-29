@@ -23,7 +23,7 @@ La dirección editorial estuvo a cargo de Lina Zuluaga, del BID y _Georgetown Un
 
 Este grupo de líderes tuvo acceso a conocimiento de expertos con la última evidencia global sobre lo que funciona en educación, así como a las historias de éxito de 4 emprendedores sociales de México, Colombia, Chile y Brasil que lograron consolidar proyectos reconocidos hoy por su impacto en la movilización de la agenda educativa en sus países. Usando parte del conocimiento aprendido en el Curso, más su propio conocimiento experto en las realidades de su país, los participantes desarrollaban semana a semana apartes de este especial periodístico, usando la metodología _TalentoLab_.
 
-Celebramos el apoyo de Luis Alberto Moreno, Emiliana Vegas, Federico Basañes, Soledad Bos, Lina Zuluaga, Edgar Gonzalez y Alejandra Ávila del BID, así como el trabajo en equipo con Mexicanos Primero, Elige Educar, Todos pela Educação y Semana Educación.
+Celebramos el apoyo de Luis Alberto Moreno, Emiliana Vegas, Marcelo Cabrol, Federico Basañes, Soledad Bos, Lina Zuluaga, Edgar Gonzalez y Alejandra Ávila del BID, así como el trabajo en equipo con Mexicanos Primero, Elige Educar, Todos pela Educação y Semana Educación.
 
 Los co-autores de esta edición periodística fueron los líderes:
 
