@@ -10,7 +10,7 @@ weight: 4
 summary: "Si usted tiene un doctorado, un entrenamiento en tecnología o un título de bachiller obtenido hace más de 5 años, hoy la mayor parte del conocimiento que le enseñaron ya está obsoleto o no es relevante frente a los nuevos retos. Si las entidades públicas, agencias de desarrollo y empresas siguen lideradas por personas sin método para actualizar el conocimiento organizacional y además con mentalidad resistente al cambio, los trabajos de millones de latinoamericanos están en riesgo de desaparecer. Los líderes deben tomar acciones urgentes y todos tenemos que volver a entrenarnos o a señalizar mejor las competencias que tenemos, las notas y los títulos tradicionales no dan señales claras al mercado laboral. Para empezar lo responsable sería eliminar las barreras institucionales y hacer inversiones conjuntas para garantizar calidad en currículos flexibles, actualizables y útiles a lo largo de la vida, tanto en el lugar de trabajo como en el sistema educativo.  Así como mejorar los sistemas de evaluación para que capturen la evidencia de los aprendizajes y las competencias de estudiantes y empleados."
 ---
 
-{{< banner h = "60" title = "Prepararnos para el futuro" subtitle = "Desarrollo y fortalecimiento de habilidades" image = "images/post_futuro.png" color = "white" bg = "#004e70" >}}{{< /banner >}}
+{{< banner h = "60" title = "Habilidades para el futuro" subtitle = "" image = "images/post_futuro.png" color = "white" bg = "#004e70" >}}{{< /banner >}}
 
 Rosario, Víctor y Mercedes se graduaron hace dos años de secundaria y a pesar de su larga búsqueda de trabajo siguen desempleados. Ellos creían que si terminaban el bachillerato podrían seguir adelante, pero ahora hacen parte del grueso de desempleo del América Latina, que según las estimaciones modeladas de la OIT (Organización Internacional del Trabajo) alcanza los 10 millones de jóvenes entre los 15 y 24 años que se encuentran desempleados en el 2017. 
 
@@ -31,7 +31,8 @@ En promedio, la mitad de los estudiantes de América Latina y el Caribe no logra
 
 A esta situación, hay que añadirle que alrededor del 50% de los estudiantes desertan de las escuelas, y una gran parte de ellos lo hace porque considera que la educación no es relevante para sus vidas.  
 
-{{< iframe url="//www.compareyourcountry.org/pisa/?lg=es" >}}
+<!-- {{< iframe url="//www.compareyourcountry.org/pisa/?lg=es" >}} -->
+{{< iframe url="https://live-cima-site.pantheonsite.io/es/node/53" >}}
 
 Con un nivel educativo como el que tenemos en América Latina y el Caribe ¿cómo creemos que los estudiantes van a salir a enfrentar el mundo?
 

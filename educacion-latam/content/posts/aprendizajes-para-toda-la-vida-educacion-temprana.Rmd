@@ -1,5 +1,5 @@
 ---
-title: "Educación temprana: aprendizajes para toda la vida"
+title: "Aprendizajes para toda la vida: educación temprana"
 date: 2018-11-26T12:48:52-05:00
 hideTitle: true
 menu: "burger"
@@ -9,7 +9,7 @@ summary: "Las secuelas de no integrar la oferta de servicios sociales (salud, al
 ---
 
 ```{r echo = FALSE}
-blogdown::shortcode('banner', h='60', title='EDUCACIÓN TEMPRANA', subtitle='Aprendizajes para toda la vida', image='images/post_educacion.png', color='white', bg = '#004e70', .content='El gran esfuerzo que debe hacer el Estado para incentivarla educación es crear unas buenas condiciones de infraestructura, recursos
+blogdown::shortcode('banner', h='60', title='APRENDIZAJES PARA TODA LA VIDA', subtitle='Educación temprana', image='images/post_educacion.png', color='white', bg = '#004e70', .content='El gran esfuerzo que debe hacer el Estado para incentivarla educación es crear unas buenas condiciones de infraestructura, recursos
 didácticos, ambiente socioafectivo, y alianzas internacionales.')
 ```
 
@@ -42,6 +42,9 @@ suppressWarnings(library(tidyverse))
 data <- read_csv('../../static/csv/gasto_publico.csv') %>% arrange(País)
 ```
 
+```{r echo = FALSE}
+blogdown::shortcode('iframe', url='https://live-cima-site.pantheonsite.io/es/node/44')
+```
 
 ```{r echo = FALSE, message = FALSE}
 datatable(data, rownames = FALSE, options = list(

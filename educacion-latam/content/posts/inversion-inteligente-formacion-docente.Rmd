@@ -58,7 +58,8 @@ datatable(data, rownames = FALSE, options = list(
 El panorama para las interacciones entre profesores y estudiantes se empeora con situaciones ajenas a ellos: paros, protestas, bloqueos o toma a las instalaciones educativas. La violencia afecta los centros de primera infancia e instituciones educativas y hace que la labor docente en muchos casos se vea limitada y hasta impedida.
 
 ```{r echo = FALSE}
-blogdown::shortcode('iframe', url='//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0')
+# blogdown::shortcode('iframe', url='//www.compareyourcountry.org/teacher-survey?cr=average&lg=en&page=0')
+blogdown::shortcode('iframe', url='https://live-cima-site.pantheonsite.io/es/node/67')
 ```
 
 Por eso desarrollar un plan de contingencia aprovechando las tecnologías, la educación on-line tutorizada y otras herramientas, es la alternativa para mantener los aprendizajes en marcha y sin pausa, más allá de las fronteras, las protestas o los problemas de las infraestructuras físicas. 
