@@ -9,11 +9,12 @@
   <!-- TailwindCSS -->
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/default.css">
+  {{ block "head" . }}{{ end }}
   <title>{{ .Site.Title }}</title>
 </head>
 <body>
   <div id="wrapper" class="h-screen flex flex-col">
-    <header class="py-4 px-6 shadow sticky top-0">
+    <header class="py-4 px-6 shadow sticky top-0 z-50 bg-white">
       <nav class="flex items-center justify-between">
         <div class="spacer">
           <small>BARS</small>

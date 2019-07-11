@@ -1,0 +1,25 @@
+#hero-banner {
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain
+}
+
+.tab-title.active:first-of-type,
+.tab-content:first-of-type a {
+  background-color: #26b1e4;
+}
+
+.tab-title.active:nth-of-type(2),
+.tab-content:nth-of-type(2) a {
+  background-color: #f3b73d;
+}
+
+.tab-title.active:last-of-type,
+.tab-content:last-of-type a {
+  background-color: #7bbf4c;
+}
+
+.tab-content:not(.active) {
+  display: none;
+}

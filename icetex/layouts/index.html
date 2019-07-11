@@ -1,2 +1,40 @@
+{{ define "head" }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/home.css">
+{{ end }}
+
 {{ define "main" }}
+  <div id="hero-banner" class="px-10 py-12 bg-dirty-white">
+    <h1 class="text-6xl tracking-wider mb-2">
+      <span class="block leading-tight uppercase text-shadow text-darkest-blue">Educando</span>
+      <span class="block leading-tight uppercase text-shadow text-darkest-blue">y formando</span>
+      <span class="block leading-tight uppercase text-shadow text-darkest-black">para la cuarta</span>
+      <span class="block leading-tight uppercase text-shadow text-darkest-black">revolución industrial</span>
+    </h1>
+    <div class="bg-darkest-blue w-8 h-2"></div>
+    <p class="my-8 max-w-lg text-lighter-black">
+      Los rectores de las principales universidades de Colombia y expertos en educación discutieron los retos y las oportunidades que debe enfrentar el sector, de cara a la transformación digital de la sociedad. Estas fueron las conclusiones de este taller convocado por Icetex, en asocio con Latin Trade.
+    </p>
+    <div class="flex items-center">
+      <a href="#" class="uppercase bg-darkest-blue text-white px-4 py-3 font-extrabold shadow-md mr-4">¿qué dicen los líderes?</a>
+      <a href="#" class="uppercase bg-darkest-blue text-white px-4 py-3 font-extrabold shadow-md">pasos a seguir</a>
+    </div>
+  </div>
+  <div class="flex items-center bg-dirty-white">
+    <div class="w-3/12">
+      {{ range $index, $post := sort (where .Pages "Section" "posts") ".Date" "asc"}}
+        <button class="tracking-wider text-left font-extrabold text-white uppercase px-6 py-16 bg-darkest-black w-full tab-title{{if eq $index 0}} active{{end}}">
+          <span>{{ $post.Title }}</span>
+        </button>
+      {{ end }}
+    </div>
+    <div class="w-9/12 px-4">
+      {{ range $index, $post := sort (where .Pages "Section" "posts") ".Date" "asc"}}
+      <div class="tab-content flex flex-col items-start w-2/3 mx-auto{{if eq $index 0}} active{{end}}">
+        <h2 class="uppercase text-darkest-black text-4xl">{{ $post.Title }}</h2>
+        <p class="text-lighter-black my-8">{{ $post.Summary }}</p>
+        <a href="#" class="w-1/3 text-center uppercase text-white px-4 py-3 font-extrabold shadow-md mr-4">leer más</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
 {{ end }}
