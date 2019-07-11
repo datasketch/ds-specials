@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap');
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+.bg-darkest-black {
+  background-color: #373737;
+}
+
+.bg-darkest-blue {
+  background-color: #3757f7;
+}
+
+.bg-dirty-white {
+  background-color: #fcfcfe;
+}
+
+.text-darkest-black {
+  color: #373737;
+}
+
+.text-darkest-blue {
+  color: #3757f7;
+}
+
+.text-lighter-black {
+  color: #333333
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 3px rgba(0,0,0,.1);
+}

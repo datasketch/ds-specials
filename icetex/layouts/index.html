@@ -1,5 +1,5 @@
 {{ define "head" }}
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href='{{ "css/home.css" | absURL }}'>
 {{ end }}
 
 {{ define "main" }}
@@ -40,5 +40,5 @@
 {{ end }}
 
 {{ define "js" }}
-  <script src="/js/home.js"></script>
+  <script src='{{ "js/home.js" | absURL }}'></script>
 {{ end }}

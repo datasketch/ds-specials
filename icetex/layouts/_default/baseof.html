@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- TailwindCSS -->
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/default.css">
+  <link rel="stylesheet" type="text/css" href='{{ "css/default.css" | absURL }}'>
   {{ block "head" . }}{{ end }}
   <title>{{ .Site.Title }}</title>
 </head>

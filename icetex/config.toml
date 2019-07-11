@@ -1,3 +1,4 @@
-baseURL = "/"
+baseURL = "/icetex"
 languageCode = "es"
 title = "Memorias ICETEX"
+publishDir = "../docs/icetex"
