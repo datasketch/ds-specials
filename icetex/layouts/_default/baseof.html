@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- TailwindCSS -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/default.css">
+  <title>{{ .Site.Title }}</title>
+</head>
+<body>
+  <div id="wrapper" class="h-screen flex flex-col">
+    <header class="py-4 px-6 shadow sticky top-0">
+      <nav class="flex items-center justify-between">
+        <div class="spacer">
+          <small>BARS</small>
+        </div>
+        <div class="flex items-center">
+          <a href="" class="pl-3 text-darkest-blue" target="_blank" rel="noopener noreferer">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="pl-3 text-darkest-blue" target="_blank" rel="noopener noreferer">
+            <i class="fa fa-rss"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    <footer class="p-4 bg-darkest-black text-white">
+      <small>Footer content</small>
+    </footer>
+  </div>
+</body>
+</html>
