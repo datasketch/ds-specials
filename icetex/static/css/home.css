@@ -27,3 +27,21 @@
 .tab-content:not(.active) {
   display: none;
 }
+
+.bullets {
+  position: relative;
+}
+
+.bullets:before {
+  border: thin solid #3757f7;
+  content: '';
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.bullet {
+  cursor: pointer;
+}
