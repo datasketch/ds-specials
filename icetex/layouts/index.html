@@ -3,45 +3,45 @@
 {{ end }}
 
 {{ define "main" }}
-  <div id="hero-banner" class="px-10 py-12 bg-dirty-white shadow-lg">
-    <h1 class="text-6xl tracking-wider mb-2">
+  <div id="hero-banner" class="px-6 lg:px-10 py-12 bg-dirty-white">
+    <h1 class="text-2xl md:text-4xl lg:text-6xl tracking-wider mb-2">
       <span class="block leading-tight uppercase text-shadow text-darkest-blue">Educando</span>
       <span class="block leading-tight uppercase text-shadow text-darkest-blue">y formando</span>
       <span class="block leading-tight uppercase text-shadow text-darkest-black">para la cuarta</span>
       <span class="block leading-tight uppercase text-shadow text-darkest-black">revolución industrial</span>
     </h1>
     <div class="bg-darkest-blue w-8 h-2"></div>
-    <p class="my-8 max-w-lg text-lighter-black">
+    <p class="text-xs my-8 mr-8 text-lighter-black max-w-lg md:text-sm md:mr-0 lg:text-base">
       Los rectores de las principales universidades de Colombia y expertos en educación discutieron los retos y las oportunidades que debe enfrentar el sector, de cara a la transformación digital de la sociedad. Estas fueron las conclusiones de este taller convocado por Icetex, en asocio con Latin Trade.
     </p>
-    <div class="flex items-center">
-      <a href="#" class="text-xs uppercase bg-darkest-blue text-white px-4 py-2 font-extrabold shadow-md mr-4 tracking-wider">¿qué dicen los líderes?</a>
-      <a href="#" class="text-xs uppercase bg-darkest-blue text-white px-4 py-2 font-extrabold shadow-md tracking-wider">pasos a seguir</a>
+    <div class="flex flex-col md:flex-row items-start lg:items-center">
+      <a href="#" class="text-xs uppercase bg-darkest-blue text-white px-4 py-2 font-extrabold shadow-md mb-4 md:mr-4 lg:mb-0 tracking-wider leading-none lg:leading-normal">¿qué dicen los líderes?</a>
+      <a href="#" class="text-xs uppercase bg-darkest-blue text-white px-4 py-2 font-extrabold shadow-md tracking-wider leading-none lg:leading-normal">pasos a seguir</a>
     </div>
   </div>
-  <div class="flex items-center bg-dirty-white shadow-inner">
-    <div class="w-3/12">
+  <div class="flex flex-col bg-dirty-white shadow-inner md:flex-row md:items-center">
+    <div class="w-full md:w-3/12">
       {{ range $index, $post := sort (where .Pages "Section" "posts") ".Date" "asc"}}
-        <button class="tracking-wider text-left font-extrabold text-white uppercase px-6 h-48 bg-darkest-black w-full tab{{if eq $index 0}} active{{end}}" data-tab="tab-{{ $index }}">
+        <button class="tracking-wider text-xs text-left font-extrabold text-white uppercase px-6 py-4 h-auto bg-darkest-black w-full tab md:h-48 lg:text-base{{if eq $index 0}} active{{end}}" data-tab="tab-{{ $index }}">
           <span>{{ $post.Title }}</span>
         </button>
       {{ end }}
     </div>
-    <div class="w-9/12 px-4">
+    <div class="w-full md:w-9/12 px-4 py-4 md:py-0">
       {{ range $index, $post := sort (where .Pages "Section" "posts") ".Date" "asc"}}
-      <div class="tab-content flex flex-col items-start w-2/3 mx-auto{{if eq $index 0}} active{{end}}" id="tab-{{ $index }}">
-        <h2 class="uppercase text-darkest-black text-4xl">{{ $post.Title }}</h2>
-        <p class="text-lighter-black my-8">{{ $post.Summary }}</p>
-        <a href="{{ .Permalink }}" class="w-1/3 text-center uppercase text-white px-4 py-3 font-extrabold shadow-md tracking-wider">leer más</a>
+      <div class="tab-content flex flex-col items-start w-full md:w-2/3 mx-auto{{if eq $index 0}} active{{end}}" id="tab-{{ $index }}">
+        <h2 class="uppercase text-darkest-black text-lg md:text-2xl lg:text-4xl">{{ $post.Title }}</h2>
+        <p class="text-lighter-black text-xs my-5 md:my-8 md:text-sm lg:text-base">{{ $post.Summary }}</p>
+        <a href="{{ .Permalink }}" class="text-xs w-1/3 text-center uppercase text-white px-4 py-3 font-extrabold shadow-md tracking-wider leading-none lg:leading-normal lg:text-base">leer más</a>
       </div>
       {{ end }}
     </div>
   </div>
-  <div class="shadow-inner py-12 px-24">
-    <div class="flex justify-between h-64">
-      <div class="flex flex-col items-center">
-        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4">Datos para mejorar</h4>
-        <ul class="bullets flex-grow flex flex-col justify-between">
+  <div class="shadow-inner p-6 md:py-12 md:px-24">
+    <div class="flex flex-col h-auto md:h-64 md:flex-row md:justify-between">
+      <div class="flex flex-col mb-8 md:mb-0">
+        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4 text-center">Datos para mejorar</h4>
+        <ul class="bullets w-full flex-grow justify-between items-center flex md:flex-col">
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
@@ -49,9 +49,9 @@
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
         </ul>
       </div>
-      <div class="flex flex-col items-center">
-        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4">Financiación para CRI</h4>
-        <ul class="bullets flex-grow flex flex-col justify-between">
+      <div class="flex flex-col mb-8 md:mb-0">
+        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4 text-center">Financiación para CRI</h4>
+        <ul class="bullets w-full flex-grow justify-between items-center flex md:flex-col">
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
@@ -61,18 +61,18 @@
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
         </ul>
       </div>
-      <div class="flex flex-col items-center">
-        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4">Investigación o spin-off</h4>
-        <ul class="bullets flex-grow flex flex-col justify-between">
+      <div class="flex flex-col mb-8 md:mb-0">
+        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4 text-center">Investigación o spin-off</h4>
+        <ul class="bullets w-full flex-grow justify-between items-center flex md:flex-col">
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
         </ul>
       </div>
-      <div class="flex flex-col items-center">
-        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4">Economía naranja</h4>
-        <ul class="bullets flex-grow flex flex-col justify-between">
+      <div class="flex flex-col mb-8 md:mb-0">
+        <h4 class="uppercase text-darkest-black font-extrabold tracking-wider mb-4 text-center">Economía naranja</h4>
+        <ul class="bullets w-full flex-grow justify-between items-center flex md:flex-col">
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
           <li class="bullet bg-darkest-blue w-3 h-3 rounded-full"></li>
@@ -81,13 +81,15 @@
     </div>
     <div class="flex mt-8 mb-12 justify-center">
       <div class="flex items-strecth shadow-lg">
-        <button class="text-xs uppercase bg-darkest-black text-white px-4 py-2 font-extrabold tracking-wider">pasos a seguir</button>
-        <button class="text-xs uppercase bg-darkest-blue text-white px-4 py-2 font-extrabold tracking-wider">sesiones</button>
+        <button class="text-xs uppercase bg-darkest-black text-white px-4 py-2 font-extrabold tracking-wider" data-category="pasos-a-seguir">pasos a seguir</button>
+        <button class="text-xs uppercase bg-darkest-blue text-white px-4 py-2 font-extrabold tracking-wider" data-category="sesiones">sesiones</button>
       </div>
     </div>
     <div class="bg-darkest-blue w-8 h-2"></div>
-    <h2 class="uppercase text-darkest-black text-4xl tracking-wider mt-4">Adriana Arellano</h2>
-    <p class="text-lighter-black mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, placeat ipsum consectetur consequuntur aliquid porro quibusdam expedita nobis ipsam quisquam facere exercitationem maiores dolor tempora, blanditiis quae reprehenderit nam similique velit obcaecati voluptatem ipsa unde et vitae. Voluptatibus tenetur accusamus laborum tempore necessitatibus impedit nulla ullam officia sit ab, hic placeat asperiores sunt quae voluptatem reiciendis laudantium. Quisquam ab dolore reiciendis nisi repellendus optio velit vel! Officia, iusto! Ea quibusdam quasi nam rem, blanditiis soluta! Veniam a deleniti nihil laboriosam pariatur, ad perferendis dolore. Asperiores at officiis maxime eos beatae. Officia velit ea similique doloremque inventore, nisi libero quidem placeat?</p>
+    <div class="bullet-content">
+      <h2 class="uppercase text-darkest-black text-xl md:text-4xl tracking-wider mt-4">Adriana Arellano</h2>
+      <p class="text-lighter-black mt-4 text-xs md:text-base md:mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, placeat ipsum consectetur consequuntur aliquid porro quibusdam expedita nobis ipsam quisquam facere exercitationem maiores dolor tempora, blanditiis quae reprehenderit nam similique velit obcaecati voluptatem ipsa unde et vitae. Voluptatibus tenetur accusamus laborum tempore necessitatibus impedit nulla ullam officia sit ab, hic placeat asperiores sunt quae voluptatem reiciendis laudantium. Quisquam ab dolore reiciendis nisi repellendus optio velit vel! Officia, iusto! Ea quibusdam quasi nam rem, blanditiis soluta! Veniam a deleniti nihil laboriosam pariatur, ad perferendis dolore. Asperiores at officiis maxime eos beatae. Officia velit ea similique doloremque inventore, nisi libero quidem placeat?</p>
+    </div>
   </div>
 {{ end }}
 
