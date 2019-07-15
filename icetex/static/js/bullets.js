@@ -157,6 +157,8 @@ Bullets.prototype.registerButtonsHandler = function registerButtonsHandler () {
       const category = target.dataset.category;
       if (self.category === category) return;
       self.category = category;
+      document.querySelector('.bullet-btn.active').classList.remove('active');
+      target.classList.add('active');
       self.createBullets();
     });
   });

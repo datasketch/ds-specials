@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Memorias ICETEX</title>
-    <link>/icetex/</link>
-    <description>Recent content on Memorias ICETEX</description>
+    <title>Posts on Memorias ICETEX</title>
+    <link>/icetex/posts/</link>
+    <description>Recent content in Posts on Memorias ICETEX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Thu, 11 Jul 2019 11:08:40 -0500</lastBuildDate>
     
-	<atom:link href="/icetex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/icetex/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
