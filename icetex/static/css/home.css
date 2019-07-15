@@ -41,10 +41,19 @@
   top: 50%;
   transform: translate(0, -50%);
   width: 100%;
+  z-index: -1;
 }
 
 .bullet {
   cursor: pointer;
+}
+
+.bullet.active {
+  background: #7bbf4c;
+}
+
+.bullet-btn.active {
+  background-color: #3757f7;
 }
 
 @media screen and (min-width: 768px) {

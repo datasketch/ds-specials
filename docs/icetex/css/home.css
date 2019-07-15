@@ -1,5 +1,5 @@
 #hero-banner {
-  background-image: url(../images/header.png);
+  background-image: url(../images/header_mobile.png);
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain
@@ -26,4 +26,45 @@
 
 .tab-content:not(.active) {
   display: none;
+}
+
+.bullets {
+  position: relative;
+}
+
+.bullets:before {
+  border: thin solid #3757f7;
+  content: '';
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  z-index: -1;
+}
+
+.bullet {
+  cursor: pointer;
+}
+
+.bullet.active {
+  background: #7bbf4c;
+}
+
+.bullet-btn.active {
+  background-color: #3757f7;
+}
+
+@media screen and (min-width: 768px) {
+  #hero-banner {
+    background-image: url(../images/header.png);
+  }
+  .bullets:before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 100%;
+    width: auto;
+  }
 }
