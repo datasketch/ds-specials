@@ -23,6 +23,7 @@ Bullets.prototype.fetchData = function fetchData () {
       self.category = self.categories[0];
       self.createButtons();
       self.createBullets();
+      document.querySelector('.loader-wrapper').classList.add('hidden')
     })
     .catch(error => console.log(error.message));
 }
@@ -83,7 +84,7 @@ Bullets.prototype.createBullets = function createBullets (data) {
       children: [
         DOMUtils.createElement('h4', {
           attrs: {
-            class: 'uppercase text-darkest-black font-extrabold tracking-wider mb-4 text-center',
+            class: 'uppercase text-darkest-black font-extrabold tracking-wider mb-4 text-center md:max-w-sm',
           },
           children: [tag.replace(/-/g, ' ')],
         }),

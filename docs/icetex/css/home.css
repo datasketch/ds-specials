@@ -56,6 +56,23 @@
   background-color: #3757f7;
 }
 
+
+button.loader {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid rgba(55, 87, 247, 0.8);
+  border-top-color: #fff;
+  animation: spinner 600ms linear infinite;
+}
+
+@keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 @media screen and (min-width: 768px) {
   #hero-banner {
     background-image: url(../images/header.png);

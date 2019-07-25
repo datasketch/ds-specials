@@ -12,6 +12,10 @@ body {
   background-color: #3757f7;
 }
 
+.bg-lightest-blue {
+  background-color: #2045ce;
+}
+
 .bg-dirty-white {
   background-color: #fcfcfe;
 }
