@@ -137,6 +137,12 @@ Bullets.prototype.displayBulletInfo = function displayBulletInfo () {
     },
     children: [info.name],
   }));
+  const role = DOMUtils.renderElement(DOMUtils.createElement('p', {
+    attrs: {
+      class: 'text-lighter-black uppercase italic text-sm'
+    },
+    children: [info.role]
+  }))
   const body = DOMUtils.renderElement(DOMUtils.createElement('p', {
     attrs: {
       class: 'text-lighter-black mt-4 text-xs md:text-base md:mt-8',
@@ -144,6 +150,7 @@ Bullets.prototype.displayBulletInfo = function displayBulletInfo () {
     children: [info.review]
   }));
   this.containers.info.appendChild(heading);
+  this.containers.info.appendChild(role);
   this.containers.info.appendChild(body);
 }
 

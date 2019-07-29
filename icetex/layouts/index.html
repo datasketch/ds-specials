@@ -12,7 +12,7 @@
     </h1>
     <div class="bg-darkest-blue w-8 h-2"></div>
     <p class="text-xs my-8 mr-8 text-lighter-black max-w-lg md:text-sm md:mr-0 lg:text-base">
-      Los rectores de las principales universidades de Colombia y expertos en educación discutieron los retos y las oportunidades que debe enfrentar el sector, de cara a la transformación digital de la sociedad. Estas fueron las conclusiones de este taller convocado por Icetex, en asocio con Latin Trade.
+      Los rectores de las principales universidades de Colombia y expertos en educación discutieron los retos y las oportunidades que debe enfrentar el sector, de cara a la transformación digital de la sociedad. Estas fueron las conclusiones de este taller convocado por Icetex, en asocio con la Fundación Líderes y Emprendedores en la U. Se utilizó la metodología de aprendizaje TalentoLab.
     </p>
     <div class="flex flex-col md:flex-row items-start lg:items-center">
       {{ range sort (where .Pages "Type" "hero") ".Date" "asc"}}
@@ -52,8 +52,8 @@
   </div>
   <div class="flex flex-col bg-dirty-white shadow-inner md:flex-row">
     {{ range $index, $post := sort (where .Pages "Type" "horizontal_tab") ".Date" "asc"}}
-      <a href="{{ .Permalink }}" class="px-6 py-10 block {{if eq $index 1}}bg-lightest-blue{{else}}bg-darkest-blue{{end}} tracking-wider text-xs text-left font-extrabold text-white uppercase md:w-1/3 md:h-48 lg:text-base flex items-center">
-        <span>{{ $post.Title }}</span>
+      <a href="{{ .Permalink }}" class="px-6 py-10 block {{if eq $index 1}}bg-lightest-blue{{else}}bg-darkest-blue{{end}} tracking-wider text-xs text-left font-extrabold text-white uppercase md:w-1/3 md:h-48 lg:text-base flex items-center text-center">
+        <span class="md:w-2/3 mx-auto block">{{ $post.Title }}</span>
       </a>
     {{ end }}
   </div>

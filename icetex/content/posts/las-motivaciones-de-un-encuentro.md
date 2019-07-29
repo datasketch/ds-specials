@@ -6,7 +6,7 @@ type: "hero"
 label: "motivaciones"
 ---
 
-El pasado 6 de junio, el ICETEX reunió a directivas de varias de las universidades más importantes de Colombia, expertos en educación, consultores e integrantes de grandes organizaciones públicas y privadas con un gran objetivo: descubrir los retos y las oportunidades que la transformación digital de la sociedad está llevando a la educación superior. 
+El pasado 6 de junio, el Icetex y la Fundación Líderes y Emprendedores en la U reunieron a directivas de varias de las universidades más importantes de Colombia, expertos en educación, consultores e integrantes de grandes organizaciones públicas y privadas con un gran objetivo: descubrir los retos y las oportunidades que la transformación digital de la sociedad está llevando a la educación superior. 
 
 El evento surgió con tres grandes motivaciones. La primera fue descubrir las diversas formas en que las instituciones y organizaciones estatales podrían usar datos para mapear las habilidades que tienen los estudiantes, según su formación y con las regiones donde se encuentran. 
 
