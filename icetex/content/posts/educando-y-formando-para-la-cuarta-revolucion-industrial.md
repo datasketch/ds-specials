@@ -8,11 +8,26 @@ sociedad."
 type: "hero"
 label: "sobre el evento"
 credits:
-  - direction:
-    - name: Manuel Acevedo
-      role: Presidente de Icetex
-    - name: Lina Zuluaga Ocampo
-      role: Directora de Applied Research - TalentoLab. Georgetown University
+  - label: 'Dirección'
+    members:
+      - name: Manuel Acevedo
+        role: Presidente de Icetex
+      - name: Lina Zuluaga Ocampo
+        role: Directora de Applied Research - TalentoLab. Georgetown University
+  - label: 'Coordinación periodística'
+    members:
+      - name: Santiago Gutiérrez
+        role: Director de LatinTrade
+  - label: 'Moderación y relatoría'
+    members:
+      - name: Claudia Palacios
+      - name: Alejandro González
+      - name: Gina Centanaro
+      - name: Rocío Olarte
+      - name: María Alejandra Tejada
+      - name: Santiago Gutiérrez
+  - label: 'Producción digital'
+    logo: 'images/ds.svg'
 ---
 
 La educación superior en Colombia está enfrentando un momento de transformación, en el cual las universidades deben explorar a fondo cómo adaptar las habilidades más valoradas en sus programas de estudio a la nueva realidad económica y social del país, así como a los cambios digitales que impactan a todas las organizaciones.
