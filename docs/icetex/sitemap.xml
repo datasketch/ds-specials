@@ -3,64 +3,64 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/las-motivaciones-de-un-encuentro/</loc>
+    <loc>/icetex/posts/las-motivaciones-de-un-encuentro/</loc>
     <lastmod>2019-07-25T12:51:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/</loc>
-    <lastmod>2019-07-25T12:51:33-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/icetex/posts/</loc>
+    <loc>/icetex/</loc>
     <lastmod>2019-07-25T12:51:33-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/financiar-educacion-y-emprendimiento/</loc>
+    <loc>/icetex/posts/</loc>
+    <lastmod>2019-07-25T12:51:33-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/icetex/posts/financiar-educacion-y-emprendimiento/</loc>
     <lastmod>2019-07-25T12:49:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/industrias-culturales-una-oportunidad-para-la-educacion/</loc>
+    <loc>/icetex/posts/industrias-culturales-una-oportunidad-para-la-educacion/</loc>
     <lastmod>2019-07-25T12:47:23-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/spin-offs-universidad-empresa-y-gobierno/</loc>
+    <loc>/icetex/posts/spin-offs-universidad-empresa-y-gobierno/</loc>
     <lastmod>2019-07-25T12:46:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/curriculo-enfocado-en-el-mercado-laboral/</loc>
+    <loc>/icetex/posts/curriculo-enfocado-en-el-mercado-laboral/</loc>
     <lastmod>2019-07-25T12:44:12-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/que-hacer-con-la-economia-naranja/</loc>
+    <loc>/icetex/posts/que-hacer-con-la-economia-naranja/</loc>
     <lastmod>2019-07-11T11:08:40-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/orientacion-vocacional-con-cambios/</loc>
+    <loc>/icetex/posts/orientacion-vocacional-con-cambios/</loc>
     <lastmod>2019-07-11T11:08:26-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/posts/educando-y-formando-para-la-cuarta-revolucion-industrial/</loc>
+    <loc>/icetex/posts/educando-y-formando-para-la-cuarta-revolucion-industrial/</loc>
     <lastmod>2019-07-11T11:07:56-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/categories/</loc>
+    <loc>/icetex/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/icetex/tags/</loc>
+    <loc>/icetex/tags/</loc>
     <priority>0</priority>
   </url>
   

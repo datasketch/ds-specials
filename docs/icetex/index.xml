@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Memorias ICETEX</title>
-    <link>http://localhost:1313/icetex/</link>
+    <link>/icetex/</link>
     <description>Recent content on Memorias ICETEX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Thu, 25 Jul 2019 12:51:33 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/icetex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/icetex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Las motivaciones de un encuentro</title>
-      <link>http://localhost:1313/icetex/posts/las-motivaciones-de-un-encuentro/</link>
+      <link>/icetex/posts/las-motivaciones-de-un-encuentro/</link>
       <pubDate>Thu, 25 Jul 2019 12:51:33 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/las-motivaciones-de-un-encuentro/</guid>
+      <guid>/icetex/posts/las-motivaciones-de-un-encuentro/</guid>
       <description>¿Por qué es el momento para pensar en la educación superior en Colombia y los aspectos que la están afectando?</description>
     </item>
     
     <item>
       <title>Financiar educación Y emprendimiento</title>
-      <link>http://localhost:1313/icetex/posts/financiar-educacion-y-emprendimiento/</link>
+      <link>/icetex/posts/financiar-educacion-y-emprendimiento/</link>
       <pubDate>Thu, 25 Jul 2019 12:49:52 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/financiar-educacion-y-emprendimiento/</guid>
+      <guid>/icetex/posts/financiar-educacion-y-emprendimiento/</guid>
       <description>La financiación sigue siendo uno de las grandes barreras para que los jóvenes accedan a opciones educativas. Comienzan a surgir alternativas para sortear este inconveniente.</description>
     </item>
     
     <item>
       <title>Industrias culturales, una oportunidad para la educación</title>
-      <link>http://localhost:1313/icetex/posts/industrias-culturales-una-oportunidad-para-la-educacion/</link>
+      <link>/icetex/posts/industrias-culturales-una-oportunidad-para-la-educacion/</link>
       <pubDate>Thu, 25 Jul 2019 12:47:23 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/industrias-culturales-una-oportunidad-para-la-educacion/</guid>
+      <guid>/icetex/posts/industrias-culturales-una-oportunidad-para-la-educacion/</guid>
       <description>Las universidades pueden buscar formas para aprovechar la riqueza cultural del país e impulsar, con ella, el desarrollo de las diferentes regiones.</description>
     </item>
     
     <item>
       <title>Spin-offs: universidad, empresa y gobierno</title>
-      <link>http://localhost:1313/icetex/posts/spin-offs-universidad-empresa-y-gobierno/</link>
+      <link>/icetex/posts/spin-offs-universidad-empresa-y-gobierno/</link>
       <pubDate>Thu, 25 Jul 2019 12:46:09 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/spin-offs-universidad-empresa-y-gobierno/</guid>
+      <guid>/icetex/posts/spin-offs-universidad-empresa-y-gobierno/</guid>
       <description>Las empresas de base tecnológica se presentan como una opción para que la academía aproveche su capital intelectual. Esta es la clave detrás de la llamada ‘Ley de Spin-offs’.</description>
     </item>
     
     <item>
       <title>Currículo enfocado en el mercado laboral</title>
-      <link>http://localhost:1313/icetex/posts/curriculo-enfocado-en-el-mercado-laboral/</link>
+      <link>/icetex/posts/curriculo-enfocado-en-el-mercado-laboral/</link>
       <pubDate>Thu, 25 Jul 2019 12:44:12 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/curriculo-enfocado-en-el-mercado-laboral/</guid>
+      <guid>/icetex/posts/curriculo-enfocado-en-el-mercado-laboral/</guid>
       <description>Las instituciones de educación superior deben comenzar a modificar sus planes de estudio para ajustarse a las realidades del mercado laboral. ¿Qué hacer?</description>
     </item>
     
     <item>
       <title>¿Qué hacer con la Economía Naranja?</title>
-      <link>http://localhost:1313/icetex/posts/que-hacer-con-la-economia-naranja/</link>
+      <link>/icetex/posts/que-hacer-con-la-economia-naranja/</link>
       <pubDate>Thu, 11 Jul 2019 11:08:40 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/que-hacer-con-la-economia-naranja/</guid>
+      <guid>/icetex/posts/que-hacer-con-la-economia-naranja/</guid>
       <description>Aún faltan condiciones para que la llamada ‘Economía Naranja’ despegue en las regiones, a pesar de los esferzos del Gobierno. Las instituciones educativas pueden ser la clave para alcanzarlas.</description>
     </item>
     
     <item>
       <title>Orientación vocacional con cambios</title>
-      <link>http://localhost:1313/icetex/posts/orientacion-vocacional-con-cambios/</link>
+      <link>/icetex/posts/orientacion-vocacional-con-cambios/</link>
       <pubDate>Thu, 11 Jul 2019 11:08:26 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/orientacion-vocacional-con-cambios/</guid>
+      <guid>/icetex/posts/orientacion-vocacional-con-cambios/</guid>
       <description>Las instituciones educativas buscan mejorar las habilidades y los conocimientos de los alumnos, para igualar a quienes llegan en desventaja, evitar la desersión y mejorar sus posibilidades de éxito profesional.</description>
     </item>
     
     <item>
       <title>Educando y formando para la cuarta revolución industrial</title>
-      <link>http://localhost:1313/icetex/posts/educando-y-formando-para-la-cuarta-revolucion-industrial/</link>
+      <link>/icetex/posts/educando-y-formando-para-la-cuarta-revolucion-industrial/</link>
       <pubDate>Thu, 11 Jul 2019 11:07:56 -0500</pubDate>
       
-      <guid>http://localhost:1313/icetex/posts/educando-y-formando-para-la-cuarta-revolucion-industrial/</guid>
+      <guid>/icetex/posts/educando-y-formando-para-la-cuarta-revolucion-industrial/</guid>
       <description>En un evento organizado por el Icetex y la Fundación Líderes y Emprendedores en la U y la Fundación Líderes y Emprendedores en la U y la Fundación Líderes y Emprendedores en la U, y que contó con el apoyo de Latin Trade y TalentoLab, rectores de las principales universidades de Colombia y expertos en educación discutieron los retos y las oportunidades que debe enfrentar el sector, de cara a la transformación digital de la sociedad.</description>
     </item>
     

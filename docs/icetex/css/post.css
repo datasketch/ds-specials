@@ -5,25 +5,25 @@
   background-position: center top;
 }
 
-p {
+.post-content p {
   color: #333333;
   margin: 0 0 1.5rem;
   font-size: .875rem;
   line-height: 1.625;
 }
 
-blockquote {
+.post-content blockquote {
   padding: 0.5rem 0 0.5rem 1rem;
   border-left: 5px solid #3757f7;
   background-color: #fcfcfe;
   margin: 0 0 1.5rem;
 }
 
-blockquote > p {
+.post-content  blockquote > p {
   margin: 0;
 }
 
-h2 {
+.post-content  h2 {
   color: #3757f7;
   font-size: 1rem;
   text-transform: uppercase;
@@ -32,7 +32,7 @@ h2 {
   position: relative;
 }
 
-h2::before {
+.post-content  h2::before {
   content: '';
   position: absolute;
   background-color: #3757f7;
@@ -43,10 +43,10 @@ h2::before {
 }
 
 @media screen and (min-width: 640px) {
-  p {
+  .post-content  p {
     font-size: 1rem;
   }
-  h2 {
+  .post-content  h2 {
     font-size: 1.25rem;
   }
 }
