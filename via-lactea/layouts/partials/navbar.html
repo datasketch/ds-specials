@@ -1,0 +1,14 @@
+<header class="p-4">
+  <nav class="flex justify-between items-center container mx-auto">
+    <a href="/" class="w-40">
+      <img src='{{ "images/datasketch.svg" | absURL }}' alt="">
+    </a>
+    <div class="nav-right">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer" class="ml-2">
+          <i class="fab fa-{{.Name}}"></i>
+        </a>
+      {{ end }}
+    </div>
+  </nav>
+</header>

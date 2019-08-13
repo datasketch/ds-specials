@@ -1,0 +1,24 @@
+@tailwind base;
+
+@tailwind components;
+
+.bg-home {
+  @apply bg-center bg-cover bg-no-repeat;
+  background-image: url('/via-lactea/images/background.png');
+}
+
+.content {
+  @apply mx-auto w-full;
+}
+
+.bar {
+  @apply bg-mine-shaft h-4 w-16;
+}
+
+@screen md {
+  .content {
+    @apply w-5/6;
+  }
+}
+
+@tailwind utilities;

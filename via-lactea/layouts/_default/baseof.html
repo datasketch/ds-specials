@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {{  $tailwind := resources.Get "css/tailwind.css" | resources.PostCSS (dict "config" "postcss.config.js") | minify }}
+  <link rel="stylesheet" href="{{ $tailwind.Permalink | absURL }}">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ad0d465019.js"></script>
+  {{ if .Title }}
+    <title>{{ .Title }} &bull; {{ .Site.Title }}</title>
+  {{ else }}
+    <title>{{ .Site.Title }}</title>
+  {{ end }}
+</head>
+<body class="font-barlow text-mine-shaft{{ if .IsHome }} bg-home{{ end }}">
+  <div class="min-h-screen flex flex-col">
+    {{ partial "navbar.html" . }}
+    <main class="flex-grow">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+</body>
+</html>
