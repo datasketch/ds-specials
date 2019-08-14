@@ -22,6 +22,10 @@
   @apply mb-6 leading-relaxed;
 }
 
+.post-content a {
+  @apply text-observatory;
+}
+
 .post-content h2 {
   @apply font-bold text-3xl tracking-wide max-w-lg leading-none relative mb-8;
 }
