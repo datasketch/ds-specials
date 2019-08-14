@@ -3,7 +3,7 @@
 @tailwind components;
 
 .bg-home {
-  @apply bg-center bg-cover bg-no-repeat;
+  @apply bg-center bg-cover bg-repeat-y bg-fixed;
   background-image: url('/via-lactea/images/background.png');
 }
 
