@@ -14,7 +14,7 @@ library(googlesheets)
 library(htmlwidgets)
 
 theme <- list(
-  background = "#FFFFFF",
+  background = "transparent",
   colors = c("#FCC047",
               "#C3E557",
               "#009478",

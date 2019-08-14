@@ -10,6 +10,18 @@
   filter: brightness(0) invert(1);
 }
 
+.navbar-post {
+  @apply fixed z-10 w-full text-white;
+}
+
+.affixed {
+  @apply bg-hint-of-red text-mine-shaft shadow-md;
+}
+
+.affixed .brand .img-white {
+  filter: none;
+}
+
 .content {
   @apply mx-auto w-full;
 }
