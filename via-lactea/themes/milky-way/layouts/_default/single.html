@@ -4,8 +4,11 @@
 {{ end }}
 
 {{ define "main" }}
+  <div class="w-full relative h-0 mb-10" style="padding-bottom: 56.25%">
+    <img src="{{ (index .Params.images 0) | absURL }}" class="absolute top-0 w-full h-full object-cover object-center"/>
+  </div>
   <div class="px-4">
-    <div class="post-content text-mine-shaft">
+    <div class="post-content text-mine-shaft text-lg">
       {{ .Content }}
     </div>
   </div>

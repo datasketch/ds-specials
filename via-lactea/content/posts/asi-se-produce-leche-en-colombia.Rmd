@@ -1,7 +1,6 @@
 ---
 title: "Así se produce leche en Colombia"
 date: 2019-08-13T14:13:22-05:00
-draft: true
 description: "Desde que se ordeña la vaca, hasta que llega a tu mesa, te contamos todo lo que quieres saber sobre la producción de leche en Colombia."
 summary: "La leche es un alimento básico de la canasta familiar del mundo entero, rico en proteínas y grasas que hace parte de la dieta de más de 6 mil millones de personas en el mundo, además de ser considerada el producto más consumido en todos los países en desarrollo."
 images:

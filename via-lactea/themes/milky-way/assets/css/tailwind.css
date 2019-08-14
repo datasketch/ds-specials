@@ -6,6 +6,10 @@
   @apply bg-mine-shaft h-4 w-16;
 }
 
+.img-white {
+  filter: brightness(0) invert(1);
+}
+
 .content {
   @apply mx-auto w-full;
 }
@@ -15,15 +19,17 @@
 }
 
 .post-content * {
-  @apply mb-6 text-lg;
+  @apply mb-6 leading-relaxed;
 }
 
 .post-content h2 {
-  @apply font-bold text-3xl tracking-wide max-w-md leading-none relative;
+  @apply font-bold text-3xl tracking-wide max-w-lg leading-none relative mb-8;
 }
 
-.post-content h2:before {
-  @apply bg-mine-shaft h-4 w-16 absolute bottom-0 block my-6;
+.post-content h2::before {
+  @apply bg-mine-shaft h-2 w-10 absolute block mt-2;
+  top: 100%;
+  content: '';
 }
 
 .post-content .caption {
@@ -40,7 +46,7 @@
     @apply w-5/6;
   }
   .post-content {
-    @apply w-4/6;
+    @apply w-3/5;
   }
   .post-content h2 {
     @apply text-5xl;

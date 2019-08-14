@@ -1,7 +1,7 @@
-<header class="p-4">
+<header class="p-4{{ if not .IsHome }} fixed z-10 w-full text-white{{ end }}">
   <nav class="flex justify-between items-center container mx-auto">
     <a href="{{ .Site.BaseURL }}" class="w-40">
-      <img src='{{ "images/datasketch.svg" | absURL }}' alt="">
+      <img src='{{ "images/datasketch.svg" | absURL }}' alt="" class="{{ if not .IsHome }}img-white{{ end }}">
     </a>
     <div class="nav-right">
       {{ range .Site.Menus.main }}
