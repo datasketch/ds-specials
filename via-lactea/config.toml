@@ -1,8 +1,9 @@
-baseURL = "/via-lactea"
+baseURL = "/via-lactea/"
 languageCode = "es-co"
 title = "Vía láctea"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-publishDir = "../docs/via-lactea"
+publishDir = "../docs/via-lactea/"
+theme = "milky-way"
 # googleAnalytics = "UA-110184023-1"
 
 [menu]
