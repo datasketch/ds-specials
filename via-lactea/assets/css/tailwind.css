@@ -2,22 +2,48 @@
 
 @tailwind components;
 
-.bg-home {
-  @apply bg-center bg-cover bg-repeat-y bg-fixed;
-  background-image: url('/via-lactea/images/background.png');
+.bar {
+  @apply bg-mine-shaft h-4 w-16;
 }
 
 .content {
   @apply mx-auto w-full;
 }
 
-.bar {
-  @apply bg-mine-shaft h-4 w-16;
+.post-content {
+  @apply w-full mx-auto;
+}
+
+.post-content * {
+  @apply mb-6 text-lg;
+}
+
+.post-content h2 {
+  @apply font-bold text-3xl tracking-wide max-w-md leading-none relative;
+}
+
+.post-content h2:before {
+  @apply bg-mine-shaft h-4 w-16 absolute bottom-0 block my-6;
+}
+
+.post-content .caption {
+  @apply text-center;
+}
+
+.bg-home {
+  @apply bg-center bg-cover bg-repeat-y bg-fixed;
+  background-image: url('/via-lactea/images/background.png');
 }
 
 @screen md {
   .content {
     @apply w-5/6;
+  }
+  .post-content {
+    @apply w-4/6;
+  }
+  .post-content h2 {
+    @apply text-5xl;
   }
 }
 

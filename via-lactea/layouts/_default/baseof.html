@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,17 @@
   <link rel="stylesheet" href="{{ $tailwind.Permalink | absURL }}">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ad0d465019.js"></script>
+  {{ if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  {{ block "meta" . }}{{ end }}
   {{ if .Title }}
     <title>{{ .Title }} &bull; {{ .Site.Title }}</title>
   {{ else }}
     <title>{{ .Site.Title }}</title>
   {{ end }}
 </head>
-<body class="font-barlow text-mine-shaft{{ if .IsHome }} bg-home{{ end }}">
+<body class="font-barlow text-mine-shaft{{ if .IsHome }} bg-home{{ else }} bg-hint-of-red{{ end }}">
   <div class="min-h-screen flex flex-col">
     {{ partial "navbar.html" . }}
     <main class="flex-grow">

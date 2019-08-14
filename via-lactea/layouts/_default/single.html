@@ -1,3 +1,12 @@
+{{ define "meta" }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+{{ end }}
+
 {{ define "main" }}
-  {{ .Content }}
+  <div class="px-4">
+    <div class="post-content text-mine-shaft">
+      {{ .Content }}
+    </div>
+  </div>
 {{ end }}

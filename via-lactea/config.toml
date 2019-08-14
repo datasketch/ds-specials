@@ -3,6 +3,8 @@ languageCode = "es-co"
 title = "Vía láctea"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 publishDir = "../docs/via-lactea"
+# googleAnalytics = "UA-110184023-1"
+
 [menu]
   [[menu.main]]
     url = "https://twitter.com/datasketch"
