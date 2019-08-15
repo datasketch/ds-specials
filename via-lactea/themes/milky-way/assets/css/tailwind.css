@@ -27,6 +27,18 @@
   background-image: url('/via-lactea/images/collages/home_mobile.png');
 }
 
+.article {
+  @apply h-screen bg-left bg-cover bg-no-repeat;
+}
+
+.article-1 {
+  background-image: url('/via-lactea/images/article_1_mobile.png')
+}
+
+.article-2 {
+  background-image: url('/via-lactea/images/article_2_mobile.png')
+}
+
 .content {
   @apply mx-auto w-full;
 }
@@ -74,8 +86,14 @@
   }
   .hero {
     @apply bg-center h-screen;
-    background-image: url('/via-lactea/images/collages/home_v2.png');
+    background-image: url('/via-lactea/images/collages/home.png');
     padding-bottom: 30vh;
+  }
+  .article-1 {
+    background-image: url('/via-lactea/images/article_1.png')
+  }
+  .article-2 {
+    background-image: url('/via-lactea/images/article_2.png')
   }
   .post-content {
     @apply w-3/5;
@@ -88,6 +106,9 @@
 @screen lg {
   .hero {
     @apply bg-cover;
+  }
+  .article {
+    @apply bg-center;
   }
 }
 

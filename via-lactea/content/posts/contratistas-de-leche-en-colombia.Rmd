@@ -1,6 +1,7 @@
 ---
 title: "Contratistas De Leche en Colombia"
 date: 2019-08-13T22:49:49-05:00
+weight: 2
 summary: "Desde compradores de tierras a familias desplazadas por el conflicto armado colombiano, hasta empresas del Programa de Alimentación Escolar que no cumplen con lo acordado, estos son los mayores contratistas de la leche en Colombia."
 description: "Desde compradores de tierras a familias desplazadas por el conflicto armado colombiano, hasta empresas del Programa de Alimentación Escolar que no cumplen con lo acordado, estos son los mayores contratistas de la leche en Colombia."
 images:

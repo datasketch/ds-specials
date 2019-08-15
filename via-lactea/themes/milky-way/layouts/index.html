@@ -55,8 +55,10 @@
     </div>
   </div>
 </div>
-<div class="article relative mb-32" style="padding-bottom: 56.25%">
-  <img src='{{ "images/article_1.png" | absURL }}' class="w-full h-full object-cover object-center absolute top-0">
+<div class="article article-1 mb-24 md:mb-32 flex flex-col justify-center">
+  {{ with (index .Site.RegularPages 0) }}
+    {{ partial "article.html" . }}
+  {{ end }}
 </div>
 <div class="scroll">
   <div class="px-4 mb-24 md:mb-32">
@@ -87,8 +89,10 @@
     </div>
   </div>
 </div>
-<div class="article relative mb-32" style="padding-bottom: 56.25%">
-  <img src='{{ "images/article_2.png" | absURL }}' class="w-full h-full object-cover object-center absolute top-0">
+<div class="article article-2 mb-24 md:mb-32 flex flex-col justify-center">
+  {{ with (index .Site.RegularPages 1) }}
+    {{ partial "article.html" . }}
+  {{ end }}
 </div>
 <div class="scroll">
   <div class="px-4 mb-24 md:mb-32">
