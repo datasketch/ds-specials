@@ -22,6 +22,11 @@
   filter: none;
 }
 
+.hero {
+  @apply flex flex-col justify-center bg-contain bg-left-bottom bg-no-repeat pb-40;
+  background-image: url('/via-lactea/images/collages/home_mobile.png');
+}
+
 .content {
   @apply mx-auto w-full;
 }
@@ -57,15 +62,32 @@
   background-image: url('/via-lactea/images/background.png');
 }
 
+@screen sm {
+  .hero {
+    @apply pb-64;
+  }
+}
+
 @screen md {
   .content {
     @apply w-5/6;
+  }
+  .hero {
+    @apply bg-center h-screen;
+    background-image: url('/via-lactea/images/collages/home_v2.png');
+    padding-bottom: 30vh;
   }
   .post-content {
     @apply w-3/5;
   }
   .post-content h2 {
     @apply text-5xl;
+  }
+}
+
+@screen lg {
+  .hero {
+    @apply bg-cover;
   }
 }
 

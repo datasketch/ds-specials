@@ -21,7 +21,6 @@
   <url>
     <loc>/via-lactea/posts/</loc>
     <lastmod>2019-08-13T22:49:49-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -31,12 +30,10 @@
   
   <url>
     <loc>/via-lactea/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/via-lactea/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

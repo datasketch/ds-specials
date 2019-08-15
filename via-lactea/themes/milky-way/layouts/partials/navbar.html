@@ -1,5 +1,5 @@
 <header class='p-4{{ if eq .Section "posts" }} navbar-post{{ end }}'>
-  <nav class="flex justify-between items-center container mx-auto">
+  <nav class="flex justify-between items-center content">
     <a href="{{ .Site.BaseURL }}" class="w-40 brand">
       <img src='{{ "images/datasketch.svg" | absURL }}' alt="" class='{{ if eq .Section "posts" }}img-white{{ end }}'>
     </a>

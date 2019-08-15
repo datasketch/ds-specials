@@ -4,7 +4,6 @@ title = "Vía láctea"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 publishDir = "../docs/via-lactea/"
 theme = "milky-way"
-hrefTargetBlank = true
 # googleAnalytics = "UA-110184023-1"
 
 [menu]
