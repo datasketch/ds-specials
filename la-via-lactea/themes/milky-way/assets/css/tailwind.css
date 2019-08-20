@@ -86,8 +86,9 @@
   }
   .hero {
     @apply bg-center h-screen;
+    height: 130vh;
     background-image: url('/la-via-lactea/images/collages/home.png');
-    padding-bottom: 30vh;
+    padding-bottom: 60vh;
   }
   .article-1 {
     background-image: url('/la-via-lactea/images/article_1.png')

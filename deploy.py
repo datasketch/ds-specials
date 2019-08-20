@@ -5,8 +5,8 @@ Deployment script to AWS
 S3 Bucket: especiales.datasketch.co
 """)
 
-dirname = str(raw_input("Folder name: ")).strip()
-prod = str(raw_input("Production folder (optional): ")).strip()
+dirname = str(input("Folder name: ")).strip()
+prod = str(input("Production folder (optional): ")).strip()
 
 
 if not prod:
@@ -15,6 +15,6 @@ elif prod:
 	cli = 's3cmd sync --no-mime-magic --guess-mime-type {}/{}/ s3://especiales.datasketch.co/{}/'.format(dirname, prod, dirname)
 
 args = shlex.split(cli)
-print args
+print(args)
 
 subprocess.call(args)
