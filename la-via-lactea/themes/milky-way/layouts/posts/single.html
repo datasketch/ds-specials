@@ -1,0 +1,19 @@
+{{ define "meta" }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="article article-{{ .Weight }} mb-24 md:mb-32 flex flex-col justify-center">
+    {{ partial "article_post.html" . }}
+  </div>
+  <div class="px-4">
+    <div class="post-content text-mine-shaft text-lg">
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}
+
+{{ define "script" }}
+  <script src='{{ "js/site.js" | absURL }}'></script>
+{{ end }}

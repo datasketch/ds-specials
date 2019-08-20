@@ -1,0 +1,115 @@
+@tailwind base;
+
+@tailwind components;
+
+.bar {
+  @apply bg-mine-shaft h-4 w-16;
+}
+
+.img-white {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-post {
+  @apply fixed z-10 w-full text-white;
+}
+
+.affixed {
+  @apply bg-hint-of-red text-mine-shaft shadow-md;
+}
+
+.affixed .brand .img-white {
+  filter: none;
+}
+
+.hero {
+  @apply flex flex-col justify-center bg-contain bg-left-bottom bg-no-repeat pb-40;
+  background-image: url('/la-via-lactea/images/collages/home_mobile.png');
+}
+
+.article {
+  @apply h-screen bg-left bg-cover bg-no-repeat;
+}
+
+.article-1 {
+  background-image: url('/la-via-lactea/images/article_1_mobile.png')
+}
+
+.article-2 {
+  background-image: url('/la-via-lactea/images/article_2_mobile.png')
+}
+
+.content {
+  @apply mx-auto w-full;
+}
+
+.post-content {
+  @apply w-full mx-auto;
+}
+
+.post-content * {
+  @apply mb-6 leading-relaxed;
+}
+
+.post-content a {
+  @apply text-observatory;
+}
+
+.post-content h2 {
+  @apply font-bold text-3xl tracking-wide max-w-lg leading-none relative mb-8;
+}
+
+.post-content h2::before {
+  @apply bg-mine-shaft h-2 w-10 absolute block mt-2;
+  top: 100%;
+  content: '';
+}
+
+.post-content .caption {
+  @apply text-center;
+}
+
+.bg-home {
+  @apply bg-center bg-cover bg-repeat-y bg-fixed;
+  background-image: url('/la-via-lactea/images/background.png');
+}
+
+@screen sm {
+  .hero {
+    @apply pb-64;
+  }
+}
+
+@screen md {
+  .content {
+    @apply w-5/6;
+  }
+  .hero {
+    @apply bg-center h-screen;
+    background-image: url('/la-via-lactea/images/collages/home.png');
+    padding-bottom: 30vh;
+  }
+  .article-1 {
+    background-image: url('/la-via-lactea/images/article_1.png')
+  }
+  .article-2 {
+    background-image: url('/la-via-lactea/images/article_2.png')
+  }
+  .post-content {
+    @apply w-3/5;
+  }
+  .post-content h2 {
+    @apply text-5xl;
+  }
+}
+
+@screen lg {
+  .hero {
+    @apply bg-cover;
+  }
+  .article {
+    @apply bg-center;
+  }
+}
+
+@tailwind utilities;
