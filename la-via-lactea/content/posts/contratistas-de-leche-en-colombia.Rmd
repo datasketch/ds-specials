@@ -49,14 +49,14 @@ count_CatCat <-function(df, cols = NULL) {
     arrange(desc(total)) %>% 
     ungroup()
 }
-d0 <- read_csv('data/leche-secop_1-full-celebrado.csv')
+d0 <- read_csv('info_post/leche-secop_1-full-celebrado.csv')
 contratistas <- d0 %>% 
   select(contratista_id, contratista_nombre) %>% 
   filter(!is.na(contratista_id)) %>% 
   count_CatCat()
 
 
-d1 <- read_csv('data/01_top_n_contratos_por_nit.csv')
+d1 <- read_csv('info_post/01_top_n_contratos_por_nit.csv')
 d2 <- d1 %>% 
   mutate(contratista = mop::match_replace(contratista_id, contratistas)) %>% 
   select(contratista, total) %>% 
