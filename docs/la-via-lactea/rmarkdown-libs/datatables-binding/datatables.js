@@ -404,27 +404,11 @@ HTMLWidgets.widget({
 
         // remove the overflow: hidden attribute of the scrollHead
         // (otherwise the scrolling table body obscures the filters)
-        // The workaround and the discussion from
-        // https://github.com/rstudio/DT/issues/554#issuecomment-518007347
-        // Otherwise the filter selection will not be anchored to the values
-        // when the columns number is many and scrollX is enabled.
         var scrollHead = $(el).find('.dataTables_scrollHead,.dataTables_scrollFoot');
-        var cssOverflowHead = scrollHead.css('overflow');
-        var scrollBody = $(el).find('.dataTables_scrollBody');
-        var cssOverflowBody = scrollBody.css('overflow');
-        var scrollTable = $(el).find('.dataTables_scroll');
-        var cssOverflowTable = scrollTable.css('overflow');
-        if (cssOverflowHead === 'hidden') {
+        var cssOverflow = scrollHead.css('overflow');
+        if (cssOverflow === 'hidden') {
           $x.on('show hide', function(e) {
-            if (e.type === 'show') {
-              scrollHead.css('overflow', 'visible');
-              scrollBody.css('overflow', 'visible');
-              scrollTable.css('overflow-x', 'scroll');
-            } else {
-              scrollHead.css('overflow', cssOverflowHead);
-              scrollBody.css('overflow', cssOverflowBody);
-              scrollTable.css('overflow-x', cssOverflowTable);
-            }
+            scrollHead.css('overflow', e.type === 'show' ? '' : cssOverflow);
           });
           $x.css('z-index', 25);
         }
@@ -759,7 +743,7 @@ HTMLWidgets.widget({
             $input.attr('title', 'Hit Ctrl+Enter to finish editing, or Esc to cancel');
           }
           $input.val(value);
-          if (inArray(_cell.index().column, disableCols)) {
+          if (disableCols && inArray(_cell.index().column, disableCols)) {
             $input.attr('readonly', '').css('filter', 'invert(25%)');
           }
           $cell.empty().append($input);
