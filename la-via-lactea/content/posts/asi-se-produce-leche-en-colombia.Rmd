@@ -9,7 +9,7 @@ images:
 ---
 
 ```{r include=FALSE}
-source('~/Repos/ds-specials/la-via-lactea/content/posts/theme.R')
+source('./theme.R')
 ```
 
 ## ¿De dónde viene la leche?
@@ -135,3 +135,6 @@ Esta razón es proporcional a las exportaciones, tan solo 132 toneladas de leche
 A lo que se podría llegar es que Colombia en el espectro internacional de producción de leche tiene unas exportaciones considerablemente menores que importaciones, es decir, que no es un gran comercializador a nivel internacional, y por lo tanto el consumo de leche dentro del país en muchos casos puede provenir de otros lugares del mundo.
 
 La importancia del reconocimiento de donde proviene la leche que se consume es fundamental, ya que la producción de leche por sí misma puede implicar unos modos de relacionamiento con la producción del campo en Colombia que esperamos cada vez permita que los productores tengan mayores garantías de continuar sus labores y seguir alimentando Colombia de la vaca a la mesa del desayuno.
+
+
+**Esta historia forma parte de la investigación regional "La leche prometida", liderada por la red de Periodistas de América Latina para la Transparencia y la Anticorrupción ([Red PALTA](https://www.redpalta.org/)), que integra La Diaria de Uruguay, El Faro de El Salvador, Ojo-Publico.com de Perú, Datasketch de Colombia, La Nación de Argentina, PODER de México y OjoConMiPisto de Guatemala.**
