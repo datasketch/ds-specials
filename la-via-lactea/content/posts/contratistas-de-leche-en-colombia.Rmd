@@ -8,9 +8,42 @@ images:
   - /la-via-lactea/images/article_2.png
 ---
 
+
+```{r include=FALSE}
+source('~/Repos/ds-specials/la-via-lactea/content/posts/theme.R')
+library(mop)
+```
+
 Las empresas que más contratan con el Estado colombiano en relación con leche y productos lácteos desde el 2011 son La Recetta Soluciones Gastronómicas Integradas, Cooperativa Colanta LTDA, Lácteos Buenos Aires S.A.S y Nestlé de Colombia.
 
-**Gráfica**
+
+```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Top empresas que más contratan con el Estado colombiano"}
+
+count_CatCat <-function(df, cols = NULL) {
+  if(!is.null(cols))
+    df <- df %>% select(one_of(cols))
+  df %>%   
+    group_by_at(c(1,2)) %>%
+    summarise(total = n()) %>% 
+    arrange(desc(total)) %>% 
+    ungroup()
+}
+d0 <- read_csv('data/leche-secop_1-full-celebrado.csv')
+contratistas <- d0 %>% 
+  select(contratista_id, contratista_nombre) %>% 
+  filter(!is.na(contratista_id)) %>% 
+  count_CatCat()
+
+
+d1 <- read_csv('data/01_top_n_contratos_por_nit.csv')
+d2 <- d1 %>% 
+  mutate(contratista = mop::match_replace(contratista_id, contratistas)) %>% 
+  select(contratista, total) %>% 
+  filter(!is.na(contratista)) %>% 
+  top_n(10)
+hgch_bar_CatNum(d2, opts = list(colors = theme$colors, labelWrap = 50,agg_text = ' ',orientation = "hor", sort = "desc", theme = tma(theme)))
+
+```
 
 Así están compuestas las empresas que más contratan con el Estado en temas de leche en Colombia:
 
@@ -18,7 +51,23 @@ Así están compuestas las empresas que más contratan con el Estado en temas de
 
 Colanta tiene un capital de más de 607 mil millones de pesos, tiene dentro de su junta directiva a Daniel Fernando Cuartas Tamayo, accionista de la Agropecuaria Carmen de Bolívar y de la Agropecuaria El Génesis (En liquidación), empresas involucradas en compras de tierras en Los Montes de María en Carmen de Bolívar.
 
-**Red de personas que conforman la empresa**
+```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Red de personas que conforman Colanta"}
+
+
+url <- "https://docs.google.com/spreadsheets/d/18lasGnUT7r_VIa0Qe18af-jACn3axjtuVBni5VerYlc/edit#gid=0"
+ss <- gs_url(url)
+d <- gs_read_csv(ss, ws = 1)
+
+d1 <- d %>% filter(Empresa == "Colanta") %>%
+  select(from = personaje1, to = personaje2, label = relacion)
+
+edges <- d1 %>% distinct()
+nodes <- tibble(id = unique(c(edges$from, edges$to)))
+nodes <- nodes %>% mutate(label = id) %>% filter(!is.na(id))
+nodes$color <- '#F4698B'
+visNetwork(nodes, edges, width = "100%") 
+
+```
 
 [Ver](https://drive.google.com/drive/folders/1po-1rck4VZMYpZ96oE1PU_WOdadkGlDH) cuadro de composición de la empresa.
 
@@ -48,7 +97,8 @@ De los 70 contratos firmados por Colanta, 29 de ellos son firmados con el Instit
 
 De la misma manera, se han obtenido 24 contratos con la Agencia Logística de las Fuerzas Militares para dar cumplimiento a convenios administrativos entre la Agencia y el Instituto Colombiano de Bienestar Familiar, con el fin de suministrar productos alimenticios en restaurantes escolares. Estos montos suman más de 1.800 millones de pesos en total.
 
-**Gráfica**
+
+
 
 **Gráfica**
 
