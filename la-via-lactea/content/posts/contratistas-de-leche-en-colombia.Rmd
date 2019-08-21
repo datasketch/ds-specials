@@ -12,6 +12,13 @@ images:
 ```{r include=FALSE}
 source('./theme.R')
 library(mop)
+library(tableviz)
+rename_with_dic <- function(x, dic){
+  not_names <- which_not_in(names(x),dic[[1]])
+  message("Variables not in dictionary: ", paste0(not_names, collapse = ", "))
+  names(x) <- mop::match_replace(names(x), dic, force = FALSE)
+  x
+}
 agg_CatNum <- function(df, cols = NULL, agg = "sum"){
   if(!is.null(cols))
     df <- df %>% select(one_of(cols))
@@ -50,6 +57,8 @@ count_CatCat <-function(df, cols = NULL) {
     ungroup()
 }
 d0 <- read_csv('info_post/leche-secop_1-full-celebrado.csv')
+dic <- read_csv("info_post/secop_dic.csv")
+
 contratistas <- d0 %>% 
   select(contratista_id, contratista_nombre) %>% 
   filter(!is.na(contratista_id)) %>% 
@@ -113,8 +122,15 @@ Dentro de las investigaciones de [La Silla Vacía](https://lasillavacia.com/hist
 El informe [Justicia y paz. Tierras y territorios en las versiones de los paramilitares](https://issuu.com/centronacionalmemoriahistorica/docs/tierras-territorios/69) del Centro Nacional de Memoria Histórica, nombra a ciertos empresarios de la región de Montes de María que realizaron compras masivas de cerca de treinta mil hectáreas, entre ellos Manuel Medina Muñetón, Andrés Felipe, Daniel y Ricardo Arango Botero y Amauri Rafael Piniche pertenecientes a las empresas Cementos Argos SA.
 
 Durante los últimos años, Colanta ha sido una de las empresas más reconocidas en producción y comercialización láctea en el país, y por lo tanto las contrataciones que ha realizado con el Estado colombiano reflejan las capacidades para suministrar productos lácteos a las distintas entidades estatales.
+```{r message=FALSE, echo=FALSE, warning=FALSE, comment = NA, fig.cap="Tabla de contratos en Colanta"}
+# Contratos colanta
+coop_colanta_nit <- 	890904478
+d_colanta <- d0 %>% filter(contratista_id == coop_colanta_nit)
+d_colanta2 <- rename_with_dic(d_colanta, dic)
+tableviz_dt(d_colanta2, scrollX = TRUE, theme = "dark", lang = "es")
 
-[comment]: <> (Tabla de contratos de Colanta)
+```
+
 
 De los 70 contratos firmados por Colanta, 29 de ellos son firmados con el Instituto Nacional Penitenciario y Carcelario (INPEC) para el suministro de bebidas lácteas con el fin de ser vendidas dentro de los centros carcelarios a lo largo del país. Cuyos montos suman más de 1.600 millones de pesos.
 
@@ -161,7 +177,14 @@ visNetwork(nodes, edges, width = "100%")
 De los 175 contratos celebrados por La Recetta con el Estado, 128 fueron firmados con el Instituto Nacional Penitenciario INPEC para el abastecimiento de los almacenes para el expendio de productos en los centros carcelarios por un total de 2.500 millones de pesos . Le siguen 34 contratos con la Agencia Logística de las Fuerzas Militares para el abastecimiento de las servitiendas de las fuerzas militares a lo largo del país por 551 millones de pesos en total.
 
 [comment]: <> (Tabla de contratos de la Recetta)
- 
+
+```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Tabla de contratos de la Recetta"}
+emp_nit <- 	900213759
+d_emp <- d0 %>% filter(contratista_id == emp_nit)
+d_emp2 <- rename_with_dic(d_emp, dic)
+
+tableviz_dt(d_emp2, scrollX = TRUE, theme = "dark", lang = "es")
+```
  
 ```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Valor contratos de la Recetta"}
 # Línea de tiempo contratos valor
@@ -186,6 +209,15 @@ Lácteos Buenos Aires tiene 30 contratos con el Estado colombiano, todos ellos f
 
 [comment]: <> (Tabla de contratos de Lácteos Buenos Aires)
 
+```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Tabla de contratos Lácteos Buenos Aires S.A.S"}
+emp_nit <- 	800136998	
+d_emp <- d0 %>% filter(contratista_id == emp_nit)
+d_emp2 <- rename_with_dic(d_emp, dic)
+
+tableviz_dt(d_emp2, scrollX = TRUE, theme = "dark", lang = "es")
+```
+
+
 ```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Número de contratos Lácteos Buenos Aires S.A.S"}
 emp_nit <- 	800136998	
 d_emp <- d0 %>% filter(contratista_id == emp_nit)
@@ -205,6 +237,9 @@ Nestlé es una empresa cuyo patrimonio sobrepasa los [162 mil millones de pesos]
 ```{r message=FALSE, echo=FALSE, warning=FALSE, fig.cap="Número de contratos de Nestlé"}
 emp_nit <- 	860002130	
 d_emp <- d0 %>% filter(contratista_id == emp_nit)
+d_emp2 <- rename_with_dic(d_emp, dic)
+
+tableviz_dt(d_emp2, scrollX = TRUE, theme = "dark", lang = "es")
 
 # Top 10 entidades buenos aires
 cols <- "ent_nombre"
