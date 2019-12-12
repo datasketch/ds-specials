@@ -1,0 +1,4 @@
+baseURL = "/elecciones-y-contratos"
+languageCode = "es-ES"
+title = "Elecciones y contratos"
+publishDir = "../docs"
