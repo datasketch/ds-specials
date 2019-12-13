@@ -234,6 +234,22 @@ header {
 p + .button {
   margin-top: 1.5rem;
 }
+
+.chart {
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  width: 100%;
+}
+
+.chart iframe {
+  border: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
   
 /* 5. Media queries */
 @media screen and (min-width: 768px) {
