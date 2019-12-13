@@ -51,6 +51,7 @@ a {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 /* 3. Helpers */
@@ -119,6 +120,29 @@ img {
 .section-row {
   display: flex;
   flex-direction: column;
+}
+
+.section-image {
+  max-width: 256px;
+  margin: 0 auto;
+}
+
+.section-image-large {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section-image-greedy {
+  height: 100%;
+}
+
+.section-image-greedy img {
+  width: 100%;
+  height: 100%;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .text-center {
@@ -197,6 +221,9 @@ img {
   }
   .section-row {
     flex-direction: row;
+  }
+  .section-row.items-center {
+    align-items: center;
   }
   .section-col {
     width: 50%;
