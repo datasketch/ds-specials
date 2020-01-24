@@ -1,178 +1,183 @@
 {{ define "main" }}
-  <div class="intro">
+  <div class="intro text-white bg-no-repeat bg-cover bg-center py-40" style='background-image: url({{ "images/bg-titulo.webp"|absURL }})'>
     <div class="container text-center">
-      <img src='{{ "images/titulo.svg" | absURL }}' alt="Elecciones y contratos">
-      <p class="narrow-xs intro-brief mx-auto">Elecciones y Contratos revela las personas naturales y jurídicas que fueron <strong>aportantes de campañas electorales</strong> territoriales de 2015 y legislativas y presidenciales de 2018, y su relación con las <strong>contrataciones públicas del Estado colombiano</strong> desde enero de 2016 hasta septiembre de 2019.</p>
+      <img src='{{ "images/titulo.svg" | absURL }}' alt="Elecciones y contratos" class="mx-auto">
+      <p class="w-full mt-20 mx-auto md:max-w-lg">Elecciones y Contratos revela las personas naturales y jurídicas que fueron <strong>aportantes de campañas electorales</strong> territoriales, y su relación con la <strong>contratación pública</strong> de Colombia.</p>
     </div>
   </div>
-  <section>
-    <div class="section-row container reversed">
-      <div class="section-col">
-        <div class="section-image-greedy">
-          <img src='{{ "images/monedas.webp" | absURL }}' alt="">
+  <!---->
+  <section class="py-20">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="lg:w-1/2 lg:px-4">
+          <img src='{{ "images/monedas.webp" | absURL }}' class="w-full max-w-xs mx-auto">
         </div>
-      </div>
-      <div class="section section-col text-center">
-        <h3 class="title">
-          <span class="title-sub">el financiamiento de las actividades</span><br>
-          <span class="title-highlight text-fuchsia-pink">político-electorales</span>
-        </h3>
-        <p>en Colombia se hace mediante los aportes públicos y privados que distintas personas naturales o jurídicas brindan a las contiendas electorales o a los funcionamientos de los partidos políticos. Estas son formas legítimas de participación y expresión de los intereses que facilitan la interlocución entre los donantes y los tomadores de decisiones políticas elegidos mediante voto popular.</p>
-      </div>
-    </div>
-  </section>
-  <section class="bg-ecstasy text-white">
-    <div class="section-row container">
-      <div class="section-col section text-center">
-        <h3 class="title">
-          <span class="title-sub font-normal">la contratación</span><br>
-          <span class="title-highlight">pública</span>
-        </h3>
-        <p>es quizás el principal escenario en el que se puede materializar <strong>la relación indebida entre financiación de campañas y aportantes privados</strong>, aunque en principio no es ilegal financiar la política y al mismo tiempo obtener contratos públicos. Las irregularidades se encuentran cuando la entrega de aportes para apoyar las campañas y los partidos políticos está condicionada a la obtención de beneficios particulares, cuando hay manipulación de procesos contractuales, cuando los aportantes/contratistas incumplen con sus obligaciones, y/o cuando se generan conflictos de intereses que no son debidamente declarados ni tramitados dentro de los marcos que la ley determina para tal fin.</p>
-      </div>
-      <div class="section-col">
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="section-row container items-center">
-      <div class="section-col">
-        <div class="section-image">
-          <img src='{{ "images/cono.webp" | absURL }}' alt="cono">
-        </div>
-      </div>
-      <div class="section-col text-center">
-        <h3 class="title">
-          <span class="title-sub text-ecstasy">¿cómo identificar estas</span><br>
-          <span class="title-highlight text-vermilion">relaciones indebidas?</span>
-        </h3>
-        <p>No se puede desconocer que los aportes privados a campañas electorales tienen el poder de incidir en la gestión administrativa para buscar un beneficio particular. En este sentido resulta relevante identificar patrones en torno a la entrega de aportes a campañas y su posible incidencia o no en la posterior obtención de contratos estatales.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section bg-alabaster">
-    <div class="chart container">
-      <iframe src='{{ "charts/data_2015.html" | absURL }}' style="border: none"></iframe>
-    </div>
-  </section>
-  <section class="section">
-    <div class="chart container">
-      <iframe src='{{ "charts/data_2018.html" | absURL }}' style="border: none"></iframe>
-    </div>
-  </section>
-  <section class="section bg-sunshade text-white">
-    <div class="container">
-      <div class="narrow-md text-center mx-auto">
-        <h3 class="title">
-          <span class="title-sub font-normal">la financiación de</span><br>
-          <span class="title-highlight text-vermilion">campañas</span>
-        </h3>
-        <p class="font-bold">es una forma de participación política y manifestación de intereses y apoyo. Ahora bien, cuando se observa que más de la tercera parte de las personas jurídicas (empresas, asociaciones y organizaciones con o sin ánimos de lucro) son las que luego de su aporte reciben contratos con el Estado, es obligatorio preguntarse cuáles son las motivaciones para aportar.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <!-- Viz -->
-  </section>
-  <section class="bg-denim text-white">
-    <div class="section-row container">
-      <div class="section-col section text-center">
-        <h3 class="title">
-          <span class="title-sub font-normal">financiadores</span><br>
-          <span class="title-highlight">anónimos</span>
-        </h3>
-        <p>En los reportes de ingresos y gastos de las campañas, se encontraron ciertos casos en los que en la información registrada del aportante se suplanta su identidad y se cambia por la de otra de persona. Esta información equivocada también se manifiesta en números de cédula o de NIT que no corresponden con el nombre del aportante, o números de identificación que no corresponden con ninguna persona natural o jurídica. En estos casos, el principal problema no radica en el monto de los recursos aportados a las campañas sino que estos registros irregulares impiden conocer el origen de los ingresos.</p>
-        <a href="http://www.monitorciudadano.co/elecciones-contratos/historias/financiadores-anonimos" class="button bg-white text-denim" target="_blank" rel="noopener noreferrer">Leer artículo</a>
-      </div>
-      <div class="section-col self-end">
-        <div class="section-image-large">
-          <img src='{{ "images/man.webp" | absURL }}' alt="">
+        <div class="text-center mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+          <h2 class="uppercase font-extrabold leading-tight">
+            <span class="tracking-wide text-xl lg:text-2xl">El financiamiento de lo</span>
+            <span class="block text-fuchsia-pink text-3xl lg:text-6xl">político y electoral</span>
+          </h2>
+          <p class="mt-6 text-sm">en Colombia se hace mediante los aportes que distintas personas –naturales o jurídicas– brindan a las campañas o al funcionamiento de los partidos políticos. Estas son formas <strong>legítimas de participación</strong> y expresión de los intereses entre los donantes y los tomadores de decisiones políticas.</p>
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="section-row container items-center">
-      <div class="section-col">
-        <div class="section-image-large">
-          <img src='{{ "images/prohibido.webp" | absURL }}' alt="">
+  <!---->
+  <section class="py-20 bg-wild-sand">
+    <div class="text-center px-4 max-w-3xl mx-auto md:w-2/3">
+      <h2 class="uppercase font-extrabold leading-tight">
+        <span class="tracking-wide text-xl lg:text-2xl">¿Quiénes son los mayores</span>
+        <span class="block text-fuchsia-pink text-3xl lg:text-6xl">financiadores?</span>
+      </h2>
+      <p class="mt-6 text-sm">Quienes tienen más financiadores en <strong>elecciones territoriales</strong> son los candidatos a las alcaldías y a los concejos municipales, cuyos ingresos principales se registran por parte de personas naturales. Por otro lado, en las <strong>elecciones generales</strong> los candidatos a Congreso son quienes más aportantes tienen, a pesar de que las elecciones presidenciales pueden movilizar más dinero por un sólo candidato. Quienes más reciben aportes de naturales y familiares son los candidatos a representantes a la cámara, sin embargo para Senado se   reciben más aportes de personas jurídicas.</p>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20 bg-ecstasy text-white relative">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="text-center mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0 lg:mx-0 relative z-10">
+          <h2 class="uppercase leading-tight">
+            <span class="tracking-wide font-regular text-xl lg:text-2xl">La contratación</span>
+            <span class="block font-extrabold text-3xl lg:text-6xl">pública</span>
+          </h2>
+          <p class="mt-6 text-sm">es quizás el principal escenario en que se puede materializar la <strong>relación indebida entre financiación de campañas y aportantes privados</strong>, aunque en principio no es ilegal financiar la política y al mismo tiempo obtener contratos públicos. Las <strong>irregularidades</strong> se encuentran cuando la entrega de aportes para apoyar las campañas y los partidos políticos está condicionada a la <strong>obtención de beneficios particulares</strong> y/o cuando se generan <strong>conflictos de intereses</strong> que no son declarados.</p>
         </div>
-      </div>
-      <div class="section-col section text-center">
-        <h3 class="title text-denim">
-          <span class="title-sub font-normal">financiadores</span><br>
-          <span class="title-highlight">prohibidos</span>
-        </h3>
-        <p>En los reportes de ingresos y gastos de las campañas, se encontraron ciertos casos en los que en la información registrada del aportante se suplanta su identidad y se cambia por la de otra de persona. Esta información equivocada también se manifiesta en números de cédula o de NIT que no corresponden con el nombre del aportante, o números de identificación que no corresponden con ninguna persona natural o jurídica. En estos casos, el principal problema no radica en el monto de los recursos aportados a las campañas sino que estos registros irregulares impiden conocer el origen de los ingresos.</p>
-        <a href="http://www.monitorciudadano.co/elecciones-contratos/historias/financiadores-prohibidos" class="button bg-tarawera text-white" target="_blank" rel="noopener noreferrer">Leer artículo</a>
-      </div>
-    </div>
-  </section>
-  <section class="bg-tarawera text-white">
-    <div class="section-row container">
-      <div class="section-col section text-center">
-        <h3 class="title">
-          <span class="title-sub font-normal">financiadores registrados</span><br>
-          <span class="title-highlight">en sisben</span>
-        </h3>
-        <p>Al revisar la información consignada en Cuentas Claras sobre financiadores de campañas, los contratistas estatales y los datos de SISBEN, se encontró que de los 34.075 aportantes de campañas que tienen contratos con el Estado, hay 2.773 registrados en SISBEN. Al respecto, entre estos financiadores, aproximadamente el 38% (1.057), están registrados como personas en condiciones de vulnerabilidad extrema. Esta condición los habilita para acceder a cualquier subsidio estatal: vivienda, educación, transferencias condicionadas, salud, etc.</p>
-        <a href="http://www.monitorciudadano.co/elecciones-contratos/historias/pobres-no-tan-pobres" class="button bg-white text-tarawera" target="_blank" rel="noopener noreferrer">Leer artículo</a>
-      </div>
-      <div class="section-col self-end">
-        <img src='{{ "images/disfraz.webp" | absURL }}' alt="">
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="section-row container reversed">
-      <div class="section-col self-end">
-        <div class="section-image">
-          <img src='{{ "images/stop.webp" | absURL }}' alt="">
-        </div>
-      </div>
-      <div class="section-col section text-center">
-        <h3 class="title text-tarawera">
-          <span class="title-sub font-normal">contratación</span><br>
-          <span class="title-highlight">prohibida</span>
-        </h3>
-        <p>Para evitar que grandes aportantes a campañas (personas y/o empresarios) puedan interferir de manera indebida en la contratación pública, el Artículo 2 del Estatuto Anticorrupción (Ley 1474 de 2011), incluyó una inhabilidad para que, quienes hacen aportes a campañas hasta determinado monto, no puedan ser contratistas en el mismo nivel en el que dieron sus aporte. Estos fueron los hallazgos de los contratistas prohibidos.</p>
-        <a href="" class="button bg-tarawera text-white">Leer artículo</a>
-      </div>
-    </div>
-  </section>
-  <section class="bg-ecstasy text-white">
-    <div class="section-row container items-center">
-      <div class="section-col section text-center">
-        <h3 class="title">
-          <span class="title-sub font-normal">calidad de la</span><br>
-          <span class="title-highlight">información</span>
-        </h3>
-        <p>Identificar la relación entre financiación de campañas y contratación pública significó realizar un análisis de datos abiertos de las plataformas de acceso público de información de SECOP y Cuentas Claras. Sin embargo estas dos fuentes de información tienen algunos errores en el origen de los datos, principalmente en el registro de los nombres, números de identificación y/o valores. Este es nuestro diagnóstico de los datos.</p>
-        <a href="" class="button bg-white text-ecstasy">Leer artículo</a>
-      </div>
-      <div class="section-col">
-        <div class="section-image">
-          <img src='{{ "images/data.webp" | absURL }}' alt="">
+        <div class="absolute top-0 right-0">
+          <img src='{{ "images/contrato.webp" | absURL }}' class="w-48 md:w-56 lg:w-full lg:max-w-sm">
         </div>
       </div>
     </div>
   </section>
-  <section class="section">
-    <div class="section-row container">
-      <div class="section-col">
-        <h3 class="text-fuchsia-pink title">
-          <span class="title-highlight">Metodología</span>
-        </h3>
-        <p>Para saber más sobre la recolección y el tratamiento de la información visite nuestra sección de Metodología y Glosario.</p>
-        <a class="text-white bg-fuchsia-pink button" href="http://www.monitorciudadano.co/elecciones-contratos/descargas#metodologia" target="_blank" rel="noopener noreferrer">Ir a metodología</a>
-      </div>
-      <div class="section-col">
-        <h3 class="text-fuchsia-pink title">
-          <span class="title-highlight">Cŕeditos</span>
-        </h3>
-        <p>Este sitio web fue elaborado por Transparencia por Colombia con el apoyo de Datasketch en el marco del proyecto: "Visibilización de los vínculos entre financiamiento de campañas y contratación pública a través de la plataforma Monitor Ciudadano".</p>
-        <p style="margin-top: 1rem">Este trabajo ha sido posible gracias al financiamiento Open Society Foundation y Luminate.</p>
+  <!---->
+  <section class="py-20">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="text-center mx-auto md:w-2/3 lg:w-1/2 lg:px-4">
+          <h2 class="uppercase font-extrabold leading-tight">
+            <span class="tracking-wide text-ecstasy text-xl lg:text-2xl">¿Por qué investigar estas</span>
+            <span class="block text-vermilion text-3xl lg:text-6xl">relaciones indebidas?</span>
+          </h2>
+          <p class="mt-6 text-sm">Cuando más de la tercera parte de las personas jurídicas (empresas, asociaciones y organizaciones con o sin ánimos de lucro) son las que luego de su aporte reciben contratos con el Estado, es obligatorio preguntarse <strong>cuáles son las motivaciones reales de los financiadores de campañas.</strong></p>
+        </div>
+        <div class="lg:w-1/2 lg:px-4">
+        </div>
       </div>
     </div>
   </section>
+  <!---->
+  <section class="py-20 bg-wild-sand">
+    <div class="text-center px-4 max-w-3xl mx-auto md:w-2/3">
+      <h2 class="uppercase font-extrabold leading-tight">
+        <span class="tracking-wide text-ecstasy text-xl lg:text-2xl">¿Qué es la</span>
+        <span class="block text-vermilion text-3xl lg:text-6xl">tasa de retorno?</span>
+      </h2>
+      <p class="mt-6 text-sm">Los financiadores que son personas jurídicas pueden tener una tasa de retorno por su aporte, es decir <strong>la cantidad de dinero que recibió en contratos</strong> con el Estado respecto al monto que financió en el mismo nivel territorial.</p>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20 bg-sunshade text-white">
+    <div class="text-center px-4 max-w-3xl mx-auto md:w-2/3">
+      <img src='{{ "images/cono.webp" | absURL }}' class="w-64 max-w-xs mx-auto">
+      <h2 class="uppercase leading-tight mt-10">
+        <span class="tracking-wide font-regular text-xl lg:text-2xl">Nuestros principales</span>
+        <span class="block font-extrabold text-vermilion text-3xl lg:text-6xl">hallazgos</span>
+      </h2>
+      <p class="mt-6 text-sm font-extrabold tracking-wide">Respecto a los datos de financiadores de campañas que a su vez son contratistas con el Estado, encontramos lo siguiente. Respecto a los datos de financiadores de campañas que a su vez son contratistas con el Estado, encontramos lo siguiente:</p>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col-reverse lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="text-center mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+          <h2 class="uppercase leading-tight">
+            <span class="tracking-wide font-regular text-xl lg:text-2xl">financiadores</span>
+            <span class="block font-extrabold text-denim text-3xl lg:text-6xl">anónimos</span>
+          </h2>
+          <p class="mt-6 text-sm">En los reportes de financiamiento existe información de aportantes que no corresponde con su número de identidad y/o nombre. Se encontraron 1272 casos en los que la información registrada del financiador se suplanta por la de otra de persona o por datos inexistentes. Estos registros irregulares impiden conocer el origen de los ingresos.</p>
+          <a href="http://www.monitorciudadano.co/elecciones-contratos/historias/financiadores-anonimos" target="_blank" class="button bg-denim text-white mt-10">Leer artículo</a>
+        </div>
+        <div class="lg:w-1/2 lg:px-4">
+          <img src='{{ "images/man.webp" | absURL }}' class="w-full max-w-xs mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20 bg-denim text-white">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="lg:w-1/2 lg:px-4">
+          <img src='{{ "images/prohibido.webp" | absURL }}' class="w-full max-w-xs mx-auto">
+        </div>
+        <div class="text-center mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+          <h2 class="uppercase leading-tight">
+            <span class="tracking-wide font-regular text-xl lg:text-2xl">financiadores</span>
+            <span class="block font-extrabold text-tarawera text-3xl lg:text-6xl">prohibidos</span>
+          </h2>
+          <p class="mt-6 text-sm">Según la ley colombiana existen fuentes de financiación no permitidas por parte de personas naturales que tengan acusaciones o imputaciones en procesos penales, asociación con grupos armados ilegales, narcotráfico, entre otros. Sin embargo se hallaron 12 financiadores que habrían tenido inhabilidades vigentes en el momento de realizar su aporte.</p>
+          <a href="http://www.monitorciudadano.co/elecciones-contratos/historias/financiadores-prohibidos" target="_blank" class="button bg-white text-denim mt-10">Leer artículo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col-reverse lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="text-center mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+          <h2 class="uppercase leading-tight">
+            <span class="tracking-wide font-regular text-xl lg:text-2xl">financiadores registrados</span>
+            <span class="block font-extrabold text-denim text-3xl lg:text-6xl">en sisbén</span>
+          </h2>
+          <p class="mt-6 text-sm">De los 34.075 aportantes de campañas que tienen contratos con el Estado, hay 2773 registrados en el Sistema de Potenciales Beneficiarios de Programas Sociales (SISBEN), y aproximadamente el 38% (1.057) están registrados en condiciones de vulnerabilidad extrema, que les da acceso a cualquier subsidio de vivienda, educación, entre otros.</p>
+          <a href="http://www.monitorciudadano.co/elecciones-contratos/historias/pobres-no-tan-pobres" target="_blank" class="button bg-denim text-white mt-10">Leer artículo</a>
+        </div>
+        <div class="lg:w-1/2 lg:px-4">
+          <img src='{{ "images/disfraz.webp" | absURL }}' class="w-full max-w-xs mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20 text-white bg-sunshade">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col lg:-mx-4 lg:flex-row lg:items-center">
+        <div class="lg:w-1/2 lg:px-4">
+          <img src='{{ "images/data.webp" | absURL }}' class="w-full max-w-xs mx-auto">
+        </div>
+        <div class="text-center mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+          <h2 class="uppercase leading-tight">
+            <span class="tracking-wide font-regular text-xl lg:text-2xl">calidad de la</span>
+            <span class="block font-extrabold text-3xl lg:text-6xl">información</span>
+          </h2>
+          <p class="mt-6 text-sm">El análisis de datos abiertos de las plataformas de acceso público de información de financiación de campañas y contratos públicos, permitió visibilizar algunos errores en el origen de los datos, aquí está nuestro diagnóstico.</p>
+          <a href="" class="button bg-white text-sunshade mt-10">Leer artículo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <section class="py-20">
+    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+      <div class="flex flex-col lg:-mx-4 lg:flex-row">
+        <div class="mx-auto md:w-2/3 lg:w-1/2 lg:px-4">
+          <h2 class="uppercase font-extrabold leading-tight text-fuchsia-pink text-2xl lg:text-4xl">
+            Metodología
+          </h2>
+          <p class="mt-6 text-sm lg:max-w-md">Para saber más sobre la recolección y el tratamiento de la información visite nuestra sección de Metodología y Glosario.</p>
+          <a href="http://www.monitorciudadano.co/elecciones-contratos/descargas#metodologia" target="_blank" class="button bg-fuchsia-pink text-white mt-10">Ir a metodología</a>
+        </div>
+        <div class="mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+          <h2 class="uppercase font-extrabold leading-tight text-fuchsia-pink text-2xl lg:text-4xl">
+            Créditos
+          </h2>
+          <p class="mt-6 text-sm">Este sitio web fue elaborado por Transparencia por Colombia con el apoyo de Datasketch en el marco del proyecto: <em>"Visibilización de los vínculos entre financiamiento de campañas y contratación pública a través de la plataforma Monitor Ciudadano".</em></p>
+          <p class="mt-4 text-sm">Este trabajo ha sido posible gracias al financiamiento Open Society Foundation y Luminate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
 {{ end }}

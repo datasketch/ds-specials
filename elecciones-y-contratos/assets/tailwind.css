@@ -1,0 +1,21 @@
+@tailwind base;
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  src: url('./fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  src: url('./fonts/Raleway-ExtraBold.ttf');
+}
+
+@tailwind components;
+
+.button {
+  @apply uppercase inline-block px-2 py-1 font-extrabold tracking-widest;
+}
+
+@tailwind utilities;

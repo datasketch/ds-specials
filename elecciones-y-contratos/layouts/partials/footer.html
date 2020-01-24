@@ -1,4 +1,29 @@
-<footer class="bg-violet-eggplant text-white">
-  <div class="container">
+<footer class="bg-violet-eggplant text-white py-10">
+  <div class="mx-auto px-4 lg:w-5/6">
+    <div class="flex flex-col md:flex-row md:items-center">
+      <div class="flex flex-col items-center md:w-1/3">
+        <a href="https://www.datasketch.co/" target="_blank">
+          <img src='{{ "images/logo_ds_v.svg" | absURL }}' alt="Logo Datasketch">
+        </a>
+      </div>
+      <div class="mt-8 flex flex-col items-center md:w-1/3">
+        <p class="uppercase font-extrabold tracking-wider text-xl">Comparte</p>
+        <div class="flex items-center mt-2">
+          <a href="https://www.facebook.com/datasketch/" target="_blank" class="mr-4">
+            <img src='{{ "images/facebook.svg" | absURL }}' alt="Logo facebook">
+          </a>
+          <a href="mailto:info@datasketch.co" class="mr-4">
+            <img src='{{ "images/email.svg" | absURL }}' alt="Logo email">
+          </a>
+          <a href="https://twitter.com/datasketch" target="_blank">
+            <img src='{{ "images/twitter.svg" | absURL }}' alt="Logo twitter">
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col items-center md:w-1/3">
+        <img src='{{ "images/cc.svg" | absURL }}'>
+        <p class="text-xs mt-4 max-w-xs">Todo el material en esta página, cuando no se indique lo contrario, es CC-BY-SA. Si reusas o adaptas recursos de esta página por favor vincúlalos y referéncialos.</p>
+      </div>
+    </div>
   </div>
 </footer>
