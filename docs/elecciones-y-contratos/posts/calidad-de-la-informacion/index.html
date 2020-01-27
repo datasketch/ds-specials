@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Calidad de la información" />
+<meta property="og:description" content="Identificar la relación entre financiación de campañas y contratación pública significa analizar los datos abiertos de las plataformas de acceso público de información de SECOP y Cuentas Claras. Sin embargo estas dos fuentes de información tienen algunos errores en el origen de los datos, principalmente en el registro de los nombres, números de identificación y/o valores. Este es nuestro diagnóstico de los datos." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/elecciones-y-contratos/posts/calidad-de-la-informacion/" />
+<meta property="og:image" content="/elecciones-y-contratos/images/bg-historia.webp" />
+<meta property="article:published_time" content="2020-01-27T08:04:56-05:00" />
+<meta property="article:modified_time" content="2020-01-27T08:04:56-05:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/elecciones-y-contratos/images/bg-historia.webp"/>
+
+<meta name="twitter:title" content="Calidad de la información"/>
+<meta name="twitter:description" content="Identificar la relación entre financiación de campañas y contratación pública significa analizar los datos abiertos de las plataformas de acceso público de información de SECOP y Cuentas Claras. Sin embargo estas dos fuentes de información tienen algunos errores en el origen de los datos, principalmente en el registro de los nombres, números de identificación y/o valores. Este es nuestro diagnóstico de los datos."/>
+
+  
+  <link rel="stylesheet" href="/elecciones-y-contratos/tailwind.css">
+  <title>Elecciones y contratos</title>
+</head>
+<body class="font-raleway text-outer-space">
+  <main>
+    <header class="absolute py-4 top-0 left-0 w-full">
+  <div class="container">
+    <div class="flex items-center justify-between">
+      <a href="/elecciones-y-contratos/">
+        <img src='/elecciones-y-contratos/images/logo_ds.svg' alt="Logo Datasketch">
+      </a>
+      <div class="flex items-center mt-2">
+        <a href="https://www.facebook.com/datasketch/" target="_blank" class="mr-4">
+          <img src='/elecciones-y-contratos/images/facebook.svg' alt="Logo facebook">
+        </a>
+        <a href="mailto:info@datasketch.co" class="mr-4">
+          <img src='/elecciones-y-contratos/images/email.svg' alt="Logo email">
+        </a>
+        <a href="https://twitter.com/datasketch" target="_blank">
+          <img src='/elecciones-y-contratos/images/twitter.svg' alt="Logo twitter">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+    
+  <div class="intro text-white bg-no-repeat bg-cover bg-center py-40" style='background-image: url(/elecciones-y-contratos/images/bg-historia.webp)'>
+    <div class="container text-center">
+      
+      <h1 class="mx-auto text-4xl font-extrabold uppercase md:text-6xl md:max-w-lg lg:max-w-4xl">Calidad de la información</h1>
+      <p class="w-full mt-20 mx-auto md:max-w-lg">Identificar la relación entre financiación de campañas y contratación pública significa analizar los datos abiertos de las plataformas de acceso público de información de SECOP y Cuentas Claras. Sin embargo estas dos fuentes de información tienen algunos errores en el origen de los datos, principalmente en el registro de los nombres, números de identificación y/o valores. Este es nuestro diagnóstico de los datos.</p>
+    </div>
+  </div>
+  <div class="w-full px-4 pt-20 md:w-5/6 mx-auto">
+    <div class="post-content">
+      <p>La efectiva apertura de datos abiertos está regida por una serie de principios de calidad e interoperabilidad para que estos sean útiles y relevantes para los usuarios. El análisis de las bases de datos de Cuentas Claras y SECOP I y II muestran la ausencia de dos de los criterios fundamentales de calidad: exactitud y completitud.</p>
+<p>En estas plataformas la intervención humana es esencial y por tanto susceptible a errores. Parte de estos ellos están ligados a la falta de capacitación de las personas encargadas de registrar la información y a la falta de validación previa de los datos por parte de las entidades encargadas de registrar los contratos y los ingresos de campañas.</p>
+<h2 id="secop">SECOP</h2>
+<p>El sistema de registro SECOP en sus dos versiones contiene la información de contratación pública de Colombia, sus datasets tienen una gran cantidad de registros y una cobertura a nivel tanto nacional como territorial.</p>
+<p>Uno de los grandes problemas de esta plataforma se relaciona con el acceso a sus bases de datos, ya que existen muchos datasets en la página web de datos abiertos de Colombia con distintos registros cada uno (se han encontrado hasta 6 versiones de SECOP I).</p>
+<h2 id="números-de-identificación">Números de identificación</h2>
+<p>SECOP I y II adolece de sistemas de control para algunos tipos de datos, como la identificación de contratantes, contratistas y representantes legales, lo que significa que el sistema no valida la integridad de los datos, como el caso de &ldquo;CC 0000&rdquo; o &ldquo;NIT 1111-1&rdquo; o &ldquo;CC 123456&rdquo; con separaciones en comas, puntos, e incluso información equivocada en la columna de identificación, con direcciones, números de teléfono, de celular etc.</p>
+<p>Sin embargo, el principal problema del campo de números de identificación es que este es de texto abierto, es decir que se pueden adicionar letras y números, y por lo tanto el diligenciamiento queda al libre albedrío de la persona que registra la información. Por ejemplo se puede escribir en una fila &ldquo;C.C. 80010148 expedida en Bogotá&rdquo; y en otra &ldquo;CC 3.489.289&rdquo; a pesar de que los dos campos son de cédula y lo único relevante es el número.</p>
+<p>Todos los contratos deben tener un identificador único, que indica un sólo proceso de contratación, a pesar de que puedan existir varios registros (filas) de identificación de un único contrato. No obstante, existen registros duplicados (de un mismo contrato) con un identificador único diferente. Puede haber hasta 20 registros de un mismo contrato que tienen un identificador único distinto, que se cuentan en el sistema como contratos diferentes.</p>
+<h2 id="números-de-contratistas-empresas-y-demás">Números de contratistas, empresas y demás</h2>
+<p>Hay múltiples formas de digitar o escribir un mismo nombre. Por ejemplo el nombre &ldquo;Eneriedh&rdquo; se puede escribir en la base de datos como &ldquo;Eneriedt&rdquo;, &ldquo;Enerieth&rdquo;, &ldquo;Eneriheth&rdquo;, o &ldquo;Eneryed&rdquo;, para el sistema son personas diferentes aunque en realidad es la misma persona con el nombre escrito de diferentes maneras debido al mal ingreso de la información en la plataforma. Esto puede hacer parecer que hay múltiples contratistas o múltiples contratos, cuando en realidad solo hay uno.</p>
+<p>Además existen distintos nombres de personas y empresas con un mismo número de cédula o de NIT, lo que no permite automatizar los contratistas, las empresas o los representantes legales.</p>
+<p>El campo del contratante directo (es decir la entidad) también es un texto abierto, y a pesar de que hay un código para cada institución, en muchos casos se escribe distinto cada registro a pesar de que es la misma, por ejemplo en una fila se escribe &ldquo;Secretaría de Movilidad&rdquo; en otra &ldquo;Secretaría de movilidad de Bogotá&rdquo;, y en otra &ldquo;Secretaría de Movilidad del Distrito&rdquo;.</p>
+<h2 id="adiciones-y-valores-del-contrato">Adiciones y valores del contrato</h2>
+<p>Particularmente, en SECOP se encuentran errores, tales como que en las adiciones y en el valor total del contrato se reportan números decimales que en la base son interpretados como unidades, lo que lleva a que el valor del contrato se multiplique hasta por mil veces respecto a su valor original. Los separadores de miles normalmente en excel se realizan por puntos y los decimales en comas, entonces contratos que son de $100.000,00 (con decimales como valores de centavo) puede resultar en $10.000.000.</p>
+<p>A su vez, en muchos registros se encuentra información errada del contrato, por ejemplo un contrato directo con el IDRD, de prestación de servicios y destinado a una persona natural, se puede plantear como de muy bajo costo, pero el valor del contrato registrado en la base de datos es de 68 billones de pesos, lo que evidentemente no refleja el monto real del contrato, que debe ser mucho menor.</p>
+<p>Es particularmente sensible analizar la información de las adiciones de los contratos, ya que a veces en el registro de la base de datos las adiciones no corresponden al valor pagado en la totalidad del contrato (que es verificado en el pdf de la plataforma).</p>
+<h2 id="información-faltante">Información faltante</h2>
+<p>Los contenidos faltantes en una base de datos es de los principales problemas al analizar contratos, ya que estos registros pueden dejar de contener información fundamental para entender estos procesos.</p>
+<p>El problema se agrava cuando vemos que muchas de estas variables dependen de otras. Por ejemplo, si un contrato no tiene una fecha de finalización, tampoco tiene la cuantía final de ejecución del contrato. O algunos montos de contratos que en el campo del tipo de moneda no tienen registro, no se sabe si el monto se encuentra en moneda colombiana, dólares u otra moneda, y así si en el campo de valor se registra &ldquo;100000&rdquo; podrían ser 100 mil pesos colombianos (valor muy bajo para un contrato), o podrían ser 100 mil dólares (que es una cifra mucho más alta).</p>
+<p>Esto además hace que aparezca más información faltante de la que puede haber, pues por ejemplo el hecho de que no haya datos de cuantías se puede atribuir en parte a que la base de datos cuenta con contratos que no fueron asignados.</p>
+<h2 id="cuentas-claras">Cuentas claras</h2>
+<p>Por su parte, Cuentas Claras tiene un completo registro de los ingresos y gastos de campaña y sus formularios cuentan con sistemas de validación del tipo de dato, no obstante, también es común encontrar que allí no existe una previa validación de la información que se registra, especialmente cuando hacemos referencia a las identificaciones de aportantes.</p>
+<p>Se encuentran registros de identificación con asociaciones a nombres distintos (cédulas incompletas, con errores de digitación o su total ausencia), o errores en la asociación del tipo de identificación con cédulas que se registran como NIT y viceversa.</p>
+<p>Hay casos donde varios aportes de una misma persona a un mismo candidato se registran de manera inadecuada, ya que al momento de diligenciar la información en formatos de excel no se tiene en cuenta que cuando se arrastra un número (de cédula en este caso), este empieza a hacer sumatoria, por ejemplo si el número de cédula de un aportante es &ldquo;8174653&rdquo;, cuando se arrastra, la siguiente fila será &ldquo;8174654&rdquo;, la siguiente &ldquo;8174655&rdquo;, y así sucesivamente, así cada fila será diferente y se leerán números de cédula de personas distintas a pesar de que sea el mismo aportante.</p>
+<p>En las elecciones territoriales de 2015 se encontró que aproximadamente 2.600 millones de pesos estaban asociados a financiadores con números de identificación alterados, entre los que se encontraron 81 personas que registraron números de identificación como &ldquo;1&rdquo;, &ldquo;2&rdquo;, &ldquo;3&rdquo;, &ldquo;4&rdquo;, &ldquo;17&rdquo;, &ldquo;70&rdquo;, &ldquo;11111&rdquo; o &ldquo;444444&rdquo;, entre otros números inventados. También hay 829 registros de personas en las que el número de identificación no concuerda con el nombre registrado. Incluso un aportante registró su número de celular como si fuera su cédula de ciudadanía.</p>
+<p>En algunos casos es casi imposible establecer el origen de los recursos de una campaña política. Por ejemplo Jazmín Stibaliz Puerta Pinto, candidata a la Cámara de Representantes por el partido Somos, presenta en su reporte de ingresos y gastos que el 95 por ciento de sus recursos (110 millones de pesos) se los donó  el señor Danilo Trujillo Pinto, sin embargo, el número de cédula registrado en Cuentas Claras corresponde a John De La Cruz Zapata ¿Finalmente quien fue el aportante de esta campaña?</p>
+<p>El senador Luis Fernando Velasco, por ejemplo registra un crédito recibido del señor Jorge Sair Naranjo López. Sin embargo, según la Registraduría Nacional del Estado Civil y el sistema de seguridad social (ADRES), Naranjo, identificado con la cédula de ciudadanía número 10547343, falleció en 2014.</p>
+<p>Además existen ciertos números de identificación que corresponden a cédulas de extranjería a pesar de que la legislación colombiana establece que ciudadanos extranjeros no pueden financiar campañas.</p>
+<p>En estos casos, la responsabilidad principal es de los candidatos, gerentes y contadores de campañas, quienes deben reportar de manera adecuada y completa todos los ingresos que reciben. Deben verificar que los números de identificación correspondan a los nombres de los aportantes. Ya que como lo indica la Resolución 3097 de 2013 del Consejo Nacional Electoral (CNE), cualquier falsedad o falta de veracidad debidamente comprobada de los datos del aplicativo Cuentas Claras será sancionada.</p>
+<p><strong>Recomendaciones</strong></p>
+<p>Teniendo en cuenta lo anterior y con el propósito de aportar a través de este análisis al acceso efectivo a la información de carácter público, a continuación se proponen algunas acciones de mejora en la calidad de los datos de estas plataformas:</p>
+<ul>
+<li>Establecer controles de validación de tipo de datos, que sea acorde con el carácter del dato registrado, sobre todo en los campos de identificación de personas y entidades, y en los de registro de valores numéricos y de fecha. Asegurarse de contar con un software que valide la información digitada por los funcionarios en el momento de carga, incluso con un sistema de validación en marcha. Una vez cargada la información, se deben incluir rutinas de limpieza para validar que la información es correcta, asegurándose de que los campos numéricos en efecto son numéricos, de que los de texto son textos o de que las fechas son fechas.</li>
+<li>Proyectar la posibilidad de precargar los nombres de las entidades públicas contratantes en un campo de texto predictivo, para que el nombre registrado sea estándar y no un texto libre. Esto se podría realizar, por ejemplo, a partir de códigos asignados a cada entidad, lo que permitiría la trazabilidad en otras bases de datos, tal es el caso del Divipola y el Código FUT.</li>
+<li>Establecer obligatoriedad en el registro de algunos campos fundamentales para conocer el proceso de contratación o de financiación de campaña.</li>
+<li>En cualquier ejercicio de análisis de datos es muy importante contar con descripciones de las variables que se están recogiendo para que todos los usuarios entiendan qué significan.</li>
+<li>Cada una de las columnas de información como la cédula, el tipo de contrato, los proponentes, etc. cuenta con su propia forma de designar los registros que no tienen información como &ldquo;No Definido&rdquo;, &ldquo;No definido&rdquo;, &ldquo;No definida&rdquo;, &ldquo;No registra&rdquo; y otras variantes. Para hacer análisis de información sería conveniente que todos los campos mantengan la misma convención.</li>
+</ul>
+
+      <a href="/elecciones-y-contratos/" target="_blank" class="button bg-ecstasy text-white mt-10">Volver al inicio</a>
+    </div>
+  </div>
+  <section class="py-20">
+  <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
+    <div class="flex flex-col lg:-mx-4 lg:flex-row">
+      <div class="mx-auto md:w-2/3 lg:w-1/2 lg:px-4">
+        <h2 class="uppercase font-extrabold leading-tight text-fuchsia-pink text-2xl lg:text-4xl">
+          Metodología
+        </h2>
+        <p class="mt-6 text-sm lg:max-w-md">Para saber más sobre la recolección y el tratamiento de la información visite nuestra sección de Metodología y Glosario.</p>
+        <a href="http://www.monitorciudadano.co/elecciones-contratos/descargas#metodologia" target="_blank" class="button bg-fuchsia-pink text-white mt-10">Ir a metodología</a>
+      </div>
+      <div class="mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
+        <h2 class="uppercase font-extrabold leading-tight text-fuchsia-pink text-2xl lg:text-4xl">
+          Créditos
+        </h2>
+        <p class="mt-6 text-sm">Este sitio web fue elaborado por Transparencia por Colombia con el apoyo de Datasketch en el marco del proyecto: <em>"Visibilización de los vínculos entre financiamiento de campañas y contratación pública a través de la plataforma Monitor Ciudadano".</em></p>
+        <p class="mt-4 text-sm">Este trabajo ha sido posible gracias al financiamiento Open Society Foundation y Luminate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="bg-violet-eggplant text-white py-10">
+  <div class="mx-auto px-4 lg:w-5/6">
+    <div class="flex flex-col md:flex-row md:items-center">
+      <div class="flex flex-col items-center md:w-1/3">
+        <a href="https://www.datasketch.co/" target="_blank">
+          <img src='/elecciones-y-contratos/images/logo_ds_v.svg' alt="Logo Datasketch">
+        </a>
+      </div>
+      <div class="mt-8 flex flex-col items-center md:w-1/3">
+        <p class="uppercase font-extrabold tracking-wider text-xl">Comparte</p>
+        <div class="flex items-center mt-2">
+          <a href="https://www.facebook.com/datasketch/" target="_blank" class="mr-4">
+            <img src='/elecciones-y-contratos/images/facebook.svg' alt="Logo facebook">
+          </a>
+          <a href="mailto:info@datasketch.co" class="mr-4">
+            <img src='/elecciones-y-contratos/images/email.svg' alt="Logo email">
+          </a>
+          <a href="https://twitter.com/datasketch" target="_blank">
+            <img src='/elecciones-y-contratos/images/twitter.svg' alt="Logo twitter">
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col items-center md:w-1/3">
+        <img src='/elecciones-y-contratos/images/cc.svg'>
+        <p class="text-xs mt-4 max-w-xs">Todo el material en esta página, cuando no se indique lo contrario, es CC-BY-SA. Si reusas o adaptas recursos de esta página por favor vincúlalos y referéncialos.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
