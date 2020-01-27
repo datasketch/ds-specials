@@ -60,12 +60,18 @@
 <h2 id="secop">SECOP</h2>
 <p>El sistema de registro SECOP en sus dos versiones contiene la información de contratación pública de Colombia, sus datasets tienen una gran cantidad de registros y una cobertura a nivel tanto nacional como territorial.</p>
 <p>Uno de los grandes problemas de esta plataforma se relaciona con el acceso a sus bases de datos, ya que existen muchos datasets en la página web de datos abiertos de Colombia con distintos registros cada uno (se han encontrado hasta 6 versiones de SECOP I).</p>
+<p><img src="/elecciones-y-contratos/images/calidad-1.webp" alt="">
+<img src="/elecciones-y-contratos/images/calidad-2.webp" alt=""></p>
 <h2 id="números-de-identificación">Números de identificación</h2>
 <p>SECOP I y II adolece de sistemas de control para algunos tipos de datos, como la identificación de contratantes, contratistas y representantes legales, lo que significa que el sistema no valida la integridad de los datos, como el caso de &ldquo;CC 0000&rdquo; o &ldquo;NIT 1111-1&rdquo; o &ldquo;CC 123456&rdquo; con separaciones en comas, puntos, e incluso información equivocada en la columna de identificación, con direcciones, números de teléfono, de celular etc.</p>
+<p><img src="/elecciones-y-contratos/images/calidad-3.webp" alt="">
+<img src="/elecciones-y-contratos/images/calidad-4.webp" alt=""></p>
 <p>Sin embargo, el principal problema del campo de números de identificación es que este es de texto abierto, es decir que se pueden adicionar letras y números, y por lo tanto el diligenciamiento queda al libre albedrío de la persona que registra la información. Por ejemplo se puede escribir en una fila &ldquo;C.C. 80010148 expedida en Bogotá&rdquo; y en otra &ldquo;CC 3.489.289&rdquo; a pesar de que los dos campos son de cédula y lo único relevante es el número.</p>
+<img src="/elecciones-y-contratos/images/calidad-5.webp" alt="">
 <p>Todos los contratos deben tener un identificador único, que indica un sólo proceso de contratación, a pesar de que puedan existir varios registros (filas) de identificación de un único contrato. No obstante, existen registros duplicados (de un mismo contrato) con un identificador único diferente. Puede haber hasta 20 registros de un mismo contrato que tienen un identificador único distinto, que se cuentan en el sistema como contratos diferentes.</p>
 <h2 id="números-de-contratistas-empresas-y-demás">Números de contratistas, empresas y demás</h2>
 <p>Hay múltiples formas de digitar o escribir un mismo nombre. Por ejemplo el nombre &ldquo;Eneriedh&rdquo; se puede escribir en la base de datos como &ldquo;Eneriedt&rdquo;, &ldquo;Enerieth&rdquo;, &ldquo;Eneriheth&rdquo;, o &ldquo;Eneryed&rdquo;, para el sistema son personas diferentes aunque en realidad es la misma persona con el nombre escrito de diferentes maneras debido al mal ingreso de la información en la plataforma. Esto puede hacer parecer que hay múltiples contratistas o múltiples contratos, cuando en realidad solo hay uno.</p>
+<img src="/elecciones-y-contratos/images/calidad-6.webp" alt="">
 <p>Además existen distintos nombres de personas y empresas con un mismo número de cédula o de NIT, lo que no permite automatizar los contratistas, las empresas o los representantes legales.</p>
 <p>El campo del contratante directo (es decir la entidad) también es un texto abierto, y a pesar de que hay un código para cada institución, en muchos casos se escribe distinto cada registro a pesar de que es la misma, por ejemplo en una fila se escribe &ldquo;Secretaría de Movilidad&rdquo; en otra &ldquo;Secretaría de movilidad de Bogotá&rdquo;, y en otra &ldquo;Secretaría de Movilidad del Distrito&rdquo;.</p>
 <h2 id="adiciones-y-valores-del-contrato">Adiciones y valores del contrato</h2>

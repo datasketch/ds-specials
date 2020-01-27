@@ -17,17 +17,27 @@ El sistema de registro SECOP en sus dos versiones contiene la información de co
 
 Uno de los grandes problemas de esta plataforma se relaciona con el acceso a sus bases de datos, ya que existen muchos datasets en la página web de datos abiertos de Colombia con distintos registros cada uno (se han encontrado hasta 6 versiones de SECOP I).
 
+{{< image "images/calidad-1.webp" >}}
+{{< image "images/calidad-2.webp" >}}
+
 ## Números de identificación
 
 SECOP I y II adolece de sistemas de control para algunos tipos de datos, como la identificación de contratantes, contratistas y representantes legales, lo que significa que el sistema no valida la integridad de los datos, como el caso de "CC 0000" o "NIT 1111-1" o "CC 123456" con separaciones en comas, puntos, e incluso información equivocada en la columna de identificación, con direcciones, números de teléfono, de celular etc.
 
+{{< image "images/calidad-3.webp" >}}
+{{< image "images/calidad-4.webp" >}}
+
 Sin embargo, el principal problema del campo de números de identificación es que este es de texto abierto, es decir que se pueden adicionar letras y números, y por lo tanto el diligenciamiento queda al libre albedrío de la persona que registra la información. Por ejemplo se puede escribir en una fila "C.C. 80010148 expedida en Bogotá" y en otra "CC 3.489.289" a pesar de que los dos campos son de cédula y lo único relevante es el número.
+
+{{< image "images/calidad-5.webp" >}}
 
 Todos los contratos deben tener un identificador único, que indica un sólo proceso de contratación, a pesar de que puedan existir varios registros (filas) de identificación de un único contrato. No obstante, existen registros duplicados (de un mismo contrato) con un identificador único diferente. Puede haber hasta 20 registros de un mismo contrato que tienen un identificador único distinto, que se cuentan en el sistema como contratos diferentes.
 
 ## Números de contratistas, empresas y demás
 
 Hay múltiples formas de digitar o escribir un mismo nombre. Por ejemplo el nombre "Eneriedh" se puede escribir en la base de datos como "Eneriedt", "Enerieth", "Eneriheth", o "Eneryed", para el sistema son personas diferentes aunque en realidad es la misma persona con el nombre escrito de diferentes maneras debido al mal ingreso de la información en la plataforma. Esto puede hacer parecer que hay múltiples contratistas o múltiples contratos, cuando en realidad solo hay uno.
+
+{{< image "images/calidad-6.webp" >}}
 
 Además existen distintos nombres de personas y empresas con un mismo número de cédula o de NIT, lo que no permite automatizar los contratistas, las empresas o los representantes legales.
 
