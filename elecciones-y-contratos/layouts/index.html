@@ -153,31 +153,12 @@
             <span class="block font-extrabold text-3xl lg:text-6xl">información</span>
           </h2>
           <p class="mt-6 text-sm">El análisis de datos abiertos de las plataformas de acceso público de información de financiación de campañas y contratos públicos, permitió visibilizar algunos errores en el origen de los datos, aquí está nuestro diagnóstico.</p>
-          <a href="" class="button bg-white text-sunshade mt-10">Leer artículo</a>
+          <a href="{{.Site.BaseURL}}posts/calidad-de-la-informacion" class="button bg-white text-sunshade mt-10">Leer artículo</a>
         </div>
       </div>
     </div>
   </section>
   <!---->
-  <section class="py-20">
-    <div class="px-4 lg:px-0 lg:w-5/6 mx-auto">
-      <div class="flex flex-col lg:-mx-4 lg:flex-row">
-        <div class="mx-auto md:w-2/3 lg:w-1/2 lg:px-4">
-          <h2 class="uppercase font-extrabold leading-tight text-fuchsia-pink text-2xl lg:text-4xl">
-            Metodología
-          </h2>
-          <p class="mt-6 text-sm lg:max-w-md">Para saber más sobre la recolección y el tratamiento de la información visite nuestra sección de Metodología y Glosario.</p>
-          <a href="http://www.monitorciudadano.co/elecciones-contratos/descargas#metodologia" target="_blank" class="button bg-fuchsia-pink text-white mt-10">Ir a metodología</a>
-        </div>
-        <div class="mt-8 mx-auto md:w-2/3 lg:w-1/2 lg:px-4 lg:mt-0">
-          <h2 class="uppercase font-extrabold leading-tight text-fuchsia-pink text-2xl lg:text-4xl">
-            Créditos
-          </h2>
-          <p class="mt-6 text-sm">Este sitio web fue elaborado por Transparencia por Colombia con el apoyo de Datasketch en el marco del proyecto: <em>"Visibilización de los vínculos entre financiamiento de campañas y contratación pública a través de la plataforma Monitor Ciudadano".</em></p>
-          <p class="mt-4 text-sm">Este trabajo ha sido posible gracias al financiamiento Open Society Foundation y Luminate.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  {{ partial "methodology.html" . }}
   <!---->
 {{ end }}

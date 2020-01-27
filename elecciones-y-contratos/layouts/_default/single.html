@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="intro text-white bg-no-repeat bg-cover bg-center py-40" style='background-image: url({{ (index .Params.images 0) | absURL }})'>
+    <div class="container text-center">
+      <!-- <img src='{{ "images/titulo.svg" | absURL }}' alt="Elecciones y contratos" class="mx-auto"> -->
+      <h1 class="mx-auto text-4xl font-extrabold uppercase md:text-6xl md:max-w-lg lg:max-w-4xl">{{ .Title }}</h1>
+      <p class="w-full mt-20 mx-auto md:max-w-lg">{{ .Description }}</p>
+    </div>
+  </div>
+  <div class="w-full px-4 pt-20 md:w-5/6 mx-auto">
+    <div class="post-content">
+      {{ .Content }}
+      <a href="{{.Site.BaseURL}}" target="_blank" class="button bg-ecstasy text-white mt-10">Volver al inicio</a>
+    </div>
+  </div>
+  {{ partial "methodology.html" . }}
+{{ end }}

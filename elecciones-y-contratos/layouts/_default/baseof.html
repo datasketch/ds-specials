@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
   {{ $style := resources.Get "tailwind.css" | postCSS }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
   <title>{{ .Site.Title }}</title>

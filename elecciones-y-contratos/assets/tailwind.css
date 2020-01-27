@@ -18,4 +18,29 @@
   @apply uppercase inline-block px-2 py-1 font-extrabold tracking-widest;
 }
 
+.post-content {
+  @apply w-full;
+}
+
+.post-content * {
+  @apply mb-4;
+}
+
+.post-content h2 {
+  @apply font-extrabold text-2xl leading-tight mt-8;
+}
+
+.post-content ul {
+  @apply pl-4 list-disc;
+}
+
+@screen md {
+  .post-content {
+    @apply w-2/3;
+  }
+  .post-content h2 {
+    @apply text-4xl;
+  }
+}
+
 @tailwind utilities;
