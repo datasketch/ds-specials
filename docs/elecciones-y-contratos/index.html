@@ -74,6 +74,20 @@
         <span class="block text-fuchsia-pink text-3xl lg:text-6xl">financiadores?</span>
       </h2>
       <p class="mt-6 text-sm">Quienes tienen más financiadores en <strong>elecciones territoriales</strong> son los candidatos a las alcaldías y a los concejos municipales, cuyos ingresos principales se registran por parte de personas naturales. Por otro lado, en las <strong>elecciones generales</strong> los candidatos a Congreso son quienes más aportantes tienen, a pesar de que las elecciones presidenciales pueden movilizar más dinero por un sólo candidato. Quienes más reciben aportes de naturales y familiares son los candidatos a representantes a la cámara, sin embargo para Senado se   reciben más aportes de personas jurídicas.</p>
+      <div class="tabs mt-10" id="financiadores">
+        <div class="tabs-content">
+          <div id="tab-1" class="tab">
+            <iframe src="/elecciones-y-contratos/charts/data_2015.html" width="100%" frameborder="0" height="500px"></iframe>
+          </div>
+          <div id="tab-2" class="tab">
+            <iframe src="/elecciones-y-contratos/charts/data_2018.html" width="100%" frameborder="0" height="500px"></iframe>
+          </div>
+        </div>
+        <div class="nav-tabs flex justify-center mt-4">
+          <button data-tab="tab-1" class="button bg-fuchsia-pink text-white">Territoriales</button>
+          <button data-tab="tab-2" class="button bg-eminence text-white">Generales</button>
+        </div>
+      </div>
     </div>
   </section>
   
@@ -105,6 +119,7 @@
           <p class="mt-6 text-sm">Cuando más de la tercera parte de las personas jurídicas (empresas, asociaciones y organizaciones con o sin ánimos de lucro) son las que luego de su aporte reciben contratos con el Estado, es obligatorio preguntarse <strong>cuáles son las motivaciones reales de los financiadores de campañas.</strong></p>
         </div>
         <div class="lg:w-1/2 lg:px-4">
+          <iframe src='/elecciones-y-contratos/charts/judiciales.html' frameborder="0" width="100%" height="300px"></iframe>
         </div>
       </div>
     </div>
@@ -117,6 +132,20 @@
         <span class="block text-vermilion text-3xl lg:text-6xl">tasa de retorno?</span>
       </h2>
       <p class="mt-6 text-sm">Los financiadores que son personas jurídicas pueden tener una tasa de retorno por su aporte, es decir <strong>la cantidad de dinero que recibió en contratos</strong> con el Estado respecto al monto que financió en el mismo nivel territorial.</p>
+      <div class="tabs mt-10" id="tasa-de-retorno">
+        <div class="tabs-content">
+          <div id="tab-retorno-1" class="tab">
+            <iframe src="/elecciones-y-contratos/charts/tabla_1.html" width="100%" frameborder="0" height="500px"></iframe>
+          </div>
+          <div id="tab-retorno-2" class="tab">
+            <iframe src="/elecciones-y-contratos/charts/tabla_2.html" width="100%" frameborder="0" height="500px"></iframe>
+          </div>
+        </div>
+        <div class="nav-tabs flex justify-center mt-4">
+          <button data-tab="tab-retorno-1" class="button bg-hot-cinnamon text-white">Gobernaciones</button>
+          <button data-tab="tab-retorno-2" class="button bg-ecstasy text-white">Alcaldías</button>
+        </div>
+      </div>
     </div>
   </section>
   
@@ -255,5 +284,12 @@
     </div>
   </div>
 </footer>
+  
+  <script src='/elecciones-y-contratos/js/tabs.js'></script>
+  <script>
+    var financiadores = new Tabs(document.querySelector('#financiadores'));
+    var tasa = new Tabs(document.querySelector('#tasa-de-retorno'));
+  </script>
+
 </body>
 </html>
